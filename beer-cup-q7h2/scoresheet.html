@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>World Cup of Beer 2026 &mdash; Rubric &amp; Score Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#0b6e4f;--deep:#0e4f6e;--gold:#c9a227;--ink:#1d2126;--paper:#f7f4ee;--card:#fff;--line:#e3ddd0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Libre Franklin",-apple-system,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+  h1,h2,h3,.disp{font-family:"Playfair Display",Georgia,serif}
+  header{background:linear-gradient(135deg,var(--green),var(--deep));color:#fff;padding:40px 24px 30px;text-align:center}
+  header h1{font-size:2rem;font-weight:900}
+  header .sub{margin:10px auto 0;max-width:600px;color:#e8e3d5;font-size:.96rem}
+  .nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.88rem;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:6px 15px}
+  main{max-width:880px;margin:0 auto;padding:28px 20px 52px}
+  .rubric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 26px;margin-bottom:30px}
+  .rubric h2{color:var(--green);font-size:1.5rem;margin-bottom:4px}
+  .rubric .lead{font-size:.93rem;color:#555c64;margin-bottom:18px}
+  .crit{border-top:1px solid #efece4;padding:14px 0}
+  .crit:first-of-type{border-top:none}
+  .crit h3{font-size:1.05rem;display:flex;justify-content:space-between;align-items:baseline}
+  .crit h3 .pts{font-family:"Libre Franklin";font-size:.78rem;font-weight:700;color:#fff;background:var(--gold);padding:2px 10px;border-radius:999px}
+  .crit p{font-size:.9rem;color:#444;margin-top:5px}
+  .crit .anchors{font-size:.82rem;color:#666;margin-top:6px}
+  .deciding{background:#f0f6f3;border:1px solid #cfe3d9;border-left:5px solid var(--green);border-radius:10px;padding:16px 20px;margin-top:18px;font-size:.9rem}
+  .deciding strong{color:var(--green)}
+
+  .sheet{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-bottom:24px}
+  .sheet .head{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;border-bottom:2px solid var(--green);padding-bottom:12px;margin-bottom:14px}
+  .sheet .head .t{font-family:"Playfair Display";font-weight:700;font-size:1.3rem;color:var(--green);margin-right:auto}
+  .fld{font-size:.82rem;color:#555}
+  .fld .ln{display:inline-block;border-bottom:1.5px solid #b9b3a4;min-width:120px;margin-left:6px}
+  table{width:100%;border-collapse:collapse;font-size:.86rem}
+  th,td{border:1px solid #d8d2c4;padding:8px 6px;text-align:center}
+  th{background:var(--green);color:#fff;font-weight:600;font-size:.74rem;line-height:1.2}
+  th.beer,td.beer{text-align:left;font-weight:700;width:64px}
+  td.notes{text-align:left;width:34%;color:#999}
+  .cup{font-size:1.1rem;font-weight:900;color:var(--deep)}
+  .rankline{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:.9rem;align-items:center}
+  .rankline .box{border:1.5px solid #b9b3a4;border-radius:6px;width:46px;height:34px;display:inline-block;vertical-align:middle;margin-left:6px}
+  .rankline b{color:var(--green)}
+  .guess{margin-top:12px;font-size:.84rem;color:#555}
+  .guess .ln{display:inline-block;border-bottom:1.5px solid #b9b3a4;min-width:160px;margin-left:6px}
+  .printnote{font-size:.82rem;color:#8a8577;text-align:center;margin-bottom:18px}
+
+  @media print{
+    header,.nav,.printnote,.rubric{ }
+    .noprint{display:none}
+    header{background:var(--green);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    th{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .sheet{break-inside:avoid;border:1px solid #999}
+    body{background:#fff}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rubric &amp; Score Sheet</h1>
+  <p class="sub">World Cup of Beer 2026. One sheet per taster, per group. Score each cup, then rank the four.</p>
+  <nav class="nav noprint">
+    <a href="index.html">Groups &amp; bracket</a>
+    <a href="scoresheet.html">Rubric &amp; score sheet</a>
+    <a href="cards.html">Printable cards</a>
+  </nav>
+</header>
+
+<main>
+  <div class="rubric noprint">
+    <h2>The rubric</h2>
+    <p class="lead">Five things to judge, 30 points total. Don&rsquo;t overthink the numbers &mdash; they&rsquo;re mostly there to slow you down and make you taste. The ranking at the bottom is what actually decides the match.</p>
+
+    <div class="crit">
+      <h3>Appearance <span class="pts">0&ndash;5</span></h3>
+      <p>Colour, clarity, and the head. A clean pale gold with a white collar that lingers scores well; murky, flat, or a head that vanishes in seconds scores low.</p>
+      <p class="anchors"><strong>0&ndash;1</strong> lifeless &middot; <strong>2&ndash;3</strong> fine, unremarkable &middot; <strong>4&ndash;5</strong> bright, inviting, good retention</p>
+    </div>
+    <div class="crit">
+      <h3>Aroma <span class="pts">0&ndash;5</span></h3>
+      <p>Stick your nose in before you sip. Look for bready malt, floral or grassy hops, a clean lager character. Mark down skunk, wet cardboard, cooked corn, or nothing at all.</p>
+      <p class="anchors"><strong>0&ndash;1</strong> off or absent &middot; <strong>2&ndash;3</strong> clean but quiet &middot; <strong>4&ndash;5</strong> expressive and appealing</p>
+    </div>
+    <div class="crit">
+      <h3>Flavour <span class="pts">0&ndash;10</span></h3>
+      <p>The big one, double weight. Balance of malt sweetness and hop bitterness, depth, and the absence of off-flavours. Does it taste like something, or like cold fizzy water?</p>
+      <p class="anchors"><strong>0&ndash;3</strong> flawed or hollow &middot; <strong>4&ndash;6</strong> solid, drinkable &middot; <strong>7&ndash;8</strong> genuinely good &middot; <strong>9&ndash;10</strong> you&rsquo;d seek it out</p>
+    </div>
+    <div class="crit">
+      <h3>Mouthfeel <span class="pts">0&ndash;5</span></h3>
+      <p>Body and carbonation. Should feel crisp and lively, not thin and watery nor heavy and sticky. Lager wants a clean, brisk feel.</p>
+      <p class="anchors"><strong>0&ndash;1</strong> watery or flabby &middot; <strong>2&ndash;3</strong> fine &middot; <strong>4&ndash;5</strong> crisp, well-carbonated, satisfying</p>
+    </div>
+    <div class="crit">
+      <h3>Finish &amp; drinkability <span class="pts">0&ndash;5</span></h3>
+      <p>What it leaves behind, and the honest question: would you pour a second? A clean, moreish finish scores high; a lingering metallic or harsh note scores low.</p>
+      <p class="anchors"><strong>0&ndash;1</strong> one was plenty &middot; <strong>2&ndash;3</strong> happy enough &middot; <strong>4&ndash;5</strong> immediately want another</p>
+    </div>
+
+    <div class="deciding">
+      <strong>How the match is decided.</strong> After scoring, <strong>force-rank the four cups 1&ndash;4</strong> &mdash; no ties. That ranking is the decider: 1st = 4 points, 2nd = 3, 3rd = 2, 4th = 1, summed across everyone. Top two advance. Using ranks rather than raw averages is deliberate &mdash; it cancels out the fact that one person&rsquo;s &ldquo;7&rdquo; is another&rsquo;s &ldquo;9&rdquo;, so no single heavy or stingy scorer can swing the result. The 30-point total is only the tie-breaker, and good fuel for arguing afterwards.
+    </div>
+  </div>
+
+  <p class="printnote noprint">&#128424;&#65039; Print this page for two blank sheets. Print once per pair of tasters (or hit print a few times). Screen readers: scroll past for the live rubric above.</p>
+
+  <!-- SCORE CARD 1 -->
+  <div class="sheet">
+    <div class="head">
+      <span class="t">Score sheet</span>
+      <span class="fld">Taster<span class="ln">&nbsp;</span></span>
+      <span class="fld">Group #<span class="ln" style="min-width:60px">&nbsp;</span></span>
+      <span class="fld">Date<span class="ln" style="min-width:90px">&nbsp;</span></span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="beer">Cup</th>
+          <th>Appearance<br>/5</th>
+          <th>Aroma<br>/5</th>
+          <th>Flavour<br>/10</th>
+          <th>Mouthfeel<br>/5</th>
+          <th>Finish<br>/5</th>
+          <th>Total<br>/30</th>
+          <th class="notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="beer"><span class="cup">A</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">B</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">C</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">D</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+      </tbody>
+    </table>
+    <div class="rankline">
+      <span><b>My ranking</b> &mdash;</span>
+      <span>1st<span class="box"></span></span>
+      <span>2nd<span class="box"></span></span>
+      <span>3rd<span class="box"></span></span>
+      <span>4th<span class="box"></span></span>
+      <span style="color:#999;font-size:.8rem">(write the cup letter)</span>
+    </div>
+    <div class="guess">For fun &mdash; guess the country or beer: A<span class="ln" style="min-width:90px">&nbsp;</span> B<span class="ln" style="min-width:90px">&nbsp;</span> C<span class="ln" style="min-width:90px">&nbsp;</span> D<span class="ln" style="min-width:90px">&nbsp;</span></div>
+  </div>
+
+  <!-- SCORE CARD 2 -->
+  <div class="sheet">
+    <div class="head">
+      <span class="t">Score sheet</span>
+      <span class="fld">Taster<span class="ln">&nbsp;</span></span>
+      <span class="fld">Group #<span class="ln" style="min-width:60px">&nbsp;</span></span>
+      <span class="fld">Date<span class="ln" style="min-width:90px">&nbsp;</span></span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="beer">Cup</th>
+          <th>Appearance<br>/5</th>
+          <th>Aroma<br>/5</th>
+          <th>Flavour<br>/10</th>
+          <th>Mouthfeel<br>/5</th>
+          <th>Finish<br>/5</th>
+          <th>Total<br>/30</th>
+          <th class="notes">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="beer"><span class="cup">A</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">B</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">C</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+        <tr><td class="beer"><span class="cup">D</span></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notes"></td></tr>
+      </tbody>
+    </table>
+    <div class="rankline">
+      <span><b>My ranking</b> &mdash;</span>
+      <span>1st<span class="box"></span></span>
+      <span>2nd<span class="box"></span></span>
+      <span>3rd<span class="box"></span></span>
+      <span>4th<span class="box"></span></span>
+      <span style="color:#999;font-size:.8rem">(write the cup letter)</span>
+    </div>
+    <div class="guess">For fun &mdash; guess the country or beer: A<span class="ln" style="min-width:90px">&nbsp;</span> B<span class="ln" style="min-width:90px">&nbsp;</span> C<span class="ln" style="min-width:90px">&nbsp;</span> D<span class="ln" style="min-width:90px">&nbsp;</span></div>
+  </div>
+
+</main>
+</body>
+</html>

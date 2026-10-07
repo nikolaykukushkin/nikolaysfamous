@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>World Cup of Beer 2026 &mdash; Printable Cards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--green:#0b6e4f;--deep:#0e4f6e;--gold:#c9a227;--ink:#1d2126;--paper:#f7f4ee;--card:#fff;--line:#d8d2c4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Libre Franklin",-apple-system,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.45}
+  h1,h2,.disp{font-family:"Playfair Display",Georgia,serif}
+  header{background:linear-gradient(135deg,var(--green),var(--deep));color:#fff;padding:38px 24px 28px;text-align:center}
+  header h1{font-size:2rem;font-weight:900}
+  header .sub{margin:10px auto 0;max-width:600px;color:#e8e3d5;font-size:.95rem}
+  .nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.88rem;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:6px 15px}
+  main{max-width:1000px;margin:0 auto;padding:26px 20px 50px}
+  .sec{margin-bottom:38px}
+  .sec > h2{font-family:"Playfair Display";color:var(--green);font-size:1.5rem;margin-bottom:4px}
+  .sec > p.note{font-size:.88rem;color:#555c64;margin-bottom:16px;max-width:680px}
+
+  /* Tent cards */
+  .tents{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .tent{border:2px solid var(--ink);border-radius:8px;overflow:hidden;background:#fff;aspect-ratio:5/3.2;display:flex;flex-direction:column}
+  .tent .half{flex:1;display:flex;align-items:center;justify-content:center}
+  .tent .half.top{transform:rotate(180deg);border-bottom:1px dashed #aaa}
+  .tent .ltr{font-family:"Playfair Display";font-weight:900;font-size:4.2rem;color:var(--deep);line-height:1}
+  .tent .fold{font-size:.6rem;letter-spacing:1px;color:#bbb;text-transform:uppercase;text-align:center;padding:1px 0}
+
+  /* Reveal cards */
+  .reveal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px}
+  .rcard{border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:10px;background:#fff;padding:16px 16px 14px;display:flex;flex-direction:column;min-height:188px;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  .rcard .flag{font-size:2.1rem;line-height:1}
+  .rcard .country{font-size:.7rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#8a8577;margin-top:8px}
+  .rcard .name{font-family:"Playfair Display";font-weight:800;font-size:1.35rem;color:var(--green);line-height:1.1;margin-top:2px}
+  .rcard .brew{font-size:.82rem;color:#555c64;margin-top:5px}
+  .rcard .spec{font-size:.8rem;color:#444;margin-top:8px}
+  .rcard .spec b{color:var(--ink)}
+  .rcard .blurb{font-size:.79rem;color:#666;font-style:italic;margin-top:auto;padding-top:8px}
+  .rcard .grp{position:relative}
+  .gtag{display:inline-block;font-size:.62rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#fff;background:var(--deep);padding:2px 8px;border-radius:999px;margin-top:8px}
+  .gtag.src{background:#b3382c}
+
+  /* Key slips */
+  .keys{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .key{border:1.5px dashed #b9b3a4;border-radius:10px;background:#fff;padding:16px 18px}
+  .key h3{font-family:"Playfair Display";color:var(--green);font-size:1.1rem;margin-bottom:2px}
+  .key .hint{font-size:.76rem;color:#8a8577;margin-bottom:10px}
+  .key .row{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid #efece4;font-size:.92rem}
+  .key .row:first-of-type{border-top:none}
+  .key .cup{font-family:"Playfair Display";font-weight:900;font-size:1.15rem;color:var(--deep);width:22px}
+  .key .ln{flex:1;border-bottom:1.5px solid #b9b3a4;height:1.1rem}
+
+  footer{max-width:1000px;margin:0 auto;text-align:center;font-size:.78rem;color:#8a8577;padding:6px 20px 44px;line-height:1.6}
+
+  @media print{
+    .noprint{display:none}
+    header{background:var(--green);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .rcard,.tent,.key{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}
+    body{background:#fff}
+    .sec{break-after:page}
+    .sec:last-of-type{break-after:auto}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Printable Cards</h1>
+  <p class="sub">World Cup of Beer 2026. Tent cards for the table, reveal cards for the big moment, and a blank key for Katy.</p>
+  <nav class="nav noprint">
+    <a href="index.html">Groups &amp; bracket</a>
+    <a href="scoresheet.html">Rubric &amp; score sheet</a>
+    <a href="cards.html">Printable cards</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="sec">
+    <h2>1 &middot; Blind tent cards</h2>
+    <p class="note">Cut out, fold along the dashed line so it stands as a tent, and set one in front of each cup. The letter reads from both sides. These stay the same every night &mdash; only what&rsquo;s poured behind them changes.</p>
+    <div class="tents">
+      <div class="tent"><div class="half top"><span class="ltr">A</span></div><div class="fold">&middot; &middot; &middot; fold &middot; &middot; &middot;</div><div class="half"><span class="ltr">A</span></div></div>
+      <div class="tent"><div class="half top"><span class="ltr">B</span></div><div class="fold">&middot; &middot; &middot; fold &middot; &middot; &middot;</div><div class="half"><span class="ltr">B</span></div></div>
+      <div class="tent"><div class="half top"><span class="ltr">C</span></div><div class="fold">&middot; &middot; &middot; fold &middot; &middot; &middot;</div><div class="half"><span class="ltr">C</span></div></div>
+      <div class="tent"><div class="half top"><span class="ltr">D</span></div><div class="fold">&middot; &middot; &middot; fold &middot; &middot; &middot;</div><div class="half"><span class="ltr">D</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>2 &middot; Reveal cards</h2>
+    <p class="note">One per beer &mdash; keep them face-down with Katy and turn over after the ranking&rsquo;s locked in. Sixteen nations, four groups. The &ldquo;real group&rdquo; tag is where that country actually sits in the 2026 draw.</p>
+    <div class="reveal-grid">
+
+      <!-- GROUP 1 -->
+      <div class="rcard"><span class="flag">&#127464;&#127487;</span><span class="country">Czechia &middot; Group 1</span><span class="name">Pilsner Urquell</span><span class="brew">Plze&#328;, est. 1842</span><span class="spec"><b>Pilsner</b> &middot; 4.4%</span><span class="gtag">real group A</span><span class="blurb">The original pilsner. Every other beer here is measured against it.</span></div>
+      <div class="rcard"><span class="flag">&#127481;&#127479;</span><span class="country">T&uuml;rkiye &middot; Group 1</span><span class="name">Efes Pilsen</span><span class="brew">Anadolu Efes, Istanbul</span><span class="spec"><b>Pilsner</b> &middot; 5.0%</span><span class="gtag">real group D</span><span class="blurb">Turkey&rsquo;s standard-bearer, crisp and grainy.</span></div>
+      <div class="rcard"><span class="flag">&#127472;&#127479;</span><span class="country">South Korea &middot; Group 1</span><span class="name">OB Premier Pilsner</span><span class="brew">Oriental Brewery, est. 1933</span><span class="spec"><b>Pilsner</b> &middot; ~4.6%</span><span class="gtag">real group A</span><span class="blurb">From Korea&rsquo;s oldest brewery; clean and light.</span></div>
+      <div class="rcard"><span class="flag">&#127463;&#127466;</span><span class="country">Belgium &middot; Group 1</span><span class="name">Bavik Super Pils</span><span class="brew">De Brabandere, West Flanders</span><span class="spec"><b>Pilsner</b> &middot; 5.2%</span><span class="gtag">real group G</span><span class="blurb">A family pils that punches above its price.</span></div>
+
+      <!-- GROUP 2 -->
+      <div class="rcard"><span class="flag">&#127475;&#127473;</span><span class="country">Netherlands &middot; Group 2</span><span class="name">Heineken</span><span class="brew">Amsterdam, est. 1873</span><span class="spec"><b>Euro pale lager</b> &middot; 5.0%</span><span class="gtag">real group F</span><span class="blurb">The green-bottle yardstick. Skunk is a known hazard.</span></div>
+      <div class="rcard"><span class="flag">&#127467;&#127479;</span><span class="country">France &middot; Group 2</span><span class="name">Kronenbourg 1664</span><span class="brew">Obernai, Alsace</span><span class="spec"><b>Blonde lager</b> &middot; 5.0%</span><span class="gtag">real group I</span><span class="blurb">France&rsquo;s best-selling beer; faintly floral.</span></div>
+      <div class="rcard"><span class="flag">&#127466;&#127480;</span><span class="country">Spain &middot; Group 2</span><span class="name">Mahou Cinco Estrellas</span><span class="brew">Madrid, est. 1890</span><span class="spec"><b>Euro pale lager</b> &middot; 5.5%</span><span class="gtag">real group H</span><span class="blurb">Madrid&rsquo;s default ca&ntilde;a, malt-forward.</span></div>
+      <div class="rcard"><span class="flag">&#127462;&#127481;</span><span class="country">Austria &middot; Group 2</span><span class="name">Stiegl Goldbr&auml;u</span><span class="brew">Salzburg, est. 1492</span><span class="spec"><b>Munich helles</b> &middot; 4.9%</span><span class="gtag">real group J</span><span class="blurb">Quietly one of the best lagers sold in America.</span></div>
+
+      <!-- GROUP 3 -->
+      <div class="rcard"><span class="flag">&#127464;&#127476;</span><span class="country">Colombia &middot; Group 3</span><span class="name">Club Colombia</span><span class="brew">Bavaria S.A., Bogot&aacute;</span><span class="spec"><b>Golden lager</b> &middot; 4.7%</span><span class="gtag">real group K</span><span class="blurb">The upscale sibling of &Aacute;guila, smooth and bready.</span></div>
+      <div class="rcard"><span class="flag">&#127462;&#127479;</span><span class="country">Argentina &middot; Group 3</span><span class="name">Quilmes Cl&aacute;sica</span><span class="brew">Quilmes, Buenos Aires</span><span class="spec"><b>Pale lager</b> &middot; 4.9%</span><span class="gtag">real group J</span><span class="blurb">The world champions&rsquo; national beer.</span></div>
+      <div class="rcard"><span class="flag">&#127462;&#127482;</span><span class="country">Australia &middot; Group 3</span><span class="name">Foster&rsquo;s</span><span class="brew">Asahi / CUB</span><span class="spec"><b>Lager</b> &middot; 4.9%</span><span class="gtag">real group D</span><span class="blurb">&ldquo;Australian for beer&rdquo; &mdash; mostly drunk everywhere but Australia.</span></div>
+      <div class="rcard"><span class="flag">&#127474;&#127485;</span><span class="country">Mexico &middot; Group 3</span><span class="name">Victoria</span><span class="brew">Grupo Modelo</span><span class="spec"><b>Vienna lager</b> &middot; 4.0% &middot; <span style="color:#b3382c">to source</span></b></span><span class="gtag src">host &middot; real group A</span><span class="blurb">Older than Corona and better. Any bodega.</span></div>
+
+      <!-- GROUP 4 -->
+      <div class="rcard"><span class="flag">&#127477;&#127481;</span><span class="country">Portugal &middot; Group 4</span><span class="name">Rep&uacute;blica La Tuya</span><span class="brew">Contract-brewed, labelled Portugal</span><span class="spec"><b>Light pilsner</b> &middot; ~4.5%</span><span class="gtag">real group K</span><span class="blurb">The wildcard; pale, thin, and cheerful.</span></div>
+      <div class="rcard"><span class="flag">&#127464;&#127462;</span><span class="country">Canada &middot; Group 4</span><span class="name">Moosehead</span><span class="brew">Saint John, New Brunswick</span><span class="spec"><b>Lager</b> &middot; 5.0%</span><span class="gtag">host &middot; real group B</span><span class="blurb">Canada&rsquo;s oldest independent brewery.</span></div>
+      <div class="rcard"><span class="flag">&#127463;&#127479;</span><span class="country">Brazil &middot; Group 4</span><span class="name">Brahma</span><span class="brew">AmBev, S&atilde;o Paulo</span><span class="spec"><b>Golden lager</b> &middot; 4.3% &middot; <span style="color:#b3382c">to source</span></span><span class="gtag src">real group C</span><span class="blurb">Brazil&rsquo;s everyday pour, light and dry.</span></div>
+      <div class="rcard"><span class="flag">&#127474;&#127462;</span><span class="country">Morocco &middot; Group 4</span><span class="name">Casablanca (&ldquo;Casa&rdquo;)</span><span class="brew">Brasseries du Maroc</span><span class="spec"><b>Pale lager</b> &middot; 5.0% &middot; <span style="color:#b3382c">to source</span></span><span class="gtag src">real group C</span><span class="blurb">From the 2022 semi-finalists; richer and rounder.</span></div>
+
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>3 &middot; Katy&rsquo;s key</h2>
+    <p class="note">One slip per group. Before pouring, Katy shuffles the four bottles, assigns each a cup letter at random, writes it here, and keeps it hidden until the reveal. (Re-randomise every night so no one reverse-engineers the pattern.)</p>
+    <div class="keys">
+      <div class="key">
+        <h3>Group 1 &middot; The Pilsners</h3>
+        <div class="hint">Urquell &middot; Efes &middot; OB Premier &middot; Bavik</div>
+        <div class="row"><span class="cup">A</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">B</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">C</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">D</span><span class="ln"></span></div>
+      </div>
+      <div class="key">
+        <h3>Group 2 &middot; Continental Lagers</h3>
+        <div class="hint">Heineken &middot; 1664 &middot; Mahou &middot; Stiegl</div>
+        <div class="row"><span class="cup">A</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">B</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">C</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">D</span><span class="ln"></span></div>
+      </div>
+      <div class="key">
+        <h3>Group 3 &middot; The Americas</h3>
+        <div class="hint">Club Colombia &middot; Quilmes &middot; Foster&rsquo;s &middot; Victoria</div>
+        <div class="row"><span class="cup">A</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">B</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">C</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">D</span><span class="ln"></span></div>
+      </div>
+      <div class="key">
+        <h3>Group 4 &middot; Group of Death</h3>
+        <div class="hint">La Tuya &middot; Moosehead &middot; Brahma &middot; Casa</div>
+        <div class="row"><span class="cup">A</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">B</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">C</span><span class="ln"></span></div>
+        <div class="row"><span class="cup">D</span><span class="ln"></span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  ABVs are approximate and vary by market &mdash; treat them as trivia, not gospel. Print on card stock if you have it; the reveal cards are sized to cut out cleanly.
+</footer>
+</body>
+</html>
