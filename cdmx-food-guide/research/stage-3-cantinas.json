@@ -1,0 +1,776 @@
+[
+  {
+    "name": "Salón París",
+    "neighborhood": "Santa María la Ribera",
+    "category": "cantina",
+    "subcategory": "Neighborhood cantina with José Alfredo Jiménez lore",
+    "description": "Family-friendly neighborhood cantina on Jaime Torres Bodet, with domino tables, the original wooden bar and Eiffel Tower paintings. Founded in the 1930s (sources say 1934 or 1939); a plaque marks the cantina where José Alfredo Jiménez began his career. Time Out praises the shrimp broth and carnitas; botana comes free with three drinks.",
+    "special_quality": "The cantina where José Alfredo Jiménez started singing, still serving botana with every round.",
+    "price_range": "$",
+    "address": "Jaime Torres Bodet 152, Santa María la Ribera",
+    "google_maps_query": "Salón París, Santa María la Ribera, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 6,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Salón París",
+        "url": "https://www.chilango.com/restaurantes/santa-maria-la-ribera/salon-paris"
+      },
+      {
+        "title": "Chilango — where José Alfredo Jiménez began",
+        "url": "https://www.chilango.com/agenda/vida-nocturna/salon-paris-cantina-donde-inicio-jose-alfredo-jimenez-cdmx/"
+      },
+      {
+        "title": "El Financiero — Así es Salón París",
+        "url": "https://www.elfinanciero.com.mx/food-and-drink/2025/12/03/asi-es-salon-paris-cantina-a-la-que-iba-jose-alfredo-jimenez/"
+      },
+      {
+        "title": "Time Out México — Salón París",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/salon-paris"
+      }
+    ]
+  },
+  {
+    "name": "La Única de Guerrero",
+    "neighborhood": "Buenavista",
+    "category": "cantina",
+    "subcategory": "Cantina-restaurant, cabrito al horno",
+    "description": "Opened 11 December 1933 on Guerrero street, beginning as a tiny five-square-metre room and growing into cantina, family restaurant and dance hall. Original folkloric decor and wooden bar have been kept for 80+ years and it has appeared on film. Specialty is oven-roasted cabrito.",
+    "special_quality": "Eighty-plus years of unchanged decor in Colonia Guerrero, known for cabrito al horno and film cameos.",
+    "price_range": "$$",
+    "address": "Guerrero 258, Buenavista",
+    "google_maps_query": "La Única de Guerrero, Buenavista, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 4,
+      "food": 7,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Chilango — La U de G",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/la-u-de-g/"
+      },
+      {
+        "title": "Sensacine México — cantina de Nosotros los nobles",
+        "url": "https://www.sensacine.com.mx/noticias/noticia-1000137753/"
+      }
+    ]
+  },
+  {
+    "name": "La Peninsular",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Oldest surviving cantina in Centro (1872)",
+    "description": "Founded 1872 and often cited as the oldest cantina still operating in the Centro Histórico; remodeled in 2013 but retains vintage advertisements and a TV-sports feel. Sits on the pedestrian Alhóndiga street near La Merced.",
+    "special_quality": "Claimed oldest working cantina in the historic center, serving since 1872.",
+    "price_range": "$",
+    "address": "Peatonal Alhóndiga 26, Centro Histórico",
+    "google_maps_query": "La Peninsular, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 9,
+      "hype": 4,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Emprendedor — La Peninsular",
+        "url": "https://emprendedor.com/la-peninsular-la-cantina-mas-antigua-del-centro-historico-que-aun-sirve-tradicion/"
+      },
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      }
+    ]
+  },
+  {
+    "name": "El Gallo de Oro",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Historic cantina, Saturday cazuelas",
+    "description": "Dating to 1874 per guides, a somewhat gloomy corner cantina on Violeta and Carranza, recognized by a historian cited in El Economista as the successor in age to the lost El Nivel. Known for a Saturday cazuelas buffet.",
+    "special_quality": "One of the oldest cantinas left standing after El Nivel, famed for Saturday cazuelas.",
+    "price_range": "$",
+    "address": "Violeta 1 esq. Venustiano Carranza, Centro Histórico",
+    "google_maps_query": "El Gallo de Oro, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 9,
+      "hype": 3,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      },
+      {
+        "title": "Time Out México — cantinas clásicas del centro",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/cantinas-clasicas-del-centro"
+      }
+    ]
+  },
+  {
+    "name": "Tío Pepe",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Porfiriato-style cantina, Barrio Chino edge",
+    "description": "Opened around 1890 at Dolores and Independencia with many original fixtures, including a trough once used as a urinal at the base of the bar and beer-barrel lampshades. The old sign once barred women, minors and vendors; all are welcome now. Short menu, strong period atmosphere.",
+    "special_quality": "Original 1890s fittings, down to the old bar-foot trough and the sign that once banned women.",
+    "price_range": "$",
+    "address": "Independencia esq. Dolores, Centro Histórico",
+    "google_maps_query": "Tío Pepe, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 5,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Mexico News Daily — Mexico City's best cantinas",
+        "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-best-cantinas/"
+      },
+      {
+        "title": "Time Out México — cantinas clásicas del centro",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/cantinas-clasicas-del-centro"
+      }
+    ]
+  },
+  {
+    "name": "La Potosina",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Historic cantina with large botanas",
+    "description": "Dates to 1890 on Pino Suárez, lively and busy, with a Santa Muerte statue out front and generous snack portions served with each drink. Legend (unverified) holds that Pancho Villa and Che Guevara drank there.",
+    "special_quality": "Generous botanas with each drink in a cantina operating since 1890.",
+    "price_range": "$",
+    "address": "José María Pino Suárez 27, Centro Histórico",
+    "google_maps_query": "La Potosina, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 4,
+      "food": 6,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Mexico News Daily — Mexico City's best cantinas",
+        "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-best-cantinas/"
+      }
+    ]
+  },
+  {
+    "name": "Bar La Ópera",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Gilded 19th-century cantina-restaurant",
+    "description": "Opened 1876 as a French bakery and operated as a cantina from 1906 to 1980; now more restaurant than drinking hall. Ornate Porfirian interior with a ceiling bullet hole attributed to Pancho Villa; Díaz, Fuentes and Paz are cited as patrons.",
+    "special_quality": "The ceiling bullet hole and the gilded Porfirian room, a literary-political landmark.",
+    "price_range": "$$$",
+    "address": "5 de Mayo 10, Centro Histórico",
+    "google_maps_query": "Bar La Ópera, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 10,
+      "hype": 8,
+      "food": 6,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Mexico News Daily — Mexico City's best cantinas",
+        "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-best-cantinas/"
+      }
+    ]
+  },
+  {
+    "name": "La Faena",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Bullfighting museum cantina",
+    "description": "Large cantina on Carranza next to Bar Mancera, doubling as a bullfighting museum with matador suits and vintage posters. Good tequila, generous botanas and occasional mariachi.",
+    "special_quality": "A cantina that is also a taurine museum, wall to wall in matador costumes.",
+    "price_range": "$$",
+    "address": "Venustiano Carranza 49-B, Centro Histórico",
+    "google_maps_query": "La Faena, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 5,
+      "food": 6,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      },
+      {
+        "title": "Time Out México — cantinas clásicas del centro",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/cantinas-clasicas-del-centro"
+      }
+    ]
+  },
+  {
+    "name": "Bar Mancera",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Elegant French-inflected hotel bar cantina",
+    "description": "Originally the bar of the Hotel Mancera, opened 1912 per a dpa piece cited by Time Out, with an elegant French-style air. Sits one door from La Faena.",
+    "special_quality": "Most refined of the old Centro cantinas, born as a hotel bar in 1912.",
+    "price_range": "$$",
+    "address": "Venustiano Carranza 49, Centro Histórico",
+    "google_maps_query": "Bar Mancera, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 4,
+      "food": 6,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — Bar Mancera",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/bar-mancera"
+      },
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      }
+    ]
+  },
+  {
+    "name": "Salón España",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Tequila cantina with plato del día",
+    "description": "Opened 1915 with a long wooden bar and almost 200 tequilas. Three drinks earns the dish of the day such as tacos, tortas or sandwiches.",
+    "special_quality": "Nearly 200 tequilas and the cantina-classic dish of the day with three rounds.",
+    "price_range": "$",
+    "address": "Luis González Obregón 25 esq. República de Argentina, Centro Histórico",
+    "google_maps_query": "Salón España, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 3,
+      "food": 6,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Time Out México — cantinas clásicas del centro",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/cantinas-clasicas-del-centro"
+      }
+    ]
+  },
+  {
+    "name": "Salón Tenampa",
+    "neighborhood": "Plaza Garibaldi",
+    "category": "cantina",
+    "subcategory": "Mariachi cantina on Garibaldi",
+    "description": "Founded 1925 on Plaza Garibaldi, loud and touristy with several mariachi bands at once and a tequila list of 170+ labels. Associated with Pedro Infante, Chavela Vargas and Luis Miguel.",
+    "special_quality": "The canonical mariachi cantina on Plaza Garibaldi since 1925.",
+    "price_range": "$$",
+    "address": "Plaza Garibaldi 12, Centro",
+    "google_maps_query": "Salón Tenampa, Plaza Garibaldi, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 9,
+      "hype": 7,
+      "food": 5,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      }
+    ]
+  },
+  {
+    "name": "El León de Oro",
+    "neighborhood": "Escandón",
+    "category": "cantina",
+    "subcategory": "Neighborhood cantina with live trios",
+    "description": "Established in 1954 in Colonia Escandón with live trios and traditional botanas, a multigenerational gathering place.",
+    "special_quality": "Live trios and botana in a 1954 Escandón neighborhood cantina.",
+    "price_range": "$",
+    "address": "Colonia Escandón (address not verified)",
+    "google_maps_query": "El León de Oro, Escandón, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 3,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Matador Network en Español — cantinas más antiguas",
+        "url": "https://matadornetwork.com/es/las-cantinas-mas-antiguas-de-la-ciudad-de-mexico/"
+      }
+    ]
+  },
+  {
+    "name": "Cantina El Centenario",
+    "neighborhood": "Condesa",
+    "category": "cantina",
+    "subcategory": "1940s Condesa cantina",
+    "description": "Tiny-changing cantina since 1948 on Vicente Suárez with bull's head, bullfighting posters, dominoes and tortilla española. Draws both older regulars and younger Condesa crowd.",
+    "special_quality": "A 1948 cantina that has barely changed amid Condesa gentrification.",
+    "price_range": "$$",
+    "address": "Vicente Suárez 42, Condesa",
+    "google_maps_query": "Cantina El Centenario, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 5,
+      "food": 5,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Matador Network — 10 best cantinas",
+        "url": "https://matadornetwork.com/read/10-best-cantinas-mexico-city/"
+      },
+      {
+        "title": "Mexico News Daily — Mexico City's best cantinas",
+        "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-best-cantinas/"
+      },
+      {
+        "title": "Chilango — mejores cantinas según bartenders",
+        "url": "https://www.chilango.com/comida/mejores-cantinas-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Cantina La Castellana",
+    "neighborhood": "San Rafael",
+    "category": "cantina",
+    "subcategory": "Historic cantina with buffet botanas",
+    "description": "Opened as a grocery in 1892 and became a cantina in 1914, in San Rafael. Offers a buffet unlocked by drink spend (about $450 pesos per Mexico News Daily; Chilango cites a lower threshold).",
+    "special_quality": "Buffet botana earned by drink spend in a 1914 San Rafael cantina.",
+    "price_range": "$$",
+    "address": "Antonio Caso 58, San Rafael",
+    "google_maps_query": "Cantina La Castellana, San Rafael, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 4,
+      "food": 6,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      },
+      {
+        "title": "Chilango — botana por tiempos",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/cantinas-cdmx-botana-tiempos/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Risa",
+    "neighborhood": "Centro Histórico",
+    "category": "pulquería",
+    "subcategory": "Traditional pulque-only pulquería",
+    "description": "Opened 1903 on Mesones and serves only pulque: natural, oat, nescafé, pineapple, strawberry with cream, piñón, tomato. Simple room with metal tables, vats and old photos.",
+    "special_quality": "Pulque-only since 1903, plain and unreconstructed.",
+    "price_range": "$",
+    "address": "Mesones 71, Centro Histórico",
+    "google_maps_query": "Pulquería La Risa, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 9,
+      "hype": 5,
+      "food": 6,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — pulquerías más antiguas",
+        "url": "https://foodandpleasure.com/pulquerias-mas-antiguas-de-la-cdmx/"
+      },
+      {
+        "title": "ADN40 — pulquerías más antiguas del Centro",
+        "url": "https://www.adn40.mx/ciudad/2024-11-05/las-pulquerias-mas-antiguas-del-centro-historico-cdmx-que-se-niegan-a-desaparecer/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Antigua Roma",
+    "neighborhood": "Lagunilla",
+    "category": "pulquería",
+    "subcategory": "Century-plus pulquería, Tlaxcala pulque",
+    "description": "More than 100 years old, serving Tlaxcala pulque with jukebox, renewed murals and the remnant of the old Departamento de Damas wall. Chicharrones and popcorn as botana; reopened after closing during the pandemic.",
+    "special_quality": "Preserves the old women's-department wall, still serving natural pulque to regulars.",
+    "price_range": "$",
+    "address": "República de Perú 38, Lagunilla",
+    "google_maps_query": "Pulquería La Antigua Roma, Lagunilla, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 4,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — pulquerías más antiguas",
+        "url": "https://foodandpleasure.com/pulquerias-mas-antiguas-de-la-cdmx/"
+      },
+      {
+        "title": "ADN40 — pulquerías más antiguas del Centro",
+        "url": "https://www.adn40.mx/ciudad/2024-11-05/las-pulquerias-mas-antiguas-del-centro-historico-cdmx-que-se-niegan-a-desaparecer/"
+      }
+    ]
+  },
+  {
+    "name": "La Hija de los Apaches",
+    "neighborhood": "Doctores",
+    "category": "pulquería",
+    "subcategory": "Pulquería run by a former boxer",
+    "description": "About 70 years old, run by a former pro boxer whose photos cover the walls. Baticurado and bicentenario on Friday/Saturday, jukebox for 10 pesos, live salsa Wednesdays and rock on Fridays.",
+    "special_quality": "Ex-boxer owner, secret-recipe curados and live music in Doctores.",
+    "price_range": "$",
+    "address": "Dr. Claudio Bernard 149, Doctores",
+    "google_maps_query": "La Hija de los Apaches, Doctores, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 5,
+      "food": 6,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — pulquerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/vida-nocturna/pulquerias-en-la-cdmx"
+      },
+      {
+        "title": "ADN40 — pulquerías más antiguas del Centro",
+        "url": "https://www.adn40.mx/ciudad/2024-11-05/las-pulquerias-mas-antiguas-del-centro-historico-cdmx-que-se-niegan-a-desaparecer/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Victoria",
+    "neighborhood": "Aragón La Villa",
+    "category": "pulquería",
+    "subcategory": "Family-run pulquería near the Basílica",
+    "description": "Over 80 years old, run by the Ponce family since 2009. Famed for an ostión curado served only on Mondays from a family recipe; also guayaba, piñón, nuez and strawberry with cream.",
+    "special_quality": "Monday-only oyster curado from a family recipe.",
+    "price_range": "$",
+    "address": "Miranda 57A, Aragón La Villa",
+    "google_maps_query": "Pulquería La Victoria, Aragón La Villa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 3,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — pulquerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/vida-nocturna/pulquerias-en-la-cdmx"
+      },
+      {
+        "title": "Food & Pleasure — pulquerías más antiguas",
+        "url": "https://foodandpleasure.com/pulquerias-mas-antiguas-de-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Hermosa Hortensia",
+    "neighborhood": "Plaza Garibaldi",
+    "category": "pulquería",
+    "subcategory": "Garibaldi pulquería with exotic curados",
+    "description": "Founded 1936 (one source says 1939) at the back of Plaza Garibaldi on Callejón de la Amargura. Murals and antiques, pulque only, curados from pineapple to chocolate, coffee and peanut. Touristy but a safe entry point.",
+    "special_quality": "A pulque-only room among the mariachi bars with chocolate and peanut curados.",
+    "price_range": "$",
+    "address": "Callejón de la Amargura 4, Plaza Garibaldi",
+    "google_maps_query": "Pulquería La Hermosa Hortensia, Plaza Garibaldi, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 6,
+      "food": 5,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — pulquerías más antiguas",
+        "url": "https://foodandpleasure.com/pulquerias-mas-antiguas-de-la-cdmx/"
+      },
+      {
+        "title": "Chilango — tour 5 pulquerías del centro",
+        "url": "https://www.chilango.com/agenda/otros/tour-5-pulquerias-chilangas-tradicionales-del-centro/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Nuclear",
+    "neighborhood": "Roma Norte",
+    "category": "pulquería",
+    "subcategory": "Modern pulquería-bar",
+    "description": "Roma pulquería mixing tradition and bar culture: mango, tuna, durazno, guayaba curados, a Friday huelia of pulque, amaranth, walnut, honey and almond. Also mezcal and sotol creams, weekend karaoke, popcorn on arrival.",
+    "special_quality": "Friday huelia of pulque with amaranth and nuts, plus weekend karaoke.",
+    "price_range": "$",
+    "address": "Querétaro 96, Roma Norte",
+    "google_maps_query": "Pulquería La Nuclear, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 6,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — pulquerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/vida-nocturna/pulquerias-en-la-cdmx"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Pirata",
+    "neighborhood": "Escandón",
+    "category": "pulquería",
+    "subcategory": "Old-school liter pulquería",
+    "description": "Over 70 years old, serving only pulque by the liter, with takeout. Older regulars, a bolero shoe-shiner and banda on the jukebox; time-capsule feel.",
+    "special_quality": "Time-capsule pulquería with a resident shoe shiner.",
+    "price_range": "$",
+    "address": "13 de Septiembre, Escandón",
+    "google_maps_query": "Pulquería La Pirata, Escandón, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 2,
+      "food": 5,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — pulquerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/vida-nocturna/pulquerias-en-la-cdmx"
+      },
+      {
+        "title": "ADN40 — pulquerías",
+        "url": "https://www.adn40.mx/ciudad/2024-11-05/las-pulquerias-mas-antiguas-del-centro-historico-cdmx-que-se-niegan-a-desaparecer/"
+      }
+    ]
+  },
+  {
+    "name": "Pulquería La Bonita",
+    "neighborhood": "Nicolás Bravo",
+    "category": "pulquería",
+    "subcategory": "Century-old pulquería in Venustiano Carranza",
+    "description": "About 101 years old per source, with boxing photos, bullfighting motifs and albur signs; celery and tomato curados, marzipan and piñón. Antojitos like salsa borracha with nopales.",
+    "special_quality": "Albur signs, boxing photos and a celery pulque in a century-old room.",
+    "price_range": "$",
+    "address": "Aluminio 119, Nicolás Bravo",
+    "google_maps_query": "Pulquería La Bonita, Nicolás Bravo, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 2,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — pulquerías más antiguas",
+        "url": "https://foodandpleasure.com/pulquerias-mas-antiguas-de-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Panana Pulquería",
+    "neighborhood": "Centro Histórico",
+    "category": "pulquería",
+    "subcategory": "Pulquería beneath the Museo del Pulque",
+    "description": "Working pulquería in the ex-convent of San Hipólito serving pulque from Hidalgo, Tlaxcala and Edomex, with mixiotes, barbacoa and guacamole; the Museo del Pulque y las Pulquerías is upstairs.",
+    "special_quality": "Pulquería under the city's pulque museum.",
+    "price_range": "$$",
+    "address": "Av. Hidalgo 107-109, Centro Histórico",
+    "google_maps_query": "Panana Pulquería, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 6,
+      "food": 6,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "CDMX Tourism — pulque museum",
+        "url": "https://mexicocity.cdmx.gob.mx/venues/pulque-museum"
+      },
+      {
+        "title": "Chilango — Museo del Pulque",
+        "url": "https://www.chilango.com/tragos/bares-antros/museo-del-pulque-cdmx/"
+      },
+      {
+        "title": "México Desconocido — Museo del Pulque",
+        "url": "https://www.mexicodesconocido.com.mx/museo-del-pulque-y-las-pulquerias.html"
+      }
+    ]
+  },
+  {
+    "name": "Salón Covadonga",
+    "neighborhood": "Roma Norte",
+    "category": "cantina",
+    "subcategory": "Spanish-exile club turned artist hangout",
+    "description": "Spanish-style social club cantina on Puebla with domino regulars and, since the early 2000s, writers, artists and hipsters; menu leans to Spanish tortillas and tapas. Founded around 1940 per Mexico News Daily.",
+    "special_quality": "Spanish émigré club turned cantina, shared by domino regulars and artists.",
+    "price_range": "$$",
+    "address": "Puebla 121, Roma Norte",
+    "google_maps_query": "Salón Covadonga, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 6,
+      "food": 5,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Time Out México — Salón Covadonga",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/salon-covadonga"
+      },
+      {
+        "title": "Saveur — Viva Cantina",
+        "url": "https://www.saveur.com/article/Travels/Cantinas"
+      },
+      {
+        "title": "Mexico News Daily — Mexico City's best cantinas",
+        "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-best-cantinas/"
+      }
+    ]
+  },
+  {
+    "name": "La Jalisciense",
+    "neighborhood": "other",
+    "category": "cantina",
+    "subcategory": "1870 cantina with Friday paella",
+    "description": "Claimed 1870 founding, mahogany bar, wooden tables and historical photos in far north GAM; paella served Fridays.",
+    "special_quality": "Friday paella in a mahogany-bar cantina dated to 1870.",
+    "price_range": "$",
+    "address": "Av. Montevideo 518, San Bartolo Atepehuacán",
+    "google_maps_query": "La Jalisciense, San Bartolo Atepehuacán, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 2,
+      "food": 5,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — 13 oldest cantinas",
+        "url": "https://mexiconewsdaily.com/lifestyle/13-of-best-cantinas-mexico-city-for-your-next-bar-crawl/"
+      }
+    ]
+  }
+]

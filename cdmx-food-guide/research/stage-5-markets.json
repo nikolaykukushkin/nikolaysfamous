@@ -1,0 +1,722 @@
+[
+ {
+  "name": "Lola la Trailera (La Corcholata) at Mercado Martínez de la Torre",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Tacos de cecina and longaniza",
+  "description": "Stall in the Guerrero neighbourhood market that many call home to the best cecina tacos in the city. The cecina and longaniza are the signature; the menu also has adobada, suadero and quesadillas de sesos, plus fresh aguas. Cecina and longaniza are sold by weight to take home.",
+  "special_quality": "The cecina taco that Chilango and Time Out both single out as the market's must-eat.",
+  "price_range": "$",
+  "address": "Mercado Martínez de la Torre, Guerrero (Mon-Sun roughly 9am-6pm per Time Out; verify)",
+  "google_maps_query": "Lola la Trailera (La Corcholata) at Mercado Martínez de la Torre, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Cáele a los tacos de Lola la Trailera",
+    "url": "https://www.chilango.com/general/caele-a-los-tacos-de-lola-la-trailera/"
+   },
+   {
+    "title": "Chilango - 5 paradas en Mercado Martínez de la Torre",
+    "url": "https://www.chilango.com/comida/5-imperdibles-en-mercado-martinez-de-la-torre/"
+   },
+   {
+    "title": "Time Out México - Mercado Martínez de la Torre",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/compras-estilo/mercado-martinez-de-la-torre"
+   }
+  ]
+ },
+ {
+  "name": "Barbacoa El Mejor at Mercado Martínez de la Torre",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Barbacoa de borrego",
+  "description": "Oven-roasted mutton brought in daily from Milpa Alta, carved to order at the butcher block, reportedly by Ignacio Ramírez since 2000. Mexico News Daily names it the standout barbacoa in a market of roughly 600 stalls. Time Out also flags Barbacoa de Milpa Alta in the same market (costilla and lomo go early).",
+  "special_quality": "Milpa Alta mutton carved to order in a working Guerrero market few visitors reach.",
+  "price_range": "$",
+  "address": "Mercado Martínez de la Torre, Guerrero",
+  "google_maps_query": "Barbacoa El Mejor at Mercado Martínez de la Torre, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Mexico News Daily - Mercado Martínez de la Torre",
+    "url": "https://mexiconewsdaily.com/mexico-living/mercado-martinez-de-la-torre"
+   },
+   {
+    "title": "Time Out México - Mercado Martínez de la Torre",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/compras-estilo/mercado-martinez-de-la-torre"
+   }
+  ]
+ },
+ {
+  "name": "Comedor Los Güeros at Mercado Martínez de la Torre",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Comida corrida",
+  "description": "Fonda recommended by market vendors themselves. It serves a traditional four-course comida corrida, and the broths are the highlight. Chilango includes it in its five essential stops.",
+  "special_quality": "A vendor-endorsed four-course comida corrida inside a working market.",
+  "price_range": "$",
+  "address": "Mercado Martínez de la Torre, Guerrero",
+  "google_maps_query": "Comedor Los Güeros at Mercado Martínez de la Torre, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 2,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - 5 paradas en Mercado Martínez de la Torre",
+    "url": "https://www.chilango.com/comida/5-imperdibles-en-mercado-martinez-de-la-torre/"
+   }
+  ]
+ },
+ {
+  "name": "Mercado Martínez de la Torre",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Working market with food stalls",
+  "description": "Guerrero market of around 600 stalls, overlooked by most non-locals, praised for meats, moles, barbacoa, seafood and tamales. Time Out rates it among the best markets to eat in and puts a meal around 80 pesos. Its Christmas romería is known for tortas de bacalao and romeritos.",
+  "special_quality": "A genuine neighbourhood mercado where the food is cheap and tourists are scarce.",
+  "price_range": "$",
+  "address": "Mercado Martínez de la Torre, Guerrero",
+  "google_maps_query": "Mercado Martínez de la Torre, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Mexico News Daily - Mercado Martínez de la Torre",
+    "url": "https://mexiconewsdaily.com/mexico-living/mercado-martinez-de-la-torre"
+   },
+   {
+    "title": "Time Out México - Los mejores mercados para comer",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/compras-estilo/los-mejores-mercados-para-comer"
+   },
+   {
+    "title": "Chilango - 5 paradas en Mercado Martínez de la Torre",
+    "url": "https://www.chilango.com/comida/5-imperdibles-en-mercado-martinez-de-la-torre/"
+   }
+  ]
+ },
+ {
+  "name": "Taquería Cinco Hermanos at Mercado de la Merced",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Tacos de suadero and tripa",
+  "description": "Family taquería in the Banquetón food zone on the market perimeter, near pasillo 9. CNN and Expansión both name it for tacos de suadero and tripa, calling them among the city's best. Sources date from 2018-2019, so verify it is still operating.",
+  "special_quality": "Suadero and tripa in the Banquetón of the city's largest market.",
+  "price_range": "$",
+  "address": "Banquetón, Mercado de la Merced, Venustiano Carranza",
+  "google_maps_query": "Taquería Cinco Hermanos at Mercado de la Merced, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "CNN - Merced Market food tour",
+    "url": "https://amp.cnn.com/cnn/travel/article/mercado-de-la-merced-mexico-city-food-tour"
+   },
+   {
+    "title": "Expansión - Come en un recorrido por el mercado más grande de la CDMX",
+    "url": "https://expansion.mx/tendencias/2019/01/06/come-en-un-recorrido-por-el-mercado-mas-grande-de-la-cdmx"
+   },
+   {
+    "title": "Wares on the Globe - Eating our way through the Merced market",
+    "url": "https://wareontheglobe.com/2018/09/14/eating-our-way-through-the-merced-market-in-mexico-city/"
+   }
+  ]
+ },
+ {
+  "name": "El Pollo (quesadillas de huitlacoche) at Mercado de la Merced",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Quesadillas de huitlacoche",
+  "description": "Banquetón stall serving fried quesadillas stuffed with huitlacoche, featured in CNN's walk through La Merced. A good example of the market's cooked-to-order antojitos. Sources date from 2018-2019; confirm before going.",
+  "special_quality": "Huitlacoche quesadillas griddled inside Mexico City's biggest market.",
+  "price_range": "$",
+  "address": "Banquetón, Mercado de la Merced, Venustiano Carranza",
+  "google_maps_query": "El Pollo (quesadillas de huitlacoche) at Mercado de la Merced, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "CNN - Merced Market food tour",
+    "url": "https://amp.cnn.com/cnn/travel/article/mercado-de-la-merced-mexico-city-food-tour"
+   },
+   {
+    "title": "Wares on the Globe - Eating our way through the Merced market",
+    "url": "https://wareontheglobe.com/2018/09/14/eating-our-way-through-the-merced-market-in-mexico-city/"
+   }
+  ]
+ },
+ {
+  "name": "Tostadas Coyoacán at Mercado de Coyoacán",
+  "neighborhood": "Coyoacán",
+  "category": "market",
+  "subcategory": "Tostadas",
+  "description": "The best-known stand in the Coyoacán market and largely responsible for its tostada fame, with bright yellow photo menus and dozens of toppings. Seafood tostadas (pulpo, jaiba) draw praise. Listed at Ignacio Allende s/n, locales 169, 181, 182; sources say roughly 11am-6pm.",
+  "special_quality": "The stall that made the market's tostada reputation.",
+  "price_range": "$",
+  "address": "Ignacio Allende s/n, locales 169, 181 y 182, Mercado de Coyoacán",
+  "google_maps_query": "Tostadas Coyoacán at Mercado de Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 8,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - 3 opciones para comer tostadas de mercado",
+    "url": "https://www.chilango.com/comida-y-tragos/tostadas-de-mercado/"
+   },
+   {
+    "title": "Mexico News Daily - Mercado Coyoacán",
+    "url": "https://mexiconewsdaily.com/mexicolife/at-mercado-coyoacan-the-main-attraction-is-food/"
+   },
+   {
+    "title": "Culinary Backstreets - Coyoacán",
+    "url": "https://culinarybackstreets.com/?p=66231"
+   }
+  ]
+ },
+ {
+  "name": "La Chaparrita at Mercado de Coyoacán",
+  "neighborhood": "Coyoacán",
+  "category": "market",
+  "subcategory": "Tostadas de pata and guisados",
+  "description": "Decades-old Coyoacán market stall (reports of 50-60+ years) known for tostadas de pata. Also serves about 15 guisados, with strong chicken tinga and black mole. Chilango features it among tostada options.",
+  "special_quality": "Tostada de pata at one of the market's oldest stalls.",
+  "price_range": "$",
+  "address": "Mercado de Coyoacán, Coyoacán",
+  "google_maps_query": "La Chaparrita at Mercado de Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - 3 opciones para comer tostadas de mercado",
+    "url": "https://www.chilango.com/comida-y-tragos/tostadas-de-mercado/"
+   },
+   {
+    "title": "El Universal - Lugares para comer tostadas de pata",
+    "url": "https://www.eluniversal.com.mx/menu/lugares-para-comer-tostadas-de-pata-en-la-cdmx/"
+   },
+   {
+    "title": "Chilango - Tostadas de pata CDMX",
+    "url": "https://www.chilango.com/comida/tostadas-de-pata-cdmx/amp/"
+   }
+  ]
+ },
+ {
+  "name": "Mercado Portales",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Food stalls: pancita, barbacoa, carnitas",
+  "description": "Benito Juárez neighbourhood market known for its food stalls rather than produce: pancita, pit barbacoa, tripa tacos, and weekend-only rabbit barbacoa. Time Out recommends the huarache with salsa verde and steak and Los Cochinitos' carnitas with habanero salsa. Crowded on weekends with an outdoor tianguis.",
+  "special_quality": "Pancita and barbacoa aisles in a southside market built for eating.",
+  "price_range": "$",
+  "address": "Mercado Portales, Portales, Benito Juárez",
+  "google_maps_query": "Mercado Portales, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Mercado Portales",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/compras-estilo/mercado-portales"
+   },
+   {
+    "title": "Chilango - ¿Dónde comer en la Portales?",
+    "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-la-portales-te-damos-un-tour-gastronomico/"
+   }
+  ]
+ },
+ {
+  "name": "Mariscos Altamar at Mercado San Pedro de los Pinos",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Mariscos",
+  "description": "Seafood restaurant at the back of the San Pedro de los Pinos market (operating since 1957). Very broad menu: aguachiles, cocteles, ostiones, pulpo, camarones every way. Praised for chalupitas de ceviche; prices are accessible.",
+  "special_quality": "Market-hall aguachiles and ostiones at fonda prices.",
+  "price_range": "$$",
+  "address": "Mercado San Pedro de los Pinos, Avenida Dos s/n, Benito Juárez",
+  "google_maps_query": "Mariscos Altamar at Mercado San Pedro de los Pinos, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Mariscos en San Pedro de los Pinos",
+    "url": "https://www.chilango.com/comida-y-tragos/mariscos-en-san-pedro-de-los-pinos/"
+   },
+   {
+    "title": "CDMX Secreta - Mariscos Mercado San Pedro de los Pinos",
+    "url": "https://cdmxsecreta.com/mariscos-mercado-de-san-pedro-de-los-pinos/"
+   }
+  ]
+ },
+ {
+  "name": "La Fuente de la Juventud at Mercado San Pedro de los Pinos",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Cocteles de mariscos",
+  "description": "Seafood stall known for quick service and thick 'vuelve a la vida' cocktails with oysters, shrimp and ketchup. Menu also lists pulpo a las brasas, mojarra and tostada de pulpo a la diabla. Chilango has a dedicated review.",
+  "special_quality": "The classic market-style 'vuelve a la vida' seafood cocktail.",
+  "price_range": "$$",
+  "address": "Mercado San Pedro de los Pinos, Benito Juárez",
+  "google_maps_query": "La Fuente de la Juventud at Mercado San Pedro de los Pinos, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - La Fuente de la Juventud",
+    "url": "https://www.chilango.com/comida/restaurantes/la-fuente-de-la-juventud/"
+   },
+   {
+    "title": "Chilango - Mariscos en San Pedro de los Pinos",
+    "url": "https://www.chilango.com/comida-y-tragos/mariscos-en-san-pedro-de-los-pinos/"
+   }
+  ]
+ },
+ {
+  "name": "Taquería Coco Loco at Mercado 14 (Tepito)",
+  "neighborhood": "Tepito",
+  "category": "market",
+  "subcategory": "Quesocarnes and tacos",
+  "description": "Most-repeated recommendation for eating in Tepito: bistec quesocarnes with quesillo on flour tortilla, plus pechuga, cecina and alambres. Over 30 years serving the barrio, in local 164 of Mercado 14. Daily, cash only.",
+  "special_quality": "Tepito's flour-tortilla quesocarne, a barrio institution.",
+  "price_range": "$",
+  "address": "Mercado 14, local 164, Tepito",
+  "google_maps_query": "Taquería Coco Loco at Mercado 14 (Tepito), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Los 20 lugares esenciales para comer en Tepito",
+    "url": "https://www.chilango.com/comida/comer-en-tepito/"
+   },
+   {
+    "title": "Time Out México - Lugares para comer en Tepito",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/lugares-para-comer-en-tepito"
+   }
+  ]
+ },
+ {
+  "name": "El Profe barbacoa at Mercado Jamaica",
+  "neighborhood": "Centro Histórico",
+  "category": "market",
+  "subcategory": "Barbacoa de borrego",
+  "description": "Barbacoa specialist inside Mercado Jamaica, with sheep from Milpa Alta. Culinary Backstreets calls the barbacoa tacos a must-try; fried quesadillas, suadero and chorizo tacos are also good. Verify stall is current.",
+  "special_quality": "Milpa Alta barbacoa tucked into the flower market.",
+  "price_range": "$",
+  "address": "Mercado de Jamaica, Congreso de la Unión, Jamaica",
+  "google_maps_query": "El Profe barbacoa at Mercado Jamaica, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Culinary Backstreets - Mercado Jamaica",
+    "url": "https://culinarybackstreets.com/?p=6803"
+   }
+  ]
+ },
+ {
+  "name": "Huaraches de costilla, anexo Mercado Jamaica",
+  "neighborhood": "Centro Histórico",
+  "category": "market",
+  "subcategory": "Huaraches",
+  "description": "Rib-topped huaraches are the signature of Jamaica's food area, sold in an annex on Guillermo Prieto near Congreso de la Unión. Doña Carmelita is credited with inventing the huarache there per the CDMX tourism board. Specific stall name not confirmed.",
+  "special_quality": "A market-annex huarache de costilla with an origin-story claim.",
+  "price_range": "$",
+  "address": "Anexo, Guillermo Prieto esq. Congreso de la Unión, Jamaica",
+  "google_maps_query": "Huaraches de costilla, anexo Mercado Jamaica, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "México Desconocido - Mercado de Jamaica",
+    "url": "https://www.mexicodesconocido.com.mx/mercado-de-jamaica-cdmx-tips.html"
+   },
+   {
+    "title": "CDMX Tourism - Venustiano Carranza: la casa del huarache",
+    "url": "https://mexicocity.cdmx.gob.mx/e/delicias-chilangas/venustiano-carranza-la-casa-del-huarache-y-la-dieta-popular/"
+   }
+  ]
+ },
+ {
+  "name": "Mercado Abelardo L. Rodríguez",
+  "neighborhood": "Centro Histórico",
+  "category": "market",
+  "subcategory": "Murals and fondas",
+  "description": "1930s market in the Centro Histórico covered in about 1,450 square metres of murals by Diego Rivera's students. Working lunch stalls, fondas and tacos de guisado inside. Open roughly 7am-6pm daily.",
+  "special_quality": "A functioning lunch market decorated with Rivera-school murals.",
+  "price_range": "$",
+  "address": "República de Venezuela 72, Centro Histórico",
+  "google_maps_query": "Mercado Abelardo L. Rodríguez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Murales y puestos de fruta: Mercado Abelardo Rodríguez",
+    "url": "https://www.chilango.com/noticias/murales-mercado-abelardo-rodriguez-cdmx-como-llegar/"
+   },
+   {
+    "title": "Time Out México - Mercado Abelardo L. Rodríguez",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/shopping/mercado-presidente-abelardo-l-rodriguez-murales-en-centro"
+   },
+   {
+    "title": "Oaxaca Culture - Lunch at Mercado Abelardo L. Rodríguez",
+    "url": "https://oaxacaculture.com/2013/10/in-mexico-city-lunch-at-mercado-abelardo-l-rodriguez/"
+   }
+  ]
+ },
+ {
+  "name": "Casa Chacón at Mercado La Dalia",
+  "neighborhood": "Santa María la Ribera",
+  "category": "market",
+  "subcategory": "Barbacoa",
+  "description": "Three-generation barbacoa stall (local 148) selling daily by the kilo, in tacos or consomé. One of Chilango's five stops at the Santa María la Ribera market; Las Aguas de La Dalia and Tacos y Carnitas Rosy are neighbours.",
+  "special_quality": "Third-generation market barbacoa in Santa María.",
+  "price_range": "$",
+  "address": "Mercado La Dalia, local 148, Santa María la Ribera",
+  "google_maps_query": "Casa Chacón at Mercado La Dalia, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Cinco paradas en el mercado La Dalia",
+    "url": "https://www.chilango.com/comida/mercado-la-dalia/"
+   },
+   {
+    "title": "CDMX Tourism - Mercado La Dalia",
+    "url": "https://mexicocity.cdmx.gob.mx/venues/mercado-la-dalia/?lang=en"
+   }
+  ]
+ },
+ {
+  "name": "Gorditas de chicharrón at Mercado Mixcoac",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Gorditas",
+  "description": "Mercado Mixcoac is known for its gorditas de chicharrón (a street tour stops at Gorditas Hermanos Luna), plus carnitas with Chucho and takeout from Cocina Carmelita. Open daily 8am-10pm per Time Out.",
+  "special_quality": "Mixcoac's gorditas de chicharrón, the market's calling card.",
+  "price_range": "$",
+  "address": "Mercado de Mixcoac, Mixcoac, Benito Juárez",
+  "google_maps_query": "Gorditas de chicharrón at Mercado Mixcoac, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Mercados con comida",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/mi-mercado-servicio-a-domicilio-de-mercados-publicos-en-la-cdmx"
+   },
+   {
+    "title": "CDMX Tourism - Mercado de Mixcoac",
+    "url": "https://mexicocity.cdmx.gob.mx/venues/mercado-de-mixcoac/"
+   }
+  ]
+ },
+ {
+  "name": "Mercado Roma",
+  "neighborhood": "Roma Norte",
+  "category": "market",
+  "subcategory": "Gourmet food hall",
+  "description": "Three-floor gourmet hall in Roma Norte with 50+ vendors, widely cited as the pioneer of the city's gourmet markets. Rooftop biergarten and bars; ground floor roughly 9am-9pm. More curated than a traditional mercado; stall lineup changes.",
+  "special_quality": "The template for the gourmet food hall in CDMX.",
+  "price_range": "$$",
+  "address": "Querétaro 225, Roma Norte",
+  "google_maps_query": "Mercado Roma, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 8,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Forbes México - mercados gourmet",
+    "url": "https://forbes.com.mx/?p=421016"
+   },
+   {
+    "title": "CDMX Tourism - Mercado Roma",
+    "url": "https://mexicocity.cdmx.gob.mx/venues/mercado-roma/"
+   },
+   {
+    "title": "Zona Turística - Mercado Roma",
+    "url": "https://www.zonaturistica.com/restaurante/2476/mercado-roma-ciudad-de-mexico.html"
+   }
+  ]
+ },
+ {
+  "name": "Quesadillas Lagunitas at La Lagunilla (Sunday)",
+  "neighborhood": "Centro Histórico",
+  "category": "market",
+  "subcategory": "Blue corn quesadillas",
+  "description": "Stall at the Sunday La Lagunilla market that draws a long line for blue-corn masa quesadillas. The Sunday market also has a tent city of michelada stands; Chilango recommends the Zona 2 food area. Evidence from a single travel blog.",
+  "special_quality": "Blue-masa quesadillas in the Sunday Lagunilla crowd.",
+  "price_range": "$",
+  "address": "República de Ecuador 39-47, Centro Histórico",
+  "google_maps_query": "Quesadillas Lagunitas at La Lagunilla (Sunday), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "La Lagunilla Market (travel guide search result)",
+    "url": "https://mexicanista.com/mercado-lagunilla-cdmx"
+   },
+   {
+    "title": "Time Out México - La Lagunilla",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/compras-estilo/la-lagunilla"
+   },
+   {
+    "title": "Chilango - Mercados con comida sabrosa cerca de Reforma",
+    "url": "https://www.chilango.com/comida-y-tragos/checa-estos-mercados-con-comida-sabrosa-cerca-reforma-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Barbacoa at Mercado 24 de Agosto",
+  "neighborhood": "Narvarte",
+  "category": "market",
+  "subcategory": "Barbacoa",
+  "description": "Matador Network calls the barbacoa here the best in the area, served as tacos, flautas or consomé. Specific stall name not found; verify at the market.",
+  "special_quality": "Narvarte's market barbacoa, served as tacos, flautas or consomé.",
+  "price_range": "$",
+  "address": "Mercado 24 de Agosto, Narvarte",
+  "google_maps_query": "Barbacoa at Mercado 24 de Agosto, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Matador Network - ¿Qué comer en cada uno de estos mercados?",
+    "url": "https://matadornetwork.com/es/mercados-chilangos-de-antojos/"
+   }
+  ]
+ },
+ {
+  "name": "Mercado Medellín",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Lonely Planet - Best markets in Mexico City",
+    "url": "https://www.lonelyplanet.com/articles/best-markets-in-mexico-city"
+   },
+   {
+    "title": "Time Out México - Mercados de comida",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes-cafes/mercados-de-comida-en-el-df"
+   }
+  ],
+  "scores": {
+   "iconic": 5,
+   "hype": 7,
+   "food": 7,
+   "weird": 6
+  }
+ },
+ {
+  "name": "Mercado de la Merced",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "CNN - Merced Market food tour",
+    "url": "https://amp.cnn.com/cnn/travel/article/mercado-de-la-merced-mexico-city-food-tour"
+   },
+   {
+    "title": "Expansión - Recorrido por el mercado más grande de la CDMX",
+    "url": "https://expansion.mx/tendencias/2019/01/06/come-en-un-recorrido-por-el-mercado-mas-grande-de-la-cdmx"
+   }
+  ],
+  "scores": {
+   "iconic": 10,
+   "hype": 7,
+   "food": 7,
+   "weird": 6
+  }
+ },
+ {
+  "name": "Mercado de Coyoacán",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Mexico News Daily - Mercado Coyoacán",
+    "url": "https://mexiconewsdaily.com/mexicolife/at-mercado-coyoacan-the-main-attraction-is-food/"
+   },
+   {
+    "title": "Chilango - Tostadas de mercado",
+    "url": "https://www.chilango.com/comida-y-tragos/tostadas-de-mercado/"
+   }
+  ],
+  "scores": {
+   "iconic": 8,
+   "hype": 8,
+   "food": 7,
+   "weird": 4
+  }
+ },
+ {
+  "name": "Mercado de San Juan",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Mexico News Daily - San Juan market",
+    "url": "https://mexiconewsdaily.com/mexico-living/mexico-citys-epicenter-for-culinary-inquisition/"
+   },
+   {
+    "title": "Afar - Mercado San Juan",
+    "url": "https://www.afar.com/places/mercado-san-juan-mexico-city"
+   }
+  ],
+  "scores": {
+   "iconic": 7,
+   "hype": 9,
+   "food": 7,
+   "weird": 8
+  }
+ },
+ {
+  "name": "Mercado Jamaica",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "México Desconocido - Mercado de Jamaica",
+    "url": "https://www.mexicodesconocido.com.mx/mercado-de-jamaica-cdmx-tips.html"
+   },
+   {
+    "title": "Culinary Backstreets - Mercado Jamaica",
+    "url": "https://culinarybackstreets.com/?p=6803"
+   }
+  ],
+  "scores": {
+   "iconic": 8,
+   "hype": 7,
+   "food": 7,
+   "weird": 5
+  }
+ }
+]

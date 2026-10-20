@@ -1,0 +1,866 @@
+[
+  {
+    "name": "La Once Mil",
+    "neighborhood": "Lomas",
+    "category": "tacos",
+    "subcategory": "Upscale trompo tacos (wagyu, picaña)",
+    "description": "Taquería named for the 11000 postal code of Lomas de Chapultepec. The trompo carries Black Angus picaña, ribeye and A5 wagyu, alongside pork belly and truffle options. It earned a Michelin star in the 2026 Mexico guide, the first for a taquería after El Califa de León lost its star.",
+    "special_quality": "The only Michelin-starred taquería in the city, with wagyu on the trompo.",
+    "price_range": "$$$",
+    "address": "Monte Everest 780, Lomas de Chapultepec",
+    "google_maps_query": "La Once Mil, Lomas, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 8,
+      "food": 8,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías in Mexico City",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "Wikipedia — La Once Mil",
+        "url": "https://en.wikipedia.org/wiki/La_Once_Mil"
+      },
+      {
+        "title": "El Financiero — Así es La Once Mil (2026)",
+        "url": "https://www.elfinanciero.com.mx/food-and-drink/2026/05/21/asi-es-la-once-mil-la-nueva-taqueria-con-estrella-michelin-donde-comio-maluma/"
+      },
+      {
+        "title": "ADN40 — Taquería La Once Mil precios y menú",
+        "url": "https://www.adn40.mx/tiempo-libre/2026-05-27/asi-es-taqueria-la-once-mil-en-cdmx-ganadora-de-estrella-michelin-2026-precios-y-menu/"
+      }
+    ]
+  },
+  {
+    "name": "Maizajo",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Next-gen taquería / tortillería",
+    "description": "Taquería, restaurant and tortillería built around house-nixtamalized heirloom corn. Thin grilled ribeye and a potato-and-cheese taco are the draws, with bright salsas. Lines are long and it has been in the Michelin guide since 2024.",
+    "special_quality": "Heirloom-corn tortillas milled in-house make the taco about the masa first.",
+    "price_range": "$$",
+    "address": "Fernando Montes de Oca 113, Condesa",
+    "google_maps_query": "Maizajo, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 7,
+      "food": 8,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías in Mexico City",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Chilango — Tlacoyos vs Maizajo",
+        "url": "https://www.chilango.com/noticias/puestito-senora-tlacoyos-compite-contra-restaurante-de-guia-michelin-en-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Taquería Selene",
+    "neighborhood": "Anzures",
+    "category": "tacos",
+    "subcategory": "Tacos al pastor",
+    "description": "Family-run trompo taquería said to date to 1964. Known for pastor with a high meat-to-cheese ratio and crisp edges, and for the gringa and beef-rib taco. Often named the best pastor in the city, though some visitors find it good rather than transcendent.",
+    "special_quality": "Frequently called the city's best al pastor, with a notably crisp, meat-heavy gringa.",
+    "price_range": "$",
+    "address": "Leibnitz 51, Anzures",
+    "google_maps_query": "Taquería Selene, Anzures, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 7,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Selene",
+        "url": "https://www.theinfatuation.com/mexico-city/reviews/selene"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos in Mexico City",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      },
+      {
+        "title": "Food & Pleasure — Buenos tacos en Polanco",
+        "url": "https://foodandpleasure.com/buenos-tacos-en-polanco/"
+      }
+    ]
+  },
+  {
+    "name": "Tacos Hola El Güero",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Tacos de guisado",
+    "description": "Traditional guisado stand serving home-style stews in tacos: chicharrón en salsa, tinga, rajas con crema, liver, sardine with tuna, rellena, acelgas. Seating is minimal and ordering is loud. Chilango lists it among the city's guisado temples.",
+    "special_quality": "A rare surviving Condesa guisado counter with a deep rotating stew menu.",
+    "price_range": "$",
+    "address": "Av. Amsterdam 135, Condesa",
+    "google_maps_query": "Tacos Hola El Güero, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 6,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Los mejores 10 tacos de guisado",
+        "url": "https://www.chilango.com/comida/los-mejores-tacos-de-guisado-en-la-cdmx/"
+      },
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos in Mexico City",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ]
+  },
+  {
+    "name": "Tacos Joven",
+    "neighborhood": "Narvarte",
+    "category": "tacos",
+    "subcategory": "Tacos de canasta",
+    "description": "Basket-taco stand open since 1971 on Avenida Universidad, famous for its salsa de chile morita with bits of chicharrón. Lines wrap around the block. Chilango covers its history.",
+    "special_quality": "Fifty-plus years of steamed canasta tacos with a morita-and-chicharrón salsa.",
+    "price_range": "$",
+    "address": "Av. Universidad 199 B, Narvarte",
+    "google_maps_query": "Tacos Joven, Narvarte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Tacos Joven: tacos de canasta en la Narvarte",
+        "url": "https://www.chilango.com/comida-y-tragos/tacos/tacos-joven-narvarte-mejores-tacos-canasta-cdmx-historia/"
+      },
+      {
+        "title": "Chilango — Mejores tacos de canasta",
+        "url": "https://www.chilango.com/comida/mejores-tacos-de-canasta-de-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Tacos de Canasta Los Especiales",
+    "neighborhood": "Centro Histórico",
+    "category": "tacos",
+    "subcategory": "Tacos de canasta",
+    "description": "Downtown basket-taco counter steps from the Zócalo with four fillings (chicharrón in verde or adobo, beans, potato) and signature pickled chiles. Dates to the early 1970s by some accounts, with a Tlaxcala family origin. Listed in the Michelin guide recommendations.",
+    "special_quality": "Michelin-listed canasta tacos at roughly ten pesos apiece.",
+    "price_range": "$",
+    "address": "Av. Francisco I. Madero 71, Centro Histórico",
+    "google_maps_query": "Tacos de Canasta Los Especiales, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 6,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías in Mexico City",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "Chilango — Opciones para comer tacos de canasta en el Centro",
+        "url": "https://www.chilango.com/comida/tacos-de-canasta-3/"
+      },
+      {
+        "title": "El Financiero — Tacos de canasta: dónde encontrar los mejores",
+        "url": "https://www.elfinanciero.com.mx/food-and-drink/2021/10/14/tacos-tacos-de-canasta-donde-encontrar-los-mejores-en-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Los Panchos",
+    "neighborhood": "Anzures",
+    "category": "tacos",
+    "subcategory": "Tacos de carnitas (Michoacán-style)",
+    "description": "Michoacán family restaurant founded in 1945, long a carnitas-only taquería and sold by the kilo. Taste Atlas ranked it first among carnitas restaurants in Mexico. It has hosted guest-chef taco collaborations.",
+    "special_quality": "Operating since 1945, ranked Mexico's top carnitas restaurant by Taste Atlas.",
+    "price_range": "$$",
+    "address": "Tolstoi 9, Anzures",
+    "google_maps_query": "Los Panchos, Anzures, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 6,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Los Panchos",
+        "url": "https://www.chilango.com/comida/los-panchos/"
+      },
+      {
+        "title": "Food & Pleasure — Los Panchos",
+        "url": "https://foodandpleasure.com/los-panchos-restaurante/"
+      },
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Uno TV — Mejores lugares para comer carnitas (Taste Atlas)",
+        "url": "https://www.unotv.com/estilo-de-vida/gastronomia/cuales-son-los-mejores-lugares-para-comer-carnitas/"
+      }
+    ]
+  },
+  {
+    "name": "El Hidalguense",
+    "neighborhood": "Roma Sur",
+    "category": "tacos",
+    "subcategory": "Barbacoa de borrego en hoyo",
+    "description": "Hidalgo-style lamb barbacoa roasted in an underground pit over oak, with consomé and pancita. Open only Friday to Sunday from early morning and often sells out. Founded by Moisés and Norma Rodríguez; sources disagree on the founding year. Appeared on Netflix's Taco Chronicles.",
+    "special_quality": "Weekend-only pit barbacoa in a ranch-style dining room in the heart of Roma.",
+    "price_range": "$$",
+    "address": "Campeche 155, Roma Sur",
+    "google_maps_query": "El Hidalguense, Roma Sur, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 7,
+      "food": 8,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Culinary Backstreets — barbacoa",
+        "url": "https://culinarybackstreets.com/?p=50048"
+      },
+      {
+        "title": "Posta — Mejor barbacoa de CDMX (Taste Atlas)",
+        "url": "https://www.posta.com.mx/mexico/donde-esta-la-mejor-barbacoa-de-cdmx-esto-dice-taste-atlas/vl1621671"
+      },
+      {
+        "title": "Food & Pleasure — Barbacoa hidalguense en la CDMX",
+        "url": "https://foodandpleasure.com/barbacoa-en-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Carnitas El Venadito",
+    "neighborhood": "other",
+    "category": "tacos",
+    "subcategory": "Carnitas / barbacoa",
+    "description": "Neighborhood fixture in Agrícola/Chimalistac since 1950, with a tiny curbside taco stand and a sit-down room behind. Soft Michoacán-style carnitas that sell out; barbacoa on weekends. Praised by chefs, including for its taco campechano.",
+    "special_quality": "Curbside carnitas stand open since 1950 that closes when the pork runs out.",
+    "price_range": "$",
+    "address": "Av. Universidad 1701, Agrícola (Chimalistac), Álvaro Obregón",
+    "google_maps_query": "Carnitas El Venadito, other, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 7,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Other Side of the Tortilla — Carnitas El Venadito",
+        "url": "https://theothersideofthetortilla.com/2014/05/carnitas-el-venadito-mexico-city/"
+      },
+      {
+        "title": "Sopitas — Mejores tacos de barbacoa de la CDMX",
+        "url": "https://www.sopitas.com/mientras-tanto/estos-son-los-mejores-tacos-de-barbacoa-de-la-cdmx-6-restaurantes/amp/"
+      },
+      {
+        "title": "Chilango — Mejores tacos de la CDMX",
+        "url": "https://www.chilango.com/comida/mejores-tacos-de-la-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Siembra Taquería",
+    "neighborhood": "Polanco",
+    "category": "tacos",
+    "subcategory": "Modern tacos on heirloom corn",
+    "description": "Tortillería-turned-taquería using criollo corn nixtamalized in-house. Michelin Bib Gourmand for the fish al pastor and arrachera. A small bar looks into the kitchen.",
+    "special_quality": "Taquería built on its own nixtamal mill, with a fish al pastor.",
+    "price_range": "$$",
+    "address": "Av. Isaac Newton 256, Polanco",
+    "google_maps_query": "Siembra Taquería, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 6,
+      "food": 8,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Siembra Tortillería",
+        "url": "https://guide.michelin.com/th/th/ciudad-de-mexico/miguel-hidalgo_1999281/restaurant/siembra-tortilleria"
+      },
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Food & Pleasure — Siembra",
+        "url": "https://foodandpleasure.com/siembra-terraza/"
+      }
+    ]
+  },
+  {
+    "name": "Cariñito Tacos",
+    "neighborhood": "Roma Norte",
+    "category": "tacos",
+    "subcategory": "Asian-fusion tacos",
+    "description": "Street-style taquería doing Southeast Asian-inflected tacos on dried corn husks: siu yuk crispy pork, Lao eggplant, Thai cochinita. Served with natural wine and house vermouth.",
+    "special_quality": "Chinese roast pork and Thai cochinita tacos in a Roma street setting.",
+    "price_range": "$$",
+    "address": "Guanajuato 53, Roma Norte",
+    "google_maps_query": "Cariñito Tacos, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 6,
+      "food": 7,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías in Mexico City",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos in Mexico City",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ]
+  },
+  {
+    "name": "Tacos Don Juan",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Suadero, guisados, weekend quesabirria",
+    "description": "Taquería born in 1982 from a family butcher shop, Súper Carnicería Atlixco. Known for suadero, daily stews and weekend quesabirria, with carnitas on Fridays. Chilango wrote a tribute and lines are common.",
+    "special_quality": "Butcher-shop taquería, 1982, with weekend quesabirria and daily guisados.",
+    "price_range": "$",
+    "address": "Atlixco 42, Condesa",
+    "google_maps_query": "Tacos Don Juan, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Tacos Don Juan",
+        "url": "https://www.theinfatuation.com/mexico-city/reviews/tacos-don-juan"
+      },
+      {
+        "title": "Chilango — Un tributo a Tacos Don Juan",
+        "url": "https://www.chilango.com/postura/tacos-don-juan-trubuto-taqueria/"
+      },
+      {
+        "title": "Sopitas — Los clásicos tacos de la Condesa: Don Juan",
+        "url": "https://www.sopitas.com/mientras-tanto/los-clasicos-tacos-de-la-condesa-don-juan/amp/"
+      }
+    ]
+  },
+  {
+    "name": "Castacán",
+    "neighborhood": "Roma Norte",
+    "category": "tacos",
+    "subcategory": "Tacos de cochinita pibil",
+    "description": "Casual Yucatán-style pork spot serving cochinita pibil tacos, lechón with castacán, and tortas. The Infatuation recommends the cochinita taco.",
+    "special_quality": "Yucatán pork done as simple tacos and tortas in Roma Norte.",
+    "price_range": "$$",
+    "address": "Puebla 387, Roma Norte",
+    "google_maps_query": "Castacán, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 6,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Castacán",
+        "url": "https://www.theinfatuation.com/mexico-city/reviews/castacan"
+      },
+      {
+        "title": "Chilango — Tacos de cochinita pibil en CDMX",
+        "url": "https://www.chilango.com/comida/tacos-de-cochinita-pibil-en-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "El Remolkito del Sirloin Pedregal",
+    "neighborhood": "other",
+    "category": "tacos",
+    "subcategory": "Sirloin on the trompo",
+    "description": "Loud soccer-themed taquería in Pedregal known for sirloin cooked on a trompo and crowned with a crisp manchego cheese costra.",
+    "special_quality": "Sirloin trompo tacos finished with a crispy cheese crust.",
+    "price_range": "$$",
+    "address": "Anillo Periférico 5460, Olímpica, Coyoacán",
+    "google_maps_query": "El Remolkito del Sirloin Pedregal, other, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 5,
+      "food": 7,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      }
+    ]
+  },
+  {
+    "name": "La Onda",
+    "neighborhood": "Lomas",
+    "category": "tacos",
+    "subcategory": "Tacos de costilla con tocino y queso",
+    "description": "Long-running Lomas institution with a retro feel, known for rib, bacon and cheese tacos.",
+    "special_quality": "Retro Lomas taquería famed for costilla con tocino y queso.",
+    "price_range": "$$",
+    "address": "Barrilaco 420, Lomas de Chapultepec",
+    "google_maps_query": "La Onda, Lomas, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 4,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      }
+    ]
+  },
+  {
+    "name": "El Charco de las Ranas",
+    "neighborhood": "other",
+    "category": "tacos",
+    "subcategory": "Chuleta con queso, al pastor",
+    "description": "Fast, colorful Pedregal taquería popular after matches and TV tapings, beginning as an al pastor and bistec stand. Founding dates conflict across sources (1980s; Pedregal branch 1996). Chef Edgar Núñez of Sud 777 counts it among his favorites.",
+    "special_quality": "Pedregal staple known for chuleta with cheese and its place in local TV lore.",
+    "price_range": "$$",
+    "address": "Periférico Sur 2772, Jardines del Pedregal, Álvaro Obregón",
+    "google_maps_query": "El Charco de las Ranas, other, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Chilango — Taquerías favoritas del chef de Sud 777",
+        "url": "https://www.chilango.com/comida/taquerias-favoritas-de-chef-sud777/"
+      },
+      {
+        "title": "Excélsior — El Charco de las Ranas: historia",
+        "url": "https://www.excelsior.com.mx/expresiones/el-charco-de-las-ranas-historia-del-famoso-restaurante/1721277"
+      }
+    ]
+  },
+  {
+    "name": "El Rincón Tarasco",
+    "neighborhood": "Escandón",
+    "category": "tacos",
+    "subcategory": "Carnitas / maciza y buche",
+    "description": "Neighborhood carnitas spot serving Michoacán-style maciza, buche and rib on handmade tortillas.",
+    "special_quality": "Slow-roasted Michoacán carnitas on handmade tortillas.",
+    "price_range": "$",
+    "address": "José Martí 142, Escandón",
+    "google_maps_query": "El Rincón Tarasco, Escandón, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 4,
+      "food": 7,
+      "weird": 2
+    },
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Excélsior — Dónde comer carnitas en la CDMX",
+        "url": "https://www.excelsior.com.mx/expresiones/donde-comer-carnitas-en-la-cdmx-los-lugares-con-los-mejores-tacos/1721196"
+      }
+    ]
+  },
+  {
+    "name": "Tacos Los Güeros",
+    "neighborhood": "Centro Histórico",
+    "category": "tacos",
+    "subcategory": "Pastor, suadero, campechano",
+    "description": "Trompo and suadero taquería near the Ciudadela market, serving beer with crisp, well-seasoned pastor and campechano.",
+    "special_quality": "Crisp pastor and suadero with beer near the Ciudadela.",
+    "price_range": "$",
+    "address": "Near Mercado de la Ciudadela / Metro Juárez, Centro (verify exact address)",
+    "google_maps_query": "Tacos Los Güeros, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 4,
+      "food": 7,
+      "weird": 2
+    },
+    "source_links": [
+      {
+        "title": "Culinary Backstreets — Los Güeros",
+        "url": "https://culinarybackstreets.com/?p=69416"
+      },
+      {
+        "title": "Chilango — Conoce Los Güeros",
+        "url": "https://www.chilango.com/comida-y-tragos/conoce-los-geros/"
+      }
+    ]
+  },
+  {
+    "name": "El Tizoncito",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Tacos al pastor (origin claim)",
+    "description": "Condesa taquería that claims to have invented the al pastor taco in 1966 at Tamaulipas and Campeche, credited to Doña Conchita Cervantes. The origin is disputed with El Huequito, and it is now a multi-branch chain.",
+    "special_quality": "Contested birthplace of the taco al pastor, at the original Condesa corner.",
+    "price_range": "$$",
+    "address": "Tamaulipas 122, Condesa",
+    "google_maps_query": "El Tizoncito, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 8,
+      "hype": 6,
+      "food": 6,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Los inventores del taco al pastor",
+        "url": "https://www.chilango.com/comida-y-tragos/inventores-del-taco-al-pastor/"
+      },
+      {
+        "title": "Publimetro — Historia de los tacos al pastor",
+        "url": "https://www.publimetro.com.mx/plus/2023/02/07/historia-de-los-tacos-al-pastor-en-la-ciudad-de-mexico/"
+      },
+      {
+        "title": "Chilango — El Tizoncito Condesa",
+        "url": "https://www.chilango.com/comida/restaurantes/el-tizoncito-condesa-ii/amp/"
+      }
+    ]
+  },
+  {
+    "name": "Los Pelayos",
+    "neighborhood": "other",
+    "category": "tacos",
+    "subcategory": "Carnitas estilo Michoacán",
+    "description": "Small Peralvillo carnitas counter with juicy pork crisped on the grill (doraditos). Neighborhood tradition.",
+    "special_quality": "Michoacán carnitas finished on the griddle in a tiny local.",
+    "price_range": "$",
+    "address": "Local K, Calzada de Guadalupe, Beethoven 134, Peralvillo",
+    "google_maps_query": "Los Pelayos, other, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 3,
+      "food": 6,
+      "weird": 2
+    },
+    "source_links": [
+      {
+        "title": "ADN40 — Los mejores tacos de carnitas en CDMX",
+        "url": "https://www.adn40.mx/tiempo-libre/los-mejores-tacos-carnitas-en-cdmx"
+      }
+    ]
+  },
+  {
+    "name": "Tacos de Canasta La Pirámide",
+    "neighborhood": "other",
+    "category": "tacos",
+    "subcategory": "Tacos de canasta",
+    "description": "Truck parked daily beside the Pemex pyramid with three giant baskets, a southern-city canasta favorite.",
+    "special_quality": "Giant-basket canasta truck beside the Pemex pyramid.",
+    "price_range": "$",
+    "address": "Calle Línea Cuatro esq. Línea Uno, Emilio Portes Gil (Pedregal)",
+    "google_maps_query": "Tacos de Canasta La Pirámide, other, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 4,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Los mejores tacos de canasta del sur",
+        "url": "https://www.chilango.com/comida/tacos-la-piramide/"
+      }
+    ]
+  },
+  {
+    "name": "Auténtico Pato Manila",
+    "neighborhood": "Polanco",
+    "category": "tacos",
+    "subcategory": "Duck tacos (Mexican-Filipino)",
+    "description": "Four-item menu built around duck, blending Mexican and Filipino flavors, including baked duck with plum sauce.",
+    "special_quality": "Duck-only taco menu with Filipino accents.",
+    "price_range": "$$",
+    "address": "Multiple (Polanco, Roma, Hipódromo)",
+    "google_maps_query": "Auténtico Pato Manila, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 1,
+      "hype": 4,
+      "food": 6,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Mexico News Daily — Best tacos in Mexico City",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ]
+  },
+  {
+    "name": "Taquería El Califa de León",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "SDP Noticias — pierde su estrella Michelin 2026",
+        "url": "https://www.sdpnoticias.com/negocios/el-califa-de-leon-pierde-su-estrella-michelin-en-la-guia-2026/"
+      },
+      {
+        "title": "Smithsonian — Michelin star taco stand",
+        "url": "https://www.smithsonianmag.com/smart-news/this-tiny-taco-stand-in-mexico-city-was-just-awarded-a-coveted-michelin-star-180984400/"
+      }
+    ],
+    "scores": {
+      "iconic": 8,
+      "hype": 10,
+      "food": 8,
+      "weird": 6
+    }
+  },
+  {
+    "name": "Taquería Los Cocuyos",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "Chilango — Los Cocuyos suadero",
+        "url": "https://www.chilango.com/comida-y-tragos/los-cocuyos-los-mejores-tacos-de-suadero-de-la-ciudad/"
+      }
+    ],
+    "scores": {
+      "iconic": 8,
+      "hype": 8,
+      "food": 8,
+      "weird": 4
+    }
+  },
+  {
+    "name": "Tacos Los Parados",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "Culinary Backstreets — Los Parados",
+        "url": "https://culinarybackstreets.com/?p=27318"
+      }
+    ],
+    "scores": {
+      "iconic": 8,
+      "hype": 7,
+      "food": 8,
+      "weird": 4
+    }
+  },
+  {
+    "name": "El Vilsito",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "Michelin Guide — Best taquerías",
+        "url": "https://guide.michelin.com/us/en/best-of/the-best-taquerias-in-mexico-city"
+      },
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      }
+    ],
+    "scores": {
+      "iconic": 6,
+      "hype": 8,
+      "food": 8,
+      "weird": 7
+    }
+  },
+  {
+    "name": "Taquería El Turix",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ],
+    "scores": {
+      "iconic": 6,
+      "hype": 8,
+      "food": 9,
+      "weird": 5
+    }
+  },
+  {
+    "name": "El Huequito",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Chilango — Los inventores del taco al pastor",
+        "url": "https://www.chilango.com/comida-y-tragos/inventores-del-taco-al-pastor/"
+      }
+    ],
+    "scores": {
+      "iconic": 9,
+      "hype": 6,
+      "food": 7,
+      "weird": 3
+    }
+  },
+  {
+    "name": "Taquería El Greco",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ],
+    "scores": {
+      "iconic": 7,
+      "hype": 5,
+      "food": 7,
+      "weird": 4
+    }
+  },
+  {
+    "name": "Taquería Orinoco",
+    "existing": true,
+    "source_links": [
+      {
+        "title": "The Infatuation — Best tacos in Mexico City",
+        "url": "https://theinfatuation.com/mexico-city/guides/best-tacos-mexico-city"
+      },
+      {
+        "title": "Mexico News Daily — Best tacos",
+        "url": "https://mexiconewsdaily.com/lifestyle/food/a-curated-guide-to-the-best-tacos-in-mexico-city-for-every-taste-profile/"
+      }
+    ],
+    "scores": {
+      "iconic": 5,
+      "hype": 7,
+      "food": 7,
+      "weird": 3
+    }
+  }
+]
