@@ -1,0 +1,522 @@
+[
+ {
+  "name": "Pastelería Ideal",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Historic Spanish-founded panadería",
+  "description": "Founded in 1927 as 'Ideal Bakery' by Spanish owners, this multi-floor Centro bakery sells tens of thousands of pieces a day. Known for pan americano, beso, cookies and tres leches cake, plus rosca de reyes season queues.",
+  "special_quality": "A 1927 Centro Histórico mega-panadería where whole families pick sweet bread with trays and tongs.",
+  "price_range": "$",
+  "address": "16 de Septiembre 18, Centro Histórico",
+  "google_maps_query": "Pastelería Ideal, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 6,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — Las 4 panaderías más antiguas del Centro Histórico",
+    "url": "https://foodandpleasure.com/panaderias-antiguas-del-centro-historico-de-cdmx/"
+   },
+   {
+    "title": "Chowhound — 9 Best Mexico City Bakeries",
+    "url": "https://www.chowhound.com/2137582/best-mexico-city-bakeries-panderias"
+   }
+  ]
+ },
+ {
+  "name": "La Vasconia",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Historic panadería",
+  "description": "Claimed to be the oldest continuously running bakery in the city (1870), founded by Spanish owners with recipes still in use. Pan de higo, conchas, cuernitos and filled breads; it supplies hotels and restaurants nearby.",
+  "special_quality": "Possibly the oldest working pan dulce bakery in CDMX, dating to 1870 (sources vary).",
+  "price_range": "$",
+  "address": "Tacuba 73, Centro Histórico",
+  "google_maps_query": "La Vasconia, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 3,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — Las 4 panaderías más antiguas del Centro Histórico",
+    "url": "https://foodandpleasure.com/panaderias-antiguas-del-centro-historico-de-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Pastelería Madrid",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Historic panadería",
+  "description": "Opened in 1939 by a family of Spanish immigrants, a Centro stalwart for the classic concha, mantecada cuadrada and custard-and-walnut strudel. Small relative to the neighbors but loved by locals.",
+  "special_quality": "1939 Spanish-immigrant bakery whose concha and square mantecada are Centro benchmarks.",
+  "price_range": "$",
+  "address": "5 de Febrero 25, Centro Histórico",
+  "google_maps_query": "Pastelería Madrid, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — Las 4 panaderías más antiguas del Centro Histórico",
+    "url": "https://foodandpleasure.com/panaderias-antiguas-del-centro-historico-de-cdmx/"
+   },
+   {
+    "title": "Chowhound — 9 Best Mexico City Bakeries",
+    "url": "https://www.chowhound.com/2137582/best-mexico-city-bakeries-panderias"
+   }
+  ]
+ },
+ {
+  "name": "Panadería El Molino",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Historic panadería",
+  "description": "Founded in 1928 with red-brick decor and up to 150 varieties of bread; the traditional concha is its star. Also serves sweet bread with ice cream.",
+  "special_quality": "1928 red-brick panadería where the concha is the headliner among 150 varieties.",
+  "price_range": "$",
+  "address": "16 de Septiembre 59, Centro Histórico",
+  "google_maps_query": "Panadería El Molino, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 5,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — Las 4 panaderías más antiguas del Centro Histórico",
+    "url": "https://foodandpleasure.com/panaderias-antiguas-del-centro-historico-de-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Pastelería Suiza",
+  "neighborhood": "Condesa",
+  "category": "bakery",
+  "subcategory": "Neighborhood institution",
+  "description": "Condesa/Roma neighborhood institution since 1942 beside Parque España. Classic conchas, orejas, polvorones, brazo fresa and pan de muerto and rosca for the holidays.",
+  "special_quality": "A Swiss-inflected 1942 pastry shop that anchors Parque España mornings.",
+  "price_range": "$",
+  "address": "Parque España 7, Condesa",
+  "google_maps_query": "Pastelería Suiza, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   },
+   {
+    "title": "Chowhound — 9 Best Mexico City Bakeries",
+    "url": "https://www.chowhound.com/2137582/best-mexico-city-bakeries-panderias"
+   }
+  ]
+ },
+ {
+  "name": "Costra",
+  "neighborhood": "Narvarte",
+  "category": "bakery",
+  "subcategory": "Sourdough bakery and coffee bar",
+  "description": "Erick Magaña's Narvarte sourdough bakery supplies loaves to many cafés in the city. Best sellers include sugar-topped conchas, cinnamon rolls, peasant bread and dulce de leche bread; seasonal rosca de reyes and pan de muerto are sought after. Time Out rated it 4/5 and notes a recent move a few blocks from the original.",
+  "special_quality": "The sourdough bakery that many other CDMX cafés quietly buy from.",
+  "price_range": "$",
+  "address": "Universidad 482, Narvarte Poniente (verify; another source lists Universidad 371-B after a recent move)",
+  "google_maps_query": "Costra, Narvarte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 6,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "CDMX Secreta — Bakeries in Mexico City",
+    "url": "https://cdmxsecreta.com/en/bakeries-in-mexico-city/"
+   },
+   {
+    "title": "Time Out México — Costra",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/costra"
+   },
+   {
+    "title": "Food & Pleasure — pan de masa madre Narvarte",
+    "url": "https://foodandpleasure.com/panaderia-de-pan-masa-madre/"
+   }
+  ]
+ },
+ {
+  "name": "El Olvidado",
+  "neighborhood": "Coyoacán",
+  "category": "bakery",
+  "subcategory": "Bakery-café with takeaway window",
+  "description": "English-inspired bakery-café in Coyoacán with a separate bread window on Av. México. Famous for the croissant cube with toffee or passion fruit filling, plus cocoa shell, lemon berlinesa and peasant bread. Lines form after 9:30 am.",
+  "special_quality": "The cube croissant and its Coyoacán bread window.",
+  "price_range": "$$",
+  "address": "Presidente Carranza 267, Coyoacán; bread window at Av. México 36",
+  "google_maps_query": "El Olvidado, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 6,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "CDMX Secreta — Bakeries in Mexico City",
+    "url": "https://cdmxsecreta.com/en/bakeries-in-mexico-city/"
+   },
+   {
+    "title": "The Infatuation — El Olvidado",
+    "url": "https://www.theinfatuation.com/mexico-city/reviews/el-olvidado"
+   },
+   {
+    "title": "Chilango — croissant en cubo, El Olvidado",
+    "url": "https://www.chilango.com/comida/croissant-en-cubo-el-olvidado-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Marne",
+  "neighborhood": "other",
+  "category": "bakery",
+  "subcategory": "Sourdough bakery-café",
+  "description": "Corner bakery-café in San Miguel Chapultepec praised for sourdough, chocolate croissants, coconut roll, traditional orejas and a good croque madame. Named by Infatuation and Food & Pleasure as an easygoing breakfast spot.",
+  "special_quality": "Sourdough and crisp orejas in a relaxed corner room.",
+  "price_range": "$$",
+  "address": "Gobernador Ignacio Esteva 35, San Miguel Chapultepec",
+  "google_maps_query": "Marne, San Miguel Chapultepec, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 6,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   },
+   {
+    "title": "Food & Pleasure — 8 rinconcitos para café y pan artesanal",
+    "url": "https://foodandpleasure.com/panaderias-artesanales-cdmx"
+   }
+  ]
+ },
+ {
+  "name": "Dave's Home Bread",
+  "neighborhood": "other",
+  "category": "bakery",
+  "subcategory": "Baguettes and sourdough",
+  "description": "Escandón bakery known for crunchy baguettes and sourdough, with sandwiches such as a Parisian baguette with Dijon and cornichons. Also named in Time Out's Miguel Hidalgo bakery guide.",
+  "special_quality": "Some of the most convincing baguettes in the city.",
+  "price_range": "$$",
+  "address": "Calle Astrónomos 33, Escandón",
+  "google_maps_query": "Dave's Home Bread, Escandón, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   },
+   {
+    "title": "Time Out México — Guía 50 Panaderías Miguel Hidalgo",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/guia-de-50-panaderias-de-miguel-hidalgo"
+   }
+  ]
+ },
+ {
+  "name": "Ficelle",
+  "neighborhood": "Condesa",
+  "category": "bakery",
+  "subcategory": "French pâtisserie",
+  "description": "Condesa French pastry shop with canelés and one of the few local sources of proper éclairs.",
+  "special_quality": "Eclairs and canelés that are hard to find elsewhere in CDMX.",
+  "price_range": "$$",
+  "address": "Av. Tamaulipas 39b, Condesa",
+  "google_maps_query": "Ficelle, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   }
+  ]
+ },
+ {
+  "name": "Alegra Pâtisserie",
+  "neighborhood": "Condesa",
+  "category": "bakery",
+  "subcategory": "Argentine pastries",
+  "description": "Condesa bakery for Argentine pastry: chipa, dulce de leche alfajores and buttery medialunas.",
+  "special_quality": "Argentine medialunas and alfajores done properly.",
+  "price_range": "$$",
+  "address": "Calle Altata 7, Condesa",
+  "google_maps_query": "Alegra Pâtisserie, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 4,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   }
+  ]
+ },
+ {
+  "name": "Saint",
+  "neighborhood": "Condesa",
+  "category": "bakery",
+  "subcategory": "Sourdough and French pastry",
+  "description": "Condesa bakery with daily-changing savory sourdough loaves, orejas, kouign amann and baguette sandwiches (BLT, ham and gouda).",
+  "special_quality": "Rotating daily savory loaves and a strong baguette sandwich.",
+  "price_range": "$$",
+  "address": "Gral. Benjamín Hill 146-1, Condesa",
+  "google_maps_query": "Saint, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   },
+   {
+    "title": "Food & Pleasure — 8 rinconcitos para café y pan artesanal",
+    "url": "https://foodandpleasure.com/panaderias-artesanales-cdmx"
+   }
+  ]
+ },
+ {
+  "name": "Cinco y Dos",
+  "neighborhood": "Roma Norte",
+  "category": "bakery",
+  "subcategory": "Artisan bakery",
+  "description": "Artisan bread, bostock, kouign-amann and seasonal pan de muerto, listed first by CDMX Secreta. Verify neighborhood.",
+  "special_quality": "A small artisan counter with bostock and kouign-amann.",
+  "price_range": "$$",
+  "address": "Río Nazas 45, local 4 (verify neighborhood)",
+  "google_maps_query": "Cinco y Dos panadería, Río Nazas 45, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "CDMX Secreta — Bakeries in Mexico City",
+    "url": "https://cdmxsecreta.com/en/bakeries-in-mexico-city/"
+   }
+  ]
+ },
+ {
+  "name": "Amano Repostería",
+  "neighborhood": "Polanco",
+  "category": "bakery",
+  "subcategory": "Cookies and croissant rolls",
+  "description": "Polanco pastry shop known for the cookie croissant and a chocolate bunny cookie, with a second branch in San Jerónimo Lídice.",
+  "special_quality": "The cookie croissant.",
+  "price_range": "$$",
+  "address": "Calle Emilio Castelar 204, Polanco",
+  "google_maps_query": "Amano Repostería, Polanco, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 2,
+   "hype": 5,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation — 13 Mexico City Bakeries Beyond Rosetta",
+    "url": "https://theinfatuation.com/mexico-city/guides/best-bakeries-mexico-city"
+   },
+   {
+    "title": "CDMX Secreta — Bakeries in Mexico City",
+    "url": "https://cdmxsecreta.com/en/bakeries-in-mexico-city/"
+   }
+  ]
+ },
+ {
+  "name": "Café Avellaneda",
+  "neighborhood": "Coyoacán",
+  "category": "cafe",
+  "subcategory": "Specialty coffee pioneer",
+  "description": "Opened in 2009 by Carlos de la Torre, a multi-time national barista and brewers cup champion, and one of the first specialty cafés in the city. A tiny Coyoacán room with a rotating weekly coffee, roasted by his Café con Jiribilla roastery, with a donation per cup to a coffee farm. Barista Magazine covers its growth.",
+  "special_quality": "One of CDMX's first specialty-coffee rooms, run by a national champion.",
+  "price_range": "$$",
+  "address": "Coyoacán (street address not verified; verify)",
+  "google_maps_query": "Café Avellaneda, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Barista Magazine — Specialty Coffee Shines from the Heart of Mexico City",
+    "url": "https://www.baristamagazine.com/specialty-coffee-shines-at-the-heart-of-mexico-city/"
+   },
+   {
+    "title": "Sprudge — Café Avellaneda",
+    "url": "https://sprudge.com/cafe-avellaneda-un-nuevo-horizonte-en-la-ciudad-de-mexico-107865.html"
+   }
+  ]
+ },
+ {
+  "name": "Chiquitito Café",
+  "neighborhood": "Condesa",
+  "category": "cafe",
+  "subcategory": "Specialty coffee pioneer",
+  "description": "Opened in 2012 in a tiny Condesa space by Jeremy Clouser and Cecilia Morales, with direct relationships with Oaxacan and Veracruz producers; now has more locations.",
+  "special_quality": "Early Condesa specialty café built on direct producer relationships.",
+  "price_range": "$$",
+  "address": "Condesa (verify address)",
+  "google_maps_query": "Chiquitito Café, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Barista Magazine — Specialty Coffee Shines from the Heart of Mexico City",
+    "url": "https://www.baristamagazine.com/specialty-coffee-shines-at-the-heart-of-mexico-city/"
+   }
+  ]
+ },
+ {
+  "name": "Café El Jarocho",
+  "neighborhood": "Coyoacán",
+  "category": "cafe",
+  "subcategory": "Historic coffee bar",
+  "description": "Coyoacán coffee institution dating to 1953, started from a family grocery selling Veracruz coffee; the main shop sits at Cuauhtémoc and Allende, with long queues, espresso and chocolate drinks, and several branches.",
+  "special_quality": "The Coyoacán coffee counter queue is a 1953 ritual.",
+  "price_range": "$",
+  "address": "Cuauhtémoc y Allende, Coyoacán (verify exact address)",
+  "google_maps_query": "Café El Jarocho, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango — La historia detrás del café más famoso de Coyoacán",
+    "url": "https://www.chilango.com/comida/el-jarocho-historia-sabrosa/"
+   },
+   {
+    "title": "Wikipedia — Café El Jarocho",
+    "url": "https://en.wikipedia.org/wiki/Caf%C3%A9_El_Jarocho"
+   }
+  ]
+ },
+ {
+  "name": "La Valiente",
+  "neighborhood": "other",
+  "category": "cafe",
+  "subcategory": "New specialty café",
+  "description": "Opened September 2025 by Valeria Lazcano, sourcing exclusively Mexican coffee via Gramo and baking its own pastries. Too new to verify; low confidence.",
+  "special_quality": "Mexican-only coffees and house pastries in a playful space.",
+  "price_range": "$$",
+  "address": "verify",
+  "google_maps_query": "La Valiente café, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 1,
+   "hype": 4,
+   "food": 6,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Barista Magazine — Specialty Coffee Shines from the Heart of Mexico City",
+    "url": "https://www.baristamagazine.com/specialty-coffee-shines-at-the-heart-of-mexico-city/"
+   }
+  ]
+ }
+]

@@ -1,0 +1,682 @@
+[
+ {
+  "name": "Cocina Mi Fonda",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Spanish-style fonda, saffron paella",
+  "description": "A shared-table fonda on Calle López that Chilango says has been famous for its saffron paella for more than 70 years. Also serves caldo gallego, fabada, pollo con mole verde and milanesa, with flan and natilla for dessert. Expect around 200 pesos or more per person.",
+  "special_quality": "Seven decades of Spanish-immigrant paella served at communal tables in the Centro.",
+  "price_range": "$$",
+  "address": "López 101, Centro Histórico",
+  "google_maps_query": "Cocina Mi Fonda, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - fondas para comer rico",
+    "url": "https://www.chilango.com/comida/fondas-cdmx-comer-rico/"
+   }
+  ]
+ },
+ {
+  "name": "Fonda La Reforma",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Pancita and comida corrida",
+  "description": "Fonda at Héroes and Degollado in Guerrero whose facade advertises 75 years of tradition; Chilango's 2015 piece says it began as a pancita stand 80+ years ago. Menu is classic comida corrida: mole, chiles rellenos, pancita, chicharrón en salsa verde, enchiladas, from about 70 pesos. Salvador Novo and Octavio Paz are rumored regulars.",
+  "special_quality": "A trip back in time: pancita-stand-turned-fonda with literary-regular lore, from ~70 pesos.",
+  "price_range": "$",
+  "address": "Héroes esq. Degollado, Guerrero",
+  "google_maps_query": "Fonda La Reforma, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 4,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - fondas para comer rico",
+    "url": "https://www.chilango.com/comida/fondas-cdmx-comer-rico/"
+   },
+   {
+    "title": "Chilango - 5 fondas del barrio",
+    "url": "https://www.chilango.com/comida-y-tragos/5-fondas-del-barrio/"
+   }
+  ]
+ },
+ {
+  "name": "Fonda La Beatricita",
+  "neighborhood": "Juárez",
+  "category": "regional",
+  "subcategory": "Mole poblano fonda",
+  "description": "Founded in 1907 in the Centro by Doña Beatriz Muciño and in the Zona Rosa since the 1970s. Chilango lists mole poblano, tacos (cecina, carnitas, guisado), pozolito and flan de caramelo. Source article is from 2015, so verify it is still operating.",
+  "special_quality": "A 1907 family fonda that survived a move into the Zona Rosa.",
+  "price_range": "$$",
+  "address": "Londres 190-D, Zona Rosa (verify still open)",
+  "google_maps_query": "Fonda La Beatricita, Juárez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 4,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - 5 fondas del barrio (2015)",
+    "url": "https://www.chilango.com/comida-y-tragos/5-fondas-del-barrio/"
+   }
+  ]
+ },
+ {
+  "name": "La Oaxaqueña (Mercado de Portales)",
+  "neighborhood": "other",
+  "category": "market",
+  "subcategory": "Market fonda, daily guisados",
+  "description": "Stall inside Mercado de Portales open for over 40 years with about 15 guisados daily, handmade tortillas, fruit waters, pancita and tlayudas, plus breakfast. Around 80 pesos per person per Chilango.",
+  "special_quality": "Fifteen rotating guisados and handmade tortillas for ~80 pesos in a 40-year-old market stall.",
+  "price_range": "$",
+  "address": "Mercado de Portales, Portales (stall location verify)",
+  "google_maps_query": "La Oaxaqueña (Mercado de Portales), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - fondas para comer rico",
+    "url": "https://www.chilango.com/comida/fondas-cdmx-comer-rico/"
+   }
+  ]
+ },
+ {
+  "name": "Los Cazadores",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Comida corrida, shared table with live music",
+  "description": "Everyone eats at one large shared table, often with live musicians. Serves meat tortas and pastas on a ~70-peso comida corrida. Chilango suggests coffee at Villarías afterward.",
+  "special_quality": "One long communal table with roaming musicians for a ~70-peso lunch in the Centro.",
+  "price_range": "$",
+  "address": "López 117, Centro Histórico",
+  "google_maps_query": "Los Cazadores, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 3,
+   "food": 7,
+   "weird": 7
+  },
+  "source_links": [
+   {
+    "title": "Chilango - fondas para comer rico",
+    "url": "https://www.chilango.com/comida/fondas-cdmx-comer-rico/"
+   }
+  ]
+ },
+ {
+  "name": "Los Tres Reyes",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Barbacoa de borrego",
+  "description": "Weekend barbacoa institution in Alfonso XIII, served with consomé or michelada at long shared tables where norteña musicians play requests for a fee. Sopitas/Time Out note 70+ years of experience and crowds. Open Saturday and Sunday 8:30 to 17:00 per Chilango.",
+  "special_quality": "Weekend barbacoa with paid norteña requests at communal tables, 70+ years running.",
+  "price_range": "$$",
+  "address": "Pablo Veronés 12, Alfonso XIII",
+  "google_maps_query": "Los Tres Reyes, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 8,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - lugares de barbacoa",
+    "url": "https://www.chilango.com/comida/mejor-barbacoa-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "La Oveja Negra",
+  "neighborhood": "Santa María la Ribera",
+  "category": "regional",
+  "subcategory": "Hidalgo-style barbacoa",
+  "description": "Barbacoa from sheep raised in Hidalgo, prepared in the traditional Hidalgo style using a recipe dating to the 1950s. Staff in green handle tortillas, meat and tables. Open late (to 23:00) unlike most barbacoa spots.",
+  "special_quality": "Hidalgo barbacoa that stays open until 11 p.m. in a city where barbacoa is a morning affair.",
+  "price_range": "$$",
+  "address": "Sabino 225, Santa María la Ribera",
+  "google_maps_query": "La Oveja Negra, Santa María la Ribera, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 5,
+   "food": 8,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - lugares de barbacoa",
+    "url": "https://www.chilango.com/comida/mejor-barbacoa-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Barbacoa de Santiago",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Barbacoa de borrego, salsa borracha",
+  "description": "Nápoles barbacoa with salsa borracha tacos and take-home kilos packed with avocado and chicharrón. Serves from morning until mid-afternoon, open Mon-Thu 8:00-20:00 and Fri-Sun 8:00-22:00 per Chilango; Time Out also cites its barbacoa flautas.",
+  "special_quality": "Reliable weekday barbacoa with a famous salsa borracha.",
+  "price_range": "$$",
+  "address": "Avenida San Antonio 57, Nápoles",
+  "google_maps_query": "Barbacoa de Santiago, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - lugares de barbacoa",
+    "url": "https://www.chilango.com/comida/mejor-barbacoa-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tripolandia",
+  "neighborhood": "Centro Histórico",
+  "category": "tacos",
+  "subcategory": "Tacos de tripa",
+  "description": "Neighborhood taquería since 1955 on Plaza Juan José Baz, known for tripa cooked twice for crisp texture.",
+  "special_quality": "Tripa tacos fried twice, a Centro fixture since 1955.",
+  "price_range": "$",
+  "address": "Plaza Juan José Baz 5, Centro Histórico",
+  "google_maps_query": "Tripolandia, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Yeshua Tacos",
+  "neighborhood": "Centro Histórico",
+  "category": "tacos",
+  "subcategory": "Tacos de vísceras",
+  "description": "Offal-focused taquería on Calle del Carmen with over 50 years of history, two salsa options and a loyal Centro crowd.",
+  "special_quality": "Five decades of vísceras tacos near the Zócalo.",
+  "price_range": "$",
+  "address": "Calle del Carmen 43, Centro Histórico",
+  "google_maps_query": "Yeshua Tacos, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "El Taco Taco (pavo frito)",
+  "neighborhood": "Centro Histórico",
+  "category": "tacos",
+  "subcategory": "Fried turkey tacos and tortas",
+  "description": "Chilango calls it an unusual pavería behind the Barrio Chino serving fried turkey in tacos or tortas.",
+  "special_quality": "A taquería built around fried turkey.",
+  "price_range": "$",
+  "address": "Behind Barrio Chino, Centro Histórico (verify exact address)",
+  "google_maps_query": "El Taco Taco (pavo frito), Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 3,
+   "food": 7,
+   "weird": 8
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Huesitos El Güero",
+  "neighborhood": "other",
+  "category": "tacos",
+  "subcategory": "Huesitos (fried pork)",
+  "description": "About 25 years old on Oriente 95 in Mártires de Río Blanco; you order by number of fried pork huesitos with a spicy red salsa.",
+  "special_quality": "Fried pork-bone tacos ordered by the piece with a fiery red salsa.",
+  "price_range": "$",
+  "address": "Oriente 95, Mártires de Río Blanco",
+  "google_maps_query": "Huesitos El Güero, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 7
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Los Provolones",
+  "neighborhood": "Doctores",
+  "category": "tacos",
+  "subcategory": "Charcoal tacos with provolone",
+  "description": "Doctores taquería serving charcoal-grilled meats and sausages each topped with melted provolone.",
+  "special_quality": "Provolone on everything from the charcoal grill.",
+  "price_range": "$",
+  "address": "Near Rosales 21, Doctores (verify)",
+  "google_maps_query": "Los Provolones, Doctores, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 7
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Zacapu",
+  "neighborhood": "other",
+  "category": "tacos",
+  "subcategory": "Achicalada (carnitas)",
+  "description": "Lagunilla neighborhood favorite with a sweet-spicy morita salsa; often sells out early.",
+  "special_quality": "Achicalada carnitas that vanish by midday.",
+  "price_range": "$",
+  "address": "Honduras 34-16, Lagunilla",
+  "google_maps_query": "Zacapu, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tacos Domingo",
+  "neighborhood": "Centro Histórico",
+  "category": "tacos",
+  "subcategory": "Charcoal tacos sold by weight",
+  "description": "Charcoal-grilled asada, chuleta and costilla tacos, volcán, torta árabe and cebollitas; meat also sold by 200g, 500g or 1kg. Food & Pleasure (Dec 2025) recommends it for the historic center.",
+  "special_quality": "Charcoal meats by the kilo in the Centro.",
+  "price_range": "$",
+  "address": "Plaza Carlos Pacheco 5, Centro Histórico",
+  "google_maps_query": "Tacos Domingo, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure - taquerías a las que sí van los mexicanos",
+    "url": "https://foodandpleasure.com/taquerias-buenas-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tacos Memo (Mercado San Cosme)",
+  "neighborhood": "San Rafael",
+  "category": "tacos",
+  "subcategory": "Placero-style tacos",
+  "description": "Weekday-morning stall inside Mercado San Cosme serving placero tacos with moronga and tártara, and cauliflower tortas.",
+  "special_quality": "Market-stall tacos with moronga and a vegetarian cauliflower torta.",
+  "price_range": "$",
+  "address": "Mercado San Cosme, San Rafael",
+  "google_maps_query": "Tacos Memo (Mercado San Cosme), San Rafael, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - taquerías imperdibles",
+    "url": "https://www.chilango.com/comida/taquerias-imperdibles-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Pozolería San Sebastián",
+  "neighborhood": "Coyoacán",
+  "category": "regional",
+  "subcategory": "Pozole, secret family recipe",
+  "description": "Known as 'pozole IMER' for sitting next to the radio station in Xoco. Huge 80-peso bowls with tostadas, cream and lime and a sharp, spicy salsa; finish with tinga or pata tostada.",
+  "special_quality": "Giant 80-peso pozole bowls beside the IMER radio building.",
+  "price_range": "$",
+  "address": "Real Mayorazgo 84, Xoco",
+  "google_maps_query": "Pozolería San Sebastián, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - ruta del pozole",
+    "url": "https://www.chilango.com/comida/ruta-del-pozole-en-la-cdmx-guia-de-lugares-para-saborear-este-platillo-tradicional/"
+   }
+  ]
+ },
+ {
+  "name": "Pozoles Texcoco",
+  "neighborhood": "Roma Norte",
+  "category": "regional",
+  "subcategory": "Pozole blanco, rojo, verde and mixteco",
+  "description": "Roma Norte pozolería emphasizing fresh ingredients with white, red, green and Mixtec (hierba santa) versions; Chilango recommends chicharrón, squash blossom and avocado. Average ticket around 250 pesos.",
+  "special_quality": "One of the few places offering Mixtec-style pozole with hierba santa.",
+  "price_range": "$$",
+  "address": "Álvaro Obregón 213, Roma Norte (Chilango lists this address; Sopitas gives it for Casa Licha, verify)",
+  "google_maps_query": "Pozoles Texcoco, Roma Norte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 5,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - ruta del pozole",
+    "url": "https://www.chilango.com/comida/ruta-del-pozole-en-la-cdmx-guia-de-lugares-para-saborear-este-platillo-tradicional/"
+   }
+  ]
+ },
+ {
+  "name": "El Rinconcito de Iguala",
+  "neighborhood": "Roma Norte",
+  "category": "regional",
+  "subcategory": "Guerrero-style pozole verde, weekday fonda",
+  "description": "Fonda with weekday comida corrida known for 10 years for Guerrero-style pozole verde with pork or chicken, avocado and chicharrón, plus chalupas chilpeñas. From about 60 pesos.",
+  "special_quality": "Guerrero green pozole from a Roma Norte weekday fonda for about 60 pesos.",
+  "price_range": "$",
+  "address": "Tabasco 313, Roma Norte",
+  "google_maps_query": "El Rinconcito de Iguala, Roma Norte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 3,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "México Desconocido - pozoles verdes estilo Guerrero",
+    "url": "https://www.mexicodesconocido.com.mx/los-mejores-pozoles-verdes-estilo-guerrero-de-la-cdmx.html"
+   }
+  ]
+ },
+ {
+  "name": "La Perla Tapatía",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Birria and pozole jalisciense",
+  "description": "Family business founded in 1984 in Azcapotzalco serving Jalisco-style birria and white pork pozole with cabbage, onion and radish, red salsa from a secret recipe, cheese and cream shipped from Jalisco. About 190 pesos pp.",
+  "special_quality": "Jalisco birria and pozole with dairy imported from Jalisco, family-run since 1984.",
+  "price_range": "$$",
+  "address": "Avenida Azcapotzalco 706-B, Centro de Azcapotzalco",
+  "google_maps_query": "La Perla Tapatía, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango - ruta del pozole",
+    "url": "https://www.chilango.com/comida/ruta-del-pozole-en-la-cdmx-guia-de-lugares-para-saborear-este-platillo-tradicional/"
+   },
+   {
+    "title": "Excélsior - 5 lugares para comer birria",
+    "url": "https://www.excelsior.com.mx/expresiones/5-lugares-para-comer-birria-en-la-cdmx/1712683"
+   }
+  ]
+ },
+ {
+  "name": "Birrias Irma Aurora",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Steamed Jalisco birria",
+  "description": "Garibaldi-area birria described by Chilango as authentic Jalisco, with very tender meat steamed in maguey leaf. Limited hours, so verify before going.",
+  "special_quality": "Birria steamed in maguey leaf, Jalisco style, with short hours.",
+  "price_range": "$",
+  "address": "Garibaldi area (verify address)",
+  "google_maps_query": "Birrias Irma Aurora, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - dónde comer birria",
+    "url": "https://www.chilango.com/comida/donde-comer-birria-en-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Los Güeros de Juanacatlán",
+  "neighborhood": "other",
+  "category": "regional",
+  "subcategory": "Quesabirria",
+  "description": "Excélsior says it has more than 50 years of tradition near Chapultepec, specializing in quesabirria.",
+  "special_quality": "Half-century birriería that now leans on quesabirria.",
+  "price_range": "$$",
+  "address": "Juanacatlán area, Chapultepec (verify address)",
+  "google_maps_query": "Los Güeros de Juanacatlán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 4,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Excélsior - 5 lugares para comer birria",
+    "url": "https://www.excelsior.com.mx/expresiones/5-lugares-para-comer-birria-en-la-cdmx/1712683"
+   }
+  ]
+ },
+ {
+  "name": "Fonda Margarita",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Chilango - 5 fondas del barrio",
+    "url": "https://www.chilango.com/comida-y-tragos/5-fondas-del-barrio/"
+   }
+  ],
+  "scores": {
+   "iconic": 6,
+   "hype": 7,
+   "food": 7,
+   "weird": 5
+  }
+ },
+ {
+  "name": "Casa Merlos",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Chilango - 5 fondas del barrio",
+    "url": "https://www.chilango.com/comida-y-tragos/5-fondas-del-barrio/"
+   }
+  ],
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 8,
+   "weird": 5
+  }
+ },
+ {
+  "name": "El Pozole de Moctezuma",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Chilango - ruta del pozole",
+    "url": "https://www.chilango.com/comida/ruta-del-pozole-en-la-cdmx-guia-de-lugares-para-saborear-este-platillo-tradicional/"
+   },
+   {
+    "title": "México Desconocido - pozoles verdes",
+    "url": "https://www.mexicodesconocido.com.mx/los-mejores-pozoles-verdes-estilo-guerrero-de-la-cdmx.html"
+   }
+  ],
+  "scores": {
+   "iconic": 8,
+   "hype": 4,
+   "food": 8,
+   "weird": 7
+  }
+ },
+ {
+  "name": "Casa Licha Acoxpa",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "México Desconocido - pozoles verdes",
+    "url": "https://www.mexicodesconocido.com.mx/los-mejores-pozoles-verdes-estilo-guerrero-de-la-cdmx.html"
+   }
+  ],
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 8,
+   "weird": 6
+  }
+ },
+ {
+  "name": "El Hidalguense",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Chilango - lugares de barbacoa",
+    "url": "https://www.chilango.com/comida/mejor-barbacoa-cdmx/"
+   }
+  ],
+  "scores": {
+   "iconic": 7,
+   "hype": 6,
+   "food": 8,
+   "weird": 5
+  }
+ },
+ {
+  "name": "El Vilsito",
+  "existing": true,
+  "source_links": [
+   {
+    "title": "Food & Pleasure - taquerías (Dec 2025)",
+    "url": "https://foodandpleasure.com/taquerias-buenas-cdmx/"
+   }
+  ],
+  "scores": {
+   "iconic": 6,
+   "hype": 9,
+   "food": 8,
+   "weird": 6
+  }
+ }
+]

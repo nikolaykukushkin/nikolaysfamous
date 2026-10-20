@@ -1,0 +1,676 @@
+[
+ {
+  "name": "Café de Tacuba",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Historic café-restaurant (1912)",
+  "description": "Opened in 1912 (some sources say 1914) in a 17th-century house tied to the Santa Clara convent, reportedly after a stint as a dairy. Diego Rivera and Guadalupe Marín held their 1922 wedding banquet here. Talavera-tiled walls, enchiladas tacuba, mole poblano, tamales and pan dulce with hot chocolate; mariachi on some evenings.",
+  "special_quality": "The Centro's definitive 1912 café-restaurant, with walls and menu that barely changed in a century.",
+  "price_range": "$$",
+  "address": "Tacuba 28, Centro Histórico",
+  "google_maps_query": "Café de Tacuba, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 10,
+   "hype": 8,
+   "food": 6,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — restaurantes más antiguos",
+    "url": "https://foodandpleasure.com/restaurantes-mas-antiguos-en-la-cdmx/"
+   },
+   {
+    "title": "CDMX Secreta — restaurantes más antiguos (notes 1912 vs 1914)",
+    "url": "https://cdmxsecreta.com/restaurantes-mas-antiguos-cdmx/"
+   },
+   {
+    "title": "UnoTV — El Café de Tacuba",
+    "url": "https://www.unotv.com/turismo/el-cafe-de-tacuba-un-viaje-al-pasado-del-centro-historico-en-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Churrería El Moro",
+  "neighborhood": "Centro Histórico",
+  "category": "cafe",
+  "subcategory": "Churrería, 24 hours",
+  "description": "Francisco Iriarte of Elizondo (Baztán) started a churro cart in the Zócalo in 1933 (city government says 1935) and opened the first shop at San Juan de Letrán 42 (today Eje Central) in 1935. Churros with thick Spanish-style hot chocolate, run by the family since Iriarte died in 1940.",
+  "special_quality": "Open around the clock since 1935 for churros and chocolate on what was San Juan de Letrán.",
+  "price_range": "$",
+  "address": "Eje Central Lázaro Cárdenas 42, Centro Histórico",
+  "google_maps_query": "Churrería El Moro, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": "https://elmoro.mx/",
+  "scores": {
+   "iconic": 9,
+   "hype": 8,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "El Moro — Historia",
+    "url": "https://elmoro.mx/en/historia/"
+   },
+   {
+    "title": "Wikipedia — Churrería El Moro",
+    "url": "https://en.wikipedia.org/wiki/Churrer%C3%ADa_El_Moro"
+   },
+   {
+    "title": "Expansión (2026)",
+    "url": "https://expansion.mx/empresas/2026/08/10/churreria-el-moro-empezo-carrito-centro-cdmx-historia"
+   }
+  ]
+ },
+ {
+  "name": "El Cardenal",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Cocina mexicana tradicional",
+  "description": "Founded 1969 by Olivia Garizurieta and Jesús Briz on Moneda and Seminario; that site was lost to the Templo Mayor excavations and the restaurant moved to a French-style building on Palma in 1984. Known for house-made nata from its own dairy, escamoles, gorditas hidalguenses and breakfast. Post-1960, but a defining modern institution.",
+  "special_quality": "Hot-chocolate-and-nata breakfast institution, with cream from its own ranch.",
+  "price_range": "$$$",
+  "address": "Palma 23, Centro Histórico",
+  "google_maps_query": "El Cardenal, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": "https://www.restauranteelcardenal.com/",
+  "scores": {
+   "iconic": 8,
+   "hype": 7,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "El Cardenal — Historia",
+    "url": "https://restauranteelcardenal.com/history-el-cardenal.html"
+   },
+   {
+    "title": "Chilango — Una historia sabrosa: El Cardenal",
+    "url": "https://www.chilango.com/comida/historia-sabrosa-el-cardenal/"
+   },
+   {
+    "title": "El Financiero — historia de El Cardenal",
+    "url": "https://www.elfinanciero.com.mx/food-and-drink/2025/08/12/la-historia-de-medio-siglo-de-el-cardenal-restaurante-favorito-de-amlo/"
+   }
+  ]
+ },
+ {
+  "name": "Sanborns Casa de los Azulejos",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Historic dining room in 18th-century palace",
+  "description": "The Sanborn brothers rented the tile-fronted palace in 1919 (opened Oct 1919 per Mexico News Daily; Grupo Sanborns says 1920) and turned the courtyard into a dining room, with an Orozco mural on the stairs. Lore credits it with enchiladas suizas. Food is solid diner-grade; the room is the draw.",
+  "special_quality": "Eat enchiladas suizas in a covered Talavera-tiled colonial courtyard under an Orozco mural.",
+  "price_range": "$$",
+  "address": "Av. Francisco I. Madero 4, Centro Histórico",
+  "google_maps_query": "Sanborns Casa de los Azulejos, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 8,
+   "food": 5,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Mexico News Daily — Sanborns history",
+    "url": "https://mexiconewsdaily.com/culture/sanborns-mexico-iconic-department-store/"
+   },
+   {
+    "title": "Food & Pleasure — Casa de los Azulejos",
+    "url": "https://foodandpleasure.com/casa-de-los-azulejos/"
+   },
+   {
+    "title": "Wikipedia — Casa de los Azulejos",
+    "url": "https://en.wikipedia.org/wiki/Casa_de_los_Azulejos"
+   }
+  ]
+ },
+ {
+  "name": "Dulcería de Celaya",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Dulcería (1874)",
+  "description": "Founded 1874 by the Guízar family on Plateros (now Madero; one source says 5 de Mayo) and moved to 5 de Mayo 39 around 1900. Cocadas, cajeta, jamoncillos, merengues and candied fruit in a roughly 100-product range, still family-run. A city marker calls it the oldest storefront of its kind.",
+  "special_quality": "The city's oldest sweet shop, still making cocadas and dulces cubiertos at its 1900 address.",
+  "price_range": "$",
+  "address": "Av. 5 de Mayo 39, Centro Histórico",
+  "google_maps_query": "Dulcería de Celaya, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 6,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Excélsior — historia de Dulcería de Celaya",
+    "url": "https://www.excelsior.com.mx/recetas/dulceria-de-celaya-la-historia-de-la-dulceria-mas-antigua-de-la-cdmx/1753591"
+   },
+   {
+    "title": "Food & Pleasure — dulcería más antigua",
+    "url": "https://foodandpleasure.com/la-dulceria-mas-antigua-de-la-cdmx/"
+   },
+   {
+    "title": "Chilango — Dulcería Celaya",
+    "url": "https://www.chilango.com/ciudad/dulceria-celaya-el-imperio-de-los-sentidos/"
+   }
+  ]
+ },
+ {
+  "name": "Pastelería Ideal",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Panadería y pastelería (1927)",
+  "description": "Opened in 1927 as the small Ideal Bakery by Adolfo Fernández and now occupies the former San Francisco convent on 16 de Septiembre, with a cake museum and café upstairs. Famous for wedding and celebration cakes and TasteAtlas-listed among the world's legendary dessert places. Sources differ on the first location.",
+  "special_quality": "Three-floor 1927 bakery in a former convent that has supplied the city's wedding cakes for generations.",
+  "price_range": "$$",
+  "address": "16 de Septiembre 18, Centro Histórico",
+  "google_maps_query": "Pastelería Ideal, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 7,
+   "food": 6,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Pastelería Ideal, una historia sabrosa",
+    "url": "https://www.chilango.com/general/pasteleria-ideal-una-historia-sabrosa/"
+   },
+   {
+    "title": "Food & Pleasure — pastelerías históricas",
+    "url": "https://foodandpleasure.com/pastelerias-historicas-en-cdmx/"
+   },
+   {
+    "title": "México Desconocido — Pastelería La Ideal",
+    "url": "https://www.mexicodesconocido.com.mx/la-historia-de-pasteleria-la-ideal-el-pequeno-expendio-que-se-convirtio-en-un-icono-de-la-panaderia-en-mexico.html"
+   }
+  ]
+ },
+ {
+  "name": "Café La Blanca",
+  "neighborhood": "Centro Histórico",
+  "category": "cafe",
+  "subcategory": "Cafetería de leche y café con leche (1915)",
+  "description": "Began in 1915 as a dairy (La Blanca Asturiana) under Higinio Gutiérrez; Marciano Díez bought it in 1943 and expanded the menu. Known for café con leche served the old way, with pan dulce and Mexican breakfasts, in a building from 1870 that once housed Hotel Comonfort.",
+  "special_quality": "Old-school café con leche in a 1915 dairy-turned-cafeteria on 5 de Mayo.",
+  "price_range": "$",
+  "address": "Av. 5 de Mayo 40, Centro Histórico",
+  "google_maps_query": "Café La Blanca, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — cafetería histórica (1915)",
+    "url": "https://foodandpleasure.com/cafeteria-historica-cdmx/"
+   },
+   {
+    "title": "Chilango — Café La Blanca",
+    "url": "https://www.chilango.com/comida/cafe-la-blanca-cafeteria-antana-cdmx/"
+   },
+   {
+    "title": "CDMX Secreta — Café La Blanca",
+    "url": "https://cdmxsecreta.com/en/cafe-la-blanca-centro-historico-en/"
+   }
+  ]
+ },
+ {
+  "name": "Café El Popular",
+  "neighborhood": "Centro Histórico",
+  "category": "cafe",
+  "subcategory": "Cafetería 24 horas (1948)",
+  "description": "Founded 1948 by Luis Eng Fui as part of a group of Chinese-run restaurants on 5 de Mayo. Classic waiter service, traditional breakfasts and café con leche, famous with late-night crowds.",
+  "special_quality": "Near-round-the-clock 1948 Chinese-Mexican coffee house run like a mid-century diner.",
+  "price_range": "$",
+  "address": "Av. 5 de Mayo 50, Centro Histórico (Food & Pleasure lists 50 y 52)",
+  "google_maps_query": "Café El Popular, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 5,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — cafeterías históricas",
+    "url": "https://foodandpleasure.com/cafeterias-historicas-cdmx/"
+   },
+   {
+    "title": "Chilango — cafeterías con más historia",
+    "url": "https://www.chilango.com/agenda/otros/las-5-cafeterias-con-mas-historia-de-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Restaurante Danubio",
+  "neighborhood": "Centro Histórico",
+  "category": "mariscos",
+  "subcategory": "Basque-Spanish seafood (1936)",
+  "description": "Opened 1936 by Basque chefs José Aranguena and Víctor Amundarain in a former German beer hall of the same name; nephew José Mirena ran it for more than 50 years. Sopa verde de mariscos, almejas al vino blanco, langostinos al mojo de ajo. Octavio Paz began the tradition of signed napkins in 1983, now over 800 framed. Time Out marked its 90th anniversary.",
+  "special_quality": "Basque seafood room since 1936 whose walls are lined with framed napkins signed by writers and politicians.",
+  "price_range": "$$$",
+  "address": "República de Uruguay 3, Centro Histórico",
+  "google_maps_query": "Restaurante Danubio, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 6,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Time Out México — Danubio cumple 90 años",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/el-restaurante-danubio-cumple-90-anos"
+   },
+   {
+    "title": "Food & Pleasure — Danubio",
+    "url": "https://foodandpleasure.com/restaurante-danubio-centro-historico/"
+   },
+   {
+    "title": "El Financiero — Danubio (2025)",
+    "url": "https://www.elfinanciero.com.mx/food-and-drink/2025/10/07/cuanto-cuesta-comer-en-danubio-restaurante-que-visitado-por-carlos-slim-helu-y-los-presidentes/"
+   }
+  ]
+ },
+ {
+  "name": "Bellinghausen",
+  "neighborhood": "Juárez",
+  "category": "regional",
+  "subcategory": "Mexican-international old guard (Zona Rosa)",
+  "description": "Opened in the early 20th century (one listing says 1915) as La Culinaria and known as the house of Mr. Bellinghausen, said to be Porfirio Díaz's cook; the Álvarez family, linked to Prendes, now owns it. Known for filete chemita, chamorro served as make-your-own tacos, maguey worms and a courtyard with canaries.",
+  "special_quality": "A Zona Rosa courtyard restaurant with canaries, a century of filete chemita and chamorro tacos.",
+  "price_range": "$$$",
+  "address": "Londres 95, Juárez (Zona Rosa)",
+  "google_maps_query": "Bellinghausen, Juárez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 6,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Historia Sabrosa: Bellinghausen",
+    "url": "https://www.chilango.com/comida-y-tragos/historia-sabrosa-bellinghausen/"
+   },
+   {
+    "title": "Time Out México — Bellinghausen",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/bellinghausen"
+   },
+   {
+    "title": "Fodor's — Juárez restaurants",
+    "url": "https://cdn.fodors.com/world/mexico-and-central-america/mexico/mexico-city/neighborhoods/juarez-and-anzures-with-la-zona-rosa/restaurants"
+   }
+  ]
+ },
+ {
+  "name": "Prendes",
+  "neighborhood": "Polanco",
+  "category": "regional",
+  "subcategory": "Asturian-Mexican steakhouse classic (1892)",
+  "description": "Founded in 1892 by Asturian brothers Manuel and Rafael Prendes, first on the site where Bellas Artes now stands, later on 16 de Septiembre, and in Polanco since 2022 per Food & Pleasure. Chamorro Prendes, filete Chemita, breaded 'oreja de elefante'; claimed as the first restaurant to serve maguey worms. The original building and move dates need verification.",
+  "special_quality": "1892 Centro institution, now in Polanco, with a menu of chamorro and filete Chemita unchanged for generations.",
+  "price_range": "$$$",
+  "address": "Molière (Palacio de Hierro Polanco), Polanco II Sección — verify",
+  "google_maps_query": "Prendes, Polanco, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 6,
+   "food": 6,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — restaurantes más antiguos",
+    "url": "https://foodandpleasure.com/restaurantes-mas-antiguos-en-la-cdmx/"
+   },
+   {
+    "title": "Chilango — Bellinghausen history (Prendes family link)",
+    "url": "https://www.chilango.com/comida-y-tragos/historia-sabrosa-bellinghausen/"
+   }
+  ]
+ },
+ {
+  "name": "Casino Español de México (restaurant)",
+  "neighborhood": "Centro Histórico",
+  "category": "fine-dining",
+  "subcategory": "Spanish cuisine in members' club",
+  "description": "The Spanish community's club, founded 1863; current ornate building inaugurated about 1905 with a large dining hall added 1939-1951. Restaurant open to the public serves tortilla española, jamón Jabugo carved at the table and arroz negro. Public access terms and hours should be verified.",
+  "special_quality": "Dine in a 1905 Spanish social club with a ballroom floor and carved-at-table jamón.",
+  "price_range": "$$$",
+  "address": "Isabel la Católica 29, Centro Histórico",
+  "google_maps_query": "Casino Español de México (restaurant), Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 6,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — Casino Español",
+    "url": "https://foodandpleasure.com/casino-espanol-de-la-cdmx/"
+   },
+   {
+    "title": "The Infatuation — Casino Español",
+    "url": "https://www.theinfatuation.com/mexico-city/reviews/casino-espanol"
+   },
+   {
+    "title": "Mexico City tourism — Casino Español",
+    "url": "https://mexicocity.cdmx.gob.mx/venues/casino-espanol/"
+   }
+  ]
+ },
+ {
+  "name": "El Taquito Taurino",
+  "neighborhood": "San José Insurgentes",
+  "category": "tacos",
+  "subcategory": "Historic taquería-restaurant (1917)",
+  "description": "Founded in 1917 by Marcos Guillén and Concepción Rioja (another source says it began as a restaurant in 1923), long on Carmen in the Centro and moved to San José Insurgentes around late 2024. Bullfighting decor, photos of celebrities, tacos borrachos with pulque sauce, seasonal chiles en nogada.",
+  "special_quality": "Claimed oldest taquería in the city, moved from the Centro in 2024 and still bull-themed.",
+  "price_range": "$$",
+  "address": "Miguel Noreña 25, San José Insurgentes",
+  "google_maps_query": "El Taquito Taurino, San José Insurgentes, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 6,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — restaurantes más antiguos",
+    "url": "https://foodandpleasure.com/restaurantes-mas-antiguos-en-la-cdmx/"
+   },
+   {
+    "title": "Excélsior — El Taquito, taquería más antigua",
+    "url": "https://www.excelsior.com.mx/expresiones/el-taquito-la-historia-de-la-taqueria-mas-antigua-de-la-cdmx/1718852"
+   },
+   {
+    "title": "CDMX Secreta — restaurantes más antiguos",
+    "url": "https://cdmxsecreta.com/restaurantes-mas-antiguos-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tacos Beatriz (Beatricita)",
+  "neighborhood": "Roma Sur",
+  "category": "tacos",
+  "subcategory": "Historic taquería (1900s)",
+  "description": "Founded by Beatriz Muciño Reyes, who sold tacos and quesadillas from a stall in the early 1900s; sources disagree: 1907 vs 1910, and 1971 for the move to Zona Rosa. The original downtown sites are gone; the descendant shop now operates as Beatricita at Tuxpan 34. Verify the address and name before going.",
+  "special_quality": "Descendant of a taco stall that fed Porfirio Díaz, now in Roma Sur.",
+  "price_range": "$",
+  "address": "Tuxpan 34, Roma Sur — verify",
+  "google_maps_query": "Tacos Beatriz (Beatricita), Roma Sur, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 6,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Así es Beatricita",
+    "url": "https://www.chilango.com/comida-y-tragos/abeatricita-taqueria-mas-antigua-de-cdmx/"
+   },
+   {
+    "title": "El Financiero — Tacos Beatriz",
+    "url": "https://www.elfinanciero.com.mx/food-and-drink/2025/10/15/asi-es-tacos-beatriz-restaurante-que-monsivais-apodo-batricita-y-el-rincon-preferido-de-porfirio-diaz/"
+   },
+   {
+    "title": "Culinary Backstreets — Tacos Beatriz",
+    "url": "https://culinarybackstreets.com/?p=29436"
+   }
+  ]
+ },
+ {
+  "name": "Taquería El Torito",
+  "neighborhood": "Centro Histórico",
+  "category": "tacos",
+  "subcategory": "Suadero y tripa (1957)",
+  "description": "Opened in 1957 by Benigno, a migrant from Puebla, on Mesones, and still run by the family. A tiny counter known for suadero and tripa tacos.",
+  "special_quality": "A family counter on Mesones serving suadero since 1957.",
+  "price_range": "$",
+  "address": "Mesones 48, Centro Histórico",
+  "google_maps_query": "Taquería El Torito, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — El Torito",
+    "url": "https://foodandpleasure.com/taqueria-el-torito-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Restaurant Ehden",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Lebanese (1930)",
+  "description": "Founded 1930 by Lebanese migrants Fuad Frangie and Adela Douaihy; at its Venustiano Carranza house since 1989 and run by a great-grandson. Over 100 dishes: kepe, jocoque, shawarma, stuffed grape leaves. Called the oldest Lebanese restaurant in the Centro.",
+  "special_quality": "The Centro's oldest Lebanese kitchen, in the house where Mariano Matamoros was born.",
+  "price_range": "$$",
+  "address": "Venustiano Carranza 148, Centro Histórico",
+  "google_maps_query": "Restaurant Ehden, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 4,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Ehden, restaurante libanés más antiguo",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/ehden-restaurante-libanes-mas-antiguo-centro-cdmx/"
+   },
+   {
+    "title": "Food & Pleasure — restaurante Ehden",
+    "url": "https://foodandpleasure.com/restaurante-ehden/"
+   }
+  ]
+ },
+ {
+  "name": "Café Moka",
+  "neighborhood": "Santa María la Ribera",
+  "category": "cafe",
+  "subcategory": "Coffee roaster (1930)",
+  "description": "Started in 1930 by Avelino Ovidio Rodríguez Fonseca in a market stall and later moved into a Porfirian-era house with vintage machinery and signs. Sells Coatepec, Veracruz coffee by the bag or to drink in.",
+  "special_quality": "A 1930 roastery in a Porfirian house with the original machines still on view.",
+  "price_range": "$",
+  "address": "Santa María la Ribera 6, Santa María la Ribera",
+  "google_maps_query": "Café Moka, Santa María la Ribera, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 6,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — cafeterías históricas",
+    "url": "https://foodandpleasure.com/cafeterias-historicas-cdmx/"
+   },
+   {
+    "title": "Chilango — cafeterías con más historia",
+    "url": "https://www.chilango.com/agenda/otros/las-5-cafeterias-con-mas-historia-de-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Pastelería Madrid",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Pastelería (1939)",
+  "description": "Opened December 1939 by Spanish immigrants in a former record and phonograph shop; credited as the first in the city to introduce self-service. Restaurant added in the 1960s.",
+  "special_quality": "Spanish exile pastry shop that brought self-service to Mexico City bakeries.",
+  "price_range": "$",
+  "address": "5 de Febrero 25, Centro Histórico",
+  "google_maps_query": "Pastelería Madrid, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 4,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — pastelerías históricas",
+    "url": "https://foodandpleasure.com/pastelerias-historicas-en-cdmx/"
+   },
+   {
+    "title": "El Financiero — Madrid, pastelería histórica (2026)",
+    "url": "https://www.elfinanciero.com.mx/food-and-drink/2026/01/29/asi-es-madrid-pasteleria-historica-de-cdmx-fundada-por-espanoles/"
+   }
+  ]
+ },
+ {
+  "name": "Pastelería Suiza",
+  "neighborhood": "Condesa",
+  "category": "bakery",
+  "subcategory": "Pastelería (1942)",
+  "description": "Founded 2 Oct 1942 by Jaime Bassegoda, who fled the Spanish Civil War, across from Parque México. Three generations of family. Pastel de nata con frutos rojos and chocolate-Nutella mousse recommended.",
+  "special_quality": "A 1942 Spanish exile pastry shop still facing Parque México.",
+  "price_range": "$$",
+  "address": "Parque España 7, Condesa",
+  "google_maps_query": "Pastelería Suiza, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — pastelerías históricas",
+    "url": "https://foodandpleasure.com/pastelerias-historicas-en-cdmx/"
+   },
+   {
+    "title": "Grupo Animal — Pastelería Suiza",
+    "url": "https://grupoanimal.mx/gastronomia/recetas/pasteleria-suiza-una-leyenda-viva-de-la-ciudad-de-mexico"
+   }
+  ]
+ },
+ {
+  "name": "Panadería La Vasconia",
+  "neighborhood": "Centro Histórico",
+  "category": "bakery",
+  "subcategory": "Panadería (1870)",
+  "description": "Described as the oldest bakery in the capital, founded 1870 by Basque-born Marcelino Zugarramurdi and still operating. Street address not confirmed in sources seen.",
+  "special_quality": "Candidate for the oldest working bakery in Mexico City.",
+  "price_range": "$",
+  "address": "verify — Centro Histórico",
+  "google_maps_query": "Panadería La Vasconia, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 5,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure — panaderías antiguas del Centro",
+    "url": "https://foodandpleasure.com/panaderias-antiguas-del-centro-historico-de-cdmx/"
+   },
+   {
+    "title": "Chilango — panaderías más antiguas",
+    "url": "https://www.chilango.com/comida-y-tragos/panaderias-de-antano/"
+   }
+  ]
+ },
+ {
+  "name": "Nevería Roxy",
+  "neighborhood": "Condesa",
+  "category": "cafe",
+  "subcategory": "Nevería, nieves artesanales (1946)",
+  "description": "Opened its Condesa branch in 1946 as a soda fountain, from a Guadalajara cinema ice-cream stand founded by Carlos Gallardo. Retro look little changed; mamey, limón, mandarina and chicozapote nieves. TasteAtlas lists it among legendary ice-cream places; several branches now exist.",
+  "special_quality": "1946 Condesa soda fountain famous for mamey nieve.",
+  "price_range": "$",
+  "address": "Condesa — verify street address",
+  "google_maps_query": "Nevería Roxy, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 7,
+   "food": 6,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Milenio — Neverías Roxy",
+    "url": "https://amp.milenio.com/politica/comunidad/neverias-roxy-historia-tradicional-heladeria-cdmx"
+   },
+   {
+    "title": "UnoTV — TasteAtlas nevería",
+    "url": "https://www.unotv.com/estilo-de-vida/gastronomia/esta-neveria-mexicana-aparece-entre-las-20-mejores-del-mundo-segun-tasteatlas/"
+   }
+  ]
+ }
+]
