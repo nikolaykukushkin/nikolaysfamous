@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CDMX · Food Guide — Nikolay's Famous</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap">
+<style>
+:root {
+  --cream: #f5f0e8;
+  --parchment: #ede5d4;
+  --ink: #1a1209;
+  --muted: #6b5e4a;
+  --accent: #c14b1e;
+  --accent-light: #f7e8e1;
+  --green: #2a5c3f;
+  --gold: #b58b2f;
+  --border: #d4c9b5;
+  --card-bg: #fdfaf5;
+  --shadow: 0 1px 4px rgba(26,18,9,0.08);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 32px 24px 24px;
+  border-bottom: 3px solid var(--accent);
+}
+.header-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+.header-title { }
+.header-title h1 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--cream);
+}
+.header-title .tagline {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 4px;
+  font-weight: 500;
+}
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.map-link:hover { background: #a33e15; }
+.search-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#search {
+  width: 100%;
+  padding: 11px 16px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.07);
+  color: var(--cream);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+#search::placeholder { color: rgba(245,240,232,0.45); }
+#search:focus { border-color: var(--accent); }
+
+/* ── CONTROLS ── */
+.controls {
+  background: var(--parchment);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.controls-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cat-tabs {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+  -webkit-overflow-scrolling: touch;
+}
+.cat-tabs::-webkit-scrollbar { display: none; }
+.cat-tab {
+  padding: 12px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+.cat-tab:hover { color: var(--ink); }
+.cat-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.nh-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.nh-pill {
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--muted);
+  cursor: pointer;
+  background: var(--card-bg);
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+.nh-pill:hover { border-color: var(--accent); color: var(--accent); }
+.nh-pill.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.sort-controls label { font-size: 0.72rem; color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+#sort-select {
+  font-size: 0.78rem;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--card-bg);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+/* ── MAIN GRID ── */
+.count-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-entry-btn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.12s;
+  font-family: var(--font-sans);
+}
+.add-entry-btn:hover { border-color: var(--accent); color: var(--accent); }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+/* ── CARDS ── */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px 20px 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.15s;
+}
+.card:hover { box-shadow: 0 3px 12px rgba(26,18,9,0.12); }
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.card-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ink);
+  flex: 1;
+}
+.price-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gold);
+  padding: 2px 6px;
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cat-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.cat-badge.market { background: #e8f0eb; color: var(--green); }
+.cat-badge.cantina { background: #f0ede8; color: #7a5c2a; }
+.cat-badge.mezcaleria { background: #ede8f5; color: #5a3a8a; }
+.cat-badge.fine-dining { background: #1a1209; color: var(--cream); }
+.cat-badge.mariscos { background: #e8f0f7; color: #1a5c7a; }
+.cat-badge.coffee { background: #f5ede8; color: #7a4020; }
+.cat-badge.bakery { background: #f5ede8; color: #7a4020; }
+.cat-badge.specialty { background: #edf5e8; color: var(--green); }
+.cat-badge.international { background: #f0e8f5; color: #5a3a7a; }
+.cat-badge.antojitos { background: var(--accent-light); color: var(--accent); }
+.neighborhood-tag {
+  font-size: 0.72rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.neighborhood-tag::before { content: '◆'; font-size: 0.5rem; }
+.special-quality {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.4;
+  font-style: italic;
+}
+.description {
+  font-size: 0.83rem;
+  color: #3d3020;
+  line-height: 1.6;
+}
+.notes-text {
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: #f9f5ee;
+  border-left: 2px solid var(--accent);
+  padding: 6px 10px;
+  border-radius: 0 3px 3px 0;
+  line-height: 1.5;
+  display: none;
+}
+.notes-text.has-notes { display: block; }
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+  border-top: 1px solid #ede8dc;
+  margin-top: 4px;
+}
+.action-link {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: all 0.12s;
+  border: 1px solid transparent;
+}
+.action-link.maps { color: var(--green); border-color: #c5d9c9; background: #edf5ef; }
+.action-link.maps:hover { background: var(--green); color: #fff; }
+.action-link.reserve { color: #1a5c7a; border-color: #c5d9e4; background: #e8f0f7; }
+.action-link.reserve:hover { background: #1a5c7a; color: #fff; }
+.action-link.menu { color: var(--muted); border-color: var(--border); background: var(--card-bg); }
+.action-link.menu:hover { background: var(--muted); color: #fff; }
+.note-btn {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.12s;
+  margin-left: auto;
+  font-family: var(--font-sans);
+}
+.note-btn:hover { border-color: var(--accent); color: var(--accent); }
+.note-btn.has-note { color: var(--gold); border-color: var(--gold); }
+.source-line {
+  font-size: 0.66rem;
+  color: #a09580;
+  font-style: italic;
+}
+
+/* ── EMPTY STATE ── */
+.empty {
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+}
+.empty h3 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 8px; }
+.empty p { font-size: 0.85rem; }
+
+/* ── MODAL ── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(26,18,9,0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.overlay.open { display: flex; }
+.modal {
+  background: var(--card-bg);
+  border-radius: 6px;
+  padding: 28px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 40px rgba(26,18,9,0.25);
+}
+.modal h2 { font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 16px; }
+.modal label { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; margin-top: 14px; }
+.modal input, .modal textarea, .modal select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  background: #fff;
+  color: var(--ink);
+  outline: none;
+}
+.modal input:focus, .modal textarea:focus { border-color: var(--accent); }
+.modal textarea { resize: vertical; min-height: 80px; }
+.modal-actions { display: flex; gap: 8px; margin-top: 20px; justify-content: flex-end; }
+.btn-save {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+.btn-save:hover { background: #a33e15; }
+.btn-cancel {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 9px 16px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+.btn-cancel:hover { border-color: var(--muted); }
+.btn-delete { margin-right: auto; background: none; border: none; color: #c44; font-size: 0.78rem; cursor: pointer; font-family: var(--font-sans); }
+.btn-delete:hover { text-decoration: underline; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  background: var(--parchment);
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.nh-toggle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+.nh-toggle:hover, .nh-toggle.active { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
+.nh-pills-wrap { padding: 0 0 8px; display: none; }
+.nh-pills-wrap.open { display: block; }
+.score-strip {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5px 0 3px;
+  border-top: 1px dotted var(--border);
+  margin-top: 2px;
+}
+.score-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.62rem;
+  white-space: nowrap;
+}
+.score-label {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.58rem;
+}
+.score-val { font-size: 0.95rem; font-weight: 700; color: var(--accent); min-width: 1.1em; text-align: right; }
+.score-empty { color: var(--border); }
+
+@media (max-width: 600px) {
+  header { padding: 20px 16px 16px; }
+  .header-title h1 { font-size: 1.8rem; }
+  main { padding: 12px 12px 40px; grid-template-columns: 1fr; }
+  .controls { padding: 0 12px; }
+  .count-bar { padding: 10px 12px 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="header-title">
+      <h1>Ciudad de México<br>Food Guide</h1>
+      <p class="tagline">Nikolay's Famous · Curated from primary sources</p>
+    </div>
+    <a class="map-link" href="https://custom-maps-beta.vercel.app/map/LWEOzLljbawwT5IQAxLH6" target="_blank" rel="noopener">
+      ▸ Open Map
+    </a>
+  </div>
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Search by name, neighborhood, dish, ingredient…" autocomplete="off">
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="cat-tabs" id="cat-tabs"></div>
+    <div class="filter-row">
+      <button class="nh-toggle" id="nh-toggle" onclick="toggleNhPills()">Neighborhoods ▾</button>
+      <div class="sort-controls">
+        <label for="sort-select">Sort</label>
+        <select id="sort-select">
+          <option value="name">A–Z</option>
+          <option value="neighborhood">Neighborhood</option>
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="score-total">Score ↓</option>
+          <option value="score-food">Food quality</option>
+          <option value="score-iconic">Most iconic</option>
+        </select>
+      </div>
+    </div>
+    <div class="nh-pills-wrap" id="nh-pills-wrap">
+      <div class="nh-pills" id="nh-pills"></div>
+    </div>
+  </div>
+</div>
+
+<div class="count-bar">
+  <span id="count-text">Loading…</span>
+  <button class="add-entry-btn" onclick="openAddModal()">+ Add Entry</button>
+</div>
+
+<main id="grid"></main>
+
+<footer>
+  Researched from Eater CDMX, NYT, Bon Appétit, Chilango, Michelin Guide Mexico 2024, Nicholas Gilman's <em>Good Food in Mexico City</em>, and chef recommendations.
+  ·
+  <a href="https://custom-maps-beta.vercel.app/map/LWEOzLljbawwT5IQAxLH6" target="_blank">View on map</a>
+  ·
+  Personal notes stored locally in your browser.
+</footer>
+
+<!-- Notes modal -->
+<div class="overlay" id="note-overlay">
+  <div class="modal">
+    <h2 id="note-modal-title">Notes</h2>
+    <label>Your notes</label>
+    <textarea id="note-text" rows="5" placeholder="What did you think? What did you order? Who did you go with?"></textarea>
+    <div class="modal-actions">
+      <button class="btn-delete" id="note-delete" onclick="deleteNote()">Delete note</button>
+      <button class="btn-cancel" onclick="closeNoteModal()">Cancel</button>
+      <button class="btn-save" onclick="saveNote()">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add entry modal -->
+<div class="overlay" id="add-overlay">
+  <div class="modal">
+    <h2>Add Entry</h2>
+    <label>Name *</label>
+    <input id="add-name" type="text" placeholder="El Turix">
+    <label>Neighborhood</label>
+    <input id="add-nh" type="text" placeholder="Polanco">
+    <label>Category</label>
+    <select id="add-cat">
+      <option value="tacos">Tacos</option>
+      <option value="antojitos">Antojitos</option>
+      <option value="market">Market</option>
+      <option value="cantina">Cantina</option>
+      <option value="mezcaleria">Mezcalería</option>
+      <option value="fine-dining">Fine dining</option>
+      <option value="mariscos">Mariscos</option>
+      <option value="coffee">Coffee</option>
+      <option value="bakery">Bakery</option>
+      <option value="specialty">Specialty</option>
+      <option value="international">International</option>
+    </select>
+    <label>Price range</label>
+    <select id="add-price">
+      <option value="$">$ · Under 200 MXN</option>
+      <option value="$$">$$ · 200–600 MXN</option>
+      <option value="$$$">$$$ · 600+ MXN</option>
+    </select>
+    <label>What makes it special</label>
+    <textarea id="add-desc" rows="3" placeholder="Why is this place worth visiting?"></textarea>
+    <label>Google Maps URL or search query</label>
+    <input id="add-maps" type="text" placeholder="Place Name, Colonia, Ciudad de Mexico">
+    <label>Reservation / website</label>
+    <input id="add-res" type="url" placeholder="https://…">
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeAddModal()">Cancel</button>
+      <button class="btn-save" onclick="saveNewEntry()">Add Entry</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── DATA ──────────────────────────────────────────────────────────────────
+// Each entry: { id, name, neighborhood, category, subcategory, description,
+//   special_quality, price_range, address, google_maps_query, reservation_url,
+//   reservation_type, menu_url, sources, notes }
+const CURATED_PLACES = [
+  {
+    "name": "Taquería El Califa de León",
+    "neighborhood": "San Rafael",
+    "category": "tacos",
+    "subcategory": "Tacos de bistec",
+    "description": "The world's first Michelin-starred taco stand — four proteins, handmade tortillas, a squeeze of lime. Zero frills: order at the window, pay cash, eat on the sidewalk. It earned the star not as a novelty but as a genuine example of the form done perfectly.",
+    "special_quality": "First and only taco stand with a Michelin star (2024); the bistec is sliced thin and seared on a searingly hot comal",
+    "price_range": "$",
+    "address": "Av. Ribera de San Cosme 56, San Rafael",
+    "google_maps_query": "Taquería El Califa de León, San Rafael, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "The Infatuation",
+      "Tasting Table"
+    ],
+    "id": "taqueria-el-califa-de-leon",
+    "lat": 19.441045799999998,
+    "lng": -99.1592311
+  },
+  {
+    "name": "Taquería Los Cocuyos",
+    "neighborhood": "Centro Histórico",
+    "category": "tacos",
+    "subcategory": "Tacos de suadero",
+    "description": "A single lit window in the Centro at night, with a vat of simmering suadero, longaniza, tripe, and tender beef cuts that have been going since the 1970s. The suadero — Mexico City's signature braised brisket cut — is the reason to come. Order the surtido (mixed) to taste the spectrum.",
+    "special_quality": "Arguably the canonical Mexico City suadero; the vat never stops simmering, building fat, gelatin, and depth over decades",
+    "price_range": "$",
+    "address": "Mesones near Pino Suárez metro, Centro",
+    "google_maps_query": "Taquería Los Cocuyos, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Eater CDMX",
+      "Mexico City Food Guide"
+    ],
+    "id": "taqueria-los-cocuyos",
+    "lat": 19.4302794,
+    "lng": -99.1387977
+  },
+  {
+    "name": "El Huequito",
+    "neighborhood": "Centro Histórico",
+    "category": "tacos",
+    "subcategory": "Tacos al pastor",
+    "description": "Open since 1959, El Huequito claims to be the birthplace of the taco al pastor in Mexico City — the shawarma-derived Lebanese-immigrant rotation of pork marinated in dried chiles and pineapple. The tiny hole-in-the-wall has barely changed. The vertical spit is the centerpiece; the tortillas are made with care.",
+    "special_quality": "Claims origin of the taco al pastor in CDMX; continuous operation since 1959 makes this the living institution of the form",
+    "price_range": "$",
+    "address": "Ayuntamiento 21, Centro",
+    "google_maps_query": "El Huequito tacos, Centro, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Bon Appétit",
+      "Chilango"
+    ],
+    "id": "el-huequito",
+    "lat": 19.4306195,
+    "lng": -99.14297669999999
+  },
+  {
+    "name": "El Vilsito",
+    "neighborhood": "Narvarte",
+    "category": "tacos",
+    "subcategory": "Tacos al pastor",
+    "description": "By day it's a functioning auto-repair garage. After 9pm the mechanics wheel out and the taqueros take over, with one of the city's most celebrated al pastor spits and a queue that snakes around the block on weekends. Anthony Bourdain came; it made television. The fact that the space smells faintly of oil and ambition only adds to it.",
+    "special_quality": "CDMX's most famous dual-identity spot: legitimate mechanic by day, legendary taco stand by night — the al pastor is the real draw",
+    "price_range": "$",
+    "address": "Nueva York 26, Narvarte",
+    "google_maps_query": "El Vilsito taqueria, Narvarte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Anthony Bourdain: Parts Unknown",
+      "Chilango"
+    ],
+    "id": "el-vilsito",
+    "lat": 19.3893341,
+    "lng": -99.15279360000001
+  },
+  {
+    "name": "Taquería El Turix",
+    "neighborhood": "Polanco",
+    "category": "tacos",
+    "subcategory": "Cochinita pibil",
+    "description": "Standing room only, tiny, one thing on the menu: cochinita pibil — Yucatecan slow-roasted citrus-achiote pork — in tacos or tortas. The pork is braised until it melts, then comes piled high with pickled red onions and habanero. It's a Yucatecan institution in the middle of Polanco.",
+    "special_quality": "The definitive single-dish specialist: cochinita pibil from the Yucatán tradition, uncompromised in the middle of wealthy Polanco",
+    "price_range": "$",
+    "address": "Emilio Castelar 212, Polanco",
+    "google_maps_query": "Taquería El Turix, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Bon Appétit",
+      "The Infatuation"
+    ],
+    "id": "taqueria-el-turix",
+    "lat": 19.431227,
+    "lng": -99.2011982
+  },
+  {
+    "name": "Taquería El Greco",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Taco árabe",
+    "description": "A Condesa institution that documents one of Mexico's most interesting food stories: the Lebanese immigrants who arrived in Puebla in the early 20th century brought shawarma, which became the taco árabe (lamb or pork on a vertical spit, in flour tortilla, with chipotle). El Greco's version is the Mexico City reference point.",
+    "special_quality": "The taco árabe — spit-roasted meat in flour tortilla — is the direct ancestor of the taco al pastor, and El Greco makes the clearest connection to that Lebanese-Mexican lineage",
+    "price_range": "$",
+    "address": "Tamaulipas 94, Condesa",
+    "google_maps_query": "Taquería El Greco, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Chilango",
+      "Eater CDMX"
+    ],
+    "id": "taqueria-el-greco",
+    "lat": 19.4110417,
+    "lng": -99.1774665
+  },
+  {
+    "name": "El Borrego Viudo",
+    "neighborhood": "Roma Norte",
+    "category": "tacos",
+    "subcategory": "Late-night tacos",
+    "description": "A reliable 24-hour (or close to it) institution that has fed generations of Roma Norte night owls, bar-goers, and early-morning market workers. Carnitas, suadero, and pastor alongside simple quesadillas. The atmosphere is fluorescent-lit, practical, and irreplaceable. Do not visit for the décor.",
+    "special_quality": "One of the few genuinely late-night taquería institutions in the city; open when nothing else is, reliably great on the suadero",
+    "price_range": "$",
+    "address": "Sonora 11, Roma Norte",
+    "google_maps_query": "El Borrego Viudo, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Mexico City Food Guide",
+      "Time Out Mexico"
+    ],
+    "id": "el-borrego-viudo",
+    "lat": 19.399413499999998,
+    "lng": -99.1852371
+  },
+  {
+    "name": "Tacos Los Parados",
+    "neighborhood": "Roma Sur",
+    "category": "tacos",
+    "subcategory": "Tacos de asada",
+    "description": "A Michelin Bib Gourmand since 2024, serving grilled meats — campechano, costilla, and arrachera — in a no-frills standing format since 1965. The longevity is the proof: six decades of consistent charcoal-grilled beef in a neighborhood that has changed completely around it.",
+    "special_quality": "Michelin Bib Gourmand; grilling tacos on the same corner since 1965 — the campechano (mixed sausage and beef) is the order",
+    "price_range": "$",
+    "address": "Álvaro Obregón 136, Roma Sur",
+    "google_maps_query": "Tacos Los Parados, Roma Sur, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "Chilango"
+    ],
+    "id": "tacos-los-parados",
+    "lat": 19.4060716,
+    "lng": -99.161278
+  },
+  {
+    "name": "Taquería Orinoco",
+    "neighborhood": "Condesa",
+    "category": "tacos",
+    "subcategory": "Tacos al pastor",
+    "description": "Open until 3:30am on weekdays, Orinoco is the Infatuation's pick for best al pastor in Mexico City — soft-inside, seared-outside chicharrón tacos alongside the pastor. The thin-sliced pork comes off the trompo with theatrical flair. The space is open, bright, and designed for large groups.",
+    "special_quality": "The Infatuation's call for best al pastor in CDMX; open extremely late for a city where serious taquerías close early",
+    "price_range": "$",
+    "address": "Insurgentes Sur 253, Condesa",
+    "google_maps_query": "Taquería Orinoco, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Eater CDMX"
+    ],
+    "id": "taqueria-orinoco",
+    "lat": 19.416401999999998,
+    "lng": -99.1672778
+  },
+  {
+    "name": "Siembra Tortillería",
+    "neighborhood": "Roma Norte",
+    "category": "antojitos",
+    "subcategory": "Nixtamal tortillería",
+    "description": "A Michelin Bib Gourmand restaurant organized around the art of the tortilla — made fresh from masa nixtamalizada (corn soaked in lime-water, stone-ground in house). Watch the process through the open kitchen. The quesadillas, enfrijoladas, and simple preparations exist to showcase what a properly made tortilla tastes like.",
+    "special_quality": "Michelin Bib Gourmand; probably the city's most serious nixtamal operation — the tortilla itself is the subject, not the topping",
+    "price_range": "$$",
+    "address": "Colima 124, Roma Norte",
+    "google_maps_query": "Siembra Tortillería, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "Bon Appétit"
+    ],
+    "id": "siembra-tortilleria",
+    "lat": 19.4374051,
+    "lng": -99.18416400000001
+  },
+  {
+    "name": "Voraz",
+    "neighborhood": "Roma Norte",
+    "category": "antojitos",
+    "subcategory": "Gastro-cantina",
+    "description": "Eight tables, a standing bar, and a short chalkboard menu built around masa with technique. The fried oyster flour gordita with celery salad and cilantro mayo became a signature; the kitchen treats antojitos as a canvas for serious culinary thinking. Thursday to Sunday only — it sells out.",
+    "special_quality": "One of the finest examples of antojitos elevated without being precious: a fried oyster gordita that redefines the form",
+    "price_range": "$$",
+    "address": "Tonalá 18, Roma Norte",
+    "google_maps_query": "Voraz restaurante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "voraz",
+    "lat": 19.4087489,
+    "lng": -99.1654124
+  },
+  {
+    "name": "Gorditas Peña Miramón",
+    "neighborhood": "Roma Sur",
+    "category": "antojitos",
+    "subcategory": "Gorditas de maíz azul",
+    "description": "A family stand just outside Mercado Medellín making blue-corn gorditas stuffed with chicharrón prensado and filled to order. This is the gordita in its classic form — the maíz azul gives it a purple-grey hue and a nutty, earthy flavor that white corn doesn't have. Come before noon on weekends.",
+    "special_quality": "Blue corn masa mixed with pork crackling, made by the same family, outside the same market for decades — the heirloom corn matters here",
+    "price_range": "$",
+    "address": "Exterior Mercado Medellín, Roma Sur",
+    "google_maps_query": "Gorditas Peña Miramón, Mercado Medellín, Roma Sur, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Culinary Backstreets"
+    ],
+    "id": "gorditas-pena-miramon",
+    "lat": 19.4104231,
+    "lng": -99.1633804
+  },
+  {
+    "name": "Xaachila",
+    "neighborhood": "Roma Norte",
+    "category": "antojitos",
+    "subcategory": "Cocina oaxaqueña",
+    "description": "Authentic Oaxacan food in the Roma — tlayudas (large crisp tortillas) loaded with quesillo, black beans, and choice of protein, served with chapulines (fried grasshoppers) on the side. The kitchen understands the seven moles, and this is one of the few places in CDMX where the Oaxacan tradition is executed by people who grew up with it.",
+    "special_quality": "Genuine Oaxacan tlayudas in the city, with chapulines, quesillo, and all seven mole sauces represented in the menu",
+    "price_range": "$$",
+    "address": "Tonalá 83, Roma Norte",
+    "google_maps_query": "Xaachila restaurante oaxaqueño, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Chilango"
+    ],
+    "id": "xaachila",
+    "lat": 19.4326075,
+    "lng": -99.1271397
+  },
+  {
+    "name": "Fugaz",
+    "neighborhood": "Roma Norte",
+    "category": "antojitos",
+    "subcategory": "Mexican small plates",
+    "description": "Thursday to Sunday only, with Instagram-only reservations and a weekly-changing menu of Mexican-Mediterranean small plates. The avocado tostadas with furikake and house salsa macha have become the calling card. Small, precise, and designed around ingredients at their peak.",
+    "special_quality": "Chef-driven Mexican-Med small plates; Thu–Sun only; reservations via Instagram DM only — the weekly menu surprises are the whole point",
+    "price_range": "$$",
+    "address": "Sonora 151, Roma Norte",
+    "google_maps_query": "Fugaz restaurante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": "https://www.instagram.com/fugaz.cdmx",
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "fugaz",
+    "lat": 19.4238167,
+    "lng": -99.1613177
+  },
+  {
+    "name": "Mercado de San Juan",
+    "neighborhood": "Centro",
+    "category": "market",
+    "subcategory": "Specialty ingredients market",
+    "description": "The market where top restaurant chefs shop for things they can't find anywhere else: imported cheeses, rare chiles, fresh truffles, live shellfish, exotic meats (including rattlesnake, crocodile, lion), and heirloom produce. Several vendor stations double as eating spots — the tuna tostadas and raw oysters at market counters are exceptional.",
+    "special_quality": "The chef's market for the exotic and rare — the only place in CDMX to find fresh black truffle, Iberian jamón, and blue corn varieties side by side",
+    "price_range": "$",
+    "address": "Ernesto Pugibet 21, Centro",
+    "google_maps_query": "Mercado de San Juan, Centro, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Nicholas Gilman",
+      "Bon Appétit"
+    ],
+    "id": "mercado-de-san-juan",
+    "lat": 19.4299708,
+    "lng": -99.1446309
+  },
+  {
+    "name": "Mercado Jamaica",
+    "neighborhood": "Centro Sur",
+    "category": "market",
+    "subcategory": "Mercado de flores y comida",
+    "description": "The capital's cathedral of flowers — the flower market operates 24 hours and supplies every quinceañera, funeral, and Day of the Dead altar in the city. The sheer scale and color is a spectacle. But the food section has its own claim: slow-cooked barbacoa tacos Saturday and Sunday mornings, huaraches, and market fondas.",
+    "special_quality": "Operating 24 hours, it's Mexico City's primary wholesale flower market — the floral cathedral — and the Saturday barbacoa de hoyo is some of the best in the city",
+    "price_range": "$",
+    "address": "Guillermo Prieto 45, Jamaica",
+    "google_maps_query": "Mercado Jamaica, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Mexico City Markets Guide"
+    ],
+    "id": "mercado-jamaica",
+    "lat": 19.4070574,
+    "lng": -99.1228116
+  },
+  {
+    "name": "Mercado Medellín",
+    "neighborhood": "Roma Sur",
+    "category": "market",
+    "subcategory": "Mercado de barrio",
+    "description": "A small, approachable neighborhood market in Roma Sur — the most visitor-friendly of the city's traditional markets. The produce is excellent, the fondas (market restaurants) serve working-class lunch at 60 pesos, and Colombian vendors make it a multicultural hub. A good first market for anyone new to Mexico City markets.",
+    "special_quality": "The only CDMX market with a significant Colombian food section alongside traditional Mexican — the result of a large Colombian diaspora in Roma Sur",
+    "price_range": "$",
+    "address": "Campeche 101, Roma Sur",
+    "google_maps_query": "Mercado Medellín, Roma Sur, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Mexico City Food Guide",
+      "Nicholas Gilman"
+    ],
+    "id": "mercado-medellin",
+    "lat": 19.4104231,
+    "lng": -99.1633804
+  },
+  {
+    "name": "Mercado de la Merced",
+    "neighborhood": "Centro",
+    "category": "market",
+    "subcategory": "Mercado tradicional",
+    "description": "The largest traditional market in the city and one of the oldest, operating in various forms since the 18th century. Overwhelming in scale — hundreds of stalls selling everything from herbs to huaraches to live chickens. The food section is deep and local; the tlayudas, tamales, and spice vendors alone justify the visit. Take only cash; keep your bag in front.",
+    "special_quality": "The city's original market — 18th-century roots, vast enough that professionals need maps, and still the primary spice and chile sourcing point for the entire metropolitan area",
+    "price_range": "$",
+    "address": "Circunvalación 30, Centro",
+    "google_maps_query": "Mercado de la Merced, Centro, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Eater CDMX",
+      "Mexico City Food Guide"
+    ],
+    "id": "mercado-de-la-merced",
+    "lat": 19.426112399999997,
+    "lng": -99.1251527
+  },
+  {
+    "name": "Mercado de Coyoacán",
+    "neighborhood": "Coyoacán",
+    "category": "market",
+    "subcategory": "Mercado con fondas",
+    "description": "The market of the neighborhood where Frida Kahlo and Diego Rivera lived — anchored by excellent fondas (market canteens) serving comida corrida and the weekend draw of carnitas stalls. Come Saturday morning for Carnitas El Charro, a local institution that runs out by noon. The tostadas de tinga and enchiladas from the fonda row are a benchmark.",
+    "special_quality": "Carnitas El Charro inside the market on weekends — cited as the best carnitas in Mexico City — runs out by noon; come early",
+    "price_range": "$",
+    "address": "Ignacio Allende 6, Coyoacán",
+    "google_maps_query": "Mercado de Coyoacán, Coyoacán, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Eater CDMX",
+      "Mexico City Food Guide"
+    ],
+    "id": "mercado-de-coyoacan",
+    "lat": 19.3526533,
+    "lng": -99.1613632
+  },
+  {
+    "name": "Pujol",
+    "neighborhood": "Polanco",
+    "category": "fine-dining",
+    "subcategory": "Alta cocina mexicana",
+    "description": "Enrique Olvera's flagship and the restaurant that put Mexico City on the world's fine-dining map. Two Michelin stars, perennial on the World's 50 Best. The mole madre — a mole continuously cooked and added to since 2013, the oldest layer now thousands of days deep — is served as a single plate at the taco omakase bar. The ten-seat bar format builds tacos like courses.",
+    "special_quality": "The mole madre: a single sauce that has been slowly evolving since 2013, the oldest layer more than 4,000 days old — served as a table at the taco omakase counter",
+    "price_range": "$$$",
+    "address": "Tennyson 133, Polanco",
+    "google_maps_query": "Pujol restaurant, Polanco, Ciudad de Mexico",
+    "reservation_url": "https://www.exploretock.com/pujol",
+    "reservation_type": "tock",
+    "menu_url": "https://pujol.com.mx",
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "World's 50 Best",
+      "Bon Appétit",
+      "Eater CDMX"
+    ],
+    "id": "pujol",
+    "lat": 19.432376299999998,
+    "lng": -99.1948132
+  },
+  {
+    "name": "Quintonil",
+    "neighborhood": "Polanco",
+    "category": "fine-dining",
+    "subcategory": "Alta cocina mexicana",
+    "description": "Chef Jorge Vallejo and his wife Alejandra Flores opened Quintonil in 2012 on the premise that Mexican fine dining should celebrate indigenous vegetables, herbs, and heirloom produce — not just protein. In 2025 it reached #3 in the World's 50 Best, ahead of Pujol, making it the top-ranked restaurant in Mexico. The tasting menu changes seasonally with market-found ingredients.",
+    "special_quality": "Currently #3 in the World's 50 Best Restaurants (2025), with a rotating menu that tracks Mexico's biodiversity — the kitchen works with hundreds of indigenous plant varieties",
+    "price_range": "$$$",
+    "address": "Newton 55, Polanco",
+    "google_maps_query": "Quintonil restaurant, Polanco, Ciudad de Mexico",
+    "reservation_url": "https://resy.com/cities/mex/quintonil",
+    "reservation_type": "resy",
+    "menu_url": "https://quintonil.com",
+    "sources": [
+      "World's 50 Best 2025",
+      "Michelin Guide Mexico 2024",
+      "Bon Appétit"
+    ],
+    "id": "quintonil",
+    "lat": 19.4308408,
+    "lng": -99.1917115
+  },
+  {
+    "name": "Rosetta",
+    "neighborhood": "Roma",
+    "category": "fine-dining",
+    "subcategory": "Mexicana con influencia italiana",
+    "description": "Elena Reygadas (World's Best Female Chef 2023, Michelin star 2024) serves a seasonal Italian-Mexican menu in a beautifully restored Porfirian mansion on Colima. The handmade pastas, distinctive sourdough breads, and careful treatment of local herbs and vegetables define the style. The lunch is the benchmark — the ricotta ravioli with lemon sauce is a touchstone dish.",
+    "special_quality": "Elena Reygadas is the World's Best Female Chef 2023; the ricotta ravioli and the house-baked bread in a Porfirian mansion on Colima are what fine dining in Roma should feel like",
+    "price_range": "$$$",
+    "address": "Colima 166, Roma",
+    "google_maps_query": "Restaurante Rosetta, Roma, Ciudad de Mexico",
+    "reservation_url": "https://resy.com/cities/mex/rosetta",
+    "reservation_type": "resy",
+    "menu_url": "https://rosetta.com.mx",
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "World's 50 Best",
+      "Bon Appétit",
+      "Cultured Magazine"
+    ],
+    "id": "rosetta",
+    "lat": 19.4197758,
+    "lng": -99.1598009
+  },
+  {
+    "name": "Máximo Bistrot",
+    "neighborhood": "Roma",
+    "category": "fine-dining",
+    "subcategory": "Bistrot francés-mexicano",
+    "description": "Eduardo García's flagship earned a Michelin star in 2025 for French-Mexican cooking that doesn't take itself too seriously — headcheese in the Caesar salad, excellent cocktails, a nine-course tasting menu available alongside the à la carte. The wine list is serious. The atrium-like space works for both a first date and a big group lunch.",
+    "special_quality": "The headcheese caesar salad sounds wrong and is completely right — Michelin star 2025; the tasting menu + wine pairing is one of the great value propositions in upscale CDMX dining",
+    "price_range": "$$$",
+    "address": "Tonalá 133, Roma",
+    "google_maps_query": "Máximo Bistrot, Roma, Ciudad de Mexico",
+    "reservation_url": "https://www.exploretock.com/maximobistrotlocal",
+    "reservation_type": "tock",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2025",
+      "The Infatuation",
+      "Bon Appétit"
+    ],
+    "id": "maximo-bistrot",
+    "lat": 19.4189482,
+    "lng": -99.1580841
+  },
+  {
+    "name": "Sud 777",
+    "neighborhood": "El Pedregal",
+    "category": "fine-dining",
+    "subcategory": "Cocina contemporánea",
+    "description": "Edgar Núñez's one-Michelin-star restaurant sits in a dramatic garden-like space in the southern suburb of El Pedregal de San Ángel. The menu draws from indigenous Mexican ingredients — wild mushrooms, edible insects, endemic chiles — in highly technical preparations. The smoked chocolate cake is a signature dessert.",
+    "special_quality": "The most striking space among CDMX fine dining: a garden setting with volcanic rock walls; the indigenous ingredient focus predates the trend by a decade",
+    "price_range": "$$$",
+    "address": "Blvd. de la Luz 777, El Pedregal de San Ángel",
+    "google_maps_query": "Sud 777 restaurante, El Pedregal, Ciudad de Mexico",
+    "reservation_url": "https://www.exploretock.com/sud777",
+    "reservation_type": "tock",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "The Infatuation",
+      "World's 50 Best"
+    ],
+    "id": "sud-777",
+    "lat": 19.3090281,
+    "lng": -99.2093428
+  },
+  {
+    "name": "Esquina Común",
+    "neighborhood": "Condesa",
+    "category": "fine-dining",
+    "subcategory": "Fine dining de barrio",
+    "description": "A Michelin-starred restaurant in a rooftop setting in Condesa, open Thursday to Sunday. Serves a refined seasonal menu with dishes like stracciatella di bufala with potato-purée-filled zucchini blossoms. The QR-code menu changes weekly. It has the feel of a neighborhood gem that happens to be executing at a very high level.",
+    "special_quality": "Michelin star in a rooftop Condesa setting — feels like a chef's dinner party; the zucchini blossom stuffed with potato purée and stracciatella is a signature",
+    "price_range": "$$$",
+    "address": "Ámsterdam 83, Condesa",
+    "google_maps_query": "Esquina Común restaurante, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "The Infatuation"
+    ],
+    "id": "esquina-comun",
+    "lat": 19.4138864,
+    "lng": -99.1767757
+  },
+  {
+    "name": "Nicos",
+    "neighborhood": "Azcapotzalco",
+    "category": "fine-dining",
+    "subcategory": "Cocina mexicana clásica",
+    "description": "Operating since 1957, Nicos is the keeper of Mexico City's classic restaurant tradition — chiles en nogada in season, a tableside Caesar salad, bone-marrow sope with perfect green salsa, and a dining room that hasn't changed since before most guests were born. Chef Gerardo Vázquez Lugo is the standard-bearer for traditional Mexican fine dining without innovation for its own sake.",
+    "special_quality": "Since 1957 — the city's reference point for Mexican classic cooking done with absolute seriousness; the tableside Caesar and the seasonal chiles en nogada are the orders",
+    "price_range": "$$$",
+    "address": "Cuitláhuac 3102, Azcapotzalco",
+    "google_maps_query": "Restaurante Nicos, Azcapotzalco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Eater CDMX",
+      "Bon Appétit"
+    ],
+    "id": "nicos",
+    "lat": 19.4650242,
+    "lng": -99.1777489
+  },
+  {
+    "name": "Tetetlán",
+    "neighborhood": "San Ángel",
+    "category": "fine-dining",
+    "subcategory": "Cocina en arquitectura",
+    "description": "Converted from a horse stable by Luis Barragán, Tetetlán is as much an architecture visit as a restaurant. Glass floors reveal the original volcanic stone below; the library of rare books is open to guests. The food is serious regional Mexican — mole negro, huitlacoche quesadillas, pulque-braised short rib. Combines two reasons to go to San Ángel.",
+    "special_quality": "The space is a Luis Barragán conversion from horse stables — a transparent floor reveals volcanic rock beneath; the food is good enough that the architecture isn't the only reason to come",
+    "price_range": "$$$",
+    "address": "Pedregal 23, San Ángel",
+    "google_maps_query": "Tetetlán restaurante, San Ángel, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "tetetlan",
+    "lat": 19.3286011,
+    "lng": -99.20479639999999
+  },
+  {
+    "name": "Ticuchi",
+    "neighborhood": "Polanco",
+    "category": "fine-dining",
+    "subcategory": "Cocina vegetariana con maíz",
+    "description": "A very dark, corn-obsessed restaurant in Polanco with a strong vegetarian identity and one of the city's most serious mezcal selections. The tamal de esquite (corn fungus steamed masa) is outstanding. The kitchen draws from endemic corn varieties to build preparations that treat maíz the way a wine-focused restaurant treats single-estate grapes.",
+    "special_quality": "The most serious corn-forward restaurant in the city — built around endemic maize varieties and huitlacoche, with a mezcal list that rivals dedicated mezcalerías",
+    "price_range": "$$$",
+    "address": "Molière 50, Polanco",
+    "google_maps_query": "Ticuchi restaurante, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "ticuchi",
+    "lat": 19.4335785,
+    "lng": -99.18546769999999
+  },
+  {
+    "name": "Contramar",
+    "neighborhood": "Roma Norte",
+    "category": "mariscos",
+    "subcategory": "Marisquería clásica",
+    "description": "Open since 1998, Contramar invented the tuna tostada format that has since migrated across the city. The white-tiled room is chaotic and joyous at lunch; the red-and-green-sauced whole fish (called the pescado a la talla) is the signature order alongside the tuna tostada with chipotle mayo, avocado, and crispy leeks. Lunch only — and some of Mexico City's best.",
+    "special_quality": "The canonical Mexico City lunch — the tuna tostada format was born here; open only midday and still the hardest lunch table in the city",
+    "price_range": "$$",
+    "address": "Durango 200, Roma Norte",
+    "google_maps_query": "Contramar restaurante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": "https://www.exploretock.com/contramar",
+    "reservation_type": "tock",
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Bon Appétit",
+      "Eater CDMX",
+      "Nicholas Gilman"
+    ],
+    "id": "contramar",
+    "lat": 19.4195793,
+    "lng": -99.1671526
+  },
+  {
+    "name": "La Docena",
+    "neighborhood": "Roma Norte",
+    "category": "mariscos",
+    "subcategory": "Ostionería y marisquería",
+    "description": "The city's most serious raw bar — oysters from Baja California, Veracruz, and Oaxacan coasts, served alongside creative tostadas loaded with fresh seafood in multiple preparations: classic ceviche, aguachile negro, butter-poached. The space is convivial and loud; the seafood quality is consistently excellent.",
+    "special_quality": "The most serious oyster program in the city — sourcing from multiple Mexican coasts simultaneously, with a raw bar that treats Mexican bivalves with the same care as the Pacific Northwest",
+    "price_range": "$$",
+    "address": "Ámsterdam 169, Roma Norte",
+    "google_maps_query": "La Docena mariscos, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Eater CDMX",
+      "Bon Appétit"
+    ],
+    "id": "la-docena",
+    "lat": 19.4192386,
+    "lng": -99.1560365
+  },
+  {
+    "name": "Mi Compa Chava",
+    "neighborhood": "Roma Norte",
+    "category": "mariscos",
+    "subcategory": "Mariscos sinaloenses",
+    "description": "Sinaloa-style mariscos — the Pacific coast tradition of seafood towers stacked with octopus, shrimp, scallops, cucumber, and citrus in formats called vuelve a la vida or campechana. The portions are enormous, the style is unashamed, and the combination of Mexican beer and briny seafood is the point.",
+    "special_quality": "Brings the Sinaloa mariscos tradition to Roma — the northwestern Mexican style of extravagant seafood towers is distinct from the Veracruz style and this is its CDMX home",
+    "price_range": "$$",
+    "address": "Sonora 51, Roma Norte",
+    "google_maps_query": "Mi Compa Chava marisquería, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Chilango"
+    ],
+    "id": "mi-compa-chava",
+    "lat": 19.41521,
+    "lng": -99.1621346
+  },
+  {
+    "name": "Bellopuerto",
+    "neighborhood": "Polanco",
+    "category": "mariscos",
+    "subcategory": "Mariscos de autor",
+    "description": "Upscale mariscos in Polanco with creative preparations like a short rib and octopus burger and roasted bone marrow with crispy octopus chicharrón and salsa borracha. The kitchen blurs the line between traditional marisquería and modern bistrot, producing some genuinely surprising dishes alongside the raw bar.",
+    "special_quality": "Bone marrow served with crispy octopus chicharrón and salsa borracha — the most inventive mariscos kitchen in the city, applying bistro technique to Pacific seafood",
+    "price_range": "$$$",
+    "address": "Masaryk 510, Polanco",
+    "google_maps_query": "Bellopuerto restaurante, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "bellopuerto",
+    "lat": 19.430302899999997,
+    "lng": -99.19648409999999
+  },
+  {
+    "name": "Merotoro",
+    "neighborhood": "Condesa",
+    "category": "mariscos",
+    "subcategory": "Cocina bajacaliforniana",
+    "description": "Baja California cooking in Condesa — fresh fish tacos, tostadas with lightly seared uni and avocado, aguachile verde with shrimp and cucumber. The wine list is the other draw: almost entirely Mexican, focused on Valle de Guadalupe producers, and among the best restaurant wine lists for exploring Mexico's emerging wine region.",
+    "special_quality": "One of the city's best arguments for Mexican wine — the Valle de Guadalupe wine list is encyclopedic, and the kitchen's Baja-style seafood pairs flawlessly with it",
+    "price_range": "$$",
+    "address": "Amsterdam 204, Condesa",
+    "google_maps_query": "Merotoro restaurante, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "merotoro",
+    "lat": 19.4096588,
+    "lng": -99.1698509
+  },
+  {
+    "name": "Romulo's at Mercado 1° de Diciembre",
+    "neighborhood": "Narvarte",
+    "category": "mariscos",
+    "subcategory": "Marisquería de mercado",
+    "description": "Tucked inside a neighborhood market in Narvarte, Romulo's follows the traditional Mexican marisquería ritual: you start with a small shot of warm shrimp broth, then work through oysters and fresh tostadas de camarón. Exceptional value; completely unpretentious; beloved by locals who know the market.",
+    "special_quality": "The traditional marisquería ritual at market prices — the shot of shrimp broth as welcome ceremony, then fresh oysters in a working-class Narvarte market",
+    "price_range": "$",
+    "address": "Mercado 1° de Diciembre, Narvarte",
+    "google_maps_query": "Romulo's mariscos, Mercado 1 Diciembre, Narvarte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Bon Appétit"
+    ],
+    "id": "romulo-s-at-mercado-1-de-diciembre",
+    "lat": 19.3990333,
+    "lng": -99.1548196
+  },
+  {
+    "name": "Cantina La Mascota",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Cantina tradicional",
+    "description": "One of the last traditional cantinas in Mexico City still offering botanas libres — substantial free plates of food arrive automatically with every round of drinks. The interior has barely changed: dark wood, bullfighting memorabilia, and a clientele that has been sitting at the same tables for decades. Order the beer; the botanas will follow.",
+    "special_quality": "One of the few cantinas in the city still doing botanas libres — a full plate of food with every drink order, an institution that died everywhere else",
+    "price_range": "$",
+    "address": "Mesones 20, Centro",
+    "google_maps_query": "Cantina La Mascota, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Matador Network",
+      "Street Gourmet LA"
+    ],
+    "id": "cantina-la-mascota",
+    "lat": 19.4289646,
+    "lng": -99.1388611
+  },
+  {
+    "name": "Salón Corona",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Cantina popular",
+    "description": "On Avenida Francisco I Madero, Salón Corona is the classic midday institution: ice-cold beer in frosted mugs, traditional Mexican bar snacks, and a standing-room crowd of office workers, tourists, and old-timers. It's a democratic space — everyone from bureaucrats to flaneurs at the same bar.",
+    "special_quality": "On Mexico City's most walked pedestrian street since the mid-20th century; the frosted mugs and no-attitude atmosphere define the concept of a democratic Mexico City cantina",
+    "price_range": "$",
+    "address": "Francisco I Madero 1, Centro",
+    "google_maps_query": "Salón Corona, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Mexico City Food Guide"
+    ],
+    "id": "salon-corona",
+    "lat": 19.4334262,
+    "lng": -99.1382704
+  },
+  {
+    "name": "Las Duelistas",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Pulquería-cantina histórica",
+    "description": "A historic pulquería and cantina in the Centro that dates from the early 1900s, with walls covered in boxing memorabilia and faded photographs. Serves traditional curado pulques (flavored with fruit, seeds, or vegetables) alongside beer and mezcal. The combination of the historic space and the fermented agave sap drink makes this irreplaceable.",
+    "special_quality": "Operating since the early 1900s, with boxing memorabilia intact — one of the last pulquería-cantina hybrids from the era when pulque was the drink of Mexico City",
+    "price_range": "$",
+    "address": "Ayuntamiento 13, Centro",
+    "google_maps_query": "Las Duelistas pulquería, Centro, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Nicholas Gilman",
+      "Mexico City Pulquerías Guide"
+    ],
+    "id": "las-duelistas",
+    "lat": 19.4302515,
+    "lng": -99.14272609999999
+  },
+  {
+    "name": "El Nivel",
+    "neighborhood": "Centro Histórico",
+    "category": "cantina",
+    "subcategory": "Cantina histórica",
+    "description": "Claims to be the oldest cantina in Mexico City, with documented continuous operation since 1855 — giving it more than 170 years of service from a corner just off the Zócalo. The space has the feel of a place that has absorbed everything that happened in the Centro: revolutions, earthquakes, tourists, and regulars.",
+    "special_quality": "Claims 1855 as its founding date — potentially the oldest cantina in Mexico City, steps from the Zócalo, in a space with 170+ years of continuous liquor service",
+    "price_range": "$",
+    "address": "Moneda 2, Centro",
+    "google_maps_query": "El Nivel cantina, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Nicholas Gilman",
+      "Mexico City Bar Guide"
+    ],
+    "id": "el-nivel",
+    "lat": 19.4303502,
+    "lng": -99.1322877
+  },
+  {
+    "name": "Havre 77",
+    "neighborhood": "Juárez",
+    "category": "cantina",
+    "subcategory": "Brasserie francesa",
+    "description": "The first well-executed French brasserie in Mexico City, open for over ten years on a quiet Juárez street with a small balcony. Fresh Baja oysters, steak frites, a serious wine list, and a warmth that balances the formality. The balcony table at sunset is the perfect Juárez evening.",
+    "special_quality": "A decade-old Juárez institution that made the French brasserie format work in CDMX — the fresh Baja oysters and honest wine list are the reason it outlasted trends",
+    "price_range": "$$",
+    "address": "Havre 77, Juárez",
+    "google_maps_query": "Havre 77 restaurante, Colonia Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "havre-77",
+    "lat": 19.425198299999998,
+    "lng": -99.1606963
+  },
+  {
+    "name": "La Clandestina",
+    "neighborhood": "Condesa",
+    "category": "mezcaleria",
+    "subcategory": "Mezcalería",
+    "description": "Near Parque España, La Clandestina is one of the city's most admired mezcalerías: low-lit, with giant glass vats containing 22 to 25 distinct artisanal mezcals available for tasting. The staff are knowledgeable without being exclusive — they want you to understand the difference between espadín, tobalá, and tepextate as much as they want you to drink.",
+    "special_quality": "Giant glass vats displaying 22-25 distinct mezcal varieties; the transparency of the vessels — literal and figurative — makes it a unique educational-drinking experience",
+    "price_range": "$$",
+    "address": "Av. Ámsterdam 37, Condesa",
+    "google_maps_query": "La Clandestina mezcalería, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Jetset Times",
+      "Mexico City Mezcal Guide"
+    ],
+    "id": "la-clandestina",
+    "lat": 19.4162483,
+    "lng": -99.1691707
+  },
+  {
+    "name": "Mezcalería Los Amantes",
+    "neighborhood": "Centro",
+    "category": "mezcaleria",
+    "subcategory": "Mezcalería artesanal",
+    "description": "Los Amantes stocks mezcals from across Oaxaca's producing regions — a deep list of espadín, tobalá, tepeztate, mexicano, and cuishe varieties. The staff walk you through tastings explaining production method, agave species, and regional origin without pretension. Their own house mezcal is produced in Oaxaca specifically for the bar.",
+    "special_quality": "Staff explain the difference between espadín and tobalá with the specificity of a sommelier — the house mezcal is their own small-batch Oaxacan production",
+    "price_range": "$$",
+    "address": "Allende 12, Centro",
+    "google_maps_query": "Mezcalería Los Amantes, Centro, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Chilango"
+    ],
+    "id": "mezcaleria-los-amantes",
+    "lat": 17.0655994,
+    "lng": -96.72423549999999
+  },
+  {
+    "name": "Pulquería Los Insurgentes",
+    "neighborhood": "Roma Norte",
+    "category": "mezcaleria",
+    "subcategory": "Pulquería tradicional",
+    "description": "One of the few traditional pulquerías surviving in Roma Norte, with a house recipe for flavored curados (guava, celery, oatmeal, strawberry) unchanged since the 1940s. Pulque — fermented agave sap — is viscous, mildly alcoholic, and completely unlike any other drink. This is the correct introduction to it.",
+    "special_quality": "The curado recipe has been unchanged since the 1940s — the flavored pulque program (guava, celery, oatmeal) is the standard for what CDMX pulque culture was before urbanization nearly killed it",
+    "price_range": "$",
+    "address": "Insurgentes Sur 226, Roma Norte",
+    "google_maps_query": "Pulquería Los Insurgentes, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Mexico City Pulquerías Guide",
+      "Eater CDMX"
+    ],
+    "id": "pulqueria-los-insurgentes",
+    "lat": 19.4193039,
+    "lng": -99.1640472
+  },
+  {
+    "name": "Tlachiquero",
+    "neighborhood": "Roma Norte",
+    "category": "mezcaleria",
+    "subcategory": "Mezcalería con ambiente de cantina",
+    "description": "A lively mezcalería in Roma Norte that channels authentic cantina energy — the selection spans entry-level espadín to rare ancestral mezcals, and the staff calibrate their recommendations to your experience level. The small food menu of botanas holds its own alongside the spirits.",
+    "special_quality": "The widest mezcal selection in Roma Norte organized by agave species — the house tasting flight (espadín → tobalá → tepeztate → ancestral) is a 90-minute education",
+    "price_range": "$$",
+    "address": "Oaxaca 44, Roma Norte",
+    "google_maps_query": "Tlachiquero mezcalería, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Eater CDMX",
+      "Antojito CDMX"
+    ],
+    "id": "tlachiquero",
+    "lat": 19.4213964,
+    "lng": -99.1542216
+  },
+  {
+    "name": "CUMBÉ Coffee Roasters",
+    "neighborhood": "Roma Norte",
+    "category": "coffee",
+    "subcategory": "Cafetería de especialidad",
+    "description": "Melbourne-trained specialty coffee roasters doing single-origin Mexican and Central American lots. The magic flat white (a Melbourne signature: concentrated double ristretto in a smaller milk drink) is executed with precision. The breakfast menu runs to chilaquiles and Mexican eggs alongside the usual pastries.",
+    "special_quality": "Melbourne specialty-coffee culture transplanted into Roma Norte — the magic flat white and the V60 single-origins are the benchmark for the city's third-wave scene",
+    "price_range": "$",
+    "address": "Monterrey 82, Roma Norte",
+    "google_maps_query": "CUMBÉ Coffee Roasters, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Casa Goliana Coffee Guide",
+      "Mexico City Coffee Map"
+    ],
+    "id": "cumbe-coffee-roasters",
+    "lat": 19.419354000000002,
+    "lng": -99.16449109999999
+  },
+  {
+    "name": "BUNA",
+    "neighborhood": "Roma Norte",
+    "category": "coffee",
+    "subcategory": "Cafetería de especialidad",
+    "description": "A minimalist specialty café on Orizaba that sources and roasts high-quality Mexican coffee beans in-house. The Cafechata — cold brew mixed with house-made horchata — is the signature invention and worth visiting for alone. The food menu of croissants, conchas, and banana bread comes from serious bakers.",
+    "special_quality": "The Cafechata (cold brew + house horchata) is a genuine invention — a drink that makes sense of both forms at once, now widely imitated across the city",
+    "price_range": "$",
+    "address": "Orizaba 42, Roma Norte",
+    "google_maps_query": "BUNA café, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Filter Notes",
+      "Local Specialty Coffee",
+      "Antojito CDMX"
+    ],
+    "id": "buna",
+    "lat": 19.421955399999998,
+    "lng": -99.1605323
+  },
+  {
+    "name": "Café Nin",
+    "neighborhood": "Juárez",
+    "category": "coffee",
+    "subcategory": "Cafetería y panadería",
+    "description": "From the Rosetta team (Elena Reygadas), Café Nin on Havre is an all-day café and bakery in one of the nicest rooms in Mexico City — tall ceilings, warm light, pastries from the Rosetta kitchen. The coffee is excellent; the book to bring is your own. It captures what the Juárez design quarter is trying to be.",
+    "special_quality": "Elena Reygadas' all-day café sibling to Rosetta — the pastry quality is that of a Michelin-starred kitchen; the room is the finest place to have coffee in the city",
+    "price_range": "$",
+    "address": "Havre 73, Juárez",
+    "google_maps_query": "Café Nin, Colonia Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Casa Goliana Coffee Guide"
+    ],
+    "id": "cafe-nin",
+    "lat": 19.4253321,
+    "lng": -99.1607411
+  },
+  {
+    "name": "Tomasa",
+    "neighborhood": "Condesa",
+    "category": "coffee",
+    "subcategory": "Café-panadería",
+    "description": "A vibrant café-bakery in Condesa with blush-pink walls and modern Mexican talavera tile design. The kitchen treats traditional panadería with the seriousness of a specialty bakery — conchas with natural fermentation, seasonal toppings, rotating pan dulce alongside espresso and pour-over. The pink room has become an Instagram staple, but the food earns its own reputation.",
+    "special_quality": "The most serious treatment of pan dulce at a coffee shop in the city — conchas made with natural fermentation alongside specialty espresso in a room that's genuinely beautiful",
+    "price_range": "$",
+    "address": "Campeche 1, Condesa",
+    "google_maps_query": "Tomasa café, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Mexico City Coffee Guide",
+      "Eater CDMX"
+    ],
+    "id": "tomasa",
+    "lat": 19.412651699999998,
+    "lng": -99.1744543
+  },
+  {
+    "name": "Panadería Rosetta",
+    "neighborhood": "Roma",
+    "category": "bakery",
+    "subcategory": "Panadería artesanal",
+    "description": "Elena Reygadas' bakery on Colima is the most talked-about in Mexico City — the rol de guayaba (flaky, buttery pastry rolled around cream cheese and guava jam) became a viral object in 2023 and the queue has been steady since. The full lineup of pastries — croissants, tarts, sourdoughs — reflects the same precision as her restaurant.",
+    "special_quality": "The rol de guayaba — flaky pastry with cream cheese and guava jam — created the bakery-queue culture in Mexico City; from a Michelin-starred chef, it shows",
+    "price_range": "$",
+    "address": "Colima 179, Roma",
+    "google_maps_query": "Panadería Rosetta, Roma, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Cultured Magazine",
+      "Forbes",
+      "Bon Appétit"
+    ],
+    "id": "panaderia-rosetta",
+    "lat": 19.4198883,
+    "lng": -99.1605402
+  },
+  {
+    "name": "Panadería Gala",
+    "neighborhood": "Roma Norte",
+    "category": "bakery",
+    "subcategory": "Panadería de restaurante",
+    "description": "Eduardo García's bakery, where the bread for Máximo Bistrot and Lalo is made. Open to the public with a rotating selection of chocolate conchas, guava croffins (croissant-muffin hybrids), tamales, and savory sandwiches. The baking technique behind a Michelin-starred kitchen is the starting point here.",
+    "special_quality": "The bread lab behind a Michelin-starred kitchen — the croffins and chocolate conchas reflect bistrot technique applied to Mexican pastry forms",
+    "price_range": "$",
+    "address": "Sonora 41, Roma Norte",
+    "google_maps_query": "Panadería Gala, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Forbes Travel Guide",
+      "Eater CDMX"
+    ],
+    "id": "panaderia-gala",
+    "lat": 19.414931799999998,
+    "lng": -99.1619612
+  },
+  {
+    "name": "Cayetana Panadería",
+    "neighborhood": "Condesa",
+    "category": "bakery",
+    "subcategory": "Panadería franco-mexicana",
+    "description": "Condesa's go-to bakery for Mexican-French crossover pastries — the bacon cinnamon roll (sweet-savory, layered, sticky) became the neighborhood signature, and the croissants are executed with the same seriousness. A bakery that understands both traditions without compromising either.",
+    "special_quality": "The bacon cinnamon roll is one of the city's most successful sweet-savory crossovers — Mexican panadería instinct applied to a European form",
+    "price_range": "$",
+    "address": "Tamaulipas 28, Condesa",
+    "google_maps_query": "Cayetana Panadería, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Chowhound",
+      "Corner Inc Bakery Guide"
+    ],
+    "id": "cayetana-panaderia",
+    "lat": 19.4137695,
+    "lng": -99.16635149999999
+  },
+  {
+    "name": "Consuelo Pan de Madre",
+    "neighborhood": "Roma Sur",
+    "category": "bakery",
+    "subcategory": "Panadería de masa madre",
+    "description": "European sourdough technique applied to Mexican pastry forms — pan de muertos with sourdough starter, rosca de almendra with guanábana filling, modernized conchas made with long fermentation. The bread here is structurally different from traditional panadería and better for it.",
+    "special_quality": "The pan de muertos made with long-fermentation sourdough — a technique change that makes the traditional form taste like what it always could have been",
+    "price_range": "$",
+    "address": "Campeche 180, Roma Sur",
+    "google_maps_query": "Consuelo Pan de Madre, Roma Sur, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Chowhound",
+      "Mexico City Bakery Guide"
+    ],
+    "id": "consuelo-pan-de-madre",
+    "lat": 19.4178027,
+    "lng": -99.1712156
+  },
+  {
+    "name": "Panadería Pancracia",
+    "neighborhood": "Condesa",
+    "category": "bakery",
+    "subcategory": "Conchas y pan dulce",
+    "description": "The go-to reference for conchas in Mexico City — the traditional shell-patterned sweet roll that defines pan dulce — done with color-forward visual design and serious filling-to-pastry ratios. Multiple locations, but the Condesa branch has the widest selection.",
+    "special_quality": "The most inventive concha program in the city — the shell pattern uses natural pigments and the fillings rotate through Mexican flavors (tamarind, chile, guava) that the tradition never had",
+    "price_range": "$",
+    "address": "Sonora 82, Condesa",
+    "google_maps_query": "Panadería Pancracia, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Yahoo Travel Bakeries Guide",
+      "Mexico City Pastry Guide"
+    ],
+    "id": "panaderia-pancracia",
+    "lat": 19.4130617,
+    "lng": -99.1586789
+  },
+  {
+    "name": "Lalo",
+    "neighborhood": "Roma Norte",
+    "category": "specialty",
+    "subcategory": "Osteria italiana-mexicana",
+    "description": "Eduardo García transformed his all-day breakfast spot into a full Italian osteria with red facade, terracotta floors, and a kitchen emphasizing local seasonal ingredients. The comfort of a neighborhood osteria at a fraction of Máximo Bistrot's price — and a good argument that the Roman and Mexican cooking impulses are not as far apart as they look.",
+    "special_quality": "Eduardo García's everyday casual — a Michelin-starred chef's approach to feeding a neighborhood without formality; the seasonal pasta with Mexican herbs is the bridge between the two traditions",
+    "price_range": "$$",
+    "address": "Tonalá 93, Roma Norte",
+    "google_maps_query": "Lalo restaurante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Bon Appétit"
+    ],
+    "id": "lalo",
+    "lat": 19.4154366,
+    "lng": -99.16247609999999
+  },
+  {
+    "name": "Comal Oculto",
+    "neighborhood": "San Miguel Chapultepec",
+    "category": "specialty",
+    "subcategory": "Cocina mexicana de barrio",
+    "description": "Back-to-back Michelin Bib Gourmand winner (2024 and 2025) serving traditional Mexican cooking in a communal-table setting that feels like a neighbor's kitchen. Wild mushroom sopes, enchiladas ahogadas, and lamb shank gorditas are made from heirloom corn and sourced from small producers. The 'hidden' in the name refers to the neighborhood — a residential street in San Miguel Chapultepec that few tourists find.",
+    "special_quality": "Two consecutive Michelin Bib Gourmand awards while staying completely local — heirloom corn, communal tables, and a lamb shank gordita that redefines the form",
+    "price_range": "$",
+    "address": "Gral. Gómez Pedraza 37, San Miguel Chapultepec",
+    "google_maps_query": "Comal Oculto restaurante, San Miguel Chapultepec, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024–2025",
+      "The Infatuation"
+    ],
+    "id": "comal-oculto",
+    "lat": 19.414045800000004,
+    "lng": -99.183476
+  },
+  {
+    "name": "Plonk",
+    "neighborhood": "Hipódromo",
+    "category": "specialty",
+    "subcategory": "Bar de vinos y cocina",
+    "description": "A Michelin Bib Gourmand wine bar in Hipódromo — small, convivial, with a carefully chosen list oriented toward natural and minimal-intervention wines alongside a short menu of dishes designed for sharing with a glass. One of the few places in the city where the wine choices are as interesting as the food.",
+    "special_quality": "Michelin Bib Gourmand; the natural wine list in a neighborhood wine bar format — CDMX's most relaxed setting for serious drinking",
+    "price_range": "$$",
+    "address": "Iztaccihuatl 52, Hipódromo",
+    "google_maps_query": "Plonk bar de vinos, Hipódromo, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "OpenTable Mexico"
+    ],
+    "id": "plonk",
+    "lat": 19.410373099999997,
+    "lng": -99.1693688
+  },
+  {
+    "name": "Comedor Jacinta",
+    "neighborhood": "Polanco",
+    "category": "specialty",
+    "subcategory": "Comida mexicana accesible",
+    "description": "Michelin Bib Gourmand in Polanco — a neighborhood that normally means $$$, Comedor Jacinta punches far above its price with accessible Mexican cooking that Michelin and serious diners both cite. The comida del día (daily menu) format makes it a daily-visit kind of place. A reminder that Polanco isn't only for expense accounts.",
+    "special_quality": "Michelin Bib Gourmand in Polanco — serious cooking at comida corrida prices in a neighborhood that otherwise demands expense-account budgets",
+    "price_range": "$",
+    "address": "Virgilio 40, Polanco",
+    "google_maps_query": "Comedor Jacinta, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "sources": [
+      "Michelin Guide Mexico 2024",
+      "OpenTable Mexico"
+    ],
+    "id": "comedor-jacinta",
+    "lat": 19.430068,
+    "lng": -99.1962132
+  },
+  {
+    "name": "Paris 16",
+    "neighborhood": "Juárez",
+    "category": "specialty",
+    "subcategory": "Brasserie retro",
+    "description": "Operating since 1985 with linoleum tiles and décor that has not changed, Paris 16 is the Juárez institution for an older European-Mexican brasserie style. The pechuga parmesana — breaded chicken with melted cheese — is outstanding. The setting, unchanged and unembarrassed by time, is its own form of statement.",
+    "special_quality": "Unchanged since 1985 — the linoleum, the menu, the clientele — the pechuga parmesana is the city's best argument for leaving certain things exactly as they are",
+    "price_range": "$$",
+    "address": "Copenhague 19, Juárez",
+    "google_maps_query": "Paris 16 restaurante, Colonia Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "paris-16",
+    "lat": 19.4258483,
+    "lng": -99.1689237
+  },
+  {
+    "name": "Hugo El Wine Bar",
+    "neighborhood": "Roma Norte",
+    "category": "specialty",
+    "subcategory": "Bar de vinos naturales",
+    "description": "Natural and minimal-intervention wines — mostly Mexican (Valle de Guadalupe, Baja California), with some European — in a space that evokes the Lower East Side in New York more than CDMX. The kitchen produces serious small plates: kampachi crudo, fennel with fava beans, rotating charcuterie. One of the city's most interesting wine lists.",
+    "special_quality": "The deepest Valle de Guadalupe wine list in the city — an argument that Mexican wine deserves the same treatment as Spanish and Italian, made from Roma Norte",
+    "price_range": "$$",
+    "address": "Sonora 180, Roma Norte",
+    "google_maps_query": "Hugo El Wine Bar, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "hugo-el-wine-bar",
+    "lat": 19.4186677,
+    "lng": -99.1751855
+  },
+  {
+    "name": "Sartoria",
+    "neighborhood": "Roma Norte",
+    "category": "specialty",
+    "subcategory": "Trattoria italiana",
+    "description": "Perfectly executed homemade pasta in a futuristic cave-like aesthetic — raw concrete, dark lighting, an obsessive natural wine list. The cacio e pepe is cited as the most buttery in the city. Sartoria is where Rome would eat in Mexico City if Rome were also into biodynamic wine.",
+    "special_quality": "The cacio e pepe — called the most buttery in CDMX — in a futuristic cave setting with a natural wine list that is arguably the best in the Roma",
+    "price_range": "$$",
+    "address": "Jalapa 70, Roma Norte",
+    "google_maps_query": "Sartoria restaurante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "sartoria",
+    "lat": 19.4218756,
+    "lng": -99.1603614
+  },
+  {
+    "name": "Taverna",
+    "neighborhood": "Juárez",
+    "category": "specialty",
+    "subcategory": "Hacienda restaurada",
+    "description": "Inside a historical restored hacienda from 1905 with candlelit rooms and a wood-burning oven. The menu is Mediterranean-inflected, with roasted meats, grilled vegetables, and the signature Pin Tonic cocktail. One of the most beautiful dining rooms in the city — the building survived the 1985 earthquake and the subsequent real estate transformations.",
+    "special_quality": "An 1895 restored hacienda with candlelit rooms and a wood-burning oven — the most beautiful dining space in Juárez, where the architecture is the first reason and the food is the second",
+    "price_range": "$$",
+    "address": "Havre 77, Juárez",
+    "google_maps_query": "Taverna restaurante, Colonia Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "taverna",
+    "lat": 19.429691,
+    "lng": -99.1531323
+  },
+  {
+    "name": "Estoril",
+    "neighborhood": "Polanco",
+    "category": "specialty",
+    "subcategory": "Fusión oaxaqueña-francesa",
+    "description": "Polanco's most approachable restaurant — a French-Oaxacan fusion that manages to be affordable for the neighborhood. The butter-sautéed escamoles (ant larvae, a pre-Hispanic delicacy tasting of butter and corn) and chipotle meatballs represent the kitchen's ability to make traditional ingredients seem inevitable. Terrace seating on a Polanco side street.",
+    "special_quality": "The escamoles (ant larvae) sautéed in butter with epazote — one of Mexico's most prized pre-Hispanic delicacies, executed without gimmick; Polanco's most accessible serious restaurant",
+    "price_range": "$$",
+    "address": "Alejandro Dumas 24, Polanco",
+    "google_maps_query": "Estoril restaurante, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Eater CDMX"
+    ],
+    "id": "estoril",
+    "lat": 19.427913699999998,
+    "lng": -99.196647
+  },
+  {
+    "name": "San Ángel Inn",
+    "neighborhood": "San Ángel",
+    "category": "specialty",
+    "subcategory": "Hacienda histórica",
+    "description": "A 17th-century former Dominican monastery converted into one of Mexico City's most storied restaurants, with a courtyard garden that blooms year-round. The food is classic Mexican — steak tacos, chiles en nogada in season, guacamole prepared tableside — executed with the care that a six-century-old building demands. Tableside margaritas are a ritual.",
+    "special_quality": "A 17th-century Dominican monastery as dining room; the tableside guacamole and margaritas are unchanged; Diego Rivera painted murals nearby while visiting guests here",
+    "price_range": "$$$",
+    "address": "Diego Rivera 50, San Ángel",
+    "google_maps_query": "San Ángel Inn restaurante, San Ángel, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation",
+      "Nicholas Gilman",
+      "Forbes Travel Guide"
+    ],
+    "id": "san-angel-inn",
+    "lat": 19.349204999999998,
+    "lng": -99.1980227
+  },
+  {
+    "name": "Bakéa",
+    "neighborhood": "Lomas de Chapultepec",
+    "category": "specialty",
+    "subcategory": "Cocina vasco-mexicana",
+    "description": "A Basque-French-Mexican power-lunch destination in Lomas de Chapultepec — the glazed pork belly with curried garbanzos sits alongside txakoli, pintxos, and a wine list that takes Spanish producers as seriously as Mexican ones. One of the places where business gets done and the food matches the occasion.",
+    "special_quality": "Basque-French-Mexican fusion at the top of the market — the glazed pork belly with curried garbanzos is where three culinary traditions coexist without compromise",
+    "price_range": "$$$",
+    "address": "Prado Norte 490, Lomas de Chapultepec",
+    "google_maps_query": "Bakéa restaurante, Lomas de Chapultepec, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "bakea",
+    "lat": 19.41611,
+    "lng": -99.22603210000001
+  },
+  {
+    "name": "Lindy",
+    "neighborhood": "Condesa",
+    "category": "specialty",
+    "subcategory": "Cocina americana contemporánea",
+    "description": "American comfort food with fine-dining execution, overlooking Parque México. The burger dripping in au poivre sauce has become the calling card; the rooftop cocktail bar is one of the best evening perches in Condesa. Does not pretend to be Mexican and is better for the honesty.",
+    "special_quality": "The au poivre burger overlooking Parque México is arguably CDMX's best burger — an American form treated with French technique in a room with one of the city's great park views",
+    "price_range": "$$",
+    "address": "Ámsterdam 80, Condesa",
+    "google_maps_query": "Lindy restaurante, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": null,
+    "menu_url": null,
+    "sources": [
+      "The Infatuation"
+    ],
+    "id": "lindy",
+    "lat": 19.413632,
+    "lng": -99.1697617
+  }
+];
+
+const CAT_LABELS = {
+  "tacos":       "Tacos",
+  "antojitos":   "Antojitos",
+  "market":      "Mercados",
+  "cantina":     "Cantinas",
+  "mezcaleria":  "Mezcal & Pulque",
+  "fine-dining": "Fine Dining",
+  "mariscos":    "Mariscos",
+  "coffee":      "Coffee",
+  "bakery":      "Pan & Bakery",
+  "specialty":   "Specialty",
+  "international": "International",
+};
+
+// ── STATE ─────────────────────────────────────────────────────────────────
+let places = [];
+let activeCategory = "all";
+let activeNeighborhood = null;
+let searchQuery = "";
+let sortMode = "name";
+let currentNoteId = null;
+
+function loadCustomEntries() {
+  try {
+    return JSON.parse(localStorage.getItem("cdmx-custom") || "[]");
+  } catch { return []; }
+}
+
+function saveCustomEntries(arr) {
+  localStorage.setItem("cdmx-custom", JSON.stringify(arr));
+}
+
+function loadNotes() {
+  try {
+    return JSON.parse(localStorage.getItem("cdmx-notes") || "{}");
+  } catch { return {}; }
+}
+
+function saveNotes(n) {
+  localStorage.setItem("cdmx-notes", JSON.stringify(n));
+}
+
+function getNotes() { return loadNotes(); }
+
+// ── INIT ──────────────────────────────────────────────────────────────────
+function init() {
+  const custom = loadCustomEntries().map((e, i) => ({...e, id: "custom_" + i, _custom: true}));
+  places = [...CURATED_PLACES, ...custom];
+
+  buildCatTabs();
+  buildNhPills();
+  render();
+
+  document.getElementById("search").addEventListener("input", e => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    render();
+  });
+  document.getElementById("sort-select").addEventListener("change", e => {
+    sortMode = e.target.value;
+    render();
+  });
+
+  // Close modals on overlay click
+  document.getElementById("note-overlay").addEventListener("click", function(e) {
+    if (e.target === this) closeNoteModal();
+  });
+  document.getElementById("add-overlay").addEventListener("click", function(e) {
+    if (e.target === this) closeAddModal();
+  });
+}
+
+// ── CATEGORIES TAB ────────────────────────────────────────────────────────
+function buildCatTabs() {
+  const cats = ["all", ...Object.keys(CAT_LABELS).filter(k => places.some(p => p.category === k))];
+  const container = document.getElementById("cat-tabs");
+  container.innerHTML = cats.map(c => {
+    const label = c === "all" ? "All" : (CAT_LABELS[c] || c);
+    const count = c === "all" ? places.length : places.filter(p => p.category === c).length;
+    return `<button class="cat-tab ${c === activeCategory ? 'active' : ''}" onclick="setCategory('${c}')">${label} <span style="opacity:.5;font-weight:400">${count}</span></button>`;
+  }).join("");
+}
+
+function setCategory(cat) {
+  activeCategory = cat;
+  activeNeighborhood = null;
+  buildCatTabs();
+  buildNhPills();
+  render();
+}
+
+// ── NEIGHBORHOOD PILLS ────────────────────────────────────────────────────
+function buildNhPills() {
+  const visible = filteredByCategory();
+  const nhs = [...new Set(visible.map(p => p.neighborhood).filter(Boolean))].sort();
+  const container = document.getElementById("nh-pills");
+  container.innerHTML = nhs.map(nh =>
+    `<button class="nh-pill ${activeNeighborhood === nh ? 'active' : ''}" onclick="toggleNh('${nh.replace(/'/g, "\\'")}')">${nh}</button>`
+  ).join("");
+}
+
+function toggleNh(nh) {
+  activeNeighborhood = activeNeighborhood === nh ? null : nh;
+  buildNhPills();
+  render();
+}
+
+function toggleNhPills() {
+  const wrap = document.getElementById("nh-pills-wrap");
+  const btn = document.getElementById("nh-toggle");
+  const isOpen = wrap.classList.contains("open");
+  wrap.classList.toggle("open");
+  btn.classList.toggle("active");
+  btn.textContent = isOpen ? "Neighborhoods ▾" : "Neighborhoods ▲";
+}
+
+// ── FILTER + SORT ─────────────────────────────────────────────────────────
+function filteredByCategory() {
+  return activeCategory === "all" ? [...places] : places.filter(p => p.category === activeCategory);
+}
+
+function getFiltered() {
+  let result = filteredByCategory();
+  if (activeNeighborhood) result = result.filter(p => p.neighborhood === activeNeighborhood);
+  if (searchQuery) {
+    result = result.filter(p => {
+      const hay = [p.name, p.neighborhood, p.description, p.special_quality, p.subcategory,
+                   p.notes, ...(p.sources || [])].join(" ").toLowerCase();
+      return searchQuery.split(/\s+/).every(term => hay.includes(term));
+    });
+  }
+  const priceOrder = {"$": 1, "$$": 2, "$$$": 3};
+  result.sort((a, b) => {
+    if (sortMode === "name") return a.name.localeCompare(b.name, "es");
+    if (sortMode === "neighborhood") return (a.neighborhood || "").localeCompare(b.neighborhood || "", "es") || a.name.localeCompare(b.name, "es");
+    if (sortMode === "price-asc") return (priceOrder[a.price_range] || 0) - (priceOrder[b.price_range] || 0) || a.name.localeCompare(b.name, "es");
+    if (sortMode === "price-desc") return (priceOrder[b.price_range] || 0) - (priceOrder[a.price_range] || 0) || a.name.localeCompare(b.name, "es");
+    if (sortMode === "score-total") {
+      const sa = a.scores ? (a.scores.iconic||0)+(a.scores.hype||0)+(a.scores.food||0)+(a.scores.weird||0) : 0;
+      const sb = b.scores ? (b.scores.iconic||0)+(b.scores.hype||0)+(b.scores.food||0)+(b.scores.weird||0) : 0;
+      return sb - sa || a.name.localeCompare(b.name, "es");
+    }
+    if (sortMode === "score-food") return ((b.scores||{}).food||0) - ((a.scores||{}).food||0) || a.name.localeCompare(b.name, "es");
+    if (sortMode === "score-iconic") return ((b.scores||{}).iconic||0) - ((a.scores||{}).iconic||0) || a.name.localeCompare(b.name, "es");
+    return 0;
+  });
+  return result;
+}
+
+// ── RENDER ────────────────────────────────────────────────────────────────
+function render() {
+  const items = getFiltered();
+  const notes = getNotes();
+  const count = document.getElementById("count-text");
+  const grid = document.getElementById("grid");
+
+  count.textContent = `${items.length} of ${places.length} places`;
+
+  if (!items.length) {
+    grid.innerHTML = `<div class="empty"><h3>No places found</h3><p>Try a different search or clear your filters.</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = items.map(p => renderCard(p, notes[p.id] || "")).join("");
+}
+
+function mapsHref(p) {
+  if (p.google_maps_query) return `https://maps.google.com/search/?q=${encodeURIComponent(p.google_maps_query)}`;
+  return `https://maps.google.com/search/?q=${encodeURIComponent(p.name + " " + (p.neighborhood || "") + " Ciudad de Mexico")}`;
+}
+
+function catClass(cat) {
+  const known = ["market","cantina","mezcaleria","fine-dining","mariscos","coffee","bakery","specialty","international","antojitos","tacos"];
+  return known.includes(cat) ? cat : "";
+}
+
+function scoreStrip(scores) {
+  if (!scores) return "";
+  const dims = [
+    {k:"iconic", l:"ICON",  t:"Historical significance (1-10)"},
+    {k:"hype",   l:"HYPE",  t:"Tourist & social fame (1-10)"},
+    {k:"food",   l:"FOOD",  t:"Food quality per professional critics (1-10)"},
+    {k:"weird",  l:"WEIRD", t:"Singularity / format-defiance (1-10)"},
+  ];
+  const items = dims.filter(d => scores[d.k] != null).map(d =>
+    `<span class="score-item" title="${d.t}"><span class="score-label">${d.l}</span><span class="score-val">${scores[d.k]}</span></span>`
+  );
+  return items.length ? `<div class="score-strip">${items.join("")}</div>` : "";
+}
+
+function renderCard(p, noteText) {
+  const hasNote = noteText && noteText.trim().length > 0;
+  const srcHtml = (p.source_links && p.source_links.length)
+    ? "Via " + p.source_links.slice(0,3).map(s => s.url
+        ? `<a href="${escHtml(s.url)}" target="_blank" rel="noopener" style="color:inherit">${escHtml(s.title || s.name || s.url)}</a>`
+        : escHtml(s.title || s.name || '')).join(", ")
+    : (p.sources && p.sources.length ? `Via ${p.sources.slice(0,2).join(", ")}` : "");
+  const reserveBtn = p.reservation_url
+    ? `<a class="action-link reserve" href="${escHtml(p.reservation_url)}" target="_blank" rel="noopener">Reserve</a>`
+    : (p.reservation_type === "walk-in" ? `<span class="action-link menu" style="cursor:default">Walk-in</span>` : "");
+  const menuBtn = p.menu_url
+    ? `<a class="action-link menu" href="${escHtml(p.menu_url)}" target="_blank" rel="noopener">Menu</a>`
+    : "";
+  const noteBtnCls = hasNote ? "note-btn has-note" : "note-btn";
+  const noteLabel = hasNote ? "✎ Note" : "+ Note";
+
+  return `<div class="card" data-id="${escHtml(p.id)}">
+  <div class="card-top">
+    <div class="card-name">${escHtml(p.name)}</div>
+    <div class="price-badge">${escHtml(p.price_range || "")}</div>
+  </div>
+  <div class="card-meta">
+    <span class="cat-badge ${catClass(p.category)}">${escHtml(p.subcategory || CAT_LABELS[p.category] || p.category)}</span>
+    ${p.neighborhood ? `<span class="neighborhood-tag">${escHtml(p.neighborhood)}</span>` : ""}
+  </div>
+  ${scoreStrip(p.scores)}
+  ${p.special_quality ? `<div class="special-quality">${escHtml(p.special_quality)}</div>` : ""}
+  <div class="description">${escHtml(p.description)}</div>
+  ${hasNote ? `<div class="notes-text has-notes">${escHtml(noteText)}</div>` : `<div class="notes-text"></div>`}
+  ${srcHtml ? `<div class="source-line">${srcHtml}</div>` : ""}
+  <div class="card-actions">
+    <a class="action-link maps" href="${mapsHref(p)}" target="_blank" rel="noopener">Google Maps</a>
+    ${reserveBtn}
+    ${menuBtn}
+    <button class="${noteBtnCls}" onclick="openNoteModal('${escAttr(p.id)}','${escAttr(p.name)}')">${noteLabel}</button>
+  </div>
+</div>`;
+}
+
+function escHtml(s) {
+  return String(s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function escAttr(s) {
+  return String(s || "").replace(/\\/g,"\\\\").replace(/'/g,"\\'");
+}
+
+// ── NOTES MODAL ───────────────────────────────────────────────────────────
+function openNoteModal(id, name) {
+  currentNoteId = id;
+  const notes = getNotes();
+  document.getElementById("note-modal-title").textContent = name;
+  document.getElementById("note-text").value = notes[id] || "";
+  document.getElementById("note-delete").style.display = notes[id] ? "block" : "none";
+  document.getElementById("note-overlay").classList.add("open");
+  setTimeout(() => document.getElementById("note-text").focus(), 60);
+}
+
+function closeNoteModal() {
+  document.getElementById("note-overlay").classList.remove("open");
+  currentNoteId = null;
+}
+
+function saveNote() {
+  if (!currentNoteId) return;
+  const notes = getNotes();
+  const text = document.getElementById("note-text").value.trim();
+  if (text) notes[currentNoteId] = text;
+  else delete notes[currentNoteId];
+  saveNotes(notes);
+  closeNoteModal();
+  render();
+}
+
+function deleteNote() {
+  if (!currentNoteId) return;
+  const notes = getNotes();
+  delete notes[currentNoteId];
+  saveNotes(notes);
+  closeNoteModal();
+  render();
+}
+
+// ── ADD ENTRY MODAL ───────────────────────────────────────────────────────
+function openAddModal() {
+  document.getElementById("add-name").value = "";
+  document.getElementById("add-nh").value = "";
+  document.getElementById("add-desc").value = "";
+  document.getElementById("add-maps").value = "";
+  document.getElementById("add-res").value = "";
+  document.getElementById("add-overlay").classList.add("open");
+  setTimeout(() => document.getElementById("add-name").focus(), 60);
+}
+
+function closeAddModal() {
+  document.getElementById("add-overlay").classList.remove("open");
+}
+
+function saveNewEntry() {
+  const name = document.getElementById("add-name").value.trim();
+  if (!name) { alert("Name is required."); return; }
+  const entry = {
+    name,
+    neighborhood: document.getElementById("add-nh").value.trim(),
+    category: document.getElementById("add-cat").value,
+    subcategory: "",
+    description: document.getElementById("add-desc").value.trim(),
+    special_quality: "",
+    price_range: document.getElementById("add-price").value,
+    google_maps_query: document.getElementById("add-maps").value.trim(),
+    reservation_url: document.getElementById("add-res").value.trim() || null,
+    reservation_type: null,
+    menu_url: null,
+    sources: ["Added manually"],
+    notes: "",
+    _custom: true,
+  };
+  const custom = loadCustomEntries();
+  custom.push(entry);
+  saveCustomEntries(custom);
+
+  // Add to places with generated id
+  entry.id = "custom_" + (places.filter(p => p._custom).length);
+  places.push(entry);
+
+  closeAddModal();
+  buildCatTabs();
+  buildNhPills();
+  render();
+}
+
+// Keyboard shortcuts
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    closeNoteModal();
+    closeAddModal();
+  }
+  if (e.key === "/" && !["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) {
+    e.preventDefault();
+    document.getElementById("search").focus();
+  }
+});
+
+init();
+</script>
+</body>
+</html>
