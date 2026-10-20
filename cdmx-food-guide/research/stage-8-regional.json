@@ -1,0 +1,636 @@
+[
+ {
+  "name": "Guzina Oaxaca",
+  "neighborhood": "Polanco",
+  "category": "regional",
+  "subcategory": "Oaxaca — moles, tlayudas, regional cooking",
+  "description": "Alejandro Ruiz (of Casa Oaxaca in Oaxaca City) brings the eight regions of Oaxaca to Polanco. Molotito de plátano macho with mole coloradito, huevos rancheros with mole negro, tamales, memelas and tlayuda anchor the menu; kitchen is now led by Carlos Galán. Opened around 2014.",
+  "special_quality": "The most serious high-end Oaxacan kitchen in the city, with ingredients trucked in from Oaxaca.",
+  "price_range": "$$$",
+  "address": "Av. Presidente Masaryk 513, Polanco",
+  "google_maps_query": "Guzina Oaxaca, Polanco, Ciudad de Mexico",
+  "reservation_url": "https://www.opentable.co.th/r/guzina-oaxaca-ciudad-de-mexico",
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 6,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Time Out México",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/guzina-oaxaca"
+   },
+   {
+    "title": "Identità Golose",
+    "url": "https://www.identitagolose.com/sito/en/95/23243/dal-mondo/n-a.html"
+   },
+   {
+    "title": "Food & Pleasure — 6 maravillas gastronómicas",
+    "url": "https://foodandpleasure.com/restaurantes-de-comida-mexicana-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Azul Histórico",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Oaxaca / classic regional — moles & pre-Hispanic dishes",
+  "description": "Ricardo Muñoz Zurita's courtyard restaurant in a 17th-century building revives little-known moles and salsas: mole negro, Oaxacan tortilla soup, cochinita pibil. Culinary Backstreets calls it the chef's most successful venture; also known for tres leches with rompope and a chiles en nogada season.",
+  "special_quality": "Scholar-chef's encyclopedic regional menu in a lantern-lit colonial patio.",
+  "price_range": "$$$",
+  "address": "Isabel la Católica 30, Centro Histórico",
+  "google_maps_query": "Azul Histórico, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 7,
+   "food": 8,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Time Out",
+    "url": "https://www.timeout.com/mexico-city/restaurants/azul-historico"
+   },
+   {
+    "title": "The World's 50 Best Discovery",
+    "url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Mexico-City/Azul-Histórico.html"
+   },
+   {
+    "title": "Goop",
+    "url": "https://goop.com/place/mexico/colonia-centro/azul-historico"
+   },
+   {
+    "title": "Culinary Backstreets",
+    "url": "https://culinarybackstreets.com/?p=7244"
+   }
+  ]
+ },
+ {
+  "name": "Los Danzantes Coyoacán",
+  "neighborhood": "Coyoacán",
+  "category": "regional",
+  "subcategory": "Oaxaca — mole negro, mezcal",
+  "description": "Oaxacan-leaning contemporary cooking on Coyoacán's main plaza: black mole, huitlacoche ravioli, hoja santa appetizer with goat cheese and a mezcal flight. Recommended by Michelin for several years; reviews are positive on setting and mole, mixed on seasoning and price.",
+  "special_quality": "Oaxacan mezcal-and-mole house on Plaza Coyoacán, sister of a starred Oaxaca City original.",
+  "price_range": "$$$",
+  "address": "Plaza de la Concepción 18, Coyoacán (verify)",
+  "google_maps_query": "Los Danzantes Coyoacán, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 6,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "OpenTable — Los Danzantes",
+    "url": "https://www.opentable.com.mx/los-danzantes?lang=en"
+   },
+   {
+    "title": "Chilango — mezcal",
+    "url": "https://www.chilango.com/comida-y-tragos/bares/mezcal-para-todos/"
+   },
+   {
+    "title": "Table Journey / Wikipedia context",
+    "url": "https://en.wikipedia.org/wiki/Los_Danzantes"
+   }
+  ]
+ },
+ {
+  "name": "Coox Hanal",
+  "neighborhood": "Centro Histórico",
+  "category": "regional",
+  "subcategory": "Yucatán — cochinita, papadzules, frijol con puerco",
+  "description": "Founded in 1953 by former boxer Raúl Salazar on the second floor of a Centro building; 'coox hanal' means 'let's eat' in Maya. Sopa de lima, papadzules, cochinita pibil and pan de cazón; frijol con puerco only on Mondays. Weekends bring music and typical dances. Arrive before 2 pm.",
+  "special_quality": "Seventy-year-old upstairs Yucatecan canteen, the city's oldest dedicated Yucatán kitchen.",
+  "price_range": "$$",
+  "address": "Isabel la Católica 83, 2nd floor, Centro Histórico",
+  "google_maps_query": "Coox Hanal, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 5,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Dónde comer comida yucateca",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-comer-comida-yucateca-en-cdmx/"
+   },
+   {
+    "title": "Time Out México — Coox Hanal",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes-cafes/coox-hanal"
+   },
+   {
+    "title": "Chilango — listing",
+    "url": "https://www.chilango.com/restaurantes/centro-histrico-1/coox-hanal/"
+   }
+  ]
+ },
+ {
+  "name": "Los Almendros",
+  "neighborhood": "Polanco",
+  "category": "regional",
+  "subcategory": "Yucatán — Ticul / Mérida classics",
+  "description": "Branch of the Mérida institution known for inventing poc chuc, with longaniza de Valladolid, cochinita pibil, relleno negro, sopa de lima and panuchos. Matador recommends the Polanco room for atmosphere; pricier than other Yucatecan options.",
+  "special_quality": "Reliable, formal Yucatecan classics from a famed Yucatán lineage.",
+  "price_range": "$$$",
+  "address": "Campos Elíseos 164, Polanco",
+  "google_maps_query": "Los Almendros, Polanco, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Los Almendros Polanco",
+    "url": "https://www.chilango.com/comida/restaurantes/los-almendros-polanco/"
+   },
+   {
+    "title": "Matador Network",
+    "url": "https://matadornetwork.com/es/7-lugares-donde-puedes-encontrarte-con-yucatan-en-la-ciudad-de-mexico/"
+   },
+   {
+    "title": "Food & Pleasure",
+    "url": "https://foodandpleasure.com/restaurantes-de-comida-mexicana-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Nicos",
+  "neighborhood": "Clavería (Azcapotzalco)",
+  "category": "regional",
+  "subcategory": "Traditional Mexican / Puebla chiles en nogada",
+  "description": "Family-run by Gerardo Vázquez Lugo and Elena Lugo since 1957, ranked on Latin America's 50 Best (#37 in the edition El Universal cites). Famous for chiles en nogada with Puebla ingredients and a vegan version, plus traditional Mexican home cooking. Founding date from memory; verify.",
+  "special_quality": "Cuitláhuac family institution that treats traditional cooking as haute cuisine, far from the tourist core.",
+  "price_range": "$$$",
+  "address": "Av. Cuitláhuac 3102, Clavería, Azcapotzalco (verify)",
+  "google_maps_query": "Nicos, Clavería (Azcapotzalco), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "El Universal — Mexico culinary hub",
+    "url": "https://www.eluniversal.com.mx/english/mexico-culinary-hub/"
+   },
+   {
+    "title": "CDMX Secreta — chiles en nogada",
+    "url": "https://cdmxsecreta.com/mejores-chiles-en-nogada-cdmx/"
+   },
+   {
+    "title": "Uno TV — Taste Atlas chiles en nogada",
+    "url": "https://www.unotv.com/estilo-de-vida/gastronomia/los-mejores-chiles-en-nogada-de-mexico-segun-taste-atlas/"
+   }
+  ]
+ },
+ {
+  "name": "Casa Merlos",
+  "neighborhood": "Observatorio",
+  "category": "regional",
+  "subcategory": "Puebla — chalupas, mole poblano",
+  "description": "Serving Puebla-style food since 1985 with recipes drawn from the 18th century: chalupitas, red and green moles, mole poblano with chicken. Open Thursday to Sunday 1-6 pm; cash only per some reviews; service can be slow at weekend lunch.",
+  "special_quality": "Time-capsule Poblano casa with 18th-century recipes, open only four days a week.",
+  "price_range": "$$",
+  "address": "Victoriano Zepeda 80, Observatorio",
+  "google_maps_query": "Casa Merlos, Observatorio, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 4,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation",
+    "url": "https://www.theinfatuation.com/mexico-city/reviews/casa-merlos"
+   },
+   {
+    "title": "OpenTable",
+    "url": "https://www.opentable.com/casa-merlos"
+   }
+  ]
+ },
+ {
+  "name": "El Mural de los Poblanos",
+  "neighborhood": "Juárez",
+  "category": "regional",
+  "subcategory": "Puebla — chiles en nogada, cemitas, mole de caderas",
+  "description": "CDMX branch of a Puebla restaurant described as a museum of Puebla's history, culture and food, with three murals by José Antonio Álvarez Morán. Chiles en nogada (capeado or not), rabo de mestiza, longaniza de Tepeaca, mole de caderas in season, cemitas, tacos árabes.",
+  "special_quality": "Puebla's classic regional house transplanted whole, murals included.",
+  "price_range": "$$$",
+  "address": "Colonia Juárez, Cuauhtémoc (verify street address)",
+  "google_maps_query": "El Mural de los Poblanos, Juárez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 6,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — El Mural de los Poblanos",
+    "url": "https://www.chilango.com/comida/el-mural-de-los-poblanos-en-cdmx/"
+   },
+   {
+    "title": "Food & Pleasure tag",
+    "url": "https://foodandpleasure.com/tag/el-mural-de-los-poblanos"
+   }
+  ]
+ },
+ {
+  "name": "Seneri",
+  "neighborhood": "verify",
+  "category": "regional",
+  "subcategory": "Michoacán — corundas, charales, trout",
+  "description": "Run by a Michoacán-born chef; Chilango features corundas, charales with verdolagas, pork cheek in xanducata sauce and charcoal-grilled trout, plus aporreado and enchiladas michoacanas. Address not given in source.",
+  "special_quality": "One of few CDMX restaurants cooking Purépecha-region dishes such as corundas and xanducata.",
+  "price_range": "$$",
+  "address": "verify",
+  "google_maps_query": "Seneri, verify, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 3,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Corundas, charales y carnitas: Michoacán en la ciudad",
+    "url": "https://www.chilango.com/comida-y-tragos/corundas-charales-y-carnitas-michoacan-en-la-ciudad/"
+   }
+  ]
+ },
+ {
+  "name": "El Pozole de Moctezuma",
+  "neighborhood": "Guerrero",
+  "category": "regional",
+  "subcategory": "Guerrero — pozole verde",
+  "description": "Guerrero-style green pozole with pipián, sardines, avocado, chicharrón and a splash of mezcal; Chilango says it has no rival for pozole verde, Uno TV cites about 75 years of tradition (white version). Cheap, around $90-100 per bowl in 2018.",
+  "special_quality": "Seventy-five-year pozole verde reference in the Guerrero barrio, sardines and mezcal included.",
+  "price_range": "$",
+  "address": "Moctezuma 12, Guerrero",
+  "google_maps_query": "El Pozole de Moctezuma, Guerrero, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 5,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — pozole verde",
+    "url": "https://www.chilango.com/comida/pozole-verde-en-cdmx/"
+   },
+   {
+    "title": "México Desconocido — pozoles verdes",
+    "url": "https://www.mexicodesconocido.com.mx/los-mejores-pozoles-verdes-estilo-guerrero-de-la-cdmx.html"
+   },
+   {
+    "title": "Uno TV — 5 lugares pozole",
+    "url": "https://www.unotv.com/turismo/5-lugares-en-cdmx-para-comer-buen-pozole/"
+   }
+  ]
+ },
+ {
+  "name": "Casa Licha Acoxpa",
+  "neighborhood": "Villa Lázaro Cárdenas (Tlalpan)",
+  "category": "regional",
+  "subcategory": "Guerrero — pozole verde with pipián",
+  "description": "Recipe from Chilapa, Guerrero: pipián de pepita and free-range chicken breast, with house mezcal and bienmesabe for dessert. El Universal credits it with about 58 years; addresses vary by source, so confirm.",
+  "special_quality": "Chilapa-family pozole verde with pipián, in the far south of the city.",
+  "price_range": "$",
+  "address": "Calzada Acoxpa 457, Villa Lázaro Cárdenas (verify)",
+  "google_maps_query": "Casa Licha Acoxpa, Villa Lázaro Cárdenas (Tlalpan), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — pozole verde",
+    "url": "https://www.chilango.com/comida/pozole-verde-en-cdmx/"
+   },
+   {
+    "title": "El Universal — pozolerías",
+    "url": "https://www.eluniversal.com.mx/menu/las-mejores-pozolerias-de-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Fonda 99.99",
+  "neighborhood": "Del Valle",
+  "category": "regional",
+  "subcategory": "Yucatán — cochinita, relleno negro, papadzules",
+  "description": "Neighborhood Yucatecan fonda praised for generous, well-seasoned portions: pollo pibil in banana leaf, relleno negro, panuchos, poc chuc, codzitos, aguas de chaya. Sources give conflicting addresses.",
+  "special_quality": "Home-style Yucatecan fonda with a long menu of lesser-seen dishes like codzitos and pan de cazón.",
+  "price_range": "$$",
+  "address": "Moras 347, Del Valle (verify; Chilango lists Hera 38)",
+  "google_maps_query": "Fonda 99.99, Del Valle, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Matador Network",
+    "url": "https://matadornetwork.com/es/7-lugares-donde-puedes-encontrarte-con-yucatan-en-la-ciudad-de-mexico/"
+   },
+   {
+    "title": "Chilango — Dónde comer comida yucateca",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-comer-comida-yucateca-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Cochinita Country",
+  "neighborhood": "Coyoacán",
+  "category": "regional",
+  "subcategory": "Yucatán — queso relleno, frijol con puerco",
+  "description": "Operating since 1982 according to Chilango. Queso relleno, frijol con puerco, relleno negro con huevo, cochinita and papadzules.",
+  "special_quality": "Four decades of Yucatecan home cooking in Coyoacán.",
+  "price_range": "$$",
+  "address": "Allende 161, Coyoacán",
+  "google_maps_query": "Cochinita Country, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Dónde comer comida yucateca",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-comer-comida-yucateca-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Moloch (Mercado Medellín)",
+  "neighborhood": "Roma Norte",
+  "category": "regional",
+  "subcategory": "Yucatán — cochinita, panuchos, tortas",
+  "description": "Market stall run by a fourth-generation family: cochinita pibil tacos, panuchos, tortas and gringas, with a habanero 'Kut' salsa and weekend lechón or chamorro en pibil.",
+  "special_quality": "Fourth-generation Yucatecan stall hidden inside a Colombian-leaning market.",
+  "price_range": "$",
+  "address": "Mercado Medellín, Roma Norte",
+  "google_maps_query": "Moloch (Mercado Medellín), Roma Norte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango — Dónde comer comida yucateca",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-comer-comida-yucateca-en-cdmx/"
+   },
+   {
+    "title": "Food & Pleasure — Mercado Medellín",
+    "url": "https://foodandpleasure.com/mercado-medellin-en-la-colonia-roma/"
+   }
+  ]
+ },
+ {
+  "name": "Castacán",
+  "neighborhood": "Roma Norte",
+  "category": "regional",
+  "subcategory": "Yucatán — castacán (pork belly) tacos & panuchos",
+  "description": "From the Contramar team: short menu built around castacán, pork belly cooked for two days, served in tacos, tortas and panuchos, plus cochinita pibil. Tiled room, loud music, folding chairs.",
+  "special_quality": "Contramar's crew treats a Yucatecan weekend-leftover pork as a destination dish.",
+  "price_range": "$$",
+  "address": "Puebla 387, Roma Norte",
+  "google_maps_query": "Castacán, Roma Norte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 7,
+   "food": 8,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "The Infatuation",
+    "url": "https://www.theinfatuation.com/mexico-city/reviews/castacan"
+   },
+   {
+    "title": "Chilango — Dónde comer comida yucateca",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-comer-comida-yucateca-en-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Le-Lah-T'Ho",
+  "neighborhood": "San Pedro de los Pinos",
+  "category": "regional",
+  "subcategory": "Yucatán — platón surtido",
+  "description": "Matador's pick for first-timers: platón surtido with panucho, salbute, cochinita taco, papadzul and codzito; popular with Yucatán expats.",
+  "special_quality": "Yucatecan expats' canteen with the best sampler platter in town.",
+  "price_range": "$$",
+  "address": "Av. Patriotismo 456, San Pedro de los Pinos",
+  "google_maps_query": "Le-Lah-T'Ho, San Pedro de los Pinos, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 2,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Matador Network",
+    "url": "https://matadornetwork.com/es/7-lugares-donde-puedes-encontrarte-con-yucatan-en-la-ciudad-de-mexico/"
+   }
+  ]
+ },
+ {
+  "name": "Humberto's",
+  "neighborhood": "Del Valle",
+  "category": "regional",
+  "subcategory": "Yucatán — lechón, papadzules, puchero",
+  "description": "Yucatecan menu with taquitos de lechón, picaditas de tuétano, papadzules, puchero and barbacoa de lengua; Food & Pleasure says you can eat as well here as in Yucatán.",
+  "special_quality": "Yucatecan family kitchen with a rare puchero and strong dessert list.",
+  "price_range": "$$",
+  "address": "Patricio Sanz 1440, Del Valle",
+  "google_maps_query": "Humberto's, Del Valle, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Food & Pleasure",
+    "url": "https://foodandpleasure.com/?p=174777"
+   },
+   {
+    "title": "Matador Network",
+    "url": "https://matadornetwork.com/es/7-lugares-donde-puedes-encontrarte-con-yucatan-en-la-ciudad-de-mexico/"
+   }
+  ]
+ },
+ {
+  "name": "Corazón de Maguey",
+  "neighborhood": "Coyoacán",
+  "category": "regional",
+  "subcategory": "Oaxaca — tlayuda de tasajo, mezcal",
+  "description": "Mezcalería and Oaxacan kitchen on Parque Centenario; tlayuda de tasajo con quelites is the recommended order, central-Oaxaca dishes.",
+  "special_quality": "Coyoacán mezcal bar that cooks proper central-valley Oaxacan food.",
+  "price_range": "$$",
+  "address": "Parque Centenario 9A, Coyoacán",
+  "google_maps_query": "Corazón de Maguey, Coyoacán, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 5,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "CDMX Secreta — restaurantes oaxaqueños",
+    "url": "https://cdmxsecreta.com/restaurantes-oaxaquenos-en-la-cdmx-que-tienes-que-probar/"
+   }
+  ]
+ },
+ {
+  "name": "La Fonda del Recuerdo",
+  "neighborhood": "Anzures",
+  "category": "regional",
+  "subcategory": "Veracruz — seafood, traditional jarocho",
+  "description": "Traditional Veracruz cooking since 1956 in a family-style, festive room with jarocho music; seafood focus. Time Out rates it 3/5.",
+  "special_quality": "Almost seventy years of festive jarocho seafood service.",
+  "price_range": "$$",
+  "address": "verify",
+  "google_maps_query": "La Fonda del Recuerdo, Anzures, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Time Out México — comida veracruzana",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/restaurantes-de-comida-veracruzana-en-la-ciudad-de-mexico"
+   }
+  ]
+ },
+ {
+  "name": "Boca del Río",
+  "neighborhood": "San Rafael",
+  "category": "regional",
+  "subcategory": "Veracruz — camarones al albañil, huachinango a la veracruzana",
+  "description": "Veracruz seafood house that owns its shrimp boats and has operated about 74 years; camarones al albañil and huachinango a la veracruzana.",
+  "special_quality": "Veracruz seafood house with its own fleet, in business over seven decades.",
+  "price_range": "$$",
+  "address": "verify (San Rafael)",
+  "google_maps_query": "Boca del Río, San Rafael, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 7,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Time Out México — comida veracruzana",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/restaurantes-de-comida-veracruzana-en-la-ciudad-de-mexico"
+   }
+  ]
+ },
+ {
+  "name": "Yuban",
+  "neighborhood": "Roma Norte",
+  "category": "regional",
+  "subcategory": "Oaxaca — moles, tlayudas",
+  "description": "Chilango's 2016 guide lists it among places for Oaxacan food; Colima 268, open daily from 13:30. Source is old; confirm still open and menu specifics.",
+  "special_quality": "Roma Oaxacan restaurant with mezcal-bar pedigree.",
+  "price_range": "$$",
+  "address": "Colima 268, Roma Norte",
+  "google_maps_query": "Yuban, Roma Norte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "reservations-recommended",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango — antojitos oaxaqueños",
+    "url": "https://www.chilango.com/comida-y-tragos/antojitos-oaxquenos-en-cdmx/"
+   }
+  ]
+ }
+]

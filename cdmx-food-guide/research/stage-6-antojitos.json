@@ -1,0 +1,600 @@
+[
+ {
+  "name": "Comal Oculto",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Gorditas and comal dishes",
+  "description": "Michelin Bib Gourmand spot in San Miguel Chapultepec built around the comal, with one long communal table. Michelin singles out the gordita especial. Open only a few days a week at lunch, so check before going.",
+  "special_quality": "A Bib Gourmand comal counter where the gordita especial is the draw.",
+  "price_range": "$",
+  "address": "Protasio Tagle 66A, San Miguel Chapultepec (a third-party listing gives Manuel Gómez Pedraza 37; verify)",
+  "google_maps_query": "Comal Oculto, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 6,
+   "food": 8,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Michelin Guide - Comal Oculto",
+    "url": "https://guide.michelin.com/mx/es/ciudad-de-mexico/miguel-hidalgo_1999281/restaurante/comal-oculto"
+   },
+   {
+    "title": "Wikipedia - Michelin Bib Gourmand Mexico",
+    "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+   }
+  ]
+ },
+ {
+  "name": "Tamales Doña Emi",
+  "neighborhood": "Roma Sur",
+  "category": "antojitos",
+  "subcategory": "Tamales and guajolotas",
+  "description": "Family tamal stand that began as a cart in the 1960s, now run by the founder's granddaughter. Big, fluffy, moist tamales in classic (verde, mole, rajas) and modern flavors like huitlacoche with goat cheese and frijol with chapulines. Order a guajolota (tamal in a bolillo) with atole; they sell out by midday.",
+  "special_quality": "The Roma tamal institution, with 60-plus years of family history and a mod menu next to the classics.",
+  "price_range": "$",
+  "address": "Jalapa s/n (about no. 277-278), esq. Tlaxcala, Roma Sur; Tue-Sun mornings (verify)",
+  "google_maps_query": "Tamales Doña Emi, Roma Sur, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 6,
+   "food": 8,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Culinary Backstreets - Doña Emi",
+    "url": "https://culinarybackstreets.com/?p=29334"
+   },
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   },
+   {
+    "title": "Food and Pleasure - Guajolotas en Roma Sur",
+    "url": "https://foodandpleasure.com/que-hacer-en-la-roma-sur-comer-tamales/"
+   }
+  ]
+ },
+ {
+  "name": "Tortas Armando",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Historic tortería",
+  "description": "Claims to trace to 1892, when Armando Martínez Centurión sold tortas from a portal in the Centro. More than 20 varieties, from jamón y queso to pastor and chilaquiles. Two branches (Cuauhtémoc and Del Valle).",
+  "special_quality": "One of the oldest continuously operating tortas brands in the city, claiming 1892.",
+  "price_range": "$",
+  "address": "Río Nazas 64, Cuauhtémoc; also Pedro Romero de Terreros 201, Del Valle",
+  "google_maps_query": "Tortas Armando, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 6,
+   "food": 7,
+   "weird": 2
+  },
+  "source_links": [
+   {
+    "title": "Posta - Míticas torterías de CDMX con más de 100 años",
+    "url": "https://www.posta.com.mx/cdmx/estas-miticas-torterias-de-cdmx/vl2001200"
+   },
+   {
+    "title": "TV Azteca - Mejores tortas de la CDMX",
+    "url": "https://www.tvazteca.com/aztecanoticias/cuales-son-las-mejores-tortas-la-cdmx"
+   }
+  ]
+ },
+ {
+  "name": "La Casa del Pavo",
+  "neighborhood": "Centro Histórico",
+  "category": "antojitos",
+  "subcategory": "Turkey tortas",
+  "description": "Century-old Centro tortería, reported opened in 1901 on Motolinía, famous for its turkey torta (turkey bought at La Merced, prepared a la vinagreta and griddled) and a bacalao torta. It appears in Cuarón's Roma and is tied to the torta cubana origin story. A 2015 column reported a closure, but 2023-2025 pieces describe it as open; verify.",
+  "special_quality": "Turkey torta from a 1901 counter, with a film cameo and a disputed role in inventing the cubana.",
+  "price_range": "$",
+  "address": "Motolinía 40, Centro Histórico (verify current status)",
+  "google_maps_query": "La Casa del Pavo, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 9,
+   "hype": 6,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Posta - Míticas torterías de CDMX con más de 100 años",
+    "url": "https://www.posta.com.mx/cdmx/estas-miticas-torterias-de-cdmx/vl2001200"
+   },
+   {
+    "title": "El Financiero - La Casa del Pavo, tortería antigua de CDMX",
+    "url": "https://www.elfinanciero.com.mx/food-and-drink/2023/05/13/la-casa-del-pavo-historia-de-una-de-las-torterias-antiguas-de-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "La Texcocana",
+  "neighborhood": "Centro Histórico",
+  "category": "antojitos",
+  "subcategory": "Historic tortería",
+  "description": "Centro tortería from 1936 that serves a small, crisp telera. Known for bacalao and pork tortas.",
+  "special_quality": "A 1936 Centro counter with a small crisp telera and good bacalao.",
+  "price_range": "$",
+  "address": "Independencia 87-A, Centro Histórico",
+  "google_maps_query": "La Texcocana, Centro Histórico, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 7,
+   "weird": 2
+  },
+  "source_links": [
+   {
+    "title": "Posta - Míticas torterías de CDMX con más de 100 años",
+    "url": "https://www.posta.com.mx/cdmx/estas-miticas-torterias-de-cdmx/vl2001200"
+   }
+  ]
+ },
+ {
+  "name": "Café La Perla (Mixcoac)",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Historic tortería",
+  "description": "Mixcoac tortería from 1958 with a wide menu: milanesa, pierna adobada, bacalao and chilaquiles, plus mini tortitas. Chilango features its torta de pierna.",
+  "special_quality": "A 1958 Mixcoac neighborhood tortería famous for its pierna torta.",
+  "price_range": "$",
+  "address": "Molinos 4, Mixcoac",
+  "google_maps_query": "Café La Perla (Mixcoac), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 4,
+   "food": 7,
+   "weird": 2
+  },
+  "source_links": [
+   {
+    "title": "Posta - Míticas torterías de CDMX con más de 100 años",
+    "url": "https://www.posta.com.mx/cdmx/estas-miticas-torterias-de-cdmx/vl2001200"
+   },
+   {
+    "title": "Chilango - Tortas Chilango: guía de torterías",
+    "url": "https://www.chilango.com/comida-y-tragos/tortas-chilango-una-guia-de-las-mejores-torterias-de-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "La Esquina del Chilaquil",
+  "neighborhood": "Condesa",
+  "category": "antojitos",
+  "subcategory": "Tortas de chilaquiles",
+  "description": "Corner stall that sells the 'tecolota': a torta of milanesa, chilaquiles (red, green or campechano), crema and queso. Run by sisters who inherited it from their great-grandmother. Time Out mentions weekend lines of around 30 minutes; the cochinita torta is also recommended.",
+  "special_quality": "Chilaquil-and-milanesa torta from a family stall on a Condesa corner.",
+  "price_range": "$",
+  "address": "Alfonso Reyes and Tamaulipas, Condesa (verify hours; 2015/2020 sources)",
+  "google_maps_query": "La Esquina del Chilaquil, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 6,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Las mejores tortas del DF",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/las-mejores-tortas-del-df"
+   },
+   {
+    "title": "Culinary Backstreets - Mexico City street food",
+    "url": "https://culinarybackstreets.com/?p=7177"
+   }
+  ]
+ },
+ {
+  "name": "Tortas Don Polo",
+  "neighborhood": "Del Valle",
+  "category": "antojitos",
+  "subcategory": "Tortas",
+  "description": "Neighborhood torta institution on Félix Cuevas in Del Valle, known for a simple cubana (pierna, jamón, queso). It has odd entries like flor de calabaza and Sunday paella.",
+  "special_quality": "A Del Valle torta classic with an uncomplicated cubana.",
+  "price_range": "$",
+  "address": "Félix Cuevas, Del Valle (verify exact address; sources conflict)",
+  "google_maps_query": "Tortas Don Polo, Del Valle, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 4,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Las mejores tortas del DF",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/las-mejores-tortas-del-df"
+   },
+   {
+    "title": "TV Azteca - Mejores tortas de la CDMX",
+    "url": "https://www.tvazteca.com/aztecanoticias/cuales-son-las-mejores-tortas-la-cdmx"
+   }
+  ]
+ },
+ {
+  "name": "Tlacoyotitlán",
+  "neighborhood": "Santa María la Ribera",
+  "category": "antojitos",
+  "subcategory": "Tlacoyos",
+  "description": "Tlacoyo specialist near the Kiosco Morisco. The standout is tlacoyos drowned in mole or salsa verde, with bistec or arrachera options, and they sell them by the dozen. WhatsApp for the menu del día.",
+  "special_quality": "A dedicated tlacoyo shop where they come ahogados in mole.",
+  "price_range": "$",
+  "address": "Salvador Díaz Mirón 84, Santa María la Ribera",
+  "google_maps_query": "Tlacoyotitlán, Santa María la Ribera, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Tlacoyos en la CDMX",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/tlacoyos-en-la-cdmx"
+   },
+   {
+    "title": "El Universal - Dónde comer pambazos en la CDMX",
+    "url": "https://www.eluniversal.com.mx/menu/donde-comer-pambazos-en-la-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "La Chalupería",
+  "neighborhood": "San Rafael",
+  "category": "antojitos",
+  "subcategory": "Puebla-style antojitos and tlacoyos",
+  "description": "Puebla-style antojitos spot in San Rafael. Its tlacoyos are rectangular, Zacatlán-style, filled with arvejón and finished with a special salsa, aged cheese and onion. Hours in the source are from 2020; verify.",
+  "special_quality": "Rectangular Zacatlán-style tlacoyos with arvejón, which are rare in the city.",
+  "price_range": "$",
+  "address": "Miguel E. Schultz 8, San Rafael",
+  "google_maps_query": "La Chalupería, San Rafael, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Time Out México - Tlacoyos en la CDMX",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/tlacoyos-en-la-cdmx"
+   }
+  ]
+ },
+ {
+  "name": "El Huarache Azteca",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Huaraches",
+  "description": "Artes Gráficas fonda claiming roughly 85 years of history in the huarache story, around Torno near Mercado Jamaica. Known for mole rojo and verde, longaniza with nopales, and chuleta in salsa morita. 2019 source; verify hours.",
+  "special_quality": "Huarache specialists from the street where the dish is said to have been born.",
+  "price_range": "$",
+  "address": "Torno 154, Artes Gráficas",
+  "google_maps_query": "El Huarache Azteca, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 8,
+   "hype": 3,
+   "food": 7,
+   "weird": 3
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Los mejores huaraches en la CDMX",
+    "url": "https://www.chilango.com/comida-y-tragos/donde-comer-huaraches-en-la-cdmx/"
+   },
+   {
+    "title": "Chilango - La competencia directa (Huarache Azteca)",
+    "url": "https://www.chilango.com/comida-y-tragos/huarache-azteca/"
+   }
+  ]
+ },
+ {
+  "name": "Los Tamalitos de la Balbuena",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Tamales",
+  "description": "Jardín Balbuena tamalería credited with inventing the tamal de gansito. Other flavors: chile morita with pork, cochinita with piña, and a seasonal pork rib with habas in salsa verde.",
+  "special_quality": "Home of the tamal de gansito, according to Chilango.",
+  "price_range": "$",
+  "address": "Retorno 24 de Fray Servando Teresa de Mier 8, Jardín Balbuena; Tue-Sun mornings",
+  "google_maps_query": "Los Tamalitos de la Balbuena, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tamalería Domy",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Tamales",
+  "description": "Moderna tamalería that usually has a line. Favorites are frijol refrito with cheese and salsa verde, suadero, cambray with chicken, and guayaba with queso and chocorrol.",
+  "special_quality": "A line-forming neighborhood tamalería with suadero and chocorrol-guayaba tamales.",
+  "price_range": "$",
+  "address": "Miguel Ángel 103, Moderna",
+  "google_maps_query": "Tamalería Domy, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 4,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Guajolotongos",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Tortas de tamal",
+  "description": "Morning stand famous for the guachilorta: a torta de tamal in a telera with chilaquiles, crema, queso, onion and chicken. Sweet or savory tamal.",
+  "special_quality": "The guachilorta, a tamal and chilaquiles torta, as the heaviest breakfast in town.",
+  "price_range": "$",
+  "address": "Holbein y Patriotismo, Nonoalco; daily 7-12",
+  "google_maps_query": "Guajolotongos, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 4,
+   "food": 7,
+   "weird": 7
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tamales Don Vic (Mercado de Granaditas)",
+  "neighborhood": "Tepito",
+  "category": "antojitos",
+  "subcategory": "Tamales de masa colada",
+  "description": "Weekend tamal stand at the Mercado de Granaditas known for masa colada tamales weighing over half a kilo, in flavors like pollo adobado and manchego with jalapeño salsa and hoja santa.",
+  "special_quality": "Half-kilo masa-colada tamales in Tepito, open weekends only.",
+  "price_range": "$",
+  "address": "Mercado de Granaditas, puerta 1 (Eje 1), Tepito; Sat-Sun 11-18",
+  "google_maps_query": "Tamales Don Vic (Mercado de Granaditas), Tepito, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 4,
+   "hype": 3,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Banqueteros (Mercado de Jamaica)",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Tamales",
+  "description": "Morning tamal stand inside Mercado de Jamaica known for champiñón and verdolagas tamales, served with atole de pinole and pan de dulce.",
+  "special_quality": "Mushroom and purslane tamales with pinole atole at the flower market.",
+  "price_range": "$",
+  "address": "Mercado de Jamaica, pasillo 88, Guillermo Prieto 45, Jamaica; daily 7-11",
+  "google_maps_query": "Banqueteros (Mercado de Jamaica), Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Tamales Madre",
+  "neighborhood": "Juárez",
+  "category": "antojitos",
+  "subcategory": "Tamales de maíz criollo",
+  "description": "Juárez tamalería using criollo corn, with the widest range in the colonia per Chilango. Offers tastings and workshops, and Chilango suggests eating there.",
+  "special_quality": "Heirloom-corn tamal shop with tastings and workshops.",
+  "price_range": "$",
+  "address": "Liverpool 44a, Juárez; Tue-Sun 8-18",
+  "google_maps_query": "Tamales Madre, Juárez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 5,
+   "food": 7,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Molino El Pujol",
+  "neighborhood": "Condesa",
+  "category": "antojitos",
+  "subcategory": "Tortillería, tamales and masa",
+  "description": "Pujol's tortillería and molino, a Michelin Bib Gourmand in the 2026 list. Fixed tamales include frijol con quesillo, carrot in red mole and cauliflower with rajas, with agua de maíz and the atole of the day.",
+  "special_quality": "Pujol's own masa counter, a Bib Gourmand.",
+  "price_range": "$",
+  "address": "General Benjamín Hill 146, Condesa",
+  "google_maps_query": "Molino El Pujol, Condesa, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 7,
+   "food": 8,
+   "weird": 4
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)",
+    "url": "https://www.chilango.com/comida-y-tragos/tamales-tamalerias-tortillerias-cdmx/"
+   },
+   {
+    "title": "Wikipedia - Michelin Bib Gourmand Mexico",
+    "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+   }
+  ]
+ },
+ {
+  "name": "Esquites Don Josué",
+  "neighborhood": "Narvarte",
+  "category": "antojitos",
+  "subcategory": "Esquites with bone marrow",
+  "description": "Over 40 years of history, known as the Xola esquites. Beef marrow is available Tuesday, Thursday and Friday, with waits up to an hour; other days chicken, beef, longaniza or shrimp. Chilango's 2019 guide lists it at Eje Central 574, while Time Out lists Navarra 39 (Álamos); verify.",
+  "special_quality": "The marrow esquites with a decades-long Narvarte line.",
+  "price_range": "$",
+  "address": "Eje Central Lázaro Cárdenas 574, Narvarte Oriente (verify; a second listing says Navarra 39, Álamos)",
+  "google_maps_query": "Esquites Don Josué, Narvarte, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 6,
+   "hype": 5,
+   "food": 7,
+   "weird": 5
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Esquites en CDMX",
+    "url": "https://www.chilango.com/comida/esquites-en-cdmx/"
+   },
+   {
+    "title": "Time Out México - Esquites en la CDMX",
+    "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/esquites-en-la-ciudad-de-mexico"
+   }
+  ]
+ },
+ {
+  "name": "Antojitos Muy Vargas",
+  "neighborhood": "other",
+  "category": "antojitos",
+  "subcategory": "Pambazos",
+  "description": "Álamos stall known for creative pambazos like the pambalentín (heart-shaped) and pambamuerto alongside traditional ones. Chilango's 2025 pambazo roundup lists it first.",
+  "special_quality": "Heart-shaped pambalentín and other inventive pambazos.",
+  "price_range": "$",
+  "address": "Calle 5 de Febrero 514, Álamos, Benito Juárez",
+  "google_maps_query": "Antojitos Muy Vargas, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 3,
+   "hype": 5,
+   "food": 7,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Chilango - Dónde venden los pambazos más ricos (sep 2025)",
+    "url": "https://www.chilango.com/comida-y-tragos/restaurantes/donde-venden-pambazos-mas-ricos-cdmx/"
+   }
+  ]
+ },
+ {
+  "name": "Pambazos at the Sullivan Saturday tianguis",
+  "neighborhood": "Juárez",
+  "category": "antojitos",
+  "subcategory": "Pambazos",
+  "description": "Unsigned street stand in the Saturday market that fills parking lots on Avenida Sullivan. Culinary Backstreets calls it the best pambazo it found, and says it is run by the family behind El Profe barbacoa in Mercado Jamaica. Saturday only; no name or sign, so ask around.",
+  "special_quality": "The best pambazo Culinary Backstreets found, at an unmarked Saturday stand.",
+  "price_range": "$",
+  "address": "Avenida Sullivan Saturday market, Juárez (exact spot: verify)",
+  "google_maps_query": "Pambazos at the Sullivan Saturday tianguis, Juárez, Ciudad de Mexico",
+  "reservation_url": null,
+  "reservation_type": "walk-in",
+  "menu_url": null,
+  "scores": {
+   "iconic": 5,
+   "hype": 3,
+   "food": 8,
+   "weird": 6
+  },
+  "source_links": [
+   {
+    "title": "Culinary Backstreets - Pambazos",
+    "url": "https://culinarybackstreets.com/tag/pambazos"
+   },
+   {
+    "title": "Culinary Backstreets - Mexico City street food",
+    "url": "https://culinarybackstreets.com/?p=7177"
+   }
+  ]
+ }
+]

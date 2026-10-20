@@ -1,0 +1,624 @@
+[
+  {
+    "name": "Handshake Speakeasy",
+    "neighborhood": "Juárez",
+    "category": "bar",
+    "subcategory": "Classic and author cocktails",
+    "description": "Art Deco speakeasy in the Zona Rosa, named North America's Best Bar two years running (2024, 2025). Drinks program is the draw: clarified, technical, serious classics and author cocktails. Food score reflects drinks program plus small bites.",
+    "special_quality": "The most decorated cocktail bar in North America, reachable only by reservation.",
+    "price_range": "$$$",
+    "address": "Calle Amberes 65, Juárez (Zona Rosa) - verify",
+    "google_maps_query": "Handshake Speakeasy, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-required",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 9,
+      "food": 9,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      },
+      {
+        "title": "Chilango - mejores bares de CDMX",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mejores-bares-de-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "Tlecān",
+    "neighborhood": "Roma Norte",
+    "category": "mezcalería",
+    "subcategory": "Agave bar, pre-Hispanic concept",
+    "description": "Mezcal and agave bar run by Eli Martínez Bello, formerly head of the Pujol beverage program. Short list of small-batch mezcals from producers who do not export, in a room built around a replica of the Aztec Mictlantecuhtli disc. Ranked No. 3 in North America's 50 Best 2025. Food score reflects drinks program.",
+    "special_quality": "A top-three North American bar built entirely around rare Mexican agave spirits.",
+    "price_range": "$$$",
+    "address": "Av. Álvaro Obregón 228, Local 2, Roma Norte",
+    "google_maps_query": "Tlecān, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 8,
+      "food": 9,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      },
+      {
+        "title": "Punch - Tlecān Tascalate Sour",
+        "url": "https://punchdrink.com/articles/tlecan-tascalate-sour-mexico-city-mezcal-cocktail/"
+      },
+      {
+        "title": "En Primeur Club - Tlecān",
+        "url": "https://www.enprimeurclub.com/bars/tlecn-mexico-city"
+      }
+    ]
+  },
+  {
+    "name": "Licorería Limantour",
+    "neighborhood": "Roma Norte",
+    "category": "bar",
+    "subcategory": "Cocktail bar, Art Deco",
+    "description": "The bar that put CDMX on the world cocktail map: Art Deco room, science-driven drinks, and the Margarita al pastor. Best World's 50 Best finish was No. 6 (2021); No. 52 in 2025 and No. 20 in North America's list 2026. Food score reflects drinks program plus bar food.",
+    "special_quality": "The Margarita al pastor and the bar that launched Mexico's cocktail boom.",
+    "price_range": "$$$",
+    "address": "Álvaro Obregón 106, Roma Norte",
+    "google_maps_query": "Licorería Limantour, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 9,
+      "food": 8,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "The World's 50 Best Bars - Licorería Limantour",
+        "url": "https://www.theworlds50best.com/bars/the-list/licoreria-limantour.html"
+      },
+      {
+        "title": "Chilango - mejores bares de CDMX",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mejores-bares-de-cdmx/"
+      },
+      {
+        "title": "El Financiero - 4 bares mexicanos en el top 50",
+        "url": "https://www.elfinanciero.com.mx/food-and-drink/2021/12/09/asi-son-los-4-bares-mexicanos-que-llegaron-al-top-50-mundial/"
+      }
+    ]
+  },
+  {
+    "name": "Bar Mauro",
+    "neighborhood": "Roma Norte",
+    "category": "bar",
+    "subcategory": "Vermouth, amaro and aperitivo bar",
+    "description": "Opened October 2024 by brothers Ricardo and Eduardo Nava (Ricardo ex-Limantour), honoring their grandfather Mauro. Shelves of vermouth and amari, negronis, spritzes and European classics. Won the Campari One To Watch Award 2025 and placed No. 2 in North America's 50 Best. Food score reflects drinks program.",
+    "special_quality": "Instant No. 2 in North America: a grandfather's aperitivo hour rebuilt as a bar.",
+    "price_range": "$$$",
+    "address": "Tabasco 149, Roma Norte",
+    "google_maps_query": "Bar Mauro, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 8,
+      "food": 9,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "The World's 50 Best Bars - Bar Mauro",
+        "url": "https://www.theworlds50best.com/bars/northamerica/the-list/bar-mauro.html"
+      },
+      {
+        "title": "The World's 50 Best Bars - One To Watch story",
+        "url": "https://www.theworlds50best.com/stories/News/bar-mauro-one-to-watch-the-worlds-50-best-bars-2025.html"
+      },
+      {
+        "title": "Chilango - Bar Mauro segundo lugar",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/bar-mauro-the-50-best-bars-norteamerica-cdmx-segundo-lugar/"
+      }
+    ]
+  },
+  {
+    "name": "Baltra Bar",
+    "neighborhood": "Condesa",
+    "category": "bar",
+    "subcategory": "Classic-based cocktails, Darwin theme",
+    "description": "Tiny Darwin-themed bar with a short chalkboard menu, seasonal drinks and martini Tuesdays; a few tables and stools. World's 50 Best Bars No. 78 in 2025, No. 20 in North America. Food score reflects drinks program.",
+    "special_quality": "A 20-seat neighbourhood bar that keeps landing on world lists.",
+    "price_range": "$$",
+    "address": "Iztaccíhuatl 36D, Condesa",
+    "google_maps_query": "Baltra Bar, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 7,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The World's 50 Best Bars - Baltra Bar",
+        "url": "https://www.theworlds50best.com/bars/northamerica/the-list/Baltra-bar.html"
+      },
+      {
+        "title": "The Infatuation - Baltra Bar",
+        "url": "https://www.theinfatuation.com/mexico-city/reviews/baltra-bar"
+      },
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      }
+    ]
+  },
+  {
+    "name": "Bijou Drinkery Room",
+    "neighborhood": "Condesa",
+    "category": "bar",
+    "subcategory": "Rooftop-hidden speakeasy",
+    "description": "Speakeasy tucked inside L'oie Foodie Rooftop, new entry at No. 34 in North America's 50 Best 2025 with a youthful, fresh cocktail program. Food score reflects drinks program.",
+    "special_quality": "A hidden room inside a rooftop restaurant, newly on the North America list.",
+    "price_range": "$$$",
+    "address": "Av. Sonora 189-B, Hipódromo (Condesa)",
+    "google_maps_query": "Bijou Drinkery Room, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 1,
+      "hype": 6,
+      "food": 7,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      },
+      {
+        "title": "OpenTable - Bijou Drinkery Room",
+        "url": "https://www.opentable.ie/r/bijou-drinkery-room-ciudad-de-mexico"
+      }
+    ]
+  },
+  {
+    "name": "Hanky Panky Cocktail Bar",
+    "neighborhood": "Juárez",
+    "category": "bar",
+    "subcategory": "Speakeasy with food pairing",
+    "description": "Speakeasy whose entrance is behind a tiny taquería; the address is given only with a reservation. Inventive cocktails and a food-pairing experience; No. 35 in North America's 50 Best 2025. Food score reflects drinks plus pairing food.",
+    "special_quality": "The hidden-door speakeasy: reserve by DM to learn the address.",
+    "price_range": "$$$",
+    "address": "Turín 50-52, Juárez - verify (given with reservation)",
+    "google_maps_query": "Hanky Panky Cocktail Bar, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-required",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 8,
+      "food": 8,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      },
+      {
+        "title": "The World's 50 Best Bars - Hanky Panky",
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Mexico-City/Hanky-Panky.html"
+      },
+      {
+        "title": "Difford's Guide - Hanky Panky",
+        "url": "https://www.diffordsguide.com/bars/dzLm27/hanky-panky"
+      }
+    ]
+  },
+  {
+    "name": "Kaito",
+    "neighborhood": "Juárez",
+    "category": "bar",
+    "subcategory": "Izakaya-style cocktail bar",
+    "description": "Founded 2016 as the first Latin American bar founded and run by women (originally Kaito del Valle); moved to Juárez in 2025 with a bigger space, DJ booth, hidden karaoke and kitchen. Japanese-Mexican cocktails; No. 40 in North America's 50 Best 2025 (as Kaito del Valle). Food score reflects drinks program.",
+    "special_quality": "Japanese izakaya meets Mexican cocktails, run by an all-women team.",
+    "price_range": "$$",
+    "address": "Juárez (new 2025 address) - verify",
+    "google_maps_query": "Kaito, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 6,
+      "food": 7,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "Chilango - Kaito deja la Del Valle",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/kaito-del-valle-mudanza-juarez/amp/"
+      },
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      }
+    ]
+  },
+  {
+    "name": "Café de Nadie",
+    "neighborhood": "Roma Norte",
+    "category": "bar",
+    "subcategory": "Vinyl listening bar",
+    "description": "Coffee shop by day, listening bar at night with about 1,500 vinyl records and a hi-fi; each original drink is inspired by a song. Ranked on North America's 50 Best (No. 15 in 2022, No. 47 in 2025). Food score reflects drinks program.",
+    "special_quality": "Cocktails named after songs, poured under 1,500 records.",
+    "price_range": "$$",
+    "address": "Chihuahua 135, Roma Norte",
+    "google_maps_query": "Café de Nadie, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 6,
+      "food": 7,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "The World's 50 Best Bars - Café de Nadie",
+        "url": "https://www.theworlds50best.com/bars/northamerica/the-list/cafe-de-nadie.html"
+      },
+      {
+        "title": "Difford's Guide - Café de Nadie",
+        "url": "https://www.diffordsguide.com/bars/v5jP07/cafe-de-nadie"
+      },
+      {
+        "title": "Time Out México - bares de CDMX en 50 Best",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-y-cantinas/bares-de-cdmx-en-50-best-bars"
+      }
+    ]
+  },
+  {
+    "name": "Fifty Mils",
+    "neighborhood": "Juárez",
+    "category": "bar",
+    "subcategory": "Hotel cocktail bar",
+    "description": "Cocktail bar inside the Four Seasons Hotel on Paseo de la Reforma; debuted on the World's 50 Best Bars list in 2018 and placed fourth in Food & Wine's 2025 top hotel bars. Food score reflects drinks program.",
+    "special_quality": "Hotel bar with a global 50 Best pedigree and a jigger-measure name.",
+    "price_range": "$$$$",
+    "address": "Four Seasons Hotel, Paseo de la Reforma, Juárez - verify number",
+    "google_maps_query": "Fifty Mils, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 7,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "The World's 50 Best Bars - Fifty Mils",
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Mexico-City/Fifty-Mils.html"
+      },
+      {
+        "title": "Four Seasons press - top hotel bars",
+        "url": "https://press.fourseasons.com/mexico/hotel-news/2025/top-hotel-bars-in-the-world-fifty-mils"
+      }
+    ]
+  },
+  {
+    "name": "Jules Basement",
+    "neighborhood": "Polanco",
+    "category": "bar",
+    "subcategory": "Fridge-door speakeasy",
+    "description": "Basement speakeasy entered through an industrial refrigerator door at the back of a taquería; catacomb-like room, praised for a mezcal negroni. Appears in Forbes México and Time Out lists. Food score reflects drinks program; may be dated.",
+    "special_quality": "Walk through a fridge door behind a taquería into a cocktail catacomb.",
+    "price_range": "$$$",
+    "address": "Polanco - verify (given with reservation)",
+    "google_maps_query": "Jules Basement, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-required",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 6,
+      "food": 7,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Time Out - Jules Basement",
+        "url": "https://www.timeout.com/mexico-city/bars/jules-basement"
+      },
+      {
+        "title": "Cool Hunting - Jules Basement",
+        "url": "https://coolhunting.com/travel/jules-basement/"
+      }
+    ]
+  },
+  {
+    "name": "Bósforo",
+    "neighborhood": "Centro Histórico",
+    "category": "mezcalería",
+    "subcategory": "Mezcal bar",
+    "description": "Tiny, minimalist bar behind rusty doors with ultra-artisanal mezcals from Oaxaca, Michoacán, Guerrero, Puebla and San Luis Potosí. Known for blue-corn and hoja santa quesadillas and a strong music selection. Food score reflects mezcal program plus quesadillas.",
+    "special_quality": "The mezcal nerds' bar: unmarked door, tiny room, rare bottles.",
+    "price_range": "$$",
+    "address": "Luis Moya 31, Local 2, Centro Histórico",
+    "google_maps_query": "Bósforo, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 7,
+      "food": 8,
+      "weird": 7
+    },
+    "source_links": [
+      {
+        "title": "Afar - Bósforo",
+        "url": "https://www.afar.com/places/bosforo-ciudad-de-mexico"
+      },
+      {
+        "title": "Time Out México - Bósforo",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/bosforo"
+      },
+      {
+        "title": "Chilango - mezcalerías que sobrevivieron al boom",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mezcalerias-que-sobrevivieron-al-boom/"
+      }
+    ]
+  },
+  {
+    "name": "Alipús Endémico",
+    "neighborhood": "Condesa",
+    "category": "mezcalería",
+    "subcategory": "Mezcalería with Oaxacan kitchen",
+    "description": "Showcase for the Alipús producer brand with a kitchen serving Oaxacan specialties, plus wine, beer and cocktails. Time Out gave it 3 of 5 stars. Food score reflects drinks plus kitchen.",
+    "special_quality": "Mezcal straight from a single producer's palenque brand, with Oaxacan plates.",
+    "price_range": "$$",
+    "address": "Aguascalientes 232, Condesa",
+    "google_maps_query": "Alipús Endémico, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 5,
+      "food": 6,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Afar - Alipús Condesa",
+        "url": "https://www.afar.com/places/alipus-endemico-ciudad-de-mexico"
+      },
+      {
+        "title": "Time Out México - Alipús Endémico",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/alipus-endemico"
+      }
+    ]
+  },
+  {
+    "name": "La Botica",
+    "neighborhood": "Condesa",
+    "category": "mezcalería",
+    "subcategory": "Apothecary-style mezcal bar",
+    "description": "Long-running apothecary-styled mezcal chain with about 50 mezcals from Mexican small producers, with several branches. Culture Trip, Goop and Time Out recommend the Condesa branches. Food score reflects mezcal program.",
+    "special_quality": "Apothecary shelves of 50 mezcals with prices that scale with rarity.",
+    "price_range": "$$",
+    "address": "Condesa (Alfonso Reyes 120 / Av. Tamaulipas) - verify",
+    "google_maps_query": "La Botica, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 6,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - La Botica Alfonso Reyes",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/antros-bares/la-botica-alfonso-reyes"
+      },
+      {
+        "title": "Culture Trip - Mezcal in Mexico City",
+        "url": "https://theculturetrip.com/mexico/articles/the-best-places-to-try-mezcal-in-mexico-city"
+      },
+      {
+        "title": "En Primeur Club - La Botica",
+        "url": "https://www.enprimeurclub.com/bars/la-botica-mexico-city-bar"
+      }
+    ]
+  },
+  {
+    "name": "Corazón de Maguey",
+    "neighborhood": "Coyoacán",
+    "category": "mezcalería",
+    "subcategory": "Mezcalería and restaurant",
+    "description": "Coyoacán mezcalería-restaurant with over 50 artisanal and campesino mezcals, seasonal regional-food pairings, often with a line without a reservation. Travesías Digital notes it is touristy and pricier.",
+    "special_quality": "Coyoacán's plaza-side mezcal institution with food pairings.",
+    "price_range": "$$$",
+    "address": "Centenario 9, Coyoacán",
+    "google_maps_query": "Corazón de Maguey, Coyoacán, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 6,
+      "food": 6,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango - mezcalerías que sobrevivieron al boom",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mezcalerias-que-sobrevivieron-al-boom/"
+      },
+      {
+        "title": "Travesías Digital - Five mezcal bars",
+        "url": "https://travesiasdigital.com/en-us/five-mezcal-bars-in-mexico-city-you-must-visit"
+      }
+    ]
+  },
+  {
+    "name": "Sabrá Dios",
+    "neighborhood": "Condesa",
+    "category": "mezcalería",
+    "subcategory": "Mezcal shop and bar",
+    "description": "Small shop with bottles from about 205 to 1,400 pesos, staff who guide selection, and producers from several states. Reinvests profits in education in mezcal communities. Source dates to 2013-era; verify still open.",
+    "special_quality": "A mezcal shop that teaches you what you are buying.",
+    "price_range": "$",
+    "address": "Veracruz 15A esquina Zamora, Condesa - verify",
+    "google_maps_query": "Sabrá Dios, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 4,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Chilango - mezcalerías que sobrevivieron al boom",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mezcalerias-que-sobrevivieron-al-boom/"
+      },
+      {
+        "title": "Time Out México - mejores mezcalerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-cantinas/las-mejores-mezcalerias"
+      }
+    ]
+  },
+  {
+    "name": "Mezcalería Finca Robles",
+    "neighborhood": "Roma Norte",
+    "category": "mezcalería",
+    "subcategory": "Producer bar in a market",
+    "description": "Small counter bar in Mercado Roma pouring 100% artesanal Finca Robles mezcal from Sola de Vega, Oaxaca, plus mezcal margaritas and a mezcal negroni. Time Out rated 4 of 5.",
+    "special_quality": "Producer-direct mezcal from Sola de Vega at a market counter.",
+    "price_range": "$$",
+    "address": "Mercado Roma, Roma Norte - verify",
+    "google_maps_query": "Mezcalería Finca Robles, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 5,
+      "food": 6,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Time Out México - mejores mezcalerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-cantinas/las-mejores-mezcalerias"
+      }
+    ]
+  },
+  {
+    "name": "Archivo Maguey",
+    "neighborhood": "San Ángel",
+    "category": "mezcalería",
+    "subcategory": "Wild-mezcal bar",
+    "description": "Lively San Ángel mezcal bar with about 40 wild mezcals and cumbia music. Listed by Chilango; date of listing unclear, verify still open.",
+    "special_quality": "Wild agave mezcals with a cumbia soundtrack in San Ángel.",
+    "price_range": "$$",
+    "address": "Avenida de la Paz 33A, San Ángel - verify",
+    "google_maps_query": "Archivo Maguey, San Ángel, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 4,
+      "food": 6,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Chilango - mejores bares de CDMX",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mejores-bares-de-cdmx/"
+      }
+    ]
+  },
+  {
+    "name": "La Clandestina",
+    "neighborhood": "Roma Norte",
+    "category": "mezcalería",
+    "subcategory": null,
+    "description": "Existing entry; additional sources.",
+    "special_quality": "Numbered mezcal list with tasting cards.",
+    "price_range": "$$",
+    "address": "Álvaro Obregón 298, Roma Norte",
+    "google_maps_query": "La Clandestina, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 7,
+      "food": 7,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Chilango - mezcalerías que sobrevivieron al boom",
+        "url": "https://www.chilango.com/comida-y-tragos/bares/mezcalerias-que-sobrevivieron-al-boom/"
+      },
+      {
+        "title": "Time Out México - mejores mezcalerías",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/bares-cantinas/las-mejores-mezcalerias"
+      }
+    ],
+    "existing": true
+  },
+  {
+    "name": "Mezcalería Los Amantes",
+    "neighborhood": "Polanco",
+    "category": "mezcalería",
+    "subcategory": null,
+    "description": "Existing entry; additional sources.",
+    "special_quality": "200+ mezcal varieties with Oaxacan food.",
+    "price_range": "$$$",
+    "address": "Polanco",
+    "google_maps_query": "Mezcalería Los Amantes, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 5,
+      "hype": 6,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Culture Trip - Mezcal in Mexico City",
+        "url": "https://theculturetrip.com/mexico/articles/the-best-places-to-try-mezcal-in-mexico-city"
+      }
+    ],
+    "existing": true
+  }
+]
