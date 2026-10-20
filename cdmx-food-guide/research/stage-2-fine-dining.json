@@ -1,0 +1,770 @@
+[
+  {
+    "name": "Em",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Mexican-Japanese tasting menu",
+    "description": "Lucho Martínez's minimalist dining room on Tonalá, formerly Emilia, pairs Mexican ingredients with Japanese technique. It offers an eight-to-nine course omakase-style menu that follows the season, and the wagyu carnitas gets repeated mention. One Michelin star since the first 2024 guide and a new entry on Latin America's 50 Best 2025 at No. 71.",
+    "special_quality": "Mexico's most convincing Mexican-Japanese omakase, run by a chef who rebranded his own restaurant after outgrowing it.",
+    "price_range": "$$$$",
+    "address": "Tonalá 133, Roma Norte",
+    "google_maps_query": "Em, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-required",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 7,
+      "food": 9,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide Mexico — Lucho Martínez on his favorite CDMX restaurants",
+        "url": "https://guide.michelin.com/mx/es/articulo/features/lucho-martinez-ciudad-de-mexico-restaurantes-favoritos-guia-michelin"
+      },
+      {
+        "title": "Latin America's 50 Best 2025 (51-100)",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-51-100-list.html"
+      },
+      {
+        "title": "Wikipedia — Michelin-starred restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Expendio de Maíz",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Menu-less masa-driven counter",
+    "description": "A cash-only sidewalk restaurant with no menu, no sign and a few communal tables. Diners put their names down, wait outside, and are served a continuous run of corn-centered dishes, saying when to stop. Bib Gourmand in 2024, one Michelin star from 2025, and ranked high on Opinionated About Dining's casual list.",
+    "special_quality": "The only Michelin-starred restaurant on the city that has no menu and no reservations.",
+    "price_range": "$$$",
+    "address": "Roma Norte, Cuauhtémoc (chef Jesús Salas Tornés; confirm exact street number)",
+    "google_maps_query": "Expendio de Maíz Sin Nombre, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "no-reservations",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 8,
+      "food": 9,
+      "weird": 9
+    },
+    "source_links": [
+      {
+        "title": "Excélsior — Sin menú, ¡pero con Estrella Michelin!",
+        "url": "https://www.excelsior.com.mx/expresiones/expendio-de-maiz-ganador-de-estrella-michelin-2025/1719666"
+      },
+      {
+        "title": "Reporter Gourmet — the Michelin-starred restaurant that doesn't take reservations",
+        "url": "https://reportergourmet.com/en/news/9920-expendio-de-maiz-the-michelin-starred-restaurant-that-doesnt-take-reservations-guests-wait-outside"
+      },
+      {
+        "title": "Wikipedia — Expendio de Maíz",
+        "url": "https://en.wikipedia.org/wiki/Expendio_de_Ma%C3%ADz"
+      },
+      {
+        "title": "Michelin Guide ceremony 2025 — new stars",
+        "url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-mexico-stars-green-stars"
+      }
+    ]
+  },
+  {
+    "name": "Masala y Maíz",
+    "neighborhood": "Juárez",
+    "category": "fine-dining",
+    "subcategory": "Mexican-South Asian-East African",
+    "description": "Norma Listman and Saqib Keval cook what they call mestizaje rebelde, mixing Mexican corn traditions with the Indian, Kenyan and Ethiopian cooking of Keval's family. The restaurant earned a Michelin star in 2025. It also runs recurring eat-what-you-want, pay-what-you-can days.",
+    "special_quality": "A Michelin-starred restaurant that blends Mexican masa with East African and Indian cooking and runs pay-what-you-can days.",
+    "price_range": "$$$",
+    "address": "Juárez / Roma Norte area, Cuauhtémoc (confirm exact address)",
+    "google_maps_query": "Masala y Maíz, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 7,
+      "food": 8,
+      "weird": 8
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Masala y Maíz, eat what you want",
+        "url": "https://guide.michelin.com/us/en/article/dining-out/mexico-city-masala-y-maiz-michelin-guide-eat-what-you-want"
+      },
+      {
+        "title": "Wikipedia — Masala y Maíz",
+        "url": "https://en.wikipedia.org/wiki/Masala_y_Ma%C3%ADz"
+      },
+      {
+        "title": "Mexico News Daily — Michelin-starred Masala y Maíz",
+        "url": "https://mexiconewsdaily.com/food/michelin-starred-masala-y-maiz-celebrates-international-womens-month-with-series-of-one-night-only-dinners/"
+      }
+    ]
+  },
+  {
+    "name": "Gaba",
+    "neighborhood": "Condesa",
+    "category": "fine-dining",
+    "subcategory": "Shared-plate author cuisine",
+    "description": "Víctor Toriz, formerly of Bestia in Los Angeles, Arca and Emilia, opened Gaba as his first own project. It is a café by day and an author-driven restaurant at night, with an open kitchen and a frequently changing menu of shared plates such as chicken-liver pâté with hibiscus jam. First Michelin star in 2026.",
+    "special_quality": "A café-by-day that became a Michelin-starred shared-plates restaurant at night.",
+    "price_range": "$$$",
+    "address": "Av. Mazatlán 190, Condesa",
+    "google_maps_query": "Gaba, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 7,
+      "food": 8,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Animal Gourmet — Gaba gets first Michelin star",
+        "url": "https://grupoanimal.mx/gastronomia/donde-comer/restaurante-estrella-michelin-gaba-cdmx"
+      },
+      {
+        "title": "Time Out México — Gaba",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/gaba"
+      },
+      {
+        "title": "Chilango — Michelin 2026 CDMX list",
+        "url": "https://www.chilango.com/comida-y-tragos/restaurantes/guia-michelin-mexico-2026-restaurantes-cdmx-lista-2/amp/"
+      }
+    ]
+  },
+  {
+    "name": "Lorea",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Seasonal tasting menu",
+    "description": "Oswaldo Oliva, a Mugaritz veteran by way of El Celler de Can Roca, serves a single seasonal tasting menu built on Mexican ingredients with Basque discipline. The chef's counter is the best seat. Time Out Mexico gave it five stars, and it is in the Michelin Guide and the 2026 Guía México Gastronómico.",
+    "special_quality": "One quiet, precise tasting menu from a Mugaritz-trained chef.",
+    "price_range": "$$$",
+    "address": "Sinaloa 141, Roma Norte",
+    "google_maps_query": "Lorea, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-required",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 5,
+      "food": 8,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Lorea",
+        "url": "https://guide.michelin.com/es/es/ciudad-de-mexico/cuauhtemoc_1995126/restaurante/lorea"
+      },
+      {
+        "title": "Time Out México — Lorea",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/lorea"
+      },
+      {
+        "title": "Food & Pleasure — Lorea",
+        "url": "https://foodandpleasure.com/?p=223876"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Pargot",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Contemporary Mexican, Bib Gourmand",
+    "description": "Chef Alexis Ayala cooks contemporary Mexican food with creative touches, using Baja California fish in dishes such as kebbe crudo with grasshopper XO sauce. Michelin Bib Gourmand and in the 2026 Guía México Gastronómico. Closed Sundays.",
+    "special_quality": "Bib Gourmand cooking with grasshopper XO sauce on a raw fish kebbe.",
+    "price_range": "$$",
+    "address": "Córdoba 212, Roma Norte",
+    "google_maps_query": "Pargot, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 5,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Pargot",
+        "url": "https://guide.michelin.com/ca/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/pargot"
+      },
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Cana",
+    "neighborhood": "Juárez",
+    "category": "fine-dining",
+    "subcategory": "Mexican-inflected bistró",
+    "description": "Fabiola Escobosa, from Mexicali and previously at Ignacio Mattos's New York restaurants and in Barcelona, runs a bright bistró in a Roseta Barraza-designed room with a long marble bar. The menu includes cod croquettes and camembert cheesecake with guava compote. It is in the 2026 Guía México Gastronómico and Time Out praised it.",
+    "special_quality": "A Mattos-trained chef's modern bistró in a gallery-like Juárez room.",
+    "price_range": "$$$",
+    "address": "Liverpool 9, Juárez",
+    "google_maps_query": "Cana, Juárez, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 6,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — Cana",
+        "url": "https://foodandpleasure.com/cana-bistro/"
+      },
+      {
+        "title": "My Art Guides — Cana",
+        "url": "https://myartguides.com/leisure/restaurants/mexico-city/cana/"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Maizajo",
+    "neighborhood": "Condesa",
+    "category": "fine-dining",
+    "subcategory": "Heirloom corn restaurant and taquería",
+    "description": "Santiago Muñoz's corn-focused concept makes masa and tortillas downstairs and serves a full restaurant upstairs, with a menu built on heirloom corn: moles, tamales, tetelas, blue-corn tostada with tuna. It is in the Michelin Guide, the 2026 Guía México Gastronómico, and the 50 Best discovery list.",
+    "special_quality": "A restaurant built top to bottom around daily nixtamalized heirloom corn.",
+    "price_range": "$$",
+    "address": "Condesa, Cuauhtémoc (confirm exact address)",
+    "google_maps_query": "Maizajo, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 6,
+      "food": 7,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Maizajo",
+        "url": "https://guide.michelin.com/es/es/ciudad-de-mexico/cuauhtemoc_1995126/restaurante/maizajo"
+      },
+      {
+        "title": "World's 50 Best Discovery — Maizajo",
+        "url": "https://www.theworlds50best.com/discovery/Establishments/Mexico/Mexico-City/Maizajo.html"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Migrante",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Mexican-Asian robata",
+    "description": "Chef Fernando Martínez Zavala, from Michoacán, mixes Mexican ingredients with Asian flavors, with fish and seafood on a robata grill and sea bass in yuzu butter. It has been in the Michelin Guide since 2024 and is in the 2026 Guía México Gastronómico.",
+    "special_quality": "Robata-grilled seafood with Mexican-Asian flavors from a former Chef of the Year winner.",
+    "price_range": "$$$",
+    "address": "Chiapas 186, Roma Norte",
+    "google_maps_query": "Migrante, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 5,
+      "food": 7,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Food & Pleasure — Migrante",
+        "url": "https://foodandpleasure.com/restaurante-fine-dining-la-roma/"
+      },
+      {
+        "title": "OpenTable — Migrante",
+        "url": "https://opentable.com/r/migrante-ciudad-de-mexico"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Raíz",
+    "neighborhood": "Polanco",
+    "category": "fine-dining",
+    "subcategory": "Tasting menu, Bib Gourmand",
+    "description": "A ground-floor restaurant in a residential building on Schiller serving six- and nine-course tasting menus of contemporary Mexican food. It has held a Michelin Bib Gourmand since 2024, has a 600-bottle wine list, and appears in the 2026 Guía México Gastronómico. Food & Pleasure notes that several well-known chefs came out of its kitchen.",
+    "special_quality": "A tasting menu with a Bib Gourmand price tag and a kitchen that trained other chefs.",
+    "price_range": "$$$",
+    "address": "Schiller 331, Polanco",
+    "google_maps_query": "Raíz, Polanco, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 4,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Raíz",
+        "url": "https://guide.michelin.com/br/pt_BR/ciudad-de-mexico/miguel-hidalgo_1999281/restaurant/raiz-1208231"
+      },
+      {
+        "title": "Food & Pleasure — Raíz",
+        "url": "https://foodandpleasure.com/restaurante-raiz/"
+      },
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Limosneros",
+    "neighborhood": "Centro Histórico",
+    "category": "fine-dining",
+    "subcategory": "Contemporary-traditional Mexican",
+    "description": "A Centro restaurant that revives old recipes with contemporary technique, with walls hung with Tlayacapan mirrors, Puebla talavera and Huichol embroidery. Michelin suggests the tasting menu or the taco tasting. In the Michelin Guide and the 2026 Guía México Gastronómico.",
+    "special_quality": "Revived old recipes served among regional crafts a few steps from the Zócalo.",
+    "price_range": "$$",
+    "address": "Ignacio Allende 3, Centro Histórico",
+    "google_maps_query": "Limosneros, Centro Histórico, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 4,
+      "hype": 5,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Limosneros",
+        "url": "https://guide.michelin.com/us/en/ciudad-de-mexico/cuauhtemoc_1995126/restaurant/limosneros"
+      },
+      {
+        "title": "Michelin Guide — Centro Histórico restaurants and hotels",
+        "url": "https://guide.michelin.com/mx/es/articulo/travel/restaurantes-hoteles-centro-historico-ciudad-de-mexico-guia-michelin"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "La Cocina del Bizco",
+    "neighborhood": "Condesa",
+    "category": "fine-dining",
+    "subcategory": "Spanish cooking, Apertura del Año 2026",
+    "description": "Opened in mid-2024 at Nuevo León and Ometusco by Madrid-born chef Jesús Pedraza, who started as La Taberna del Bizco. Named Apertura del Año in the Guía México Gastronómico 2026, with a mushroom arroz meloso as the featured dish. Chilango counted it among the notable 2024 openings.",
+    "special_quality": "The 2026 Guía México Gastronómico's opening of the year, a Madrid-style room in Hipódromo.",
+    "price_range": "$$$",
+    "address": "Ometusco 1, Hipódromo (Condesa)",
+    "google_maps_query": "La Cocina del Bizco, Condesa, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 6,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Guía México Gastronómico 2026 (Apertura del año)",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      },
+      {
+        "title": "Chilango — Los juegos del hambre: Todos somos bizcos",
+        "url": "https://www.chilango.com/opinion/los-juegos-del-hambre-todos-somos-bizcos-o-deberiamos/"
+      },
+      {
+        "title": "Time Out México — La Cocina del Bizco",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes/la-cocina-del-bizco"
+      }
+    ]
+  },
+  {
+    "name": "Filigrana",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Playful contemporary Mexican, Bib Gourmand",
+    "description": "Martha Ortiz runs this concrete-and-trees dining room with purple chairs and floor-to-ceiling windows. The menu reworks familiar dishes, such as a tongue gordita with fried epazote, fried portobello tamal in guajillo and pozole brujo. Michelin Bib Gourmand.",
+    "special_quality": "Martha Ortiz's playful, value-priced take on Mexican classics in a room with indoor trees.",
+    "price_range": "$$",
+    "address": "Av. Veracruz 62, Roma Norte",
+    "google_maps_query": "Filigrana, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 3,
+      "hype": 5,
+      "food": 7,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Filigrana",
+        "url": "https://guide.michelin.com/es/es/ciudad-de-mexico/cuauhtemoc_1995126/restaurante/filigrana"
+      },
+      {
+        "title": "Food & Pleasure — restaurantes mexicanos en la Roma",
+        "url": "https://foodandpleasure.com/restaurantes-mexicanos-la-roma/"
+      },
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Vigneron",
+    "neighborhood": "Roma Norte",
+    "category": "fine-dining",
+    "subcategory": "Small French wine bistro, Bib Gourmand",
+    "description": "A small, dim room with a few tables and one communal table, run by chef Aram Abisahi. The menu is short and meant for sharing, and the European-leaning wine list is large. Michelin Bib Gourmand, no reservations through Michelin.",
+    "special_quality": "A tiny French sharing-plates room with an outsized wine list.",
+    "price_range": "$$",
+    "address": "Jalapa 181, Roma Norte",
+    "google_maps_query": "Vigneron, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 3,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Vigneron",
+        "url": "https://guide.michelin.com/mx/es/ciudad-de-mexico/cuauhtemoc_1995126/restaurante/vigneron"
+      },
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Alelí Rooftop",
+    "neighborhood": "Roma Norte",
+    "category": "bar",
+    "subcategory": "Grill rooftop, Bib Gourmand",
+    "description": "A rooftop grill upstairs from Lorea's building where the cooking is done over fire and guests can sit at the bar. Michelin cites shrimp brochette, grilled potato bread, zarandeado-style fish and an asado cheesecake. Bib Gourmand and open late.",
+    "special_quality": "A Bib Gourmand fire-grill rooftop open past midnight.",
+    "price_range": "$$",
+    "address": "Sinaloa 141, Roma Norte",
+    "google_maps_query": "Alelí Rooftop, Roma Norte, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "reservations-recommended",
+    "menu_url": null,
+    "scores": {
+      "iconic": 2,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Michelin Guide — Aleli Rooftop",
+        "url": "https://guide.michelin.com/es/es/ciudad-de-mexico/cuauhtemoc_1995126/restaurante/aleli-rooftop"
+      },
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Fonda Margarita",
+    "neighborhood": "Del Valle",
+    "category": "regional",
+    "subcategory": "Breakfast fonda",
+    "description": "A neighborhood breakfast counter that opens around 5:30 a.m. and sells out early, known for chicharrón in salsa verde, scrambled eggs with beans and a spicy, home-style menu. Anthony Bourdain named it his favorite breakfast fonda in Mexico City. It is in the 2026 Guía México Gastronómico.",
+    "special_quality": "Bourdain's favorite breakfast spot, where the best dishes run out by mid-morning.",
+    "price_range": "$",
+    "address": "Adolfo Prieto 1364, Tlacoquemécatl del Valle (confirm)",
+    "google_maps_query": "Fonda Margarita, Del Valle, Ciudad de Mexico",
+    "reservation_url": null,
+    "reservation_type": "walk-in",
+    "menu_url": null,
+    "scores": {
+      "iconic": 6,
+      "hype": 6,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Fonda Margarita: desayunos, madrugadores y Anthony Bourdain",
+        "url": "https://www.chilango.com/comida-y-tragos/fonda-margarita-desayunos-cdmx-anthony-bourdain/"
+      },
+      {
+        "title": "Time Out México — Fonda Margarita",
+        "url": "https://www.timeoutmexico.mx/ciudad-de-mexico/restaurantes-cafes/fonda-margarita"
+      },
+      {
+        "title": "Infobae — Bourdain y Fonda Margarita",
+        "url": "https://www.infobae.com/mexico/2024/11/08/esta-es-la-famosa-fonda-en-cdmx-que-anthony-bourdain-definio-como-el-mejor-lugar-para-desayunar/"
+      }
+    ]
+  },
+  {
+    "name": "Pujol",
+    "existing": true,
+    "scores": {
+      "iconic": 8,
+      "hype": 10,
+      "food": 10,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025 (51-100): No. 51",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-51-100-list.html"
+      },
+      {
+        "title": "Chilango — Michelin 2026 (two stars)",
+        "url": "https://www.chilango.com/comida-y-tragos/restaurantes/guia-michelin-mexico-2026-restaurantes-cdmx-lista-2/amp/"
+      }
+    ]
+  },
+  {
+    "name": "Quintonil",
+    "existing": true,
+    "scores": {
+      "iconic": 6,
+      "hype": 9,
+      "food": 10,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025: No. 7",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-1-50-list.html"
+      },
+      {
+        "title": "Chilango — Michelin 2026 (two stars)",
+        "url": "https://www.chilango.com/comida-y-tragos/restaurantes/guia-michelin-mexico-2026-restaurantes-cdmx-lista-2/amp/"
+      }
+    ]
+  },
+  {
+    "name": "Rosetta",
+    "existing": true,
+    "scores": {
+      "iconic": 6,
+      "hype": 9,
+      "food": 9,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025: No. 39",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-1-50-list.html"
+      },
+      {
+        "title": "Wikipedia — Michelin-starred restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Máximo Bistrot",
+    "existing": true,
+    "scores": {
+      "iconic": 5,
+      "hype": 8,
+      "food": 9,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025: No. 30",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-1-50-list.html"
+      },
+      {
+        "title": "Wikipedia — Michelin-starred restaurants in Mexico (star from 2025)",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Sud 777",
+    "existing": true,
+    "scores": {
+      "iconic": 5,
+      "hype": 7,
+      "food": 9,
+      "weird": 5
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025 (51-100): No. 59",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-51-100-list.html"
+      },
+      {
+        "title": "Wikipedia — Michelin-starred restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Nicos",
+    "existing": true,
+    "scores": {
+      "iconic": 9,
+      "hype": 6,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Latin America's 50 Best 2025 (51-100): No. 84",
+        "url": "https://www.the50.com/stories/News/latin-americas-50-best-restaurants-2025-51-100-list.html"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Esquina Común",
+    "existing": true,
+    "scores": {
+      "iconic": 3,
+      "hype": 6,
+      "food": 8,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Wikipedia — Michelin-starred restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Mexico"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Contramar",
+    "existing": true,
+    "scores": {
+      "iconic": 7,
+      "hype": 9,
+      "food": 8,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico (2025-2026)",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      },
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  },
+  {
+    "name": "Plonk",
+    "existing": true,
+    "scores": {
+      "iconic": 2,
+      "hype": 4,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico (2025-2026)",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Comal Oculto",
+    "existing": true,
+    "scores": {
+      "iconic": 3,
+      "hype": 5,
+      "food": 7,
+      "weird": 6
+    },
+    "source_links": [
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Comedor Jacinta",
+    "existing": true,
+    "scores": {
+      "iconic": 3,
+      "hype": 5,
+      "food": 7,
+      "weird": 4
+    },
+    "source_links": [
+      {
+        "title": "Wikipedia — Michelin Bib Gourmand restaurants in Mexico",
+        "url": "https://en.wikipedia.org/wiki/List_of_Michelin_Bib_Gourmand_restaurants_in_Mexico"
+      }
+    ]
+  },
+  {
+    "name": "Sartoria",
+    "existing": true,
+    "scores": {
+      "iconic": 3,
+      "hype": 5,
+      "food": 7,
+      "weird": 3
+    },
+    "source_links": [
+      {
+        "title": "Chilango — Guía México Gastronómico 2026",
+        "url": "https://www.chilango.com/comida-y-tragos/donde-comer-en-cdmx-conoce-los-restaurantes-mas-top-del-2026-segun-la-guia-mexico-gastronomico/"
+      }
+    ]
+  }
+]
