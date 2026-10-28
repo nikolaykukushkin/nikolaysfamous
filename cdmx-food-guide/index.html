@@ -185,6 +185,24 @@ header {
   cursor: pointer;
   font-family: var(--font-sans);
 }
+.weights-btn {
+  font-size: 0.72rem;
+  padding: 4px 8px;
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  background: var(--accent-light);
+  color: var(--accent);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  display: none;
+}
+.weights-btn.show { display: inline-block; }
+.weight-row { display: flex; align-items: center; gap: 12px; margin-top: 12px; }
+.weight-row .weight-name { width: 130px; flex-shrink: 0; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; color: var(--muted); }
+.weight-row .weight-desc { display: block; font-size: 0.68rem; font-weight: 400; letter-spacing: 0; text-transform: none; }
+.modal .weight-row input[type=range] { flex: 1; padding: 0; border: none; background: none; accent-color: var(--accent); }
+.weight-row output { width: 1.6em; text-align: right; font-weight: 700; color: var(--accent); }
+.weights-hint { font-size: 0.75rem; color: var(--muted); margin-top: -8px; }
 
 /* ── MAIN GRID ── */
 .count-bar {
@@ -533,15 +551,19 @@ footer a:hover { text-decoration: underline; }
       <div class="sort-controls">
         <label for="sort-select">Sort</label>
         <select id="sort-select">
+          <option value="score-total" selected>Total score</option>
+          <option value="score-iconic">Iconic</option>
+          <option value="score-hype">Hype</option>
+          <option value="score-food">Food</option>
+          <option value="score-weird">Weird</option>
+          <option value="custom">Custom weights…</option>
+          <option value="michelin">Michelin</option>
           <option value="name">A–Z</option>
           <option value="neighborhood">Neighborhood</option>
           <option value="price-asc">Price ↑</option>
           <option value="price-desc">Price ↓</option>
-          <option value="score-total">Score ↓</option>
-          <option value="score-food">Food quality</option>
-          <option value="score-iconic">Most iconic</option>
-          <option value="michelin">Michelin</option>
         </select>
+        <button class="weights-btn" id="weights-btn" onclick="openWeightsModal()" title="Edit custom weights">Weights</button>
       </div>
     </div>
     <div class="nh-pills-wrap" id="nh-pills-wrap">
@@ -575,6 +597,20 @@ footer a:hover { text-decoration: underline; }
       <button class="btn-delete" id="note-delete" onclick="deleteNote()">Delete note</button>
       <button class="btn-cancel" onclick="closeNoteModal()">Cancel</button>
       <button class="btn-save" onclick="saveNote()">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Custom weights modal -->
+<div class="overlay" id="weights-overlay">
+  <div class="modal">
+    <h2>Custom sort</h2>
+    <p class="weights-hint">Places are ranked by the weighted sum of their scores. Set a weight to 0 to ignore that score.</p>
+    <div id="weights-rows"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="resetWeights()">Equal weights</button>
+      <button class="btn-cancel" onclick="closeWeightsModal()">Cancel</button>
+      <button class="btn-save" onclick="applyWeights()">Sort</button>
     </div>
   </div>
 </div>
@@ -682,7 +718,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-el-califa-de-leon",
     "lat": 19.441045799999998,
-    "lng": -99.1592311
+    "lng": -99.1592311,
+    "place_id": "ChIJDdgBq8_40YUReV5XNsJFMJE",
+    "google_maps_url": "https://maps.google.com/?cid=10461938634819329657"
   },
   {
     "name": "Taquería Los Cocuyos",
@@ -736,7 +774,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-los-cocuyos",
     "lat": 19.4302794,
-    "lng": -99.1387977
+    "lng": -99.1387977,
+    "place_id": "ChIJs1uZdNP-0YUR7xEuCTGxAMM",
+    "google_maps_url": "https://maps.google.com/?cid=14051425661561475567"
   },
   {
     "name": "El Huequito",
@@ -788,7 +828,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-huequito",
     "lat": 19.4306195,
-    "lng": -99.14297669999999
+    "lng": -99.14297669999999,
+    "place_id": "ChIJczgiA9X-0YURqRON9mN1nMA",
+    "google_maps_url": "https://maps.google.com/?cid=13879097223847678889"
   },
   {
     "name": "El Vilsito",
@@ -846,7 +888,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-vilsito",
     "lat": 19.3893341,
-    "lng": -99.15279360000001
+    "lng": -99.15279360000001,
+    "place_id": "ChIJDdra6wb_0YURFuXldLZeUug",
+    "google_maps_url": "https://maps.google.com/?cid=16740546902627837206"
   },
   {
     "name": "Taquería El Turix",
@@ -898,7 +942,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-el-turix",
     "lat": 19.431227,
-    "lng": -99.2011982
+    "lng": -99.2011982,
+    "place_id": "ChIJtyazSx0C0oURvu2x312-KnY",
+    "google_maps_url": "https://maps.google.com/?cid=8514827355891559870"
   },
   {
     "name": "Taquería El Greco",
@@ -950,7 +996,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-el-greco",
     "lat": 19.4110417,
-    "lng": -99.1774665
+    "lng": -99.1774665,
+    "place_id": "ChIJYxYkckH_0YURoHVp-GaZGec",
+    "google_maps_url": "https://maps.google.com/?cid=16652509764712494496"
   },
   {
     "name": "El Borrego Viudo",
@@ -1002,7 +1050,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-borrego-viudo",
     "lat": 19.399413499999998,
-    "lng": -99.1852371
+    "lng": -99.1852371,
+    "place_id": "ChIJh3TykGP_0YURSoX5QW6l5zs",
+    "google_maps_url": "https://maps.google.com/?cid=4316600660829766986"
   },
   {
     "name": "Tacos Los Parados",
@@ -1050,7 +1100,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-los-parados",
     "lat": 19.4060716,
-    "lng": -99.161278
+    "lng": -99.161278,
+    "place_id": "ChIJsyICZBb_0YURFFEjAh6qYBo",
+    "google_maps_url": "https://maps.google.com/?cid=1900706088611959060"
   },
   {
     "name": "Taquería Orinoco",
@@ -1098,7 +1150,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-orinoco",
     "lat": 19.416401999999998,
-    "lng": -99.1672778
+    "lng": -99.1672778,
+    "place_id": "ChIJcYILOUX_0YUR2Ow1Fp4lCN4",
+    "google_maps_url": "https://maps.google.com/?cid=15999079037141380312"
   },
   {
     "name": "Siembra Tortillería",
@@ -1152,7 +1206,9 @@ const CURATED_PLACES = [
     ],
     "id": "siembra-tortilleria",
     "lat": 19.4374051,
-    "lng": -99.18416400000001
+    "lng": -99.18416400000001,
+    "place_id": "ChIJYds7cuD50YURyD2wYfNGCDs",
+    "google_maps_url": "https://maps.google.com/?cid=4253727859181370824"
   },
   {
     "name": "Voraz",
@@ -1202,7 +1258,9 @@ const CURATED_PLACES = [
     ],
     "id": "voraz",
     "lat": 19.4087489,
-    "lng": -99.1654124
+    "lng": -99.1654124,
+    "place_id": "ChIJEcBouVr_0YURj4yco-UwNco",
+    "google_maps_url": "https://maps.google.com/?cid=14570605932277697679"
   },
   {
     "name": "Gorditas Peña Miramón",
@@ -1250,7 +1308,9 @@ const CURATED_PLACES = [
     ],
     "id": "gorditas-pena-miramon",
     "lat": 19.4104231,
-    "lng": -99.1633804
+    "lng": -99.1633804,
+    "place_id": "ChIJ48KvaD7_0YURhzmZCryLbSw",
+    "google_maps_url": "https://maps.google.com/?cid=3201368549878217095"
   },
   {
     "name": "Xaachila",
@@ -1302,7 +1362,9 @@ const CURATED_PLACES = [
     ],
     "id": "xaachila",
     "lat": 19.4326075,
-    "lng": -99.1271397
+    "lng": -99.1271397,
+    "place_id": "ChIJ939wPMv-0YURhFrth42NbbU",
+    "google_maps_url": "https://maps.google.com/?cid=13073260932336802436"
   },
   {
     "name": "Fugaz",
@@ -1352,7 +1414,9 @@ const CURATED_PLACES = [
     ],
     "id": "fugaz",
     "lat": 19.4238167,
-    "lng": -99.1613177
+    "lng": -99.1613177,
+    "place_id": "ChIJOVp_-i3_0YURA1takNZDGYU",
+    "google_maps_url": "https://maps.google.com/?cid=9590771470286084867"
   },
   {
     "name": "Mercado de San Juan",
@@ -1404,7 +1468,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-de-san-juan",
     "lat": 19.4299708,
-    "lng": -99.1446309
+    "lng": -99.1446309,
+    "place_id": "ChIJxSUeddX-0YURNIFMA2OAD6I",
+    "google_maps_url": "https://maps.google.com/?cid=11677693521540448564"
   },
   {
     "name": "Mercado Jamaica",
@@ -1451,8 +1517,10 @@ const CURATED_PLACES = [
       "Mexico City Markets Guide"
     ],
     "id": "mercado-jamaica",
-    "lat": 19.4070574,
-    "lng": -99.1228116
+    "lat": 19.408065,
+    "lng": -99.1230732,
+    "place_id": "ChIJj4OJKZX-0YURj9mEeHCcyAo",
+    "google_maps_url": "https://maps.google.com/?cid=777042942593653135"
   },
   {
     "name": "Mercado Medellín",
@@ -1504,7 +1572,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-medellin",
     "lat": 19.4104231,
-    "lng": -99.1633804
+    "lng": -99.1633804,
+    "place_id": "ChIJ48KvaD7_0YURhzmZCryLbSw",
+    "google_maps_url": "https://maps.google.com/?cid=3201368549878217095"
   },
   {
     "name": "Mercado de la Merced",
@@ -1556,7 +1626,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-de-la-merced",
     "lat": 19.426112399999997,
-    "lng": -99.1251527
+    "lng": -99.1251527,
+    "place_id": "ChIJb8brj_n_0YURP6P7j8_u4J0",
+    "google_maps_url": "https://maps.google.com/?cid=11376355233979147071"
   },
   {
     "name": "Mercado de Coyoacán",
@@ -1607,8 +1679,10 @@ const CURATED_PLACES = [
       "Eater CDMX"
     ],
     "id": "mercado-de-coyoacan",
-    "lat": 19.3526533,
-    "lng": -99.1613632
+    "lat": 19.3527374,
+    "lng": -99.16163739999999,
+    "place_id": "ChIJeYLOZMT_0YURFEhp2ubb43c",
+    "google_maps_url": "https://maps.google.com/?cid=8638990294780037140"
   },
   {
     "name": "Pujol",
@@ -1666,7 +1740,9 @@ const CURATED_PLACES = [
     ],
     "id": "pujol",
     "lat": 19.432376299999998,
-    "lng": -99.1948132
+    "lng": -99.1948132,
+    "place_id": "ChIJWZ2zdav40YURFvsU_rU3uaE",
+    "google_maps_url": "https://maps.google.com/?cid=11653406765589265174"
   },
   {
     "name": "Quintonil",
@@ -1720,7 +1796,9 @@ const CURATED_PLACES = [
     ],
     "id": "quintonil",
     "lat": 19.4308408,
-    "lng": -99.1917115
+    "lng": -99.1917115,
+    "place_id": "ChIJbS8EZf8B0oURwwD8B0MpqK0",
+    "google_maps_url": "https://maps.google.com/?cid=12513296932522426563"
   },
   {
     "name": "Rosetta",
@@ -1778,7 +1856,9 @@ const CURATED_PLACES = [
     ],
     "id": "rosetta",
     "lat": 19.4197758,
-    "lng": -99.1598009
+    "lng": -99.1598009,
+    "place_id": "ChIJdSGAWgP_0YURwNtY7rftf2E",
+    "google_maps_url": "https://maps.google.com/?cid=7025595317954862016"
   },
   {
     "name": "Máximo Bistrot",
@@ -1832,7 +1912,9 @@ const CURATED_PLACES = [
     ],
     "id": "maximo-bistrot",
     "lat": 19.4189482,
-    "lng": -99.1580841
+    "lng": -99.1580841,
+    "place_id": "ChIJdw0B4zv_0YURK8xSHYwyp2E",
+    "google_maps_url": "https://maps.google.com/?cid=7036648520158465067"
   },
   {
     "name": "Sud 777",
@@ -1886,7 +1968,9 @@ const CURATED_PLACES = [
     ],
     "id": "sud-777",
     "lat": 19.3090281,
-    "lng": -99.2093428
+    "lng": -99.2093428,
+    "place_id": "ChIJNTreqsH_zYUR82jk2MVoXMM",
+    "google_maps_url": "https://maps.google.com/?cid=14077241734210021619"
   },
   {
     "name": "Esquina Común",
@@ -1936,7 +2020,9 @@ const CURATED_PLACES = [
     ],
     "id": "esquina-comun",
     "lat": 19.4138864,
-    "lng": -99.1767757
+    "lng": -99.1767757,
+    "place_id": "ChIJoXqgWgD_0YURd2FcKb8I4UU",
+    "google_maps_url": "https://maps.google.com/?cid=5035315475502621047"
   },
   {
     "name": "Nicos",
@@ -2000,7 +2086,9 @@ const CURATED_PLACES = [
     ],
     "id": "nicos",
     "lat": 19.4650242,
-    "lng": -99.1777489
+    "lng": -99.1777489,
+    "place_id": "ChIJ7bEfa5D40YURWT8nrY-pPxQ",
+    "google_maps_url": "https://maps.google.com/?cid=1459071238841778009"
   },
   {
     "name": "Tetetlán",
@@ -2048,7 +2136,9 @@ const CURATED_PLACES = [
     ],
     "id": "tetetlan",
     "lat": 19.3286011,
-    "lng": -99.20479639999999
+    "lng": -99.20479639999999,
+    "place_id": "ChIJp2kqPvH_zYURzceQRjPKWyw",
+    "google_maps_url": "https://maps.google.com/?cid=3196370682125535181"
   },
   {
     "name": "Ticuchi",
@@ -2096,7 +2186,9 @@ const CURATED_PLACES = [
     ],
     "id": "ticuchi",
     "lat": 19.4335785,
-    "lng": -99.18546769999999
+    "lng": -99.18546769999999,
+    "place_id": "ChIJbRDPdav40YURqux8hUKwtww",
+    "google_maps_url": "https://maps.google.com/?cid=916394848947072170"
   },
   {
     "name": "Contramar",
@@ -2154,7 +2246,9 @@ const CURATED_PLACES = [
     ],
     "id": "contramar",
     "lat": 19.4195793,
-    "lng": -99.1671526
+    "lng": -99.1671526,
+    "place_id": "ChIJez8vvy__0YURP0rx5WhEig4",
+    "google_maps_url": "https://maps.google.com/?cid=1047725080642144831"
   },
   {
     "name": "La Docena",
@@ -2206,7 +2300,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-docena",
     "lat": 19.4192386,
-    "lng": -99.1560365
+    "lng": -99.1560365,
+    "place_id": "ChIJ-U2ISCX_0YURnsbcbq9uqgg",
+    "google_maps_url": "https://maps.google.com/?cid=624433198102529694"
   },
   {
     "name": "Mi Compa Chava",
@@ -2258,7 +2354,9 @@ const CURATED_PLACES = [
     ],
     "id": "mi-compa-chava",
     "lat": 19.41521,
-    "lng": -99.1621346
+    "lng": -99.1621346,
+    "place_id": "ChIJ0fQgbpf_0YURar4TNFX8hyA",
+    "google_maps_url": "https://maps.google.com/?cid=2344119573945761386"
   },
   {
     "name": "Bellopuerto",
@@ -2306,7 +2404,9 @@ const CURATED_PLACES = [
     ],
     "id": "bellopuerto",
     "lat": 19.430302899999997,
-    "lng": -99.19648409999999
+    "lng": -99.19648409999999,
+    "place_id": "ChIJUcQSCgIC0oURkHw840p_db4",
+    "google_maps_url": "https://maps.google.com/?cid=13724015399098154128"
   },
   {
     "name": "Merotoro",
@@ -2354,7 +2454,9 @@ const CURATED_PLACES = [
     ],
     "id": "merotoro",
     "lat": 19.4096588,
-    "lng": -99.1698509
+    "lng": -99.1698509,
+    "place_id": "ChIJzdbHQUD_0YUR1Vqx8mGkQsk",
+    "google_maps_url": "https://maps.google.com/?cid=14502334490676910805"
   },
   {
     "name": "Romulo's at Mercado 1° de Diciembre",
@@ -2406,7 +2508,9 @@ const CURATED_PLACES = [
     ],
     "id": "romulo-s-at-mercado-1-de-diciembre",
     "lat": 19.3990333,
-    "lng": -99.1548196
+    "lng": -99.1548196,
+    "place_id": "ChIJpRRs8Rr_0YURGkPoiUp4Bh0",
+    "google_maps_url": "https://maps.google.com/?cid=2091491338496787226"
   },
   {
     "name": "Cantina La Mascota",
@@ -2462,7 +2566,9 @@ const CURATED_PLACES = [
     ],
     "id": "cantina-la-mascota",
     "lat": 19.4289646,
-    "lng": -99.1388611
+    "lng": -99.1388611,
+    "place_id": "ChIJJXL0lNP-0YURFBOhYWkKVsE",
+    "google_maps_url": "https://maps.google.com/?cid=13931333945042998036"
   },
   {
     "name": "Salón Corona",
@@ -2509,8 +2615,10 @@ const CURATED_PLACES = [
       "Mexico City Food Guide"
     ],
     "id": "salon-corona",
-    "lat": 19.4334262,
-    "lng": -99.1382704
+    "lat": 19.4339407,
+    "lng": -99.1396987,
+    "place_id": "ChIJa81Mio_50YURQ5vU3znkezU",
+    "google_maps_url": "https://maps.google.com/?cid=3853924843365112643"
   },
   {
     "name": "Las Duelistas",
@@ -2566,7 +2674,9 @@ const CURATED_PLACES = [
     ],
     "id": "las-duelistas",
     "lat": 19.4302515,
-    "lng": -99.14272609999999
+    "lng": -99.14272609999999,
+    "place_id": "ChIJn4i9_9T-0YUR-l0N0VpBZNE",
+    "google_maps_url": "https://maps.google.com/?cid=15088256509908180474"
   },
   {
     "name": "Havre 77",
@@ -2614,7 +2724,9 @@ const CURATED_PLACES = [
     ],
     "id": "havre-77",
     "lat": 19.425198299999998,
-    "lng": -99.1606963
+    "lng": -99.1606963,
+    "place_id": "ChIJ98MjaTH_0YURfNluGTohbuA",
+    "google_maps_url": "https://maps.google.com/?cid=16171899845352544636"
   },
   {
     "name": "La Clandestina",
@@ -2666,7 +2778,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-clandestina",
     "lat": 19.4162483,
-    "lng": -99.1691707
+    "lng": -99.1691707,
+    "place_id": "ChIJb0o-MkH_0YUReHcA77q4Mhc",
+    "google_maps_url": "https://maps.google.com/?cid=1671601524721088376"
   },
   {
     "name": "Mezcalería Los Amantes",
@@ -2709,7 +2823,8 @@ const CURATED_PLACES = [
     ],
     "id": "mezcaleria-los-amantes",
     "lat": 17.0655994,
-    "lng": -96.72423549999999
+    "lng": -96.72423549999999,
+    "not_in_cdmx": true
   },
   {
     "name": "Pulquería Los Insurgentes",
@@ -2761,7 +2876,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-los-insurgentes",
     "lat": 19.4193039,
-    "lng": -99.1640472
+    "lng": -99.1640472,
+    "place_id": "ChIJ2YXcxDn_0YURo3dqzLPaaG0",
+    "google_maps_url": "https://maps.google.com/?cid=7883791613475583907"
   },
   {
     "name": "Tlachiquero",
@@ -2813,7 +2930,9 @@ const CURATED_PLACES = [
     ],
     "id": "tlachiquero",
     "lat": 19.4213964,
-    "lng": -99.1542216
+    "lng": -99.1542216,
+    "place_id": "ChIJZ4cvgy__0YURceP3wW0tyNY",
+    "google_maps_url": "https://maps.google.com/?cid=15476670068887642993"
   },
   {
     "name": "CUMBÉ Coffee Roasters",
@@ -2865,7 +2984,9 @@ const CURATED_PLACES = [
     ],
     "id": "cumbe-coffee-roasters",
     "lat": 19.419354000000002,
-    "lng": -99.16449109999999
+    "lng": -99.16449109999999,
+    "place_id": "ChIJQ0UnELv_0YUR2YNjjXYTsw4",
+    "google_maps_url": "https://maps.google.com/?cid=1059211737261376473"
   },
   {
     "name": "BUNA",
@@ -2921,7 +3042,9 @@ const CURATED_PLACES = [
     ],
     "id": "buna",
     "lat": 19.421955399999998,
-    "lng": -99.1605323
+    "lng": -99.1605323,
+    "place_id": "ChIJhY2F6zD_0YUReXd8RE_uYwI",
+    "google_maps_url": "https://maps.google.com/?cid=172243234989045625"
   },
   {
     "name": "Café Nin",
@@ -2973,7 +3096,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-nin",
     "lat": 19.4253321,
-    "lng": -99.1607411
+    "lng": -99.1607411,
+    "place_id": "ChIJuXSKaDH_0YURxdPlN4QO4uc",
+    "google_maps_url": "https://maps.google.com/?cid=16708933528534242245"
   },
   {
     "name": "Tomasa",
@@ -3025,7 +3150,9 @@ const CURATED_PLACES = [
     ],
     "id": "tomasa",
     "lat": 19.412651699999998,
-    "lng": -99.1744543
+    "lng": -99.1744543,
+    "place_id": "ChIJWQZF2A__0YURp4Zo-xW9ytQ",
+    "google_maps_url": "https://maps.google.com/?cid=15333275783446169255"
   },
   {
     "name": "Panadería Rosetta",
@@ -3073,7 +3200,9 @@ const CURATED_PLACES = [
     ],
     "id": "panaderia-rosetta",
     "lat": 19.4198883,
-    "lng": -99.1605402
+    "lng": -99.1605402,
+    "place_id": "ChIJ-_GNczr_0YURLJgHYS8ZPMg",
+    "google_maps_url": "https://maps.google.com/?cid=14428434997470271532"
   },
   {
     "name": "Panadería Gala",
@@ -3121,7 +3250,9 @@ const CURATED_PLACES = [
     ],
     "id": "panaderia-gala",
     "lat": 19.414931799999998,
-    "lng": -99.1619612
+    "lng": -99.1619612,
+    "place_id": "ChIJL-fGEQD_0YURQohOIBR8Suk",
+    "google_maps_url": "https://maps.google.com/?cid=16810384984997005378"
   },
   {
     "name": "Cayetana Panadería",
@@ -3169,7 +3300,9 @@ const CURATED_PLACES = [
     ],
     "id": "cayetana-panaderia",
     "lat": 19.4137695,
-    "lng": -99.16635149999999
+    "lng": -99.16635149999999,
+    "place_id": "ChIJU6stwN7_zYURHfQvYLKpHws",
+    "google_maps_url": "https://maps.google.com/?cid=801545842278265885"
   },
   {
     "name": "Consuelo Pan de Madre",
@@ -3212,7 +3345,9 @@ const CURATED_PLACES = [
     ],
     "id": "consuelo-pan-de-madre",
     "lat": 19.4178027,
-    "lng": -99.1712156
+    "lng": -99.1712156,
+    "place_id": "ChIJyZnkeMb_0YURT5HSGm9zPjQ",
+    "google_maps_url": "https://maps.google.com/?cid=3764573259556884815"
   },
   {
     "name": "Panadería Pancracia",
@@ -3260,7 +3395,9 @@ const CURATED_PLACES = [
     ],
     "id": "panaderia-pancracia",
     "lat": 19.4130617,
-    "lng": -99.1586789
+    "lng": -99.1586789,
+    "place_id": "ChIJGYU2aK3_0YURmsden66hKzY",
+    "google_maps_url": "https://maps.google.com/?cid=3903391273416837018"
   },
   {
     "name": "Lalo",
@@ -3303,7 +3440,9 @@ const CURATED_PLACES = [
     ],
     "id": "lalo",
     "lat": 19.4154366,
-    "lng": -99.16247609999999
+    "lng": -99.16247609999999,
+    "place_id": "ChIJLYA0Xzn_0YUR195xvvUoYxw",
+    "google_maps_url": "https://maps.google.com/?cid=2045523691683569367"
   },
   {
     "name": "Comal Oculto",
@@ -3352,8 +3491,10 @@ const CURATED_PLACES = [
       "The Infatuation"
     ],
     "id": "comal-oculto",
-    "lat": 19.4129452,
-    "lng": -99.1836489
+    "lat": 19.414045800000004,
+    "lng": -99.183476,
+    "place_id": "ChIJF1Vb4Yf_0YURwBQPkqdpGrk",
+    "google_maps_url": "https://maps.google.com/?cid=13338089414842062016"
   },
   {
     "name": "Plonk",
@@ -3398,7 +3539,9 @@ const CURATED_PLACES = [
     ],
     "id": "plonk",
     "lat": 19.410373099999997,
-    "lng": -99.1693688
+    "lng": -99.1693688,
+    "place_id": "ChIJ-8zCEcv_0YURIByYeea8JdM",
+    "google_maps_url": "https://maps.google.com/?cid=15214774614209600544"
   },
   {
     "name": "Comedor Jacinta",
@@ -3443,7 +3586,9 @@ const CURATED_PLACES = [
     ],
     "id": "comedor-jacinta",
     "lat": 19.430068,
-    "lng": -99.1962132
+    "lng": -99.1962132,
+    "place_id": "ChIJ3fK3p_gB0oURgOC4DpJkSCo",
+    "google_maps_url": "https://maps.google.com/?cid=3046795726391140480"
   },
   {
     "name": "Paris 16",
@@ -3486,7 +3631,9 @@ const CURATED_PLACES = [
     ],
     "id": "paris-16",
     "lat": 19.4258483,
-    "lng": -99.1689237
+    "lng": -99.1689237,
+    "place_id": "ChIJHVruH0r_0YURmaYkRnam92c",
+    "google_maps_url": "https://maps.google.com/?cid=7491639532067268249"
   },
   {
     "name": "Hugo El Wine Bar",
@@ -3534,7 +3681,9 @@ const CURATED_PLACES = [
     ],
     "id": "hugo-el-wine-bar",
     "lat": 19.4186677,
-    "lng": -99.1751855
+    "lng": -99.1751855,
+    "place_id": "ChIJQ0Jj9Nr_0YURFpdrL-X3hdE",
+    "google_maps_url": "https://maps.google.com/?cid=15097745889544607510"
   },
   {
     "name": "Sartoria",
@@ -3574,7 +3723,9 @@ const CURATED_PLACES = [
     ],
     "id": "sartoria",
     "lat": 19.4218756,
-    "lng": -99.1603614
+    "lng": -99.1603614,
+    "place_id": "ChIJeaR76zD_0YURdkIaawq5AaQ",
+    "google_maps_url": "https://maps.google.com/?cid=11817930351594586742"
   },
   {
     "name": "Taverna",
@@ -3612,7 +3763,9 @@ const CURATED_PLACES = [
     ],
     "id": "taverna",
     "lat": 19.429691,
-    "lng": -99.1531323
+    "lng": -99.1531323,
+    "place_id": "ChIJNyMZ2qL_0YUR3eYvqdU7DLE",
+    "google_maps_url": "https://maps.google.com/?cid=12757637633286334173"
   },
   {
     "name": "Estoril",
@@ -3660,7 +3813,9 @@ const CURATED_PLACES = [
     ],
     "id": "estoril",
     "lat": 19.427913699999998,
-    "lng": -99.196647
+    "lng": -99.196647,
+    "place_id": "ChIJ82if3PgB0oURk9D4bi9jrQ4",
+    "google_maps_url": "https://maps.google.com/?cid=1057610542878347411"
   },
   {
     "name": "San Ángel Inn",
@@ -3716,7 +3871,9 @@ const CURATED_PLACES = [
     ],
     "id": "san-angel-inn",
     "lat": 19.349204999999998,
-    "lng": -99.1980227
+    "lng": -99.1980227,
+    "place_id": "ChIJufeRJhsA0oURihuMwEKs2Ao",
+    "google_maps_url": "https://maps.google.com/?cid=781563938047007626"
   },
   {
     "name": "Bakéa",
@@ -3754,7 +3911,9 @@ const CURATED_PLACES = [
     ],
     "id": "bakea",
     "lat": 19.41611,
-    "lng": -99.22603210000001
+    "lng": -99.22603210000001,
+    "place_id": "ChIJHUMfYOcc0oURgksMHSAWBB8",
+    "google_maps_url": "https://maps.google.com/?cid=2234935642264718210"
   },
   {
     "name": "Lindy",
@@ -3802,7 +3961,9 @@ const CURATED_PLACES = [
     ],
     "id": "lindy",
     "lat": 19.413632,
-    "lng": -99.1697617
+    "lng": -99.1697617,
+    "place_id": "ChIJQTBBte3_0YURAG6S9z9Qgms",
+    "google_maps_url": "https://maps.google.com/?cid=7746842544697404928"
   },
   {
     "name": "La Once Mil",
@@ -3852,7 +4013,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-once-mil",
     "lat": 19.4181703,
-    "lng": -99.215489
+    "lng": -99.215489,
+    "place_id": "ChIJe_9SHGUB0oURM_uxZtY_NyE",
+    "google_maps_url": "https://maps.google.com/?cid=2393451917049199411"
   },
   {
     "name": "Maizajo",
@@ -3908,7 +4071,9 @@ const CURATED_PLACES = [
     ],
     "id": "maizajo",
     "lat": 19.4148572,
-    "lng": -99.1781999
+    "lng": -99.1781999,
+    "place_id": "ChIJXbwmJ2b40YURmtGpCDJwN9Q",
+    "google_maps_url": "https://maps.google.com/?cid=15291814419955831194"
   },
   {
     "name": "Taquería Selene",
@@ -3951,7 +4116,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-selene",
     "lat": 19.427082,
-    "lng": -99.177397
+    "lng": -99.177397,
+    "place_id": "ChIJCZwivk3_0YURPrm2LqrxRyA",
+    "google_maps_url": "https://maps.google.com/?cid=2326093445790611774"
   },
   {
     "name": "Tacos Hola El Güero",
@@ -3994,7 +4161,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-hola-el-guero",
     "lat": 19.4116663,
-    "lng": -99.1715018
+    "lng": -99.1715018,
+    "place_id": "ChIJZeIEDEH_0YURpQ_UHx0ZTTo",
+    "google_maps_url": "https://maps.google.com/?cid=4201041640285278117"
   },
   {
     "name": "Tacos Joven",
@@ -4032,7 +4201,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-joven",
     "lat": 19.3929325,
-    "lng": -99.1507824
+    "lng": -99.1507824,
+    "place_id": "ChIJtzCdjAP_0YUR0mLJc5s5YDQ",
+    "google_maps_url": "https://maps.google.com/?cid=3774079827561767634"
   },
   {
     "name": "Tacos de Canasta Los Especiales",
@@ -4075,7 +4246,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-de-canasta-los-especiales",
     "lat": 19.4331589,
-    "lng": -99.13458999999999
+    "lng": -99.13458999999999,
+    "place_id": "ChIJQYiGqtL-0YURAmYK1TVRDpQ",
+    "google_maps_url": "https://maps.google.com/?cid=10668553858936628738"
   },
   {
     "name": "Los Panchos",
@@ -4123,7 +4296,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-panchos",
     "lat": 19.425511399999998,
-    "lng": -99.17730279999999
+    "lng": -99.17730279999999,
+    "place_id": "ChIJyfmf303_0YURtWylvB170Bg",
+    "google_maps_url": "https://maps.google.com/?cid=1788064419715312821"
   },
   {
     "name": "El Hidalguense",
@@ -4175,7 +4350,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-hidalguense",
     "lat": 19.409855999999998,
-    "lng": -99.16520299999999
+    "lng": -99.16520299999999,
+    "place_id": "ChIJhZ_ytT__0YURRb-fzYtU7AQ",
+    "google_maps_url": "https://maps.google.com/?cid=354751430082412357"
   },
   {
     "name": "Carnitas El Venadito",
@@ -4218,7 +4395,9 @@ const CURATED_PLACES = [
     ],
     "id": "carnitas-el-venadito",
     "lat": 19.348453100000004,
-    "lng": -99.1806209
+    "lng": -99.1806209,
+    "place_id": "ChIJAWsylrD_0YURwR8MX-48WG8",
+    "google_maps_url": "https://maps.google.com/?cid=8023229730655051713"
   },
   {
     "name": "Siembra Taquería",
@@ -4261,7 +4440,9 @@ const CURATED_PLACES = [
     ],
     "id": "siembra-taqueria",
     "lat": 19.4365128,
-    "lng": -99.185183
+    "lng": -99.185183,
+    "place_id": "ChIJWbBTqlD50YURyDQx6W6IRIU",
+    "google_maps_url": "https://maps.google.com/?cid=9602950315400836296"
   },
   {
     "name": "Cariñito Tacos",
@@ -4299,7 +4480,9 @@ const CURATED_PLACES = [
     ],
     "id": "carinito-tacos",
     "lat": 19.417473599999997,
-    "lng": -99.15674469999999
+    "lng": -99.15674469999999,
+    "place_id": "ChIJDVZ6Op7_0YUR-_48JJitQyQ",
+    "google_maps_url": "https://maps.google.com/?cid=2613123077759631099"
   },
   {
     "name": "Tacos Don Juan",
@@ -4342,7 +4525,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-don-juan",
     "lat": 19.4140694,
-    "lng": -99.1736403
+    "lng": -99.1736403,
+    "place_id": "ChIJ9cR8BET_0YURr9cvQGxPfwk",
+    "google_maps_url": "https://maps.google.com/?cid=684352994735544239"
   },
   {
     "name": "Castacán",
@@ -4385,7 +4570,9 @@ const CURATED_PLACES = [
     ],
     "id": "castacan",
     "lat": 19.4202571,
-    "lng": -99.17448619999999
+    "lng": -99.17448619999999,
+    "place_id": "ChIJY1H-VeT_0YUR_eu6Fx_jc-8",
+    "google_maps_url": "https://maps.google.com/?cid=17254384320068119549"
   },
   {
     "name": "El Remolkito del Sirloin Pedregal",
@@ -4417,8 +4604,10 @@ const CURATED_PLACES = [
       "The Infatuation — Best tacos in Mexico City"
     ],
     "id": "el-remolkito-del-sirloin-pedregal",
-    "lat": 19.3162227,
-    "lng": -99.21250739999999
+    "lat": 19.302330299999998,
+    "lng": -99.1673369,
+    "place_id": "ChIJk0hhrEIAzoURalWFM4X3ssc",
+    "google_maps_url": "https://maps.google.com/?cid=14389835910869243242"
   },
   {
     "name": "La Onda",
@@ -4451,7 +4640,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-onda",
     "lat": 19.427769899999998,
-    "lng": -99.2113778
+    "lng": -99.2113778,
+    "place_id": "ChIJSc3ZOfUB0oUR6X9Omcf5Ogs",
+    "google_maps_url": "https://maps.google.com/?cid=809233718732292073"
   },
   {
     "name": "El Charco de las Ranas",
@@ -4494,7 +4685,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-charco-de-las-ranas",
     "lat": 19.3243209,
-    "lng": -99.21507310000001
+    "lng": -99.21507310000001,
+    "place_id": "ChIJV40Ndo3_zYURM4aZCzYvQiI",
+    "google_maps_url": "https://maps.google.com/?cid=2468587454921803315"
   },
   {
     "name": "El Rincón Tarasco",
@@ -4531,8 +4724,10 @@ const CURATED_PLACES = [
       "Excélsior — Dónde comer carnitas en la CDMX"
     ],
     "id": "el-rincon-tarasco",
-    "lat": 19.4007505,
-    "lng": -99.178669
+    "lat": 19.4025906,
+    "lng": -99.17941069999999,
+    "place_id": "ChIJ171-GWb_0YUREUFoTDVF-2U",
+    "google_maps_url": "https://maps.google.com/?cid=7348543312202580241"
   },
   {
     "name": "Tacos Los Güeros",
@@ -4570,7 +4765,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-los-gueros",
     "lat": 19.4295971,
-    "lng": -99.1427015
+    "lng": -99.1427015,
+    "place_id": "ChIJ13qFVNT-0YURQVzsm63FrvI",
+    "google_maps_url": "https://maps.google.com/?cid=17487131752562187329"
   },
   {
     "name": "El Tizoncito",
@@ -4613,7 +4810,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-tizoncito",
     "lat": 19.409813099999997,
-    "lng": -99.17523059999999
+    "lng": -99.17523059999999,
+    "place_id": "ChIJOaMoRUL_0YURZhQUBKADth8",
+    "google_maps_url": "https://maps.google.com/?cid=2285017846735180902"
   },
   {
     "name": "Los Pelayos",
@@ -4646,7 +4845,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-pelayos",
     "lat": 19.4593635,
-    "lng": -99.1277973
+    "lng": -99.1277973,
+    "place_id": "ChIJ77mhxxX50YURT7bk0FhCH9E",
+    "google_maps_url": "https://maps.google.com/?cid=15068835827434174031"
   },
   {
     "name": "Tacos de Canasta La Pirámide",
@@ -4679,7 +4880,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-de-canasta-la-piramide",
     "lat": 19.3064772,
-    "lng": -99.218333
+    "lng": -99.218333,
+    "place_id": "ChIJEZzIi7L_zYUR71PQ4NOELds",
+    "google_maps_url": "https://maps.google.com/?cid=15793425513802912751"
   },
   {
     "name": "Auténtico Pato Manila",
@@ -4711,8 +4914,10 @@ const CURATED_PLACES = [
       "Mexico News Daily — Best tacos in Mexico City"
     ],
     "id": "autentico-pato-manila",
-    "lat": 19.4277414,
-    "lng": -99.2112588
+    "lat": 19.404101,
+    "lng": -99.17036230000001,
+    "place_id": "ChIJ4crOB2v_0YUR0C2P7_aEnbQ",
+    "google_maps_url": "https://maps.google.com/?cid=13014704694286560720"
   },
   {
     "name": "Café de Tacuba",
@@ -4755,7 +4960,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-de-tacuba",
     "lat": 19.4358935,
-    "lng": -99.1375946
+    "lng": -99.1375946,
+    "place_id": "ChIJ___D_iz50YURnlo8sopE6ss",
+    "google_maps_url": "https://maps.google.com/?cid=14693632096736139934"
   },
   {
     "name": "Churrería El Moro",
@@ -4798,7 +5005,9 @@ const CURATED_PLACES = [
     ],
     "id": "churreria-el-moro",
     "lat": 19.4313392,
-    "lng": -99.1411061
+    "lng": -99.1411061,
+    "place_id": "ChIJwQNPQCT50YURd0rOhlLTvH4",
+    "google_maps_url": "https://maps.google.com/?cid=9132406495802968695"
   },
   {
     "name": "El Cardenal",
@@ -4841,7 +5050,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-cardenal",
     "lat": 19.4337049,
-    "lng": -99.13534639999999
+    "lng": -99.13534639999999,
+    "place_id": "ChIJh3D2US350YURVW0T-_DRdsA",
+    "google_maps_url": "https://maps.google.com/?cid=13868502935468731733"
   },
   {
     "name": "Sanborns Casa de los Azulejos",
@@ -4884,7 +5095,9 @@ const CURATED_PLACES = [
     ],
     "id": "sanborns-casa-de-los-azulejos",
     "lat": 19.4342214,
-    "lng": -99.1401815
+    "lng": -99.1401815,
+    "place_id": "ChIJL0UaXyv50YURNyz05p6HsQg",
+    "google_maps_url": "https://maps.google.com/?cid=626430939730553911"
   },
   {
     "name": "Dulcería de Celaya",
@@ -4927,7 +5140,9 @@ const CURATED_PLACES = [
     ],
     "id": "dulceria-de-celaya",
     "lat": 19.4341218,
-    "lng": -99.1366651
+    "lng": -99.1366651,
+    "place_id": "ChIJr3twwjD_0YURkTIB7T7oaeU",
+    "google_maps_url": "https://maps.google.com/?cid=16530999264202011281"
   },
   {
     "name": "Pastelería Ideal",
@@ -4978,8 +5193,10 @@ const CURATED_PLACES = [
       "Food & Pleasure — Las 4 panaderías más antiguas del Centro Histórico"
     ],
     "id": "pasteleria-ideal",
-    "lat": 19.4304758,
-    "lng": -99.1355208
+    "lat": 19.4327507,
+    "lng": -99.1398931,
+    "place_id": "ChIJyf3GlvMA0oURtZxbvDLVR14",
+    "google_maps_url": "https://maps.google.com/?cid=6793632976796884149"
   },
   {
     "name": "Café La Blanca",
@@ -5022,7 +5239,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-la-blanca",
     "lat": 19.4344111,
-    "lng": -99.1364057
+    "lng": -99.1364057,
+    "place_id": "ChIJ0-qiRi350YUR-uY0mp_DXkg",
+    "google_maps_url": "https://maps.google.com/?cid=5214820508795987706"
   },
   {
     "name": "Café El Popular",
@@ -5060,7 +5279,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-el-popular",
     "lat": 19.43433,
-    "lng": -99.1355165
+    "lng": -99.1355165,
+    "place_id": "ChIJOw1ZRC350YUR9g47BGXQoPM",
+    "google_maps_url": "https://maps.google.com/?cid=17555260479771447030"
   },
   {
     "name": "Restaurante Danubio",
@@ -5103,7 +5324,9 @@ const CURATED_PLACES = [
     ],
     "id": "restaurante-danubio",
     "lat": 19.431024999999998,
-    "lng": -99.14101029999999
+    "lng": -99.14101029999999,
+    "place_id": "ChIJqY3rHkP_0YURHsXTd7TTYek",
+    "google_maps_url": "https://maps.google.com/?cid=16816955255636083998"
   },
   {
     "name": "Bellinghausen",
@@ -5146,7 +5369,9 @@ const CURATED_PLACES = [
     ],
     "id": "bellinghausen",
     "lat": 19.426328599999998,
-    "lng": -99.1631469
+    "lng": -99.1631469,
+    "place_id": "ChIJx6ygmDb_0YURgpxiERPTndQ",
+    "google_maps_url": "https://maps.google.com/?cid=15320633586233810050"
   },
   {
     "name": "Prendes",
@@ -5184,7 +5409,9 @@ const CURATED_PLACES = [
     ],
     "id": "prendes",
     "lat": 19.4356367,
-    "lng": -99.2021931
+    "lng": -99.2021931,
+    "place_id": "ChIJcXkqTmP_0YURgL7SkW2AGaY",
+    "google_maps_url": "https://maps.google.com/?cid=11968738692800102016"
   },
   {
     "name": "Casino Español de México (restaurant)",
@@ -5227,7 +5454,9 @@ const CURATED_PLACES = [
     ],
     "id": "casino-espanol-de-mexico-restaurant",
     "lat": 19.4329532,
-    "lng": -99.136557
+    "lng": -99.136557,
+    "place_id": "ChIJQ8IpzNL-0YURTSTBYN8_sqw",
+    "google_maps_url": "https://maps.google.com/?cid=12444078949011629133"
   },
   {
     "name": "El Taquito Taurino",
@@ -5270,7 +5499,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-taquito-taurino",
     "lat": 19.364006300000003,
-    "lng": -99.1876004
+    "lng": -99.1876004,
+    "place_id": "ChIJP0l9_zP50YURf5qp44Iak_o",
+    "google_maps_url": "https://maps.google.com/?cid=18055804480526064255"
   },
   {
     "name": "Tacos Beatriz (Beatricita)",
@@ -5313,7 +5544,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-beatriz-beatricita",
     "lat": 19.405206,
-    "lng": -99.1674416
+    "lng": -99.1674416,
+    "place_id": "ChIJTUUEKhX_0YURoZY9yslL1Qs",
+    "google_maps_url": "https://maps.google.com/?cid=852671034510120609"
   },
   {
     "name": "Taquería El Torito",
@@ -5346,7 +5579,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-el-torito",
     "lat": 19.4283994,
-    "lng": -99.1371241
+    "lng": -99.1371241,
+    "place_id": "ChIJy1qXM9L-0YUR4Vx7bOb8jFA",
+    "google_maps_url": "https://maps.google.com/?cid=5804292086366428385"
   },
   {
     "name": "Restaurant Ehden",
@@ -5384,7 +5619,9 @@ const CURATED_PLACES = [
     ],
     "id": "restaurant-ehden",
     "lat": 19.4304956,
-    "lng": -99.1291857
+    "lng": -99.1291857,
+    "place_id": "ChIJ8RNnYMz-0YURJ0CdbSoRYfk",
+    "google_maps_url": "https://maps.google.com/?cid=17969662862110310439"
   },
   {
     "name": "Café Moka",
@@ -5422,7 +5659,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-moka",
     "lat": 19.441398799999998,
-    "lng": -99.1584701
+    "lng": -99.1584701,
+    "place_id": "ChIJe0zgRFf50YURb7boL6XzFRo",
+    "google_maps_url": "https://maps.google.com/?cid=1879676310295983727"
   },
   {
     "name": "Pastelería Madrid",
@@ -5470,7 +5709,9 @@ const CURATED_PLACES = [
     ],
     "id": "pasteleria-madrid",
     "lat": 19.4297138,
-    "lng": -99.13489159999999
+    "lng": -99.13489159999999,
+    "place_id": "ChIJpQvHedL-0YUROQORiQ-QgbI",
+    "google_maps_url": "https://maps.google.com/?cid=12862720407153738553"
   },
   {
     "name": "Pastelería Suiza",
@@ -5518,7 +5759,9 @@ const CURATED_PLACES = [
     ],
     "id": "pasteleria-suiza",
     "lat": 19.4165855,
-    "lng": -99.17001859999999
+    "lng": -99.17001859999999,
+    "place_id": "ChIJsVJy-0b_0YUR-FxlTwr258c",
+    "google_maps_url": "https://maps.google.com/?cid=14404752457309969656"
   },
   {
     "name": "La Vasconia",
@@ -5556,7 +5799,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-vasconia",
     "lat": 19.435121199999998,
-    "lng": -99.1351383
+    "lng": -99.1351383,
+    "place_id": "ChIJhcUobr340YUR71fklueZkmc",
+    "google_maps_url": "https://maps.google.com/?cid=7463196752454375407"
   },
   {
     "name": "Nevería Roxy",
@@ -5593,8 +5838,10 @@ const CURATED_PLACES = [
       "UnoTV — TasteAtlas nevería"
     ],
     "id": "neveria-roxy",
-    "lat": 19.414196699999998,
-    "lng": -99.1768594
+    "lat": 19.408835699999997,
+    "lng": -99.1765945,
+    "place_id": "ChIJU2QujEL_0YURMhc4n7KXNUU",
+    "google_maps_url": "https://maps.google.com/?cid=4987058955813918514"
   },
   {
     "name": "Panadería El Molino",
@@ -5627,7 +5874,9 @@ const CURATED_PLACES = [
     ],
     "id": "panaderia-el-molino",
     "lat": 19.4321988,
-    "lng": -99.1368238
+    "lng": -99.1368238,
+    "place_id": "ChIJbzxLx9L-0YURV6zEUyKkDHg",
+    "google_maps_url": "https://maps.google.com/?cid=8650469451613121623"
   },
   {
     "name": "Costra",
@@ -5670,7 +5919,9 @@ const CURATED_PLACES = [
     ],
     "id": "costra",
     "lat": 19.382942699999997,
-    "lng": -99.1564691
+    "lng": -99.1564691,
+    "place_id": "ChIJHaaHdG3_0YURa5MA9WxFfvs",
+    "google_maps_url": "https://maps.google.com/?cid=18121998284854694763"
   },
   {
     "name": "El Olvidado",
@@ -5713,7 +5964,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-olvidado",
     "lat": 19.3488606,
-    "lng": -99.16886980000001
+    "lng": -99.16886980000001,
+    "place_id": "ChIJM4F6BcD_0YURjdR4ge4qf-Y",
+    "google_maps_url": "https://maps.google.com/?cid=16609041154628441229"
   },
   {
     "name": "Marne",
@@ -5751,7 +6004,9 @@ const CURATED_PLACES = [
     ],
     "id": "marne",
     "lat": 19.4098041,
-    "lng": -99.184692
+    "lng": -99.184692,
+    "place_id": "ChIJk4vJlbP_0YURzkyGqUkUuzs",
+    "google_maps_url": "https://maps.google.com/?cid=4304056175491960014"
   },
   {
     "name": "Dave's Home Bread",
@@ -5789,7 +6044,9 @@ const CURATED_PLACES = [
     ],
     "id": "dave-s-home-bread",
     "lat": 19.401394,
-    "lng": -99.17158859999999
+    "lng": -99.17158859999999,
+    "place_id": "ChIJ6xosAxf_0YURf2L9zRK90jw",
+    "google_maps_url": "https://maps.google.com/?cid=4382773275847910015"
   },
   {
     "name": "Ficelle",
@@ -5822,7 +6079,9 @@ const CURATED_PLACES = [
     ],
     "id": "ficelle",
     "lat": 19.4130261,
-    "lng": -99.1728041
+    "lng": -99.1728041,
+    "place_id": "ChIJrzHrUEH_0YURJUb1tzX7AN8",
+    "google_maps_url": "https://maps.google.com/?cid=16069119678596072997"
   },
   {
     "name": "Alegra Pâtisserie",
@@ -5855,7 +6114,9 @@ const CURATED_PLACES = [
     ],
     "id": "alegra-patisserie",
     "lat": 19.4070546,
-    "lng": -99.17264759999999
+    "lng": -99.17264759999999,
+    "place_id": "ChIJgVjzMO__0YURqlLnNJOXWas",
+    "google_maps_url": "https://maps.google.com/?cid=12347066511916487338"
   },
   {
     "name": "Saint",
@@ -5893,7 +6154,9 @@ const CURATED_PLACES = [
     ],
     "id": "saint",
     "lat": 19.4077573,
-    "lng": -99.1771326
+    "lng": -99.1771326,
+    "place_id": "ChIJXSiEN83_0YURNf7kVA0gq-c",
+    "google_maps_url": "https://maps.google.com/?cid=16693471685409832501"
   },
   {
     "name": "Cinco y Dos",
@@ -5926,7 +6189,9 @@ const CURATED_PLACES = [
     ],
     "id": "cinco-y-dos",
     "lat": 19.432496099999998,
-    "lng": -99.16713260000002
+    "lng": -99.16713260000002,
+    "place_id": "ChIJUaSXpOX50YURQGh1xGWgqKI",
+    "google_maps_url": "https://maps.google.com/?cid=11720794389179885632"
   },
   {
     "name": "Amano Repostería",
@@ -5964,7 +6229,9 @@ const CURATED_PLACES = [
     ],
     "id": "amano-reposteria",
     "lat": 19.4309825,
-    "lng": -99.20099479999999
+    "lng": -99.20099479999999,
+    "place_id": "ChIJlZpSWyUD0oUR_UAQQDuqAts",
+    "google_maps_url": "https://maps.google.com/?cid=15781363215714238717"
   },
   {
     "name": "Café Avellaneda",
@@ -6002,7 +6269,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-avellaneda",
     "lat": 19.3483028,
-    "lng": -99.1607341
+    "lng": -99.1607341,
+    "place_id": "ChIJazsNP9v_0YURcpA0b692xDw",
+    "google_maps_url": "https://maps.google.com/?cid=4378755233568034930"
   },
   {
     "name": "Chiquitito Café",
@@ -6034,8 +6303,10 @@ const CURATED_PLACES = [
       "Barista Magazine — Specialty Coffee Shines from the Heart of Mexico City"
     ],
     "id": "chiquitito-cafe",
-    "lat": 19.4140262,
-    "lng": -99.1765874
+    "lat": 19.406996,
+    "lng": -99.17299419999999,
+    "place_id": "ChIJV_W9HGr_0YURpcwR_-cpQWg",
+    "google_maps_url": "https://maps.google.com/?cid=7512331729824238757"
   },
   {
     "name": "Café El Jarocho",
@@ -6073,7 +6344,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-el-jarocho",
     "lat": 19.351196599999998,
-    "lng": -99.1618206
+    "lng": -99.1618206,
+    "place_id": "ChIJWxNQnsT_0YURxs-c3oS8w8o",
+    "google_maps_url": "https://maps.google.com/?cid=14610728894976544710"
   },
   {
     "name": "La Valiente",
@@ -6106,7 +6379,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-valiente",
     "lat": 19.4284939,
-    "lng": -99.1603506
+    "lng": -99.1603506,
+    "place_id": "ChIJCaYmXwD_0YURnQSSpyPGiQ0",
+    "google_maps_url": "https://maps.google.com/?cid=975528650739942557"
   },
   {
     "name": "Em",
@@ -6151,7 +6426,9 @@ const CURATED_PLACES = [
     ],
     "id": "em",
     "lat": 19.4140838,
-    "lng": -99.16999969999999
+    "lng": -99.16999969999999,
+    "place_id": "ChIJ1bf3HX__0YURqxkTy1DKP9s",
+    "google_maps_url": "https://maps.google.com/?cid=15798568466192210347"
   },
   {
     "name": "Expendio de Maíz",
@@ -6201,7 +6478,9 @@ const CURATED_PLACES = [
     ],
     "id": "expendio-de-maiz",
     "lat": 19.4141385,
-    "lng": -99.1626922
+    "lng": -99.1626922,
+    "place_id": "ChIJUYDQNgL_0YURYhvNnCzntYY",
+    "google_maps_url": "https://maps.google.com/?cid=9706918750662237026"
   },
   {
     "name": "Masala y Maíz",
@@ -6251,7 +6530,9 @@ const CURATED_PLACES = [
     ],
     "id": "masala-y-maiz",
     "lat": 19.433015899999997,
-    "lng": -99.148962
+    "lng": -99.148962,
+    "place_id": "ChIJmWtRD1z_0YURSJiNhdfktTY",
+    "google_maps_url": "https://maps.google.com/?cid=3942308663142488136"
   },
   {
     "name": "Gaba",
@@ -6296,7 +6577,9 @@ const CURATED_PLACES = [
     ],
     "id": "gaba",
     "lat": 19.409324700000003,
-    "lng": -99.1795874
+    "lng": -99.1795874,
+    "place_id": "ChIJ1WZ53iX_0YURMkdgcdGY2kw",
+    "google_maps_url": "https://maps.google.com/?cid=5537906717123168050"
   },
   {
     "name": "Lorea",
@@ -6350,7 +6633,9 @@ const CURATED_PLACES = [
     ],
     "id": "lorea",
     "lat": 19.4202542,
-    "lng": -99.17011439999999
+    "lng": -99.17011439999999,
+    "place_id": "ChIJIeR_eUj_0YURqJCvQJfuUwI",
+    "google_maps_url": "https://maps.google.com/?cid=167739944535560360"
   },
   {
     "name": "Pargot",
@@ -6395,7 +6680,9 @@ const CURATED_PLACES = [
     ],
     "id": "pargot",
     "lat": 19.4135658,
-    "lng": -99.1571464
+    "lng": -99.1571464,
+    "place_id": "ChIJ_SAr-Pz_0YURKHUdChyefYY",
+    "google_maps_url": "https://maps.google.com/?cid=9691075816437151016"
   },
   {
     "name": "Cana",
@@ -6438,7 +6725,9 @@ const CURATED_PLACES = [
     ],
     "id": "cana",
     "lat": 19.428134,
-    "lng": -99.156318
+    "lng": -99.156318,
+    "place_id": "ChIJVVUJjC3_0YURjPJMlrMwyak",
+    "google_maps_url": "https://maps.google.com/?cid=12234363410607567500"
   },
   {
     "name": "Migrante",
@@ -6483,7 +6772,9 @@ const CURATED_PLACES = [
     ],
     "id": "migrante",
     "lat": 19.4117559,
-    "lng": -99.1649783
+    "lng": -99.1649783,
+    "place_id": "ChIJtYS1cbH_0YURVsV8LI6WCHE",
+    "google_maps_url": "https://maps.google.com/?cid=8144925463475438934"
   },
   {
     "name": "Raíz",
@@ -6528,7 +6819,9 @@ const CURATED_PLACES = [
     ],
     "id": "raiz",
     "lat": 19.4320246,
-    "lng": -99.1865747
+    "lng": -99.1865747,
+    "place_id": "ChIJb2bGJKv40YURSRf5qxN_yoA",
+    "google_maps_url": "https://maps.google.com/?cid=9280369704616662857"
   },
   {
     "name": "Limosneros",
@@ -6573,7 +6866,9 @@ const CURATED_PLACES = [
     ],
     "id": "limosneros",
     "lat": 19.436066999999998,
-    "lng": -99.137811
+    "lng": -99.137811,
+    "place_id": "ChIJgxgQ_Sz50YURoJpnpRhMn7o",
+    "google_maps_url": "https://maps.google.com/?cid=13447550681089546912"
   },
   {
     "name": "La Cocina del Bizco",
@@ -6616,7 +6911,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-cocina-del-bizco",
     "lat": 19.409258299999998,
-    "lng": -99.17284719999999
+    "lng": -99.17284719999999,
+    "place_id": "ChIJUzvwAAD_0YURytNqJLi1FTM",
+    "google_maps_url": "https://maps.google.com/?cid=3681048072934839242"
   },
   {
     "name": "Filigrana",
@@ -6661,7 +6958,9 @@ const CURATED_PLACES = [
     ],
     "id": "filigrana",
     "lat": 19.4175768,
-    "lng": -99.1739985
+    "lng": -99.1739985,
+    "place_id": "ChIJFQm9dQr_0YUR_e1Y_Ar5QlY",
+    "google_maps_url": "https://maps.google.com/?cid=6215804261303381501"
   },
   {
     "name": "Vigneron",
@@ -6701,7 +7000,9 @@ const CURATED_PLACES = [
     ],
     "id": "vigneron",
     "lat": 19.4145413,
-    "lng": -99.1603471
+    "lng": -99.1603471,
+    "place_id": "ChIJ6Yh4chz_0YURut_rRG8Ikw4",
+    "google_maps_url": "https://maps.google.com/?cid=1050192412098158522"
   },
   {
     "name": "Alelí Rooftop",
@@ -6741,7 +7042,9 @@ const CURATED_PLACES = [
     ],
     "id": "aleli-rooftop",
     "lat": 19.4202281,
-    "lng": -99.1701387
+    "lng": -99.1701387,
+    "place_id": "ChIJ7a-_e0j_0YUR7PyT4k0gCys",
+    "google_maps_url": "https://maps.google.com/?cid=3101608287260638444"
   },
   {
     "name": "Fonda Margarita",
@@ -6789,7 +7092,9 @@ const CURATED_PLACES = [
     ],
     "id": "fonda-margarita",
     "lat": 19.3781344,
-    "lng": -99.17086019999999
+    "lng": -99.17086019999999,
+    "place_id": "ChIJzxC7Lpn_0YUR6wqFINUI8P8",
+    "google_maps_url": "https://maps.google.com/?cid=18442250185548827371"
   },
   {
     "name": "Salón París",
@@ -6837,7 +7142,9 @@ const CURATED_PLACES = [
     ],
     "id": "salon-paris",
     "lat": 19.4485152,
-    "lng": -99.1576848
+    "lng": -99.1576848,
+    "place_id": "ChIJn1YOrMT40YURp8f64SPCIAU",
+    "google_maps_url": "https://maps.google.com/?cid=369508628815333287"
   },
   {
     "name": "La Única de Guerrero",
@@ -6880,7 +7187,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-unica-de-guerrero",
     "lat": 19.4508404,
-    "lng": -99.1465192
+    "lng": -99.1465192,
+    "place_id": "ChIJdy3jTd_40YUREBS4GxXq5sQ",
+    "google_maps_url": "https://maps.google.com/?cid=14188285052457587728"
   },
   {
     "name": "La Peninsular",
@@ -6923,7 +7232,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-peninsular",
     "lat": 19.430935299999998,
-    "lng": -99.12714480000001
+    "lng": -99.12714480000001,
+    "place_id": "ChIJY1anCcv-0YURb-KARQuV1lI",
+    "google_maps_url": "https://maps.google.com/?cid=5969122231769424495"
   },
   {
     "name": "El Gallo de Oro",
@@ -6966,7 +7277,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-gallo-de-oro",
     "lat": 19.4315182,
-    "lng": -99.1385146
+    "lng": -99.1385146,
+    "place_id": "ChIJDfZ0o9T-0YURRNB6Qaoa0pA",
+    "google_maps_url": "https://maps.google.com/?cid=10435432605116190788"
   },
   {
     "name": "Tío Pepe",
@@ -7009,7 +7322,9 @@ const CURATED_PLACES = [
     ],
     "id": "tio-pepe",
     "lat": 19.432993,
-    "lng": -99.14282899999999
+    "lng": -99.14282899999999,
+    "place_id": "ChIJV-ZX1dT-0YURWE1tihw4KTo",
+    "google_maps_url": "https://maps.google.com/?cid=4190942623477615960"
   },
   {
     "name": "La Potosina",
@@ -7047,7 +7362,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-potosina",
     "lat": 19.432975499999998,
-    "lng": -99.1280001
+    "lng": -99.1280001,
+    "place_id": "ChIJtYywSMv-0YUR-MIIBPyPURY",
+    "google_maps_url": "https://maps.google.com/?cid=1608224854510191352"
   },
   {
     "name": "Bar La Ópera",
@@ -7085,7 +7402,9 @@ const CURATED_PLACES = [
     ],
     "id": "bar-la-opera",
     "lat": 19.4347347,
-    "lng": -99.13955570000002
+    "lng": -99.13955570000002,
+    "place_id": "ChIJJ3vOmSz50YURYFga67X4PAM",
+    "google_maps_url": "https://maps.google.com/?cid=233334740933564512"
   },
   {
     "name": "Bar Mancera",
@@ -7123,7 +7442,9 @@ const CURATED_PLACES = [
     ],
     "id": "bar-mancera",
     "lat": 19.431452099999998,
-    "lng": -99.13769470000001
+    "lng": -99.13769470000001,
+    "place_id": "ChIJrzBJGdP-0YUR-KJatIwyMOM",
+    "google_maps_url": "https://maps.google.com/?cid=16370640225394402040"
   },
   {
     "name": "Salón España",
@@ -7161,7 +7482,9 @@ const CURATED_PLACES = [
     ],
     "id": "salon-espana",
     "lat": 19.4365332,
-    "lng": -99.1317074
+    "lng": -99.1317074,
+    "place_id": "ChIJq7S9qjP50YURVrfpErwVaao",
+    "google_maps_url": "https://maps.google.com/?cid=12279369756517709654"
   },
   {
     "name": "Salón Tenampa",
@@ -7199,7 +7522,9 @@ const CURATED_PLACES = [
     ],
     "id": "salon-tenampa",
     "lat": 19.441036099999998,
-    "lng": -99.13895
+    "lng": -99.13895,
+    "place_id": "ChIJq_7ywy750YURugGS3uSUQUw",
+    "google_maps_url": "https://maps.google.com/?cid=5494836731076280762"
   },
   {
     "name": "El León de Oro",
@@ -7232,7 +7557,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-leon-de-oro",
     "lat": 19.4035294,
-    "lng": -99.1813804
+    "lng": -99.1813804,
+    "place_id": "ChIJlzLWXmb_0YURkBqJbiPRVNQ",
+    "google_maps_url": "https://maps.google.com/?cid=15300083784192957072"
   },
   {
     "name": "Cantina El Centenario",
@@ -7275,7 +7602,9 @@ const CURATED_PLACES = [
     ],
     "id": "cantina-el-centenario",
     "lat": 19.4112744,
-    "lng": -99.1749821
+    "lng": -99.1749821,
+    "place_id": "ChIJ2Yght0P_0YURoGnUYtShzDc",
+    "google_maps_url": "https://maps.google.com/?cid=4020766500898236832"
   },
   {
     "name": "Cantina La Castellana",
@@ -7313,7 +7642,9 @@ const CURATED_PLACES = [
     ],
     "id": "cantina-la-castellana",
     "lat": 19.4342933,
-    "lng": -99.1583727
+    "lng": -99.1583727,
+    "place_id": "ChIJHUMfYOcc0oURcmAsC4oF394",
+    "google_maps_url": "https://maps.google.com/?cid=16059560886677561458"
   },
   {
     "name": "Pulquería La Risa",
@@ -7351,7 +7682,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-risa",
     "lat": 19.428472400000004,
-    "lng": -99.1359526
+    "lng": -99.1359526,
+    "place_id": "ChIJnenUPdL-0YURt-9ja5r91o0",
+    "google_maps_url": "https://maps.google.com/?cid=10220635244032421815"
   },
   {
     "name": "Pulquería La Antigua Roma",
@@ -7394,7 +7727,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-antigua-roma",
     "lat": 19.439711199999998,
-    "lng": -99.1373191
+    "lng": -99.1373191,
+    "place_id": "ChIJrfNshy750YURYqylXJbo--U",
+    "google_maps_url": "https://maps.google.com/?cid=16572094986336971874"
   },
   {
     "name": "La Hija de los Apaches",
@@ -7432,7 +7767,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-hija-de-los-apaches",
     "lat": 19.4236738,
-    "lng": -99.1521133
+    "lng": -99.1521133,
+    "place_id": "ChIJFelW7gX_0YURKYA35fqcFRY",
+    "google_maps_url": "https://maps.google.com/?cid=1591350644746715177"
   },
   {
     "name": "Pulquería La Victoria",
@@ -7470,7 +7807,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-victoria",
     "lat": 19.4801666,
-    "lng": -99.1160199
+    "lng": -99.1160199,
+    "place_id": "ChIJb-DhOHb50YURemljLZOjfB8",
+    "google_maps_url": "https://maps.google.com/?cid=2268868164804897146"
   },
   {
     "name": "Pulquería La Hermosa Hortensia",
@@ -7508,7 +7847,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-hermosa-hortensia",
     "lat": 19.4409375,
-    "lng": -99.1385842
+    "lng": -99.1385842,
+    "place_id": "ChIJvy-E6S750YUR5BaC0Vrgsc8",
+    "google_maps_url": "https://maps.google.com/?cid=14965989717395511012"
   },
   {
     "name": "Pulquería La Nuclear",
@@ -7541,7 +7882,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-nuclear",
     "lat": 19.414953,
-    "lng": -99.1590899
+    "lng": -99.1590899,
+    "place_id": "ChIJCW-qeTv_0YURuaG-9DrvBTk",
+    "google_maps_url": "https://maps.google.com/?cid=4108953271538721209"
   },
   {
     "name": "Pulquería La Pirata",
@@ -7579,7 +7922,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-pirata",
     "lat": 19.3990994,
-    "lng": -99.1787387
+    "lng": -99.1787387,
+    "place_id": "ChIJGxiLfW__0YURodu9f1lNMoE",
+    "google_maps_url": "https://maps.google.com/?cid=9309588426518813601"
   },
   {
     "name": "Pulquería La Bonita",
@@ -7612,7 +7957,9 @@ const CURATED_PLACES = [
     ],
     "id": "pulqueria-la-bonita",
     "lat": 19.4529492,
-    "lng": -99.1235011
+    "lng": -99.1235011,
+    "place_id": "ChIJ8YgYoED50YUR8dBseQG6W-o",
+    "google_maps_url": "https://maps.google.com/?cid=16887295743250714865"
   },
   {
     "name": "Panana Pulquería",
@@ -7655,7 +8002,9 @@ const CURATED_PLACES = [
     ],
     "id": "panana-pulqueria",
     "lat": 19.437704399999998,
-    "lng": -99.1470622
+    "lng": -99.1470622,
+    "place_id": "ChIJs8OirXr50YURN22sIs2jDrQ",
+    "google_maps_url": "https://maps.google.com/?cid=12974487677946326327"
   },
   {
     "name": "Salón Covadonga",
@@ -7698,7 +8047,9 @@ const CURATED_PLACES = [
     ],
     "id": "salon-covadonga",
     "lat": 19.4229699,
-    "lng": -99.1604174
+    "lng": -99.1604174,
+    "place_id": "ChIJuxX74zD_0YURbhx-0TfwSjA",
+    "google_maps_url": "https://maps.google.com/?cid=3479857784625699950"
   },
   {
     "name": "La Jalisciense",
@@ -7731,7 +8082,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-jalisciense",
     "lat": 19.4918949,
-    "lng": -99.1409671
+    "lng": -99.1409671,
+    "place_id": "ChIJvQNJCLL50YURyIYNDmcVZjY",
+    "google_maps_url": "https://maps.google.com/?cid=3919844058034177736"
   },
   {
     "name": "Campobaja",
@@ -7776,7 +8129,9 @@ const CURATED_PLACES = [
     ],
     "id": "campobaja",
     "lat": 19.4200488,
-    "lng": -99.158288
+    "lng": -99.158288,
+    "place_id": "ChIJ-wf0njr_0YURewRsUhR94XE",
+    "google_maps_url": "https://maps.google.com/?cid=8205977522281383035"
   },
   {
     "name": "Ultramarinos Demar",
@@ -7816,7 +8171,9 @@ const CURATED_PLACES = [
     ],
     "id": "ultramarinos-demar",
     "lat": 19.423471499999998,
-    "lng": -99.1586808
+    "lng": -99.1586808,
+    "place_id": "ChIJ6861PAD_0YURBCIy7ssSy54",
+    "google_maps_url": "https://maps.google.com/?cid=11442259945348801028"
   },
   {
     "name": "Mariscos Don Vergas",
@@ -7858,8 +8215,8 @@ const CURATED_PLACES = [
       "Chilango - 9 lugares de mariscos"
     ],
     "id": "mariscos-don-vergas",
-    "lat": 20.6998283,
-    "lng": -103.38501529999999
+    "lat": 19.428105199999997,
+    "lng": -99.1701892
   },
   {
     "name": "La Guerrerense (Condesa)",
@@ -7944,8 +8301,8 @@ const CURATED_PLACES = [
       "Time Out México - tostadas de atún"
     ],
     "id": "henry-sailor",
-    "lat": 19.4194487,
-    "lng": -99.17095189999999
+    "lat": 19.3893957,
+    "lng": -99.153232
   },
   {
     "name": "Avenida La Tizona",
@@ -7988,7 +8345,9 @@ const CURATED_PLACES = [
     ],
     "id": "avenida-la-tizona",
     "lat": 19.418868,
-    "lng": -99.1696686
+    "lng": -99.1696686,
+    "place_id": "ChIJAQCsxUf_0YURpEWg_AUkZ7k",
+    "google_maps_url": "https://maps.google.com/?cid=13359686427749664164"
   },
   {
     "name": "La Matoza",
@@ -8030,8 +8389,10 @@ const CURATED_PLACES = [
       "Chilango - 9 lugares de mariscos"
     ],
     "id": "la-matoza",
-    "lat": 19.4172358,
-    "lng": -99.12457599999999
+    "lat": 19.3718781,
+    "lng": -99.0972441,
+    "place_id": "ChIJyUKwSYb90YUR4I8fToXvK2I",
+    "google_maps_url": "https://maps.google.com/?cid=7074010995535876064"
   },
   {
     "name": "El K-Guamo (Mariscos El Caguamo)",
@@ -8069,7 +8430,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-k-guamo-mariscos-el-caguamo",
     "lat": 19.4303731,
-    "lng": -99.1425963
+    "lng": -99.1425963,
+    "place_id": "ChIJh0oQ_NT-0YURyZqEje02NLI",
+    "google_maps_url": "https://maps.google.com/?cid=12840948831449553609"
   },
   {
     "name": "Agua y Sal",
@@ -8112,7 +8475,9 @@ const CURATED_PLACES = [
     ],
     "id": "agua-y-sal",
     "lat": 19.4281492,
-    "lng": -99.19268989999999
+    "lng": -99.19268989999999,
+    "place_id": "ChIJDToBB_8B0oUR4hJNdxALSvo",
+    "google_maps_url": "https://maps.google.com/?cid=18035239823107494626"
   },
   {
     "name": "La Pinguina",
@@ -8149,8 +8514,8 @@ const CURATED_PLACES = [
       "Time Out México - Aguachile en la CDMX"
     ],
     "id": "la-pinguina",
-    "lat": 19.3523776,
-    "lng": -99.16514049999999
+    "lat": 19.3570411,
+    "lng": -99.16210780000002
   },
   {
     "name": "Tostadas Coyoacán at Mercado de Coyoacán",
@@ -8198,7 +8563,9 @@ const CURATED_PLACES = [
     ],
     "id": "tostadas-coyoacan-at-mercado-de-coyoacan",
     "lat": 19.352771699999998,
-    "lng": -99.1615138
+    "lng": -99.1615138,
+    "place_id": "ChIJmYbreMT_0YURs7E2sPnqaRM",
+    "google_maps_url": "https://maps.google.com/?cid=1398907517399380403"
   },
   {
     "name": "Taco de Mar",
@@ -8230,8 +8597,8 @@ const CURATED_PLACES = [
       "Chilango - 9 lugares de mariscos"
     ],
     "id": "taco-de-mar",
-    "lat": 19.3483303,
-    "lng": -99.1632851
+    "lat": 19.3536225,
+    "lng": -99.15215649999999
   },
   {
     "name": "Mariscos del Diego",
@@ -8269,7 +8636,9 @@ const CURATED_PLACES = [
     ],
     "id": "mariscos-del-diego",
     "lat": 19.365619199999998,
-    "lng": -99.1626637
+    "lng": -99.1626637,
+    "place_id": "ChIJcWeIyb7_0YURZK-1_-cukbE",
+    "google_maps_url": "https://maps.google.com/?cid=12795059590298709860"
   },
   {
     "name": "Mi Gusto Es",
@@ -8307,7 +8676,9 @@ const CURATED_PLACES = [
     ],
     "id": "mi-gusto-es",
     "lat": 19.399126,
-    "lng": -99.1502526
+    "lng": -99.1502526,
+    "place_id": "ChIJd5l1kRz_0YURiDlbpfRaetA",
+    "google_maps_url": "https://maps.google.com/?cid=15022419513840449928"
   },
   {
     "name": "La Corriente Cevichería Nais",
@@ -8345,7 +8716,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-corriente-cevicheria-nais",
     "lat": 19.422642,
-    "lng": -99.16071
+    "lng": -99.16071,
+    "place_id": "ChIJ-fZkejb_0YURhhcblCLnOtM",
+    "google_maps_url": "https://maps.google.com/?cid=15220732026351720326"
   },
   {
     "name": "Micheviche",
@@ -8378,7 +8751,9 @@ const CURATED_PLACES = [
     ],
     "id": "micheviche",
     "lat": 19.4103325,
-    "lng": -99.1826509
+    "lng": -99.1826509,
+    "place_id": "ChIJXd25TFz_0YURT00Eb_sRATo",
+    "google_maps_url": "https://maps.google.com/?cid=4179641700773547343"
   },
   {
     "name": "Tostadas Amatista",
@@ -8411,7 +8786,9 @@ const CURATED_PLACES = [
     ],
     "id": "tostadas-amatista",
     "lat": 19.3511998,
-    "lng": -99.16371649999999
+    "lng": -99.16371649999999,
+    "place_id": "ChIJR9WWFMP_0YURY2cMl0sNyyc",
+    "google_maps_url": "https://maps.google.com/?cid=2867400206059333475"
   },
   {
     "name": "La Morenita (Mercado Medellín)",
@@ -8449,7 +8826,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-morenita-mercado-medellin",
     "lat": 19.410328099999997,
-    "lng": -99.1628089
+    "lng": -99.1628089,
+    "place_id": "ChIJiZS5cT7_0YURJ3gzcfn9EPs",
+    "google_maps_url": "https://maps.google.com/?cid=18091238950935164967"
   },
   {
     "name": "La Nueva Viga (pasillo marisquero)",
@@ -8492,7 +8871,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-nueva-viga-pasillo-marisquero",
     "lat": 19.3709751,
-    "lng": -99.0973767
+    "lng": -99.0973767,
+    "place_id": "ChIJ_WggTQD90YUR4_UYtuJjFu4",
+    "google_maps_url": "https://maps.google.com/?cid=17156009655883331043"
   },
   {
     "name": "The Bob Marlin",
@@ -8529,8 +8910,8 @@ const CURATED_PLACES = [
       "Chilango - 9 lugares de mariscos"
     ],
     "id": "the-bob-marlin",
-    "lat": 19.4138993,
-    "lng": -99.1710825
+    "lat": 19.413913,
+    "lng": -99.1710392
   },
   {
     "name": "El Pescadito",
@@ -8562,8 +8943,8 @@ const CURATED_PLACES = [
       "Time Out México - Tacos de mariscos"
     ],
     "id": "el-pescadito",
-    "lat": 19.414296,
-    "lng": -99.1734486
+    "lat": 19.414400699999998,
+    "lng": -99.1734087
   },
   {
     "name": "Soda Fishlab",
@@ -8601,7 +8982,9 @@ const CURATED_PLACES = [
     ],
     "id": "soda-fishlab",
     "lat": 19.557512799999998,
-    "lng": -99.13373729999999
+    "lng": -99.13373729999999,
+    "place_id": "ChIJBXpcHhL30YURU9grYX_omOs",
+    "google_maps_url": "https://maps.google.com/?cid=16976574429161838675"
   },
   {
     "name": "Cocina Conchita",
@@ -8633,8 +9016,8 @@ const CURATED_PLACES = [
       "Time Out México - Tacos de mariscos"
     ],
     "id": "cocina-conchita",
-    "lat": 19.4177306,
-    "lng": -99.1675748
+    "lat": 19.4176009,
+    "lng": -99.16182730000001
   },
   {
     "name": "Lola la Trailera (La Corcholata) at Mercado Martínez de la Torre",
@@ -8677,7 +9060,9 @@ const CURATED_PLACES = [
     ],
     "id": "lola-la-trailera-la-corcholata-at-mercado-martinez-de-la-torre",
     "lat": 19.445328,
-    "lng": -99.144538
+    "lng": -99.144538,
+    "place_id": "ChIJbX9R7yf50YUR2gos-s2QM_4",
+    "google_maps_url": "https://maps.google.com/?cid=18317143323785824986"
   },
   {
     "name": "Barbacoa El Mejor at Mercado Martínez de la Torre",
@@ -8715,7 +9100,9 @@ const CURATED_PLACES = [
     ],
     "id": "barbacoa-el-mejor-at-mercado-martinez-de-la-torre",
     "lat": 19.445255,
-    "lng": -99.1442852
+    "lng": -99.1442852,
+    "place_id": "ChIJ_7OZ9if50YURVR_Ea4DER2o",
+    "google_maps_url": "https://maps.google.com/?cid=7658305747209690965"
   },
   {
     "name": "Comedor Los Güeros at Mercado Martínez de la Torre",
@@ -8748,7 +9135,9 @@ const CURATED_PLACES = [
     ],
     "id": "comedor-los-gueros-at-mercado-martinez-de-la-torre",
     "lat": 19.445255,
-    "lng": -99.1442852
+    "lng": -99.1442852,
+    "place_id": "ChIJ_7OZ9if50YURVR_Ea4DER2o",
+    "google_maps_url": "https://maps.google.com/?cid=7658305747209690965"
   },
   {
     "name": "Mercado Martínez de la Torre",
@@ -8791,7 +9180,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-martinez-de-la-torre",
     "lat": 19.445255,
-    "lng": -99.1442852
+    "lng": -99.1442852,
+    "place_id": "ChIJ_7OZ9if50YURVR_Ea4DER2o",
+    "google_maps_url": "https://maps.google.com/?cid=7658305747209690965"
   },
   {
     "name": "Taquería Cinco Hermanos at Mercado de la Merced",
@@ -8834,7 +9225,9 @@ const CURATED_PLACES = [
     ],
     "id": "taqueria-cinco-hermanos-at-mercado-de-la-merced",
     "lat": 19.427138199999998,
-    "lng": -99.1243291
+    "lng": -99.1243291,
+    "place_id": "ChIJaU41eA7_0YURsZ7_m76aNSo",
+    "google_maps_url": "https://maps.google.com/?cid=3041507266810322609"
   },
   {
     "name": "El Pollo (quesadillas de huitlacoche) at Mercado de la Merced",
@@ -8871,8 +9264,10 @@ const CURATED_PLACES = [
       "Wares on the Globe - Eating our way through the Merced market"
     ],
     "id": "el-pollo-quesadillas-de-huitlacoche-at-mercado-de-la-merced",
-    "lat": 19.426112399999997,
-    "lng": -99.1251527
+    "lat": 19.425403799999998,
+    "lng": -99.12814089999999,
+    "place_id": "ChIJdU_-JMn-0YUR-VdkGLoTgjU",
+    "google_maps_url": "https://maps.google.com/?cid=3855665920976639993"
   },
   {
     "name": "La Chaparrita at Mercado de Coyoacán",
@@ -8914,8 +9309,10 @@ const CURATED_PLACES = [
       "Chilango - Tostadas de pata CDMX"
     ],
     "id": "la-chaparrita-at-mercado-de-coyoacan",
-    "lat": 19.352771699999998,
-    "lng": -99.1615138
+    "lat": 19.3526387,
+    "lng": -99.16170179999999,
+    "place_id": "ChIJvcuOeAD_0YURARcbcBHR5r0",
+    "google_maps_url": "https://maps.google.com/?cid=13683854390637303553"
   },
   {
     "name": "Mercado Portales",
@@ -8953,7 +9350,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-portales",
     "lat": 19.3718939,
-    "lng": -99.14349879999999
+    "lng": -99.14349879999999,
+    "place_id": "ChIJq5hLDk3-0YUR80eJyuJsduY",
+    "google_maps_url": "https://maps.google.com/?cid=16606580397291685875"
   },
   {
     "name": "Mariscos Altamar at Mercado San Pedro de los Pinos",
@@ -8991,7 +9390,9 @@ const CURATED_PLACES = [
     ],
     "id": "mariscos-altamar-at-mercado-san-pedro-de-los-pinos",
     "lat": 19.3920508,
-    "lng": -99.1834361
+    "lng": -99.1834361,
+    "place_id": "ChIJx7INmXv_0YURQEj8Mv9dlmI",
+    "google_maps_url": "https://maps.google.com/?cid=7103968812876974144"
   },
   {
     "name": "La Fuente de la Juventud at Mercado San Pedro de los Pinos",
@@ -9029,7 +9430,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-fuente-de-la-juventud-at-mercado-san-pedro-de-los-pinos",
     "lat": 19.391646299999998,
-    "lng": -99.18334449999999
+    "lng": -99.18334449999999,
+    "place_id": "ChIJj0hLjHv_0YURzSFO4x59av0",
+    "google_maps_url": "https://maps.google.com/?cid=18260545210743136717"
   },
   {
     "name": "Taquería Coco Loco at Mercado 14 (Tepito)",
@@ -9066,8 +9469,8 @@ const CURATED_PLACES = [
       "Time Out México - Lugares para comer en Tepito"
     ],
     "id": "taqueria-coco-loco-at-mercado-14-tepito",
-    "lat": 19.4464848,
-    "lng": -99.1273792
+    "lat": 19.4463811,
+    "lng": -99.1275462
   },
   {
     "name": "El Profe barbacoa at Mercado Jamaica",
@@ -9100,7 +9503,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-profe-barbacoa-at-mercado-jamaica",
     "lat": 19.40845,
-    "lng": -99.12272
+    "lng": -99.12272,
+    "place_id": "ChIJUZLWrxL_0YURwmZiawZVl94",
+    "google_maps_url": "https://maps.google.com/?cid=16039382083963086530"
   },
   {
     "name": "Huaraches de costilla, anexo Mercado Jamaica",
@@ -9137,8 +9542,10 @@ const CURATED_PLACES = [
       "CDMX Tourism - Venustiano Carranza: la casa del huarache"
     ],
     "id": "huaraches-de-costilla-anexo-mercado-jamaica",
-    "lat": 19.406817399999998,
-    "lng": -99.1224738
+    "lat": 19.4067692,
+    "lng": -99.12213369999999,
+    "place_id": "ChIJMTvt55T-0YURIFW2gTMAG9k",
+    "google_maps_url": "https://maps.google.com/?cid=15644097951821092128"
   },
   {
     "name": "Mercado Abelardo L. Rodríguez",
@@ -9181,7 +9588,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-abelardo-l-rodriguez",
     "lat": 19.4370532,
-    "lng": -99.1274554
+    "lng": -99.1274554,
+    "place_id": "ChIJS9IEcDT50YURiI8P5v3pj0o",
+    "google_maps_url": "https://maps.google.com/?cid=5372770157172068232"
   },
   {
     "name": "Casa Chacón at Mercado La Dalia",
@@ -9256,8 +9665,10 @@ const CURATED_PLACES = [
       "CDMX Tourism - Mercado de Mixcoac"
     ],
     "id": "gorditas-de-chicharron-at-mercado-mixcoac",
-    "lat": 19.3730665,
-    "lng": -99.18875729999999
+    "lat": 19.372816099999998,
+    "lng": -99.1882785,
+    "place_id": "ChIJM6sBxIf_0YURqy4mChF1KEY",
+    "google_maps_url": "https://maps.google.com/?cid=5055419297768550059"
   },
   {
     "name": "Mercado Roma",
@@ -9300,7 +9711,9 @@ const CURATED_PLACES = [
     ],
     "id": "mercado-roma",
     "lat": 19.414186,
-    "lng": -99.16455470000001
+    "lng": -99.16455470000001,
+    "place_id": "ChIJ0Z9P0z7_0YURVqrnz-OpFms",
+    "google_maps_url": "https://maps.google.com/?cid=7716541807456660054"
   },
   {
     "name": "Quesadillas Lagunitas at La Lagunilla (Sunday)",
@@ -9342,8 +9755,8 @@ const CURATED_PLACES = [
       "Chilango - Mercados con comida sabrosa cerca de Reforma"
     ],
     "id": "quesadillas-lagunitas-at-la-lagunilla-sunday",
-    "lat": 19.4438365,
-    "lng": -99.13488650000001
+    "lat": 19.429785499999998,
+    "lng": -99.1381258
   },
   {
     "name": "Barbacoa at Mercado 24 de Agosto",
@@ -9375,8 +9788,10 @@ const CURATED_PLACES = [
       "Matador Network - ¿Qué comer en cada uno de estos mercados?"
     ],
     "id": "barbacoa-at-mercado-24-de-agosto",
-    "lat": 19.3901109,
-    "lng": -99.1576369
+    "lat": 19.390357599999998,
+    "lng": -99.1576384,
+    "place_id": "ChIJx-kuuwj_0YURQxsLaFeGZyI",
+    "google_maps_url": "https://maps.google.com/?cid=2479097829856582467"
   },
   {
     "name": "Tamales Doña Emi",
@@ -9419,7 +9834,9 @@ const CURATED_PLACES = [
     ],
     "id": "tamales-dona-emi",
     "lat": 19.408409799999998,
-    "lng": -99.1600934
+    "lng": -99.1600934,
+    "place_id": "ChIJdxPKKBb_0YUR0jt1eMZQpic",
+    "google_maps_url": "https://maps.google.com/?cid=2857059826967854034"
   },
   {
     "name": "Tortas Armando",
@@ -9457,7 +9874,9 @@ const CURATED_PLACES = [
     ],
     "id": "tortas-armando",
     "lat": 19.43197,
-    "lng": -99.1675028
+    "lng": -99.1675028,
+    "place_id": "ChIJ1zQxqsr40YUR8sp5lwNgluY",
+    "google_maps_url": "https://maps.google.com/?cid=16615573443772533490"
   },
   {
     "name": "La Casa del Pavo",
@@ -9495,7 +9914,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-casa-del-pavo",
     "lat": 19.4326461,
-    "lng": -99.13737160000001
+    "lng": -99.13737160000001,
+    "place_id": "ChIJkxZ7KNP-0YURwOJgWbKCD4o",
+    "google_maps_url": "https://maps.google.com/?cid=9948313804400026304"
   },
   {
     "name": "La Texcocana",
@@ -9528,7 +9949,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-texcocana",
     "lat": 19.4337569,
-    "lng": -99.1466466
+    "lng": -99.1466466,
+    "place_id": "ChIJMxEiRNX40YURDMexoQ3odHc",
+    "google_maps_url": "https://maps.google.com/?cid=8607759933056861964"
   },
   {
     "name": "Café La Perla (Mixcoac)",
@@ -9566,7 +9989,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-la-perla-mixcoac",
     "lat": 19.3723592,
-    "lng": -99.18835059999999
+    "lng": -99.18835059999999,
+    "place_id": "ChIJ-yzi9Yf_0YURw1UHpvWTEkI",
+    "google_maps_url": "https://maps.google.com/?cid=4761030439345804739"
   },
   {
     "name": "La Esquina del Chilaquil",
@@ -9604,7 +10029,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-esquina-del-chilaquil",
     "lat": 19.4083759,
-    "lng": -99.17656269999999
+    "lng": -99.17656269999999,
+    "place_id": "ChIJo6Zhj0L_0YURRFnw4GR8dew",
+    "google_maps_url": "https://maps.google.com/?cid=17038661537938561348"
   },
   {
     "name": "Tortas Don Polo",
@@ -9642,7 +10069,9 @@ const CURATED_PLACES = [
     ],
     "id": "tortas-don-polo",
     "lat": 19.3718212,
-    "lng": -99.17143899999999
+    "lng": -99.17143899999999,
+    "place_id": "ChIJa4czM4X_0YURmJuNaoJBbtM",
+    "google_maps_url": "https://maps.google.com/?cid=15235186617830185880"
   },
   {
     "name": "Tlacoyotitlán",
@@ -9680,7 +10109,9 @@ const CURATED_PLACES = [
     ],
     "id": "tlacoyotitlan",
     "lat": 19.4485223,
-    "lng": -99.15607779999999
+    "lng": -99.15607779999999,
+    "place_id": "ChIJXRLAR9v40YURn1PmZam_aF8",
+    "google_maps_url": "https://maps.google.com/?cid=6874955565461033887"
   },
   {
     "name": "La Chalupería",
@@ -9713,7 +10144,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-chaluperia",
     "lat": 19.4399025,
-    "lng": -99.1602966
+    "lng": -99.1602966,
+    "place_id": "ChIJwff3v0D50YURGeN1w6FW8k8",
+    "google_maps_url": "https://maps.google.com/?cid=5760762126129292057"
   },
   {
     "name": "El Huarache Azteca",
@@ -9751,7 +10184,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-huarache-azteca",
     "lat": 19.4099562,
-    "lng": -99.12414679999999
+    "lng": -99.12414679999999,
+    "place_id": "ChIJp4EMZMD-0YURiuQvS-rGOCU",
+    "google_maps_url": "https://maps.google.com/?cid=2682112287685207178"
   },
   {
     "name": "Los Tamalitos de la Balbuena",
@@ -9783,8 +10218,10 @@ const CURATED_PLACES = [
       "Chilango - Guía de tamalerías, puestos y tortillerías (ene 2026)"
     ],
     "id": "los-tamalitos-de-la-balbuena",
-    "lat": 19.4176471,
-    "lng": -99.1020387
+    "lat": 19.4179155,
+    "lng": -99.1014981,
+    "place_id": "ChIJlzJ-IQD_0YURmgs2uo4CHpc",
+    "google_maps_url": "https://maps.google.com/?cid=10889143761061153690"
   },
   {
     "name": "Tamalería Domy",
@@ -9817,7 +10254,9 @@ const CURATED_PLACES = [
     ],
     "id": "tamaleria-domy",
     "lat": 19.395369199999998,
-    "lng": -99.135429
+    "lng": -99.135429,
+    "place_id": "ChIJk9jLiPr-0YUREYm9nIxZ4cY",
+    "google_maps_url": "https://maps.google.com/?cid=14330833949729589521"
   },
   {
     "name": "Guajolotongos",
@@ -9850,7 +10289,9 @@ const CURATED_PLACES = [
     ],
     "id": "guajolotongos",
     "lat": 19.380954799999998,
-    "lng": -99.1845835
+    "lng": -99.1845835,
+    "place_id": "ChIJWZAmKiH_0YURu07xMrJ0Yeo",
+    "google_maps_url": "https://maps.google.com/?cid=16888908386323746491"
   },
   {
     "name": "Tamales Don Vic (Mercado de Granaditas)",
@@ -9883,7 +10324,9 @@ const CURATED_PLACES = [
     ],
     "id": "tamales-don-vic-mercado-de-granaditas",
     "lat": 19.4429887,
-    "lng": -99.1289955
+    "lng": -99.1289955,
+    "place_id": "ChIJtazbegD50YURjRrYVawOL4g",
+    "google_maps_url": "https://maps.google.com/?cid=9813078246400989837"
   },
   {
     "name": "Banqueteros (Mercado de Jamaica)",
@@ -9916,7 +10359,9 @@ const CURATED_PLACES = [
     ],
     "id": "banqueteros-mercado-de-jamaica",
     "lat": 19.408065,
-    "lng": -99.1230732
+    "lng": -99.1230732,
+    "place_id": "ChIJj4OJKZX-0YURj9mEeHCcyAo",
+    "google_maps_url": "https://maps.google.com/?cid=777042942593653135"
   },
   {
     "name": "Tamales Madre",
@@ -9949,7 +10394,9 @@ const CURATED_PLACES = [
     ],
     "id": "tamales-madre",
     "lat": 19.4271332,
-    "lng": -99.1578541
+    "lng": -99.1578541,
+    "place_id": "ChIJgSZJei__0YURCdLEpBF-U9E",
+    "google_maps_url": "https://maps.google.com/?cid=15083538191237829129"
   },
   {
     "name": "Molino El Pujol",
@@ -9989,7 +10436,9 @@ const CURATED_PLACES = [
     ],
     "id": "molino-el-pujol",
     "lat": 19.4076748,
-    "lng": -99.1771131
+    "lng": -99.1771131,
+    "place_id": "ChIJEf1kmb3_0YURQR2YXpr2jSE",
+    "google_maps_url": "https://maps.google.com/?cid=2417859717840248129"
   },
   {
     "name": "Esquites Don Josué",
@@ -10027,7 +10476,9 @@ const CURATED_PLACES = [
     ],
     "id": "esquites-don-josue",
     "lat": 19.395299599999998,
-    "lng": -99.1462087
+    "lng": -99.1462087,
+    "place_id": "ChIJA_ekglH_0YURbYEUXnRI0vI",
+    "google_maps_url": "https://maps.google.com/?cid=17497127166919606637"
   },
   {
     "name": "Antojitos Muy Vargas",
@@ -10060,7 +10511,9 @@ const CURATED_PLACES = [
     ],
     "id": "antojitos-muy-vargas",
     "lat": 19.3924946,
-    "lng": -99.15064059999999
+    "lng": -99.15064059999999,
+    "place_id": "ChIJqRK5scP90YURbSqCG8NshBM",
+    "google_maps_url": "https://maps.google.com/?cid=1406368568882375277"
   },
   {
     "name": "Pambazos at the Sullivan Saturday tianguis",
@@ -10097,8 +10550,10 @@ const CURATED_PLACES = [
       "Culinary Backstreets - Mexico City street food"
     ],
     "id": "pambazos-at-the-sullivan-saturday-tianguis",
-    "lat": 19.4334016,
-    "lng": -99.16107439999999
+    "lat": 19.4347392,
+    "lng": -99.1654123,
+    "place_id": "ChIJhZggfAD50YURms2lHr1LQXE",
+    "google_maps_url": "https://maps.google.com/?cid=8160887275407134106"
   },
   {
     "name": "Handshake Speakeasy",
@@ -10136,7 +10591,9 @@ const CURATED_PLACES = [
     ],
     "id": "handshake-speakeasy",
     "lat": 19.4243776,
-    "lng": -99.164873
+    "lng": -99.164873,
+    "place_id": "ChIJU_vg0kID0oUR37k2I3XazcM",
+    "google_maps_url": "https://maps.google.com/?cid=14109173404258449887"
   },
   {
     "name": "Tlecān",
@@ -10179,7 +10636,9 @@ const CURATED_PLACES = [
     ],
     "id": "tlecan",
     "lat": 19.4169081,
-    "lng": -99.1654616
+    "lng": -99.1654616,
+    "place_id": "ChIJRbtqqOX_0YURJkwQEFZd2cs",
+    "google_maps_url": "https://maps.google.com/?cid=14688874283863657510"
   },
   {
     "name": "Licorería Limantour",
@@ -10222,7 +10681,9 @@ const CURATED_PLACES = [
     ],
     "id": "licoreria-limantour",
     "lat": 19.4180939,
-    "lng": -99.1593559
+    "lng": -99.1593559,
+    "place_id": "ChIJX03s9zr_0YURHdcjFe9hbiE",
+    "google_maps_url": "https://maps.google.com/?cid=2408970530169542429"
   },
   {
     "name": "Bar Mauro",
@@ -10265,7 +10726,9 @@ const CURATED_PLACES = [
     ],
     "id": "bar-mauro",
     "lat": 19.419463999999998,
-    "lng": -99.1593451
+    "lng": -99.1593451,
+    "place_id": "ChIJcdBWvtv_0YURTptIyzduRkU",
+    "google_maps_url": "https://maps.google.com/?cid=4991798422899563342"
   },
   {
     "name": "Baltra Bar",
@@ -10308,7 +10771,9 @@ const CURATED_PLACES = [
     ],
     "id": "baltra-bar",
     "lat": 19.409497100000003,
-    "lng": -99.16887
+    "lng": -99.16887,
+    "place_id": "ChIJ0Q5aE0D_0YURSgPnuAqiwlY",
+    "google_maps_url": "https://maps.google.com/?cid=6251737399679189834"
   },
   {
     "name": "Bijou Drinkery Room",
@@ -10346,7 +10811,9 @@ const CURATED_PLACES = [
     ],
     "id": "bijou-drinkery-room",
     "lat": 19.412901599999998,
-    "lng": -99.16781119999999
+    "lng": -99.16781119999999,
+    "place_id": "ChIJ576kWD__0YUR977wHiOAofE",
+    "google_maps_url": "https://maps.google.com/?cid=17411338522722352887"
   },
   {
     "name": "Hanky Panky Cocktail Bar",
@@ -10389,7 +10856,9 @@ const CURATED_PLACES = [
     ],
     "id": "hanky-panky-cocktail-bar",
     "lat": 19.427017,
-    "lng": -99.1556652
+    "lng": -99.1556652,
+    "place_id": "ChIJxRZMnzb_0YURMVE1PsNPolo",
+    "google_maps_url": "https://maps.google.com/?cid=6530870109621539121"
   },
   {
     "name": "Kaito",
@@ -10427,7 +10896,9 @@ const CURATED_PLACES = [
     ],
     "id": "kaito",
     "lat": 19.427191699999998,
-    "lng": -99.1625031
+    "lng": -99.1625031,
+    "place_id": "ChIJ4QgDEKT_0YURJPINUbbCOhA",
+    "google_maps_url": "https://maps.google.com/?cid=1169461141555769892"
   },
   {
     "name": "Café de Nadie",
@@ -10470,7 +10941,9 @@ const CURATED_PLACES = [
     ],
     "id": "cafe-de-nadie",
     "lat": 19.417402,
-    "lng": -99.1605353
+    "lng": -99.1605353,
+    "place_id": "ChIJ_3DO2x7_0YURvIlJiTo6cds",
+    "google_maps_url": "https://maps.google.com/?cid=15812483789760334268"
   },
   {
     "name": "Fifty Mils",
@@ -10508,7 +10981,9 @@ const CURATED_PLACES = [
     ],
     "id": "fifty-mils",
     "lat": 19.423236799999998,
-    "lng": -99.1743556
+    "lng": -99.1743556,
+    "place_id": "ChIJwYwt2E7_0YURaoAbDk4_czo",
+    "google_maps_url": "https://maps.google.com/?cid=4211779680998228074"
   },
   {
     "name": "Jules Basement",
@@ -10545,8 +11020,8 @@ const CURATED_PLACES = [
       "Cool Hunting - Jules Basement"
     ],
     "id": "jules-basement",
-    "lat": 19.430663799999998,
-    "lng": -99.196214
+    "lat": 19.4305927,
+    "lng": -99.1962906
   },
   {
     "name": "Bósforo",
@@ -10589,7 +11064,9 @@ const CURATED_PLACES = [
     ],
     "id": "bosforo",
     "lat": 19.4332967,
-    "lng": -99.14512239999999
+    "lng": -99.14512239999999,
+    "place_id": "ChIJkQOhrir50YURGDwva4WiHrE",
+    "google_maps_url": "https://maps.google.com/?cid=12762817087927172120"
   },
   {
     "name": "Alipús Endémico",
@@ -10627,7 +11104,9 @@ const CURATED_PLACES = [
     ],
     "id": "alipus-endemico",
     "lat": 19.4073297,
-    "lng": -99.1735315
+    "lng": -99.1735315,
+    "place_id": "ChIJXxMJXAD_0YURQti_z3tTWxk",
+    "google_maps_url": "https://maps.google.com/?cid=1827145865060407362"
   },
   {
     "name": "La Botica",
@@ -10670,7 +11149,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-botica",
     "lat": 19.4148993,
-    "lng": -99.1590524
+    "lng": -99.1590524,
+    "place_id": "ChIJpUyFezv_0YURzJ9qC45456k",
+    "google_maps_url": "https://maps.google.com/?cid=12242886663502208972"
   },
   {
     "name": "Corazón de Maguey",
@@ -10713,7 +11194,9 @@ const CURATED_PLACES = [
     ],
     "id": "corazon-de-maguey",
     "lat": 19.3496897,
-    "lng": -99.1635572
+    "lng": -99.1635572,
+    "place_id": "ChIJGX_PSsP_0YURvm73DGoe4r4",
+    "google_maps_url": "https://maps.google.com/?cid=13754589652775825086"
   },
   {
     "name": "Sabrá Dios",
@@ -10750,8 +11233,8 @@ const CURATED_PLACES = [
       "Time Out México - mejores mezcalerías"
     ],
     "id": "sabra-dios",
-    "lat": 19.419396,
-    "lng": -99.17622999999999
+    "lat": 19.419379799999998,
+    "lng": -99.17624579999999
   },
   {
     "name": "Mezcalería Finca Robles",
@@ -10784,7 +11267,9 @@ const CURATED_PLACES = [
     ],
     "id": "mezcaleria-finca-robles",
     "lat": 19.414278,
-    "lng": -99.16463449999999
+    "lng": -99.16463449999999,
+    "place_id": "ChIJNZ-vxDf_0YUR-TX2xHFgOKE",
+    "google_maps_url": "https://maps.google.com/?cid=11617141280554235385"
   },
   {
     "name": "Archivo Maguey",
@@ -10816,8 +11301,8 @@ const CURATED_PLACES = [
       "Chilango - mejores bares de CDMX"
     ],
     "id": "archivo-maguey",
-    "lat": 19.346188599999998,
-    "lng": -99.1891488
+    "lat": 19.3468958,
+    "lng": -99.18852969999999
   },
   {
     "name": "Guzina Oaxaca",
@@ -10862,7 +11347,9 @@ const CURATED_PLACES = [
     ],
     "id": "guzina-oaxaca",
     "lat": 19.432536499999998,
-    "lng": -99.2036129
+    "lng": -99.2036129,
+    "place_id": "ChIJV4LlAB0C0oURDAvCk8vRpeM",
+    "google_maps_url": "https://maps.google.com/?cid=16403747890054433548"
   },
   {
     "name": "Azul Histórico",
@@ -10910,7 +11397,9 @@ const CURATED_PLACES = [
     ],
     "id": "azul-historico",
     "lat": 19.4328194,
-    "lng": -99.13601659999999
+    "lng": -99.13601659999999,
+    "place_id": "ChIJzbJ7ydL-0YURDh_BqkCUY5E",
+    "google_maps_url": "https://maps.google.com/?cid=10476380163657506574"
   },
   {
     "name": "Los Danzantes Coyoacán",
@@ -10958,7 +11447,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-danzantes-coyoacan",
     "lat": 19.348755,
-    "lng": -99.16365599999999
+    "lng": -99.16365599999999,
+    "place_id": "ChIJQTexydz_0YUR2QfqjGI6FS8",
+    "google_maps_url": "https://maps.google.com/?cid=3392682089238890457"
   },
   {
     "name": "Coox Hanal",
@@ -11001,7 +11492,9 @@ const CURATED_PLACES = [
     ],
     "id": "coox-hanal",
     "lat": 19.4282492,
-    "lng": -99.1371369
+    "lng": -99.1371369,
+    "place_id": "ChIJjeNNMtL-0YURcYy7j7wVbIU",
+    "google_maps_url": "https://maps.google.com/?cid=9614083204138634353"
   },
   {
     "name": "Los Almendros",
@@ -11043,8 +11536,8 @@ const CURATED_PLACES = [
       "Food & Pleasure"
     ],
     "id": "los-almendros",
-    "lat": 19.4286733,
-    "lng": -99.190783
+    "lat": 19.4272574,
+    "lng": -99.19360440000001
   },
   {
     "name": "Casa Merlos",
@@ -11087,7 +11580,9 @@ const CURATED_PLACES = [
     ],
     "id": "casa-merlos",
     "lat": 19.4049084,
-    "lng": -99.1965597
+    "lng": -99.1965597,
+    "place_id": "ChIJZbtxwd0B0oURxleYUjCVgyU",
+    "google_maps_url": "https://maps.google.com/?cid=2703168236129114054"
   },
   {
     "name": "Seneri",
@@ -11124,8 +11619,8 @@ const CURATED_PLACES = [
       "Revista Travesías — Seneri, gastronomía michoacana en la CDMX"
     ],
     "id": "seneri",
-    "lat": 19.4383002,
-    "lng": -99.21227569999999
+    "lat": 19.414186,
+    "lng": -99.16455470000001
   },
   {
     "name": "El Pozole de Moctezuma",
@@ -11181,7 +11676,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-pozole-de-moctezuma",
     "lat": 19.442881,
-    "lng": -99.1398813
+    "lng": -99.1398813,
+    "place_id": "ChIJNzijyCj50YURh7SbysSqcPs",
+    "google_maps_url": "https://maps.google.com/?cid=18118169063101019271"
   },
   {
     "name": "Casa Licha Acoxpa",
@@ -11223,8 +11720,10 @@ const CURATED_PLACES = [
       "México Desconocido - pozoles verdes"
     ],
     "id": "casa-licha-acoxpa",
-    "lat": 19.296888,
-    "lng": -99.136303
+    "lat": 19.3656064,
+    "lng": -99.135926,
+    "place_id": "ChIJX4yHYEj-0YUR43ZYkK0zZ8U",
+    "google_maps_url": "https://maps.google.com/?cid=14224394768617076451"
   },
   {
     "name": "Fonda 99.99",
@@ -11262,7 +11761,9 @@ const CURATED_PLACES = [
     ],
     "id": "fonda-99-99",
     "lat": 19.364763999999997,
-    "lng": -99.1804623
+    "lng": -99.1804623,
+    "place_id": "ChIJR6RG1pv_0YURmXE_3q0nhEE",
+    "google_maps_url": "https://maps.google.com/?cid=4720941937102647705"
   },
   {
     "name": "Cochinita Country",
@@ -11295,7 +11796,9 @@ const CURATED_PLACES = [
     ],
     "id": "cochinita-country",
     "lat": 19.355652,
-    "lng": -99.1625275
+    "lng": -99.1625275,
+    "place_id": "ChIJr5Qfa3z_0YURcIDFt9nbYv4",
+    "google_maps_url": "https://maps.google.com/?cid=18330455161488900208"
   },
   {
     "name": "Moloch (Mercado Medellín)",
@@ -11333,7 +11836,9 @@ const CURATED_PLACES = [
     ],
     "id": "moloch-mercado-medellin",
     "lat": 19.410349399999998,
-    "lng": -99.1634321
+    "lng": -99.1634321,
+    "place_id": "ChIJ5bNHaD7_0YUR8OTe1y8Q1sU",
+    "google_maps_url": "https://maps.google.com/?cid=14255599468159100144"
   },
   {
     "name": "Le-Lah-T'Ho",
@@ -11366,7 +11871,9 @@ const CURATED_PLACES = [
     ],
     "id": "le-lah-t-ho",
     "lat": 19.3876876,
-    "lng": -99.182684
+    "lng": -99.182684,
+    "place_id": "ChIJQ5TaFnn_0YURBXXXsa9SUzI",
+    "google_maps_url": "https://maps.google.com/?cid=3626333039519823109"
   },
   {
     "name": "Humberto's",
@@ -11404,7 +11911,9 @@ const CURATED_PLACES = [
     ],
     "id": "humberto-s",
     "lat": 19.3755181,
-    "lng": -99.1741095
+    "lng": -99.1741095,
+    "place_id": "ChIJD56ozZv_0YURWjjayoBnwsE",
+    "google_maps_url": "https://maps.google.com/?cid=13961835597658732634"
   },
   {
     "name": "La Fonda del Recuerdo",
@@ -11447,7 +11956,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-fonda-del-recuerdo",
     "lat": 19.428179,
-    "lng": -99.16937039999999
+    "lng": -99.16937039999999,
+    "place_id": "ChIJ23k1qqX_0YURTq49bD1aVU4",
+    "google_maps_url": "https://maps.google.com/?cid=5644516927834271310"
   },
   {
     "name": "Boca del Río",
@@ -11490,7 +12001,9 @@ const CURATED_PLACES = [
     ],
     "id": "boca-del-rio",
     "lat": 19.440520499999998,
-    "lng": -99.158091
+    "lng": -99.158091,
+    "place_id": "ChIJpfqdSc740YURmiCKhfZG1-k",
+    "google_maps_url": "https://maps.google.com/?cid=16850014555446321306"
   },
   {
     "name": "Cocina Mi Fonda",
@@ -11523,7 +12036,9 @@ const CURATED_PLACES = [
     ],
     "id": "cocina-mi-fonda",
     "lat": 19.4294501,
-    "lng": -99.14268109999999
+    "lng": -99.14268109999999,
+    "place_id": "ChIJCT4AU9T-0YURwO3je8C0ta4",
+    "google_maps_url": "https://maps.google.com/?cid=12589167072189345216"
   },
   {
     "name": "Fonda La Reforma",
@@ -11566,7 +12081,9 @@ const CURATED_PLACES = [
     ],
     "id": "fonda-la-reforma",
     "lat": 19.445788,
-    "lng": -99.1459386
+    "lng": -99.1459386,
+    "place_id": "ChIJT-i9CNj40YUR_lChksOUegQ",
+    "google_maps_url": "https://maps.google.com/?cid=322733891009990910"
   },
   {
     "name": "Fonda La Beatricita",
@@ -11599,7 +12116,9 @@ const CURATED_PLACES = [
     ],
     "id": "fonda-la-beatricita",
     "lat": 19.4237264,
-    "lng": -99.1670003
+    "lng": -99.1670003,
+    "place_id": "ChIJvaQvPhYH0oURzyY8QYBpYlk",
+    "google_maps_url": "https://maps.google.com/?cid=6440826416664422095"
   },
   {
     "name": "La Oaxaqueña (Mercado de Portales)",
@@ -11632,7 +12151,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-oaxaquena-mercado-de-portales",
     "lat": 19.3721271,
-    "lng": -99.14224639999999
+    "lng": -99.14224639999999,
+    "place_id": "ChIJ3UIJDU3-0YURGS8kJ7BO5Kk",
+    "google_maps_url": "https://maps.google.com/?cid=12241996205577744153"
   },
   {
     "name": "Los Cazadores",
@@ -11664,8 +12185,10 @@ const CURATED_PLACES = [
       "Chilango - fondas para comer rico"
     ],
     "id": "los-cazadores",
-    "lat": 19.42997,
-    "lng": -99.1445947
+    "lat": 19.4284558,
+    "lng": -99.14282019999999,
+    "place_id": "ChIJoe1ONdT-0YURO8dc_4lONWY",
+    "google_maps_url": "https://maps.google.com/?cid=7364879120236070715"
   },
   {
     "name": "Los Tres Reyes",
@@ -11703,7 +12226,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-tres-reyes",
     "lat": 19.3773951,
-    "lng": -99.19344459999999
+    "lng": -99.19344459999999,
+    "place_id": "ChIJcZA72CsA0oURBDr5v88cgDE",
+    "google_maps_url": "https://maps.google.com/?cid=3566882583482022404"
   },
   {
     "name": "La Oveja Negra",
@@ -11741,7 +12266,9 @@ const CURATED_PLACES = [
     ],
     "id": "la-oveja-negra",
     "lat": 19.4516422,
-    "lng": -99.1593863
+    "lng": -99.1593863,
+    "place_id": "ChIJicwxPPr50YURd8Rkum_Ovcs",
+    "google_maps_url": "https://maps.google.com/?cid=14681117339561542775"
   },
   {
     "name": "Barbacoa de Santiago",
@@ -11774,7 +12301,9 @@ const CURATED_PLACES = [
     ],
     "id": "barbacoa-de-santiago",
     "lat": 19.3862469,
-    "lng": -99.1758024
+    "lng": -99.1758024,
+    "place_id": "ChIJvQuiTnb_0YURWiSZrlP0b7g",
+    "google_maps_url": "https://maps.google.com/?cid=13290109665642357850"
   },
   {
     "name": "Tripolandia",
@@ -11806,8 +12335,10 @@ const CURATED_PLACES = [
       "Chilango - taquerías imperdibles"
     ],
     "id": "tripolandia",
-    "lat": 19.431908099999998,
-    "lng": -99.1273263
+    "lat": 19.4273913,
+    "lng": -99.1279259,
+    "place_id": "ChIJnawFWMn-0YURiXw0vfmhHJg",
+    "google_maps_url": "https://maps.google.com/?cid=10960813687106206857"
   },
   {
     "name": "Yeshua Tacos",
@@ -11845,7 +12376,9 @@ const CURATED_PLACES = [
     ],
     "id": "yeshua-tacos",
     "lat": 19.4378109,
-    "lng": -99.1291777
+    "lng": -99.1291777,
+    "place_id": "ChIJHS92gjP50YUR0FecWnd5xLI",
+    "google_maps_url": "https://maps.google.com/?cid=12881554387714725840"
   },
   {
     "name": "El Taco Taco (pavo frito)",
@@ -11878,7 +12411,9 @@ const CURATED_PLACES = [
     ],
     "id": "el-taco-taco-pavo-frito",
     "lat": 19.4307959,
-    "lng": -99.14318139999999
+    "lng": -99.14318139999999,
+    "place_id": "ChIJLRyWBNX-0YURa2-0Trx30Cg",
+    "google_maps_url": "https://maps.google.com/?cid=2940982207330938731"
   },
   {
     "name": "Huesitos El Güero",
@@ -11911,7 +12446,9 @@ const CURATED_PLACES = [
     ],
     "id": "huesitos-el-guero",
     "lat": 19.462256,
-    "lng": -99.1131461
+    "lng": -99.1131461,
+    "place_id": "ChIJfQ2pl2j50YUR9bltFxbw22s",
+    "google_maps_url": "https://maps.google.com/?cid=7772069559630936565"
   },
   {
     "name": "Los Provolones",
@@ -11944,7 +12481,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-provolones",
     "lat": 19.4364467,
-    "lng": -99.1495963
+    "lng": -99.1495963,
+    "place_id": "ChIJCVGpek750YURhZWyvuz6gfg",
+    "google_maps_url": "https://maps.google.com/?cid=17906869488120403333"
   },
   {
     "name": "Zacapu",
@@ -11976,8 +12515,10 @@ const CURATED_PLACES = [
       "Chilango - taquerías imperdibles"
     ],
     "id": "zacapu",
-    "lat": 19.8125119,
-    "lng": -101.7956703
+    "lat": 19.4410861,
+    "lng": -99.13626610000001,
+    "place_id": "ChIJC98zQS750YUR7bM3OcLmwiA",
+    "google_maps_url": "https://maps.google.com/?cid=2360702876553556973"
   },
   {
     "name": "Tacos Domingo",
@@ -12015,7 +12556,9 @@ const CURATED_PLACES = [
     ],
     "id": "tacos-domingo",
     "lat": 19.430475599999998,
-    "lng": -99.14714339999999
+    "lng": -99.14714339999999,
+    "place_id": "ChIJUci1QgD_0YURyITBGtYrUE4",
+    "google_maps_url": "https://maps.google.com/?cid=5643058531667117256"
   },
   {
     "name": "Tacos Memo (Mercado San Cosme)",
@@ -12047,8 +12590,10 @@ const CURATED_PLACES = [
       "Chilango - taquerías imperdibles"
     ],
     "id": "tacos-memo-mercado-san-cosme",
-    "lat": 19.442203499999998,
-    "lng": -99.1624908
+    "lat": 19.442075199999998,
+    "lng": -99.1623941,
+    "place_id": "ChIJS9KVlbL50YURjtSbopic9MM",
+    "google_maps_url": "https://maps.google.com/?cid=14120082911090431118"
   },
   {
     "name": "Pozolería San Sebastián",
@@ -12081,7 +12626,9 @@ const CURATED_PLACES = [
     ],
     "id": "pozoleria-san-sebastian",
     "lat": 19.360327599999998,
-    "lng": -99.1663732
+    "lng": -99.1663732,
+    "place_id": "ChIJiZfaQgT_0YURfsW7ENYfcP4",
+    "google_maps_url": "https://maps.google.com/?cid=18334189087289492862"
   },
   {
     "name": "Pozoles Texcoco",
@@ -12113,8 +12660,8 @@ const CURATED_PLACES = [
       "Chilango - ruta del pozole"
     ],
     "id": "pozoles-texcoco",
-    "lat": 19.417479999999998,
-    "lng": -99.1650609
+    "lat": 19.4174732,
+    "lng": -99.16516179999999
   },
   {
     "name": "El Rinconcito de Iguala",
@@ -12146,8 +12693,8 @@ const CURATED_PLACES = [
       "México Desconocido - pozoles verdes estilo Guerrero"
     ],
     "id": "el-rinconcito-de-iguala",
-    "lat": 19.6126328,
-    "lng": -99.3179505
+    "lat": 19.4191666,
+    "lng": -99.15881669999999
   },
   {
     "name": "La Perla Tapatía",
@@ -12184,8 +12731,10 @@ const CURATED_PLACES = [
       "Excélsior - 5 lugares para comer birria"
     ],
     "id": "la-perla-tapatia",
-    "lat": 19.463352399999998,
-    "lng": -99.1122338
+    "lat": 19.4838046,
+    "lng": -99.1859576,
+    "place_id": "ChIJ6aAgy3740YURlAM6t3ylxuk",
+    "google_maps_url": "https://maps.google.com/?cid=16845333411294479252"
   },
   {
     "name": "Birrias Irma Aurora",
@@ -12218,7 +12767,9 @@ const CURATED_PLACES = [
     ],
     "id": "birrias-irma-aurora",
     "lat": 19.4422796,
-    "lng": -99.1002575
+    "lng": -99.1002575,
+    "place_id": "ChIJXVc-6_370YURdUbnfUMzRMU",
+    "google_maps_url": "https://maps.google.com/?cid=14214542688856262261"
   },
   {
     "name": "Los Güeros de Juanacatlán",
@@ -12251,7 +12802,9 @@ const CURATED_PLACES = [
     ],
     "id": "los-gueros-de-juanacatlan",
     "lat": 19.412653199999998,
-    "lng": -99.18181799999999
+    "lng": -99.18181799999999,
+    "place_id": "ChIJBZvhfFz_0YUR3mW0n9JoxA8",
+    "google_maps_url": "https://maps.google.com/?cid=1136148259836028382"
   }
 ];
 
@@ -12276,7 +12829,14 @@ let places = [];
 let activeCategory = "all";
 let activeNeighborhood = null;
 let searchQuery = "";
-let sortMode = "name";
+let sortMode = "score-total";
+const SCORE_DIMS = [
+  {k:"iconic", l:"ICON",  t:"Historical significance (1-10)"},
+  {k:"hype",   l:"HYPE",  t:"Tourist & social fame (1-10)"},
+  {k:"food",   l:"FOOD",  t:"Food quality per professional critics (1-10)"},
+  {k:"weird",  l:"WEIRD", t:"Singularity / format-defiance (1-10)"},
+];
+let customWeights = loadWeights();
 let currentNoteId = null;
 
 function loadCustomEntries() {
@@ -12301,6 +12861,18 @@ function saveNotes(n) {
 
 function getNotes() { return loadNotes(); }
 
+function loadWeights() {
+  try {
+    const w = JSON.parse(localStorage.getItem("cdmx-weights") || "null");
+    if (w && SCORE_DIMS.every(d => typeof w[d.k] === "number")) return w;
+  } catch {}
+  return {iconic: 1, hype: 1, food: 1, weird: 1};
+}
+
+function saveWeights(w) {
+  try { localStorage.setItem("cdmx-weights", JSON.stringify(w)); } catch {}
+}
+
 // ── INIT ──────────────────────────────────────────────────────────────────
 function init() {
   const custom = loadCustomEntries().map((e, i) => ({...e, id: "custom_" + i, _custom: true}));
@@ -12308,15 +12880,15 @@ function init() {
 
   buildCatTabs();
   buildNhPills();
-  render();
+  setSortMode(sortMode);
 
   document.getElementById("search").addEventListener("input", e => {
     searchQuery = e.target.value.toLowerCase().trim();
     render();
   });
   document.getElementById("sort-select").addEventListener("change", e => {
-    sortMode = e.target.value;
-    render();
+    if (e.target.value === "custom") { openWeightsModal(); return; }
+    setSortMode(e.target.value);
   });
 
   // Close modals on overlay click
@@ -12326,6 +12898,57 @@ function init() {
   document.getElementById("add-overlay").addEventListener("click", function(e) {
     if (e.target === this) closeAddModal();
   });
+  document.getElementById("weights-overlay").addEventListener("click", function(e) {
+    if (e.target === this) closeWeightsModal();
+  });
+}
+
+function setSortMode(mode) {
+  sortMode = mode;
+  document.getElementById("sort-select").value = mode;
+  document.getElementById("weights-btn").classList.toggle("show", mode === "custom");
+  render();
+}
+
+// ── CUSTOM WEIGHTS MODAL ──────────────────────────────────────────────────
+function openWeightsModal() {
+  document.getElementById("weights-rows").innerHTML = SCORE_DIMS.map(d =>
+    `<div class="weight-row">
+      <span class="weight-name">${d.l}<span class="weight-desc">${d.t.replace(/ \(1-10\)$/, "")}</span></span>
+      <input type="range" id="w-${d.k}" min="0" max="5" step="0.5" value="${customWeights[d.k]}"
+             oninput="this.nextElementSibling.value = this.value">
+      <output>${customWeights[d.k]}</output>
+    </div>`
+  ).join("");
+  document.getElementById("weights-overlay").classList.add("open");
+}
+
+function closeWeightsModal() {
+  document.getElementById("weights-overlay").classList.remove("open");
+  // Cancelled from the dropdown: restore the previous sort in the select
+  document.getElementById("sort-select").value = sortMode;
+}
+
+function resetWeights() {
+  SCORE_DIMS.forEach(d => {
+    const input = document.getElementById("w-" + d.k);
+    input.value = 1;
+    input.nextElementSibling.value = 1;
+  });
+}
+
+function applyWeights() {
+  const w = {};
+  SCORE_DIMS.forEach(d => { w[d.k] = parseFloat(document.getElementById("w-" + d.k).value) || 0; });
+  customWeights = w;
+  saveWeights(w);
+  document.getElementById("weights-overlay").classList.remove("open");
+  setSortMode("custom");
+}
+
+function weightedScore(p, weights) {
+  const s = p.scores || {};
+  return SCORE_DIMS.reduce((sum, d) => sum + (s[d.k] || 0) * weights[d.k], 0);
 }
 
 // ── CATEGORIES TAB ────────────────────────────────────────────────────────
@@ -12393,18 +13016,19 @@ function getFiltered() {
     if (sortMode === "neighborhood") return (a.neighborhood || "").localeCompare(b.neighborhood || "", "es") || a.name.localeCompare(b.name, "es");
     if (sortMode === "price-asc") return (priceOrder[a.price_range] || 0) - (priceOrder[b.price_range] || 0) || a.name.localeCompare(b.name, "es");
     if (sortMode === "price-desc") return (priceOrder[b.price_range] || 0) - (priceOrder[a.price_range] || 0) || a.name.localeCompare(b.name, "es");
-    if (sortMode === "score-total") {
-      const sa = a.scores ? (a.scores.iconic||0)+(a.scores.hype||0)+(a.scores.food||0)+(a.scores.weird||0) : 0;
-      const sb = b.scores ? (b.scores.iconic||0)+(b.scores.hype||0)+(b.scores.food||0)+(b.scores.weird||0) : 0;
-      return sb - sa || a.name.localeCompare(b.name, "es");
+    if (sortMode === "score-total") return weightedScore(b, EQUAL_WEIGHTS) - weightedScore(a, EQUAL_WEIGHTS) || a.name.localeCompare(b.name, "es");
+    if (sortMode === "custom") return weightedScore(b, customWeights) - weightedScore(a, customWeights) || a.name.localeCompare(b.name, "es");
+    if (sortMode.startsWith("score-")) {
+      const k = sortMode.slice(6);
+      return ((b.scores||{})[k]||0) - ((a.scores||{})[k]||0) || a.name.localeCompare(b.name, "es");
     }
-    if (sortMode === "score-food") return ((b.scores||{}).food||0) - ((a.scores||{}).food||0) || a.name.localeCompare(b.name, "es");
     if (sortMode === "michelin") return michelinRank(b) - michelinRank(a) || a.name.localeCompare(b.name, "es");
-    if (sortMode === "score-iconic") return ((b.scores||{}).iconic||0) - ((a.scores||{}).iconic||0) || a.name.localeCompare(b.name, "es");
     return 0;
   });
   return result;
 }
+
+const EQUAL_WEIGHTS = {iconic: 1, hype: 1, food: 1, weird: 1};
 
 // ── RENDER ────────────────────────────────────────────────────────────────
 function render() {
@@ -12424,8 +13048,11 @@ function render() {
 }
 
 function mapsHref(p) {
-  if (p.google_maps_query) return `https://maps.google.com/search/?q=${encodeURIComponent(p.google_maps_query)}`;
-  return `https://maps.google.com/search/?q=${encodeURIComponent(p.name + " " + (p.neighborhood || "") + " Ciudad de Mexico")}`;
+  if (p.google_maps_url) return p.google_maps_url;
+  if (/^https?:\/\//.test(p.google_maps_query || "")) return p.google_maps_query;
+  const q = p.google_maps_query || [p.name, p.address || p.neighborhood, "Ciudad de México"].filter(Boolean).join(", ");
+  const placeParam = p.place_id ? `&query_place_id=${encodeURIComponent(p.place_id)}` : "";
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}${placeParam}`;
 }
 
 function catClass(cat) {
@@ -12446,13 +13073,7 @@ function michelinBadge(p) {
 
 function scoreStrip(scores) {
   if (!scores) return "";
-  const dims = [
-    {k:"iconic", l:"ICON",  t:"Historical significance (1-10)"},
-    {k:"hype",   l:"HYPE",  t:"Tourist & social fame (1-10)"},
-    {k:"food",   l:"FOOD",  t:"Food quality per professional critics (1-10)"},
-    {k:"weird",  l:"WEIRD", t:"Singularity / format-defiance (1-10)"},
-  ];
-  const items = dims.filter(d => scores[d.k] != null).map(d =>
+  const items = SCORE_DIMS.filter(d => scores[d.k] != null).map(d =>
     `<span class="score-item" title="${d.t}"><span class="score-label">${d.l}</span><span class="score-val">${scores[d.k]}</span></span>`
   );
   return items.length ? `<div class="score-strip">${items.join("")}</div>` : "";
@@ -12595,6 +13216,7 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
     closeNoteModal();
     closeAddModal();
+    if (document.getElementById("weights-overlay").classList.contains("open")) closeWeightsModal();
   }
   if (e.key === "/" && !["INPUT","TEXTAREA"].includes(document.activeElement.tagName)) {
     e.preventDefault();
