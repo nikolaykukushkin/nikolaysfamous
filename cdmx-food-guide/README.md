@@ -1,6 +1,6 @@
 # CDMX Food Guide — Nikolay's Famous
 
-A curated Mexico City food guide: 64 places researched from Eater CDMX, The Infatuation, Michelin Guide Mexico 2024–25, World's 50 Best, Bon Appétit, Chilango, Nicholas Gilman's *Good Food in Mexico City*, and chef/publication recommendations.
+A curated Mexico City food guide: 277 places researched from Eater CDMX, The Infatuation, Michelin Guide Mexico 2024–25, World's 50 Best, Bon Appétit, Chilango, Nicholas Gilman's *Good Food in Mexico City*, and chef/publication recommendations.
 
 **Live guide:** https://nikolaysfamous.com/cdmx-food-guide/
 

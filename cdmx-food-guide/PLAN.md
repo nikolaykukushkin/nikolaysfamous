@@ -4,7 +4,9 @@
 professional / Spanish-language writing, with links to sources. The guide should read like a
 serious cultural document, not a tourist list.
 
-**Status as of 2026-10-20:**
+**Status as of 2026-10-27: DONE.** Stages 1–11 ran (Sonnet, staged); stage 12 merged 325 records → 282 unique, verified each (open/closed, address, scores, sources) and matched Michelin 2026; 5 closed places dropped → 277 published. No score cutoff (user choice): sort/filter on the page instead. Verification workdir: homeserver ~/cdmx-verify (merge.py, run.sh, build.py).
+
+**Original status as of 2026-10-20:**
 - 64 entries in `server/briefing/static/cdmx-data-source.json` — no scores, no source links
 - HTML built (hidden neighborhood pills toggle, 1–10 scoring display, source link rendering)
   at `nikolaysfamous.com/cdmx-food-guide/index.html` — awaiting scored data
