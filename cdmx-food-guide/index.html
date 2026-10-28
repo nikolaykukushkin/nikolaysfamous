@@ -253,6 +253,20 @@ main {
   transition: box-shadow 0.15s;
 }
 .card:hover { box-shadow: 0 3px 12px rgba(26,18,9,0.12); }
+.star-btn {
+  background: none;
+  border: none;
+  padding: 0 2px;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--border);
+  transition: transform 0.12s, color 0.12s;
+  flex-shrink: 0;
+}
+.star-btn:hover { transform: scale(1.2); color: #d4a017; }
+.star-btn.on { color: #d4a017; }
+.star-btn:disabled { cursor: default; opacity: 0.4; transform: none; }
 .card-top {
   display: flex;
   align-items: flex-start;
@@ -12839,6 +12853,13 @@ const SCORE_DIMS = [
 let customWeights = loadWeights();
 let currentNoteId = null;
 
+// Stars live on the CDMX custom map as a "starred" tag, so they show up (and
+// sort/filter) there too. The last known set is cached for offline viewing.
+const MAPS_API = "https://custom-maps-beta.vercel.app/api/maps/LWEOzLljbawwT5IQAxLH6";
+const STAR_TAG = "starred";
+let mapPinIds = {};   // place id -> map location id
+let starred = new Set(loadStarCache());
+
 function loadCustomEntries() {
   try {
     return JSON.parse(localStorage.getItem("cdmx-custom") || "[]");
@@ -12861,6 +12882,14 @@ function saveNotes(n) {
 
 function getNotes() { return loadNotes(); }
 
+function loadStarCache() {
+  try { return JSON.parse(localStorage.getItem("cdmx-starred") || "[]"); } catch { return []; }
+}
+
+function saveStarCache() {
+  try { localStorage.setItem("cdmx-starred", JSON.stringify([...starred])); } catch {}
+}
+
 function loadWeights() {
   try {
     const w = JSON.parse(localStorage.getItem("cdmx-weights") || "null");
@@ -12881,6 +12910,7 @@ function init() {
   buildCatTabs();
   buildNhPills();
   setSortMode(sortMode);
+  loadStars();
 
   document.getElementById("search").addEventListener("input", e => {
     searchQuery = e.target.value.toLowerCase().trim();
@@ -12951,13 +12981,69 @@ function weightedScore(p, weights) {
   return SCORE_DIMS.reduce((sum, d) => sum + (s[d.k] || 0) * weights[d.k], 0);
 }
 
+// ── STARS ─────────────────────────────────────────────────────────────────
+async function loadStars() {
+  try {
+    const res = await fetch(MAPS_API, {cache: "no-store"});
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const {locations} = await res.json();
+    const byName = new Map(locations.map(l => [l.name, l]));
+    const byPlaceId = new Map(locations.filter(l => l.placeId).map(l => [l.placeId, l]));
+    mapPinIds = {};
+    starred = new Set();
+    for (const p of CURATED_PLACES) {
+      const pin = byName.get(p.name) || (p.place_id && byPlaceId.get(p.place_id));
+      if (!pin) continue;
+      mapPinIds[p.id] = pin.id;
+      if ((pin.tags || []).includes(STAR_TAG)) starred.add(p.id);
+    }
+    saveStarCache();
+  } catch (e) {
+    console.warn("Could not load stars from the map; showing cached stars", e);
+  }
+  buildCatTabs();
+  render();
+}
+
+async function toggleStar(id) {
+  const pinId = mapPinIds[id];
+  if (!pinId) return;
+  const on = !starred.has(id);
+  on ? starred.add(id) : starred.delete(id);
+  buildCatTabs();
+  render();
+  try {
+    const res = await fetch(`${MAPS_API}/locations/${pinId}`, {
+      method: "PATCH",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(on ? {addTags: [STAR_TAG]} : {removeTags: [STAR_TAG]}),
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    saveStarCache();
+  } catch (e) {
+    console.warn("Could not save star to the map", e);
+    on ? starred.delete(id) : starred.add(id);
+    buildCatTabs();
+    render();
+  }
+}
+
+function starButton(p) {
+  if (p._custom) return "";
+  const on = starred.has(p.id);
+  const onMap = !!mapPinIds[p.id];
+  const title = !onMap ? "Not on the map (stars sync through it)" : on ? "Unstar" : "Star";
+  return `<button class="star-btn ${on ? "on" : ""}" title="${title}" aria-label="${title}" aria-pressed="${on}"
+    ${onMap ? `onclick="toggleStar('${escAttr(p.id)}')"` : "disabled"}>${on ? "★" : "☆"}</button>`;
+}
+
 // ── CATEGORIES TAB ────────────────────────────────────────────────────────
 function buildCatTabs() {
-  const cats = ["all", ...Object.keys(CAT_LABELS).filter(k => places.some(p => p.category === k))];
+  const cats = ["all", "starred", ...Object.keys(CAT_LABELS).filter(k => places.some(p => p.category === k))];
   const container = document.getElementById("cat-tabs");
   container.innerHTML = cats.map(c => {
-    const label = c === "all" ? "All" : (CAT_LABELS[c] || c);
-    const count = c === "all" ? places.length : places.filter(p => p.category === c).length;
+    const label = c === "all" ? "All" : c === "starred" ? "★ Starred" : (CAT_LABELS[c] || c);
+    const count = c === "all" ? places.length : c === "starred" ? starred.size : places.filter(p => p.category === c).length;
     return `<button class="cat-tab ${c === activeCategory ? 'active' : ''}" onclick="setCategory('${c}')">${label} <span style="opacity:.5;font-weight:400">${count}</span></button>`;
   }).join("");
 }
@@ -12997,7 +13083,9 @@ function toggleNhPills() {
 
 // ── FILTER + SORT ─────────────────────────────────────────────────────────
 function filteredByCategory() {
-  return activeCategory === "all" ? [...places] : places.filter(p => p.category === activeCategory);
+  if (activeCategory === "all") return [...places];
+  if (activeCategory === "starred") return places.filter(p => starred.has(p.id));
+  return places.filter(p => p.category === activeCategory);
 }
 
 function getFiltered() {
@@ -13040,7 +13128,9 @@ function render() {
   count.textContent = `${items.length} of ${places.length} places`;
 
   if (!items.length) {
-    grid.innerHTML = `<div class="empty"><h3>No places found</h3><p>Try a different search or clear your filters.</p></div>`;
+    grid.innerHTML = activeCategory === "starred" && !starred.size
+      ? `<div class="empty"><h3>No starred places yet</h3><p>Tap ☆ on any place to star it. Stars also appear on the map.</p></div>`
+      : `<div class="empty"><h3>No places found</h3><p>Try a different search or clear your filters.</p></div>`;
     return;
   }
 
@@ -13098,6 +13188,7 @@ function renderCard(p, noteText) {
   return `<div class="card" data-id="${escHtml(p.id)}">
   <div class="card-top">
     <div class="card-name">${escHtml(p.name)}</div>
+    ${starButton(p)}
     <div class="price-badge">${escHtml(p.price_range || "")}</div>
   </div>
   <div class="card-meta">
